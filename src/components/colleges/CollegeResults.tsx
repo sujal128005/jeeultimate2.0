@@ -13,7 +13,7 @@ import { ease } from "@/lib/motion";
 const PAGE = 24;
 
 export const feeLabel = (fees: number | null) =>
-  fees === null ? "Not listed" : fees >= 100000 ? `₹${(fees / 100000).toFixed(fees % 100000 === 0 ? 0 : 1)}L / yr` : `₹${formatNumber(fees)} / yr`;
+  fees === null ? "Not listed" : fees >= 100000 ? `₹${(fees / 100000).toFixed(2).replace(/\.?0+$/, "")}L / yr` : `₹${formatNumber(fees)} / yr`;
 
 type Props = {
   results: College[];
