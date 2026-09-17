@@ -12,7 +12,7 @@ import { StaticField } from "./StaticField";
  * composition when WebGL isn't available.
  */
 export function ParticleField() {
-  const canvasRef = useRef<HTMLCanvasElement>(null);
+  const hostRef = useRef<HTMLDivElement>(null);
   const engineRef = useRef<ParticleEngine | null>(null);
   // Rendered client-only (dynamic import with ssr: false), so window is available.
   const [profile] = useState<FieldProfile>(() => detectFieldProfile());
@@ -23,17 +23,25 @@ export function ParticleField() {
   // Boot
   useEffect(() => {
     const detected = profile;
-    if (detected.tier === "none" || !canvasRef.current) return;
+    const host = hostRef.current;
+    if (detected.tier === "none" || !host) return;
+
+    // A fresh canvas per mount. React's dev mode mounts effects twice, and a
+    // canvas whose WebGL context was released can never be used again.
+    const canvas = document.createElement("canvas");
+    canvas.className = "block size-full";
+    host.appendChild(canvas);
 
     let engine: ParticleEngine;
     try {
-      engine = new ParticleEngine(canvasRef.current, {
+      engine = new ParticleEngine(canvas, {
         count: detected.count,
         dpr: detected.dpr,
         staticMode: detected.tier === "static",
         onFallback: () => setFailed(true),
       });
     } catch {
+      canvas.remove();
       const id = requestAnimationFrame(() => setFailed(true));
       return () => cancelAnimationFrame(id);
     }
@@ -72,6 +80,7 @@ export function ParticleField() {
       document.documentElement.removeEventListener("pointerleave", onPointerLeave);
       window.removeEventListener("touchend", onTouchEnd);
       engine.dispose();
+      canvas.remove();
       engineRef.current = null;
     };
   }, [profile]);
@@ -91,8 +100,8 @@ export function ParticleField() {
 
   return (
     <div aria-hidden className="pointer-events-none fixed inset-0 -z-10">
-      <canvas
-        ref={canvasRef}
+      <div
+        ref={hostRef}
         className="size-full transition-opacity duration-[1.2s] ease-(--ease-out-soft)"
         style={{ opacity: ready ? 1 : 0 }}
       />
