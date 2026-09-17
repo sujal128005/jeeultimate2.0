@@ -1,0 +1,8 @@
+@import "tailwindcss";
+
+/* JEE Ultimate 2.0 design system - see src/styles/* and /design-system */
+@import "../styles/tokens.css";
+@import "../styles/typography.css";
+@import "../styles/surfaces.css";
+@import "../styles/base.css";
+@import "../styles/career.css";

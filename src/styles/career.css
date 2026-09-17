@@ -1,0 +1,106 @@
+/* ==========================================================================
+   Career world - a separate visual environment.
+   Scoped to [data-world="career"]. Semantic tokens are re-pointed to a deep
+   night palette, so shared components (inputs, buttons) adapt automatically.
+   ========================================================================== */
+
+[data-world="career"] {
+  color-scheme: dark;
+
+  /* World primitives */
+  --cw-void: #04050a;
+  --cw-void-2: #080a13;
+  --cw-chrome: #eef0f8;
+  --cw-dim: #9097ad;
+  --cw-faint: #5b6178;
+  --cw-periwinkle: #9aa7ff;
+  --cw-spark: var(--ju-brand-400); /* the JEE Ultimate 2.0 thread */
+  --cw-ion: #7ce7ff;
+  --cw-violet: #a98bff;
+  --cw-rose: #ff7ac6;
+  --cw-mint: #6bffb8;
+  --cw-coral: #ff8a4c;
+
+  /* Active role accent (set inline by the page) */
+  --cw-accent: var(--cw-spark);
+
+  /* Semantic overrides */
+  --canvas: var(--cw-void);
+  --surface: #0d0f19;
+  --surface-2: #121524;
+  --surface-3: #191d30;
+  --contrast: var(--cw-chrome);
+  --contrast-hover: #ffffff;
+  --on-contrast: var(--cw-void);
+  --fg: var(--cw-chrome);
+  --fg-2: #c9cde0;
+  --fg-muted: var(--cw-dim);
+  --fg-subtle: var(--cw-faint);
+  --line: rgb(238 240 248 / 0.09);
+  --line-strong: rgb(238 240 248 / 0.18);
+  --accent-soft: color-mix(in oklch, var(--cw-spark) 16%, transparent);
+  --accent-text: var(--cw-spark);
+  --focus-ring: var(--cw-ion);
+  --danger: #ff7b72;
+  --danger-soft: rgb(255 123 114 / 0.14);
+  --success: var(--cw-mint);
+  --success-soft: rgb(107 255 184 / 0.12);
+  --glass-fill-subtle: rgb(255 255 255 / 0.025);
+  --glass-fill: rgb(255 255 255 / 0.045);
+  --glass-fill-strong: rgb(13 15 25 / 0.82);
+  --glass-fill-hover: rgb(255 255 255 / 0.08);
+  --glass-stroke: rgb(255 255 255 / 0.1);
+  --glass-highlight: rgb(255 255 255 / 0.07);
+  --glass-edge: rgb(0 0 0 / 0.5);
+  --glass-shade: rgb(0 0 0 / 0.6);
+
+  background: var(--cw-void);
+  color: var(--fg);
+}
+
+/* Keep overscroll and the page behind the world dark */
+html:has([data-world="career"]) {
+  background: #04050a;
+}
+html:has([data-world="career"]) body {
+  background: #04050a;
+}
+html:has([data-world="career"]) ::selection {
+  background: var(--cw-ion, #7ce7ff);
+  color: #04050a;
+}
+
+/* Hollow, engraved display type */
+@utility text-hollow {
+  /* Static cut - the variable font's overlapping contours show through a stroke */
+  font-family: var(--font-geist-static), var(--font-sans);
+  font-weight: 600;
+  letter-spacing: -0.02em;
+  color: transparent;
+  -webkit-text-stroke: max(1px, 0.011em) color-mix(in oklab, var(--fg) 62%, transparent);
+}
+
+@utility type-mega {
+  font-size: clamp(3.4rem, 13.2vw, 13.5rem);
+  line-height: 0.82;
+  font-weight: 600;
+  letter-spacing: -0.055em;
+  text-transform: uppercase;
+}
+
+@utility type-pixel {
+  font-family: var(--font-pixel);
+  font-size: 0.8125rem;
+  line-height: 1.2;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+@utility career-noise {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='200' height='200'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.8' numOctaves='2' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='.5'/%3E%3C/svg%3E");
+}
+
+@keyframes scrollcue {
+  0% { transform: translateY(-100%); }
+  60%, 100% { transform: translateY(200%); }
+}
