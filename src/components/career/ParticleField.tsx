@@ -48,12 +48,18 @@ export function ParticleField() {
       const [nx, ny] = toNdc(event.clientX, event.clientY);
       engine.setPointer(nx, ny, event.pointerType === "mouse" || event.buttons > 0 || event.pointerType === "touch");
     };
+    const onPointerDown = (event: PointerEvent) => {
+      const [nx, ny] = toNdc(event.clientX, event.clientY);
+      engine.setPointer(nx, ny, true);
+      engine.pulse(nx, ny);
+    };
     const onPointerLeave = () => engine.setPointer(0, 0, false);
     const onTouchEnd = () => engine.setPointer(0, 0, false);
 
     window.addEventListener("resize", onResize);
     document.addEventListener("visibilitychange", onVisibility);
     window.addEventListener("pointermove", onPointerMove, { passive: true });
+    window.addEventListener("pointerdown", onPointerDown, { passive: true });
     document.documentElement.addEventListener("pointerleave", onPointerLeave);
     window.addEventListener("touchend", onTouchEnd, { passive: true });
 
@@ -62,6 +68,7 @@ export function ParticleField() {
       window.removeEventListener("resize", onResize);
       document.removeEventListener("visibilitychange", onVisibility);
       window.removeEventListener("pointermove", onPointerMove);
+      window.removeEventListener("pointerdown", onPointerDown);
       document.documentElement.removeEventListener("pointerleave", onPointerLeave);
       window.removeEventListener("touchend", onTouchEnd);
       engine.dispose();

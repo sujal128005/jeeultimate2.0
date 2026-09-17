@@ -132,7 +132,7 @@ export function CareerHero() {
               transition={{ duration: 0.9, ease: ease.out, delay: 1.25 }}
               className="flex flex-wrap items-center gap-5 lg:col-span-6 lg:justify-end"
             >
-              <MagneticButton href="#join">Join the talent network</MagneticButton>
+              <MagneticButton href="#roles">Explore the roles</MagneticButton>
               <a href="#story" className="group/scroll flex items-center gap-3 type-pixel text-fg-muted transition-colors hover:text-fg">
                 <span aria-hidden className="relative h-10 w-px overflow-hidden bg-line-strong">
                   <span className="absolute inset-x-0 top-0 h-1/2 animate-[scrollcue_2.2s_var(--ease-in-out-soft)_infinite] bg-fg" />

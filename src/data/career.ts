@@ -5,15 +5,24 @@ export type CareerRole = {
   id: string;
   title: string;
   line: string;
+  /** The must-have for this role, shown as a requirement */
+  requirement: string;
   formation: FormationName;
   formationLabel: string;
   /** World accent - particles and type take this colour when the role is active */
   accent: string;
 };
 
+/**
+ * Applications are closed for now: the Join section shows a "recruiting soon"
+ * state instead of the form. Flip to true (and configure the talent network,
+ * see lib/career/talent-network.ts) to bring the form back.
+ */
+export const applicationsOpen = false;
+
 export const careerStatus = {
   primary: "Recruiting soon",
-  network: isTalentNetworkLive ? "Talent network open" : "Talent network opening soon",
+  network: applicationsOpen && isTalentNetworkLive ? "Applications open" : "Applications opening soon",
 };
 
 export const careerHero = {
@@ -61,60 +70,55 @@ export const careerStory = [
 
 export const careerRoles: CareerRole[] = [
   {
-    id: "engineers",
-    title: "Engineers",
-    line: "Build the systems students lean on during the most stressful weeks of their year.",
-    formation: "lattice",
-    formationLabel: "Lattice",
-    accent: "#7ce7ff",
-  },
-  {
-    id: "ai-builders",
-    title: "AI Builders",
-    line: "Turn years of counselling knowledge into tools that think alongside students.",
-    formation: "neural",
-    formationLabel: "Network",
-    accent: "#a98bff",
-  },
-  {
-    id: "designers",
-    title: "Designers",
-    line: "Make complex, high-stakes decisions feel calm, clear and human.",
+    id: "long-form-editor",
+    title: "Long-Form Editor",
+    line: "Cut deep-dive explainers that walk students through counselling from the first round to the final seat.",
+    requirement: "15+ long-form videos edited",
     formation: "knot",
-    formationLabel: "Knot",
+    formationLabel: "Storyline",
     accent: "#ff7ac6",
   },
   {
-    id: "content",
-    title: "Content Creators",
-    line: "Explain the maze in ways students actually remember.",
+    id: "short-form-editor",
+    title: "Short-Form Editor",
+    line: "Turn one sharp insight into a reel students stop scrolling for.",
+    requirement: "30+ shorts or reels edited",
     formation: "rings",
     formationLabel: "Broadcast",
     accent: "#ffb020",
   },
   {
-    id: "counsellors",
-    title: "Counsellors",
-    line: "Sit beside students at the moment their future gets decided.",
+    id: "mentor",
+    title: "Mentor Counsellor",
+    line: "Sit beside students at the moment their future gets decided, and guide them like a senior would.",
+    requirement: "Student or graduate of an IIT, NIT or IIIT",
     formation: "vortex",
     formationLabel: "Convergence",
     accent: "#6bffb8",
   },
   {
-    id: "operators",
-    title: "Operators",
-    line: "Keep every round, every season, running like clockwork.",
-    formation: "orbit",
-    formationLabel: "Orbit",
-    accent: "#ff8a4c",
+    id: "social-media",
+    title: "Social Media Lead",
+    line: "Grow JEE Ultimate 2.0 across YouTube, Instagram and Facebook, and turn reach into trust.",
+    requirement: "Proven growth on YouTube, Instagram & Facebook",
+    formation: "neural",
+    formationLabel: "Network",
+    accent: "#a98bff",
+  },
+  {
+    id: "tech-manager",
+    title: "Tech Manager",
+    line: "Own the website and the technical backbone, including personalised choice-filling tools for every student.",
+    requirement: "Frontend, backend & Microsoft tools (Excel and more)",
+    formation: "lattice",
+    formationLabel: "Lattice",
+    accent: "#7ce7ff",
   },
 ];
 
 export const careerCta = {
   title: ["Want to build", "with us?"],
-  body: isTalentNetworkLive
-    ? "There are no specific openings yet. Tell us how you build, and you’ll hear from us first when roles open."
-    : "There are no specific openings yet. The talent network is opening soon, and this is where you’ll join it.",
+  body: "Applications for these roles open soon. Keep an eye on this page: this is where you’ll apply.",
   note: isTalentNetworkLive ? null : "Opening soon. Nothing is sent until the network is live.",
   button: "Join the talent network",
 };

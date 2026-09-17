@@ -58,10 +58,10 @@ export function RoleField() {
         <div className="lg:col-span-7">
           <p className="type-pixel text-fg-muted">Who we’re looking for</p>
           <h2 id="roles-title" className="mt-6 max-w-[16ch] type-h2 text-fg">
-            Six ways to build what comes next.
+            Five ways to build what comes next.
           </h2>
           <p className="mt-5 max-w-[30rem] type-body text-fg-muted">
-            No specific openings yet. These are the kinds of people we want to build with.
+            Recruiting soon for these five roles. Here is who we are looking for, and the one thing each role must bring.
           </p>
 
           <ul ref={listRef} className="mt-12 border-t border-line md:mt-16">
@@ -113,8 +113,12 @@ export function RoleField() {
                     data-open={on}
                     className="grid transition-[grid-template-rows] duration-(--duration-slow) ease-(--ease-out-soft) data-[open=false]:grid-rows-[0fr] data-[open=true]:grid-rows-[1fr] lg:sr-only"
                   >
-                    <div className="overflow-hidden">
-                      <p className={cn("pb-6 pl-11 type-body-lg text-fg-2 md:pl-13", !on && "max-lg:invisible")}>{item.line}</p>
+                    <div className={cn("overflow-hidden", !on && "max-lg:invisible")}>
+                      <p className="pl-11 type-body-lg text-fg-2 md:pl-13">{item.line}</p>
+                      <p className="mt-3 mb-6 ml-11 inline-flex items-center gap-2 rounded-full border border-line px-3 py-1.5 type-caption text-fg md:ml-13">
+                        <span className="type-pixel text-[var(--role)]">Must have</span>
+                        {item.requirement}
+                      </p>
                     </div>
                   </div>
                 </li>
@@ -137,7 +141,9 @@ export function RoleField() {
                 style={{ "--role": role.accent } as React.CSSProperties}
               >
                 <div className="flex items-center justify-between type-pixel">
-                  <span className="text-fg-muted">Role {String(active + 1).padStart(2, "0")} / 06</span>
+                  <span className="text-fg-muted">
+                    Role {String(active + 1).padStart(2, "0")} / {String(careerRoles.length).padStart(2, "0")}
+                  </span>
                   <span className="flex items-center gap-2 text-[var(--role)]">
                     <span className="size-2 rounded-full bg-[var(--role)] shadow-[0_0_14px_var(--role)]" />
                     {role.formationLabel}
@@ -145,6 +151,10 @@ export function RoleField() {
                 </div>
                 <p className="mt-8 type-h3 text-fg">{role.title}</p>
                 <p className="mt-3 type-body-lg text-fg-2">{role.line}</p>
+                <div className="mt-6 rounded-lg border border-line bg-[var(--cw-void)]/40 p-4">
+                  <p className="type-pixel text-[var(--role)]">Must have</p>
+                  <p className="mt-2 type-body font-medium text-fg">{role.requirement}</p>
+                </div>
                 <div className="mt-8 flex gap-1.5">
                   {careerRoles.map((r, i) => (
                     <span

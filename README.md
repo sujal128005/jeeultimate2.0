@@ -121,19 +121,24 @@ The Career page is a separate world with a deep night palette, oversized type, a
 | The problem | Chaos |
 | What we know | A mapped terrain |
 | What's next | A helix |
-| Six roles | A different shape and colour for each role |
+| Five roles | A different shape and colour for each role |
 | Talent network | The JEE Ultimate 2.0 mark |
 
-Each role's shape:
+Each role (all marked **Recruiting soon**):
 
-| Role | Shape |
-|---|---|
-| Engineers | Lattice |
-| AI builders | Neural network |
-| Designers | Knot |
-| Content creators | Broadcast rings |
-| Counsellors | Converging vortex |
-| Operators | Orbit |
+| Role | Must have | Shape |
+|---|---|---|
+| Long-Form Editor | 15+ long-form videos edited | Knot |
+| Short-Form Editor | 30+ shorts or reels edited | Broadcast rings |
+| Mentor Counsellor | Student or graduate of an IIT, NIT or IIIT | Converging vortex |
+| Social Media Lead | Proven growth on YouTube, Instagram & Facebook | Neural network |
+| Tech Manager | Frontend, backend & Microsoft tools (Excel and more) | Lattice |
+
+Edit names, descriptions and requirements in `src/data/career.ts`.
+
+**Cursor effect:** particles near the cursor swell into a glowing bubble and flicker through characters (`0-9 ! @ # $ % ^ & * + = ? < > / { } [ ]`). Moving faster makes the bubble bigger and the characters change faster, and a comet trail follows the cursor. Clicking (or tapping) sends a ring of characters outward. Every few seconds a scan line decodes a strip of the field on its own, and the whole field breathes, so it never looks static. The characters come from a small glyph atlas drawn once on a canvas.
+
+**Applications:** the bottom of the page shows a read-only "Applications open soon" panel (`ApplicationsSoon.tsx`) with nothing to type into. When you are ready to accept applications, set `applicationsOpen = true` in `src/data/career.ts` to bring back the form (and configure it as described below).
 
 **Files:**
 
@@ -141,8 +146,8 @@ Each role's shape:
 app/career/layout.tsx, fonts.ts   world fonts (Geist Pixel + static SemiBold) and dark theme colour
 components/career/                CareerWorld (scene state) · ParticleField · StaticField · CareerNav
                                   CareerHero · SignalTicker · CareerStory · RoleField
-                                  TalentNetwork · TalentForm · MagneticButton · CareerFooter
-lib/career/particle-engine.ts     WebGL engine: GPU morphing, pointer repulsion, adaptive quality
+                                  TalentNetwork · ApplicationsSoon · TalentForm · MagneticButton · CareerFooter
+lib/career/particle-engine.ts     WebGL engine: GPU morphing, cursor glyph bubble, click ripple, scan line, adaptive quality
 lib/career/formations.ts          shape generators
 lib/career/capabilities.ts        device tiers
 lib/career/talent-network.ts      form submission contract
@@ -166,7 +171,7 @@ data/career.ts                    all copy, roles, colours
 
 ### Making the talent network live
 
-With no configuration, the form validates input and then tells the visitor, honestly, that nothing was sent yet. To make it live, set **one** of these variables:
+First set `applicationsOpen = true` in `src/data/career.ts`. With no other configuration, the form validates input and then tells the visitor, honestly, that nothing was sent yet. To make it live, set **one** of these variables:
 
 ```bash
 # .env.local
@@ -197,4 +202,4 @@ Once either is set, the status text changes to "Talent network open" automatical
 
 - "Latest news" stories are **sample content** and are labelled as such.
 - The homepage "Strategy board" is an illustrative example that uses no real data.
-- The Career page makes no claim about open roles. It says "Recruiting soon", and says whether the talent network is open or opening soon depending on the configuration above.
+- The Career page makes no claim about open roles. It says "Recruiting soon" and shows no application form until `applicationsOpen` is turned on.

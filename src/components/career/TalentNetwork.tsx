@@ -1,9 +1,10 @@
 "use client";
 
 import { motion } from "motion/react";
-import { careerCta } from "@/data/career";
+import { applicationsOpen, careerCta } from "@/data/career";
 import { ease } from "@/lib/motion";
 import { FieldScene } from "./CareerWorld";
+import { ApplicationsSoon } from "./ApplicationsSoon";
 import { TalentForm } from "./TalentForm";
 
 export function TalentNetwork() {
@@ -19,9 +20,9 @@ export function TalentNetwork() {
       aria-labelledby="join-title"
       className="relative px-gutter pt-section pb-section-sm"
     >
-      <div className="mx-auto grid max-w-page items-end gap-12 lg:grid-cols-12 lg:gap-10">
-        <div className="pt-[30vh] lg:col-span-6 lg:pt-[40vh]">
-          <p className="type-pixel text-fg-muted">The talent network</p>
+      <div className="mx-auto grid max-w-page grid-cols-1 items-end gap-12 lg:grid-cols-12 lg:gap-10">
+        <div className="min-w-0 pt-[30vh] lg:col-span-6 lg:pt-[40vh]">
+          <p className="type-pixel text-fg-muted">Join the team</p>
           <h2 id="join-title" className="mt-6 type-mega !text-[clamp(3rem,8.4vw,7.8rem)] text-fg">
             {careerCta.title.map((line, i) => (
               <motion.span
@@ -39,13 +40,13 @@ export function TalentNetwork() {
           <p className="mt-8 max-w-[28rem] type-body-lg text-fg-2">{careerCta.body}</p>
         </div>
         <motion.div
-          className="lg:col-span-6"
+          className="min-w-0 lg:col-span-6"
           initial={{ opacity: 0, y: 40 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true, amount: 0.25 }}
           transition={{ duration: 0.9, ease: ease.expo, delay: 0.15 }}
         >
-          <TalentForm />
+          {applicationsOpen ? <TalentForm /> : <ApplicationsSoon />}
         </motion.div>
       </div>
     </FieldScene>
