@@ -27,8 +27,31 @@ export type RoleOption = {
   icon: IconName;
 };
 
+export type CounsellingSlug = "josaa" | "csab" | "uptac" | "jac-delhi";
+
+/** Colour identity of a counselling. `accent` for fills, `ink` for small text on light surfaces (AA). */
+export type CounsellingTheme = {
+  accent: string;
+  ink: string;
+  /** Second gradient stop for hero tickets */
+  glow: string;
+};
+
+export type CounsellingFact = { label: string; value: string; note?: string };
+
+export type CounsellingLink = { label: string; href: string };
+
+export type EnrolmentPlan = {
+  name: string;
+  /** Price in rupees. `null` shows "Price announced soon". */
+  price: number | null;
+  /** Direct enrolment link. `null` shows "Enrolment opens soon". */
+  href: string | null;
+  includes: string[];
+};
+
 export type CounsellingProcess = {
-  slug: "josaa" | "csab" | "uptac" | "jac-delhi";
+  slug: CounsellingSlug;
   name: string;
   fullName: string;
   summary: string;
@@ -37,8 +60,26 @@ export type CounsellingProcess = {
   covers: string[];
   icon: IconName;
   href: string;
-  /** Chapters planned for the dedicated guide page */
-  chapters: string[];
+  theme: CounsellingTheme;
+  /** When the counselling usually runs, e.g. "June to July" */
+  season: string;
+  /** Key facts from the 2026 cycle */
+  facts: CounsellingFact[];
+  eligibility: string[];
+  considerations: string[];
+  documents: { everyone: string[]; ifApplicable: string[] };
+  links: {
+    official: string;
+    seatMatrix: string;
+    cutoffs: string;
+    brochure: string;
+    extra?: CounsellingLink[];
+  };
+  plan: EnrolmentPlan;
+  /** What we know about the next cycle */
+  nextCycle: string;
+  /** Where the dates and figures come from */
+  sourceNote: string;
 };
 
 export type ValuePoint = {

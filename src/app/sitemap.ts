@@ -12,6 +12,7 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     ...counsellingProcesses.map((item) => item.href),
     "/news",
     ...(await getAllNewsSlugs()).map((slug) => `/news/${slug}`),
+    "/testimonials",
     "/contact",
     "/privacy",
     "/terms",

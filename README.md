@@ -34,8 +34,10 @@ Requires Node.js 20.9 or newer (https://nodejs.org, LTS).
 | Route | What it is |
 |---|---|
 | `/` | Homepage |
-| `/counselling-support`, `/college-lists`, `/previous-cutoffs`, `/ai-predictor` | Phase-1 section pages |
-| `/counselling/[josaa · csab · uptac · jac-delhi]` | Counselling guide placeholders |
+| `/college-lists`, `/previous-cutoffs`, `/ai-predictor` | Phase-1 section pages |
+| `/counselling-support` | **Counselling Support hub** (see below) |
+| `/counselling/[josaa · csab · uptac · jac-delhi]` | Per-counselling support: enrolment, dates, eligibility, documents, official links |
+| `/testimonials` | Member stories (placeholder until real stories are added) |
 | `/career` | **Signature Career experience** - its own visual world |
 | `/design-system` | Living style guide (not in navigation, not indexed) |
 | `/news`, `/news/[slug]`, `/portal/[role]`, `/contact`, `/privacy`, `/terms` | Supporting placeholders |
@@ -191,6 +193,37 @@ Once either is set, the status text changes to "Talent network open" automatical
 - **Official logo:** the badge lives at `public/brand/jee-ultimate-2.0-logo.png` (background removed). `Logo`, the favicon (`src/app/icon.svg`), `apple-icon.png`, the world transition and the Career nav all use it. On `/career`, the final particle scene draws the badge's ring and "2.0".
 - **Home shortcut:** an icon-only Home button appears in the glass nav and the mobile tab bar on every page except the homepage. On `/career` it is a ring button that lights up on hover and crosses back with the world transition.
 - **Maker credit:** `src/components/layout/MakerCredit.tsx`, in both footers. It reads "Crafted by a human, not a template"; on hover or focus it glitch-decodes into the maker's name, runs a colour flow, and bursts sparks from the cursor. It links to https://sujalnegi.tech in a new tab.
+
+## Counselling Support (`/counselling-support`)
+
+| # | Section | Component |
+|---|---|---|
+| 1 | Hero with ticket fan and jump links | `counselling-hub/HubHero.tsx` |
+| 2 | "Which counselling do you need?" multi-select picker with themed support tickets | `counselling-hub/CounsellingChooser.tsx` |
+| 3 | "Which counselling is for me?" two questions, personalised plan, sends picks to section 2 | same file |
+| 4 | Status of each counselling + month calendar per counselling | `counselling-hub/CounsellingCalendar.tsx` |
+| 5 | Seven-step journey (click or play) | `counselling-hub/JourneyStepper.tsx` |
+| 7 | Why choice filling matters, with an animated allotment demo | `counselling-hub/ChoiceFillingDemo.tsx` |
+| 9 | Counselling terms with small visuals | `counselling-hub/TermsExplorer.tsx` |
+| 10 | Resources: guides, documents, seat matrix, cutoffs, official links, each with its own picker | `counselling-hub/ResourceHub.tsx` |
+| 12 | JoSAA vs CSAB vs UPTAC vs JAC Delhi table | `counselling-hub/ComparisonTable.tsx` |
+| 13 | Why JEE Ultimate 2.0, link to member stories | `counselling-hub/MembersCta.tsx` |
+
+All sections sit side by side on large screens where it makes sense (2 and 3) and stack on phones. The picker (`CounsellingSelect.tsx`) is a themed listbox with full keyboard support.
+
+**Where the content lives**
+
+| File | What to edit |
+|---|---|
+| `src/data/counselling.ts` | Each counselling: colours, facts, eligibility, documents, official links, **enrolment price and link** |
+| `src/data/counselling-calendar.ts` | Calendar events. Replace with 2027 dates when published and change `calendarYear` |
+| `src/data/counselling-hub.ts` | Hero copy, quiz logic, journey, terms, resources, comparison, member stories link |
+
+**Enrolment:** in `src/data/counselling.ts`, set `plan.price` (rupees, e.g. `4999`) and `plan.href` (payment or sign-up link) for each counselling. While they are `null`, the site shows "Price announced soon" and a locked "Enrolment opens soon" button.
+
+**Member stories:** `membersCta.href` points to `/testimonials`. Add real stories there (with permission) or point it to your video page.
+
+**Status** is worked out in the visitor's browser from today's date, so it moves from "Upcoming" to "Live now" to "complete" on its own. Facts and dates come from the official 2026 brochures and schedules; UPTAC round dates were revised during 2026 and use the latest reported dates.
 
 ## Still to configure
 

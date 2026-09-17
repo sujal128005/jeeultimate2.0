@@ -73,3 +73,12 @@
   from { background-position: 0% 50%; }
   to { background-position: 200% 50%; }
 }
+
+/* Heartbeat for the member stories heart */
+@keyframes heartbeat {
+  0%, 100% { transform: scale(1); }
+  14% { transform: scale(1.18); }
+  28% { transform: scale(1); }
+  42% { transform: scale(1.12); }
+  70% { transform: scale(1); }
+}
