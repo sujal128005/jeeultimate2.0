@@ -233,6 +233,6 @@ All sections sit side by side on large screens where it makes sense (2 and 3) an
 
 ## Content notes
 
-- "Latest news" stories are **sample content** and are labelled as such.
+- Updates (`/news`) are **sample content** and are labelled as such. They are no longer on the homepage; the footer links to them under Counselling → Updates.
 - The homepage "Strategy board" is an illustrative example that uses no real data.
 - The Career page makes no claim about open roles. It says "Recruiting soon" and shows no application form until `applicationsOpen` is turned on.

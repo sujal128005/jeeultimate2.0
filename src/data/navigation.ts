@@ -51,6 +51,7 @@ export const footerNav: { title: string; links: LinkItem[] }[] = [
       { label: "CSAB", href: "/counselling/csab" },
       { label: "UPTAC", href: "/counselling/uptac" },
       { label: "JAC Delhi", href: "/counselling/jac-delhi" },
+      { label: "Updates", href: "/news" },
     ],
   },
   {
@@ -58,7 +59,6 @@ export const footerNav: { title: string; links: LinkItem[] }[] = [
     links: [
       { label: "About", href: "/#about" },
       { label: "Why JEE Ultimate 2.0", href: "/#why" },
-      { label: "Latest News", href: "/news" },
       { label: "Contact", href: "/contact" },
     ],
   },
