@@ -11,14 +11,13 @@ import { ease } from "@/lib/motion";
 import type { CounsellingSlug } from "@/types";
 import { CounsellingSelect } from "./CounsellingSelect";
 
-const spans = ["lg:col-span-2", "lg:col-span-2", "lg:col-span-2", "lg:col-span-3", "lg:col-span-3"];
 
-/** Five resource types, each with its own counselling picker and link. */
+/** Six resource types, each with its own counselling picker and link. */
 export function ResourceHub() {
   return (
     <ul className="grid grid-cols-1 gap-3 sm:grid-cols-2 lg:grid-cols-6">
       {resources.map((r, i) => (
-        <ResourceCard key={r.id} resource={r} className={cn(spans[i], i === 4 && "sm:col-span-2 lg:col-span-3")} index={i} />
+        <ResourceCard key={r.id} resource={r} className="lg:col-span-2" index={i} />
       ))}
     </ul>
   );

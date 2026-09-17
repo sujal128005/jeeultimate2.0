@@ -4,9 +4,12 @@ import { AnimatePresence, motion } from "motion/react";
 import { useCallback, useEffect, useRef, useState } from "react";
 import { Container } from "@/components/ui/Container";
 import { Icon } from "@/components/ui/Icon";
+import { JourneyLinks } from "@/components/journey/JourneyLinks";
 import { collegesPending } from "@/data/colleges";
 import { paramsFromState } from "@/lib/colleges/engine";
 import { CollegeHero } from "./CollegeHero";
+import { CollegeUIProvider } from "./CollegeUI";
+import { CompareTray } from "./CompareTray";
 import { CollegeResults } from "./CollegeResults";
 import { ExplorerToolbar } from "./ExplorerToolbar";
 import { FilterPanel } from "./FilterPanel";
@@ -41,7 +44,7 @@ export function CollegeExplorerApp() {
   const resetKey = paramsFromState({ ...state, sort: "popularity", view: "grid" });
 
   return (
-    <>
+    <CollegeUIProvider>
       <CollegeHero ref={heroInput} explorer={explorer} />
 
       <Container size="wide" className="pb-section">
@@ -100,9 +103,16 @@ export function CollegeExplorerApp() {
             </AnimatePresence>
           </div>
         </section>
+        <JourneyLinks
+          current="colleges"
+          title="Found a few you like?"
+          query={state.counselling.length === 1 ? `counselling=${state.counselling[0]}` : undefined}
+          className="mt-16 mb-8 md:mt-20"
+        />
       </Container>
 
       <FilterPanel open={filtersOpen} onClose={closeFilters} all={all} state={state} onApply={(patch) => update(patch)} />
-    </>
+      <CompareTray />
+    </CollegeUIProvider>
   );
 }

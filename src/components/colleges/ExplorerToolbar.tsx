@@ -1,7 +1,9 @@
 "use client";
 
 import { AnimatePresence, LayoutGroup, motion } from "motion/react";
+import Link from "next/link";
 import { forwardRef, useEffect, useRef, useState } from "react";
+import { useShortlist } from "@/lib/colleges/store";
 import { Icon } from "@/components/ui/Icon";
 import {
   activeFilterCount,
@@ -22,6 +24,7 @@ import { cn } from "@/lib/cn";
 import { ease, spring } from "@/lib/motion";
 import { applySuggestion } from "./applySuggestion";
 import { CollegeSearch } from "./CollegeSearch";
+import { MapPicker } from "./IndiaMap";
 import { SortMenu } from "./SortMenu";
 import type { Explorer } from "./useExplorer";
 
@@ -84,6 +87,7 @@ export const ExplorerToolbar = forwardRef<HTMLInputElement, Props>(function Expl
           </button>
           <SortMenu value={state.sort} onChange={(sort) => update({ sort })} />
           <ViewToggle value={state.view} onChange={(view) => update({ view })} />
+          <ShortlistLink />
           <p className="ml-auto type-body-sm text-fg-muted" aria-live="polite">
             <AnimatePresence mode="popLayout" initial={false}>
               <motion.span
@@ -106,6 +110,20 @@ export const ExplorerToolbar = forwardRef<HTMLInputElement, Props>(function Expl
     </>
   );
 });
+
+function ShortlistLink() {
+  const { saved } = useShortlist();
+  return (
+    <Link
+      href="/colleges/shortlist"
+      className="inline-flex h-10 items-center gap-2 rounded-full bg-surface pr-3 pl-3.5 type-nav ring-1 ring-line transition-colors hover:ring-line-strong"
+    >
+      <Icon name="heart" className={cn("size-4", saved.length ? "fill-[#ff4d6d] text-[#ff4d6d]" : "text-fg-muted")} />
+      <span className="font-semibold max-sm:sr-only">My Shortlist</span>
+      <span className="rounded-full bg-fg/[0.06] px-1.5 type-meta tabular-nums">{saved.length}</span>
+    </Link>
+  );
+}
 
 function ViewToggle({ value, onChange }: { value: "grid" | "list"; onChange: (v: "grid" | "list") => void }) {
   return (
@@ -156,11 +174,9 @@ function RegionBar({ explorer }: { explorer: Explorer }) {
 
   return (
     <LayoutGroup id="regions">
-      <div className="flex items-center gap-1.5 overflow-x-auto pb-2 [scrollbar-width:none]">
-        <span className="mr-1 flex shrink-0 items-center gap-1 type-label text-fg-subtle">
-          <Icon name="map-pin" className="size-3.5" />
-          Region
-        </span>
+      <div className="flex items-center gap-1.5 pb-2">
+        <MapPicker explorer={explorer} />
+        <div className="flex min-w-0 items-center gap-1.5 overflow-x-auto [scrollbar-width:none]">
         {([null, ...Object.keys(REGIONS)] as (Region | null)[]).map((r) => {
           const on = state.region === r;
           const n = r ? (counts.get(r) ?? 0) : null;
@@ -188,6 +204,7 @@ function RegionBar({ explorer }: { explorer: Explorer }) {
             </button>
           );
         })}
+        </div>
       </div>
       <AnimatePresence initial={false}>
         {state.region && regionStates.length > 0 && (

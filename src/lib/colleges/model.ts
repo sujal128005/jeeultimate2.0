@@ -136,3 +136,42 @@ export function normalizeColleges(raw: RawCollege[]): College[] {
   }
   return out;
 }
+
+/* ------------------------------------------------------------------ */
+/* Derived facts for previews                                           */
+/* ------------------------------------------------------------------ */
+
+const BRANCH_PRIORITY = ["cse", "ai", "mnc", "it", "ece", "ee", "eee", "me", "ce", "che", "aero", "meta", "ephys", "bio", "arch", "plan"];
+
+/** Up to `n` branch codes, most sought-after first. */
+export function popularBranches(c: College, n = 4) {
+  const ranked = BRANCH_PRIORITY.filter((b) => c.branches.includes(b));
+  const rest = c.branches.filter((b) => !BRANCH_PRIORITY.includes(b) && b !== "other");
+  return [...ranked, ...rest].slice(0, n);
+}
+
+export type Popularity = { label: string; level: 1 | 2 | 3; note: string };
+
+/**
+ * Popularity from real JoSAA opening ranks, compared only with colleges
+ * ranked on the same exam (JEE Advanced or JEE Main).
+ */
+export function popularityIndex(all: College[]) {
+  const groups = new Map<string, number[]>();
+  for (const c of all) {
+    if (c.openingRank === null) continue;
+    const g = groups.get(c.rankExam) ?? [];
+    g.push(c.openingRank);
+    groups.set(c.rankExam, g);
+  }
+  for (const g of groups.values()) g.sort((a, b) => a - b);
+  return (c: College): Popularity | null => {
+    if (c.openingRank === null) return null;
+    const g = groups.get(c.rankExam)!;
+    const pos = g.indexOf(c.openingRank) / Math.max(1, g.length - 1);
+    const note = `Based on ${c.rankYear ?? "JoSAA"} opening ranks among ${c.rankExam === "advanced" ? "JEE Advanced" : "JEE Main"} colleges`;
+    if (pos <= 0.2) return { label: "Most sought-after", level: 3, note };
+    if (pos <= 0.55) return { label: "Highly sought-after", level: 2, note };
+    return { label: "Sought-after", level: 1, note };
+  };
+}

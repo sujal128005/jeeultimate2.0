@@ -290,7 +290,7 @@ export const counsellingTerms = [
 /* Resources                                                           */
 /* ------------------------------------------------------------------ */
 
-export type ResourceKind = "guide" | "documents" | "seatMatrix" | "cutoffs" | "official";
+export type ResourceKind = "guide" | "documents" | "colleges" | "seatMatrix" | "cutoffs" | "official";
 
 export const resources: {
   id: ResourceKind;
@@ -317,6 +317,15 @@ export const resources: {
     icon: "check-circle",
     cta: (name) => `${name} documents checklist`,
     href: (p) => `${p.href}#documents`,
+    external: false,
+  },
+  {
+    id: "colleges",
+    title: "Participating colleges",
+    body: "Every college in that counselling, ready to filter, save and compare.",
+    icon: "landmark",
+    cta: (name) => `${name} colleges`,
+    href: (p) => `/colleges?counselling=${p.slug}`,
     external: false,
   },
   {

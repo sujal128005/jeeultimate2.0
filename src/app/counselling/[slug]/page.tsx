@@ -4,6 +4,7 @@ import { notFound } from "next/navigation";
 import { CounsellingCalendar } from "@/components/counselling-hub/CounsellingCalendar";
 import { DocumentsChecklist } from "@/components/counselling-hub/DocumentsChecklist";
 import { CounsellingList } from "@/components/counselling/CounsellingList";
+import { JourneyLinks } from "@/components/journey/JourneyLinks";
 import { AnimatedSection, Stagger, StaggerItem } from "@/components/motion/AnimatedSection";
 import { Container } from "@/components/ui/Container";
 import { Icon, type IconName } from "@/components/ui/Icon";
@@ -153,6 +154,24 @@ export default async function CounsellingPage(props: PageProps<"/counselling/[sl
         </Block>
 
         <Block id="seat-matrix" eyebrow="Seats, cutoffs & official links" title="Straight from the official source.">
+          <Link
+            href={`/colleges?counselling=${process.slug}`}
+            className="group mb-3 flex items-center gap-4 rounded-card bg-[linear-gradient(120deg,color-mix(in_oklab,var(--c)_14%,var(--color-surface)),var(--color-surface))] p-5 shadow-hairline transition-[transform,box-shadow] duration-(--duration-base) hover:-translate-y-0.5 hover:shadow-card"
+          >
+            <span className="grid size-11 shrink-0 place-items-center rounded-2xl bg-[var(--c)] text-white">
+              <Icon name="landmark" className="size-5" />
+            </span>
+            <span className="min-w-0 flex-1">
+              <span className="block type-body font-semibold">Participating colleges</span>
+              <span className="mt-0.5 block type-body-sm text-fg-muted">
+                Browse, save and compare every college in {process.name} on JEE Ultimate 2.0.
+              </span>
+            </span>
+            <Icon
+              name="arrow-right"
+              className="size-5 shrink-0 text-[var(--ink)] transition-transform group-hover:translate-x-0.5"
+            />
+          </Link>
           <ul className="grid gap-3 sm:grid-cols-2 lg:grid-cols-4">
             <OfficialLink icon="layers" title="Seat matrix" body="Seats by institute and branch." href={process.links.seatMatrix} />
             <OfficialLink icon="chart" title="Opening & closing ranks" body="Past rounds and years." href={process.links.cutoffs} />
@@ -178,6 +197,17 @@ export default async function CounsellingPage(props: PageProps<"/counselling/[sl
           )}
           <p className="mt-6 type-caption text-fg-muted">{process.sourceNote}</p>
         </Block>
+
+        <AnimatedSection>
+          <JourneyLinks
+            current="counselling"
+            hrefs={{
+              colleges: `/colleges?counselling=${process.slug}`,
+              cutoffs: `/previous-cutoffs?counselling=${process.slug}`,
+              predictor: `/ai-predictor?counselling=${process.slug}`,
+            }}
+          />
+        </AnimatedSection>
 
         <AnimatedSection>
           <div className="mb-6 flex flex-wrap items-end justify-between gap-4">

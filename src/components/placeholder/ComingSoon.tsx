@@ -29,7 +29,7 @@ export function ComingSoon({
   return (
     <PageShell>
       <div className="grid gap-12 lg:grid-cols-12 lg:gap-10">
-        <AnimatedSection className="lg:col-span-5">
+        <AnimatedSection className="min-w-0 lg:col-span-5">
           <div className="lg:sticky lg:top-32">
             <div className="flex flex-wrap items-center gap-3">
               <span className="bg-accent-gradient grid size-11 place-items-center rounded-md text-on-accent shadow-accent">
@@ -74,7 +74,7 @@ export function ComingSoon({
           </div>
         </AnimatedSection>
 
-        <div className="flex flex-col gap-8 lg:col-span-7">
+        <div className="flex min-w-0 flex-col gap-8 lg:col-span-7">
           {children}
           {showPreview && (
           <AnimatedSection delay={0.15}>
