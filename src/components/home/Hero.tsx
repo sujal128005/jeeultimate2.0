@@ -7,7 +7,6 @@ import { Container } from "@/components/ui/Container";
 import { StatusBadge } from "@/components/ui/StatusBadge";
 import { site } from "@/data/site";
 import { ease } from "@/lib/motion";
-import { HeroVisual } from "./HeroVisual";
 
 const lines = [
   { lead: "Your JEE", word: "Rank." },
@@ -25,7 +24,7 @@ export function Hero() {
   const copyOpacity = useTransform(scrollYProgress, [0, 0.45], [1, reduce ? 1 : 0]);
 
   return (
-    <section ref={ref} aria-labelledby="hero-title" className="relative overflow-hidden pt-[120px] pb-16 md:pt-[168px] md:pb-24">
+    <section ref={ref} aria-labelledby="hero-title" className="relative overflow-hidden pt-[120px] pb-20 md:pt-[168px] md:pb-28">
       <HeroBackdrop />
 
       <Container size="wide" className="relative">
@@ -100,7 +99,6 @@ export function Hero() {
           </motion.ul>
         </motion.div>
 
-        <HeroVisual progress={scrollYProgress} />
       </Container>
     </section>
   );
