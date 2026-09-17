@@ -30,7 +30,7 @@ export const credibility = {
   facts: [
     { value: "2023", label: "Our first counselling season", detail: "And every season since" },
     { value: "4", label: "Counselling processes", detail: "JoSAA · CSAB · UPTAC · JAC Delhi" },
-    { value: "4", label: "Institute families", detail: "IIT · NIT · IIIT · GFTI" },
+    { value: "institutes", label: "Institutes covered", detail: "JoSAA & CSAB · JAC Delhi · UPTAC" },
   ],
 };
 

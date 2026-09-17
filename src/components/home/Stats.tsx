@@ -3,6 +3,7 @@ import { Counter } from "@/components/motion/Counter";
 import { Container } from "@/components/ui/Container";
 import { Stat } from "@/components/ui/Stat";
 import { Eyebrow } from "@/components/ui/Eyebrow";
+import { institutesCovered } from "@/data/colleges";
 import { credibility } from "@/data/home";
 import { site } from "@/data/site";
 
@@ -57,7 +58,12 @@ export function Stats() {
           >
             {credibility.facts.map((fact) => (
               <StaggerItem as="li" key={fact.label} className="py-7 sm:px-6 sm:first:pl-0 md:py-10 lg:px-10">
-                <Stat tone="contrast" value={fact.value} label={fact.label} detail={fact.detail} />
+                <Stat
+                  tone="contrast"
+                  value={fact.value === "institutes" ? `${institutesCovered}+` : fact.value}
+                  label={fact.label}
+                  detail={fact.detail}
+                />
               </StaggerItem>
             ))}
           </Stagger>

@@ -82,3 +82,9 @@
   42% { transform: scale(1.12); }
   70% { transform: scale(1); }
 }
+
+/* Resting shimmer on the maker credit */
+@keyframes maker-shimmer {
+  0% { background-position: 110% 50%; }
+  60%, 100% { background-position: -10% 50%; }
+}

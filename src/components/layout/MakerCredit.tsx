@@ -4,7 +4,7 @@ import { AnimatePresence, motion, useReducedMotion } from "motion/react";
 import { useCallback, useEffect, useRef, useState } from "react";
 import { cn } from "@/lib/cn";
 
-const IDLE = "Crafted by a human, not a template";
+const IDLE = "01001100 01100101 01100001 01100011 01111001 ↗";
 const REVEAL = "Sujal Negi · sujalnegi.tech ↗";
 const HREF = "https://sujalnegi.tech";
 const GLYPHS = "!<>-_\\/[]{}=+*^?#01ABCDEFXYZ";
@@ -24,6 +24,7 @@ export function MakerCredit({ className }: { className?: string }) {
   const [active, setActive] = useState(false);
   const [bursts, setBursts] = useState<Burst[]>([]);
   const frame = useRef(0);
+  const busy = useRef(false);
   const ref = useRef<HTMLAnchorElement>(null);
 
   const scrambleTo = useCallback(
@@ -33,6 +34,7 @@ export function MakerCredit({ className }: { className?: string }) {
         setText(target);
         return;
       }
+      busy.current = true;
       const start = performance.now();
       const duration = 720;
       const tick = (now: number) => {
@@ -47,6 +49,7 @@ export function MakerCredit({ className }: { className?: string }) {
         }
         setText(p >= 1 ? target : out);
         if (p < 1) frame.current = requestAnimationFrame(tick);
+        else busy.current = false;
       };
       frame.current = requestAnimationFrame(tick);
     },
@@ -54,6 +57,23 @@ export function MakerCredit({ className }: { className?: string }) {
   );
 
   useEffect(() => () => cancelAnimationFrame(frame.current), []);
+
+  // At rest the bits keep flickering, so the eye is drawn to it
+  useEffect(() => {
+    if (active || reduce) return;
+    const bits = [...IDLE].map((ch, i) => (ch === "0" || ch === "1" ? i : -1)).filter((i) => i >= 0);
+    const id = window.setInterval(() => {
+      if (busy.current) return;
+      const chars = [...IDLE];
+      const flips = 1 + Math.floor(Math.random() * 3);
+      for (let k = 0; k < flips; k++) {
+        const i = bits[Math.floor(Math.random() * bits.length)];
+        chars[i] = chars[i] === "0" ? "1" : "0";
+      }
+      setText(Math.random() < 0.35 ? IDLE : chars.join(""));
+    }, 160);
+    return () => window.clearInterval(id);
+  }, [active, reduce]);
 
   const ignite = (clientX?: number, clientY?: number) => {
     setActive(true);
@@ -103,8 +123,12 @@ export function MakerCredit({ className }: { className?: string }) {
         aria-hidden
         viewBox="0 0 16 16"
         className="relative size-3.5 shrink-0"
-        animate={active && !reduce ? { rotate: 180, scale: 1.35 } : { rotate: 0, scale: 1 }}
-        transition={{ type: "spring", stiffness: 260, damping: 14 }}
+        animate={
+          reduce ? undefined : active ? { rotate: 180, scale: 1.35 } : { rotate: [0, 90, 90], scale: [1, 1.25, 1] }
+        }
+        transition={
+          active ? { type: "spring", stiffness: 260, damping: 14 } : { duration: 2.4, repeat: Infinity, ease: "easeInOut" }
+        }
       >
         <path
           d="M8 0c.5 4.2 3.8 7.5 8 8-4.2.5-7.5 3.8-8 8-.5-4.2-3.8-7.5-8-8 4.2-.5 7.5-3.8 8-8Z"
@@ -121,7 +145,7 @@ export function MakerCredit({ className }: { className?: string }) {
       </motion.svg>
 
       {/* Fixed-width stage so decoding never shifts the layout */}
-      <span className="relative inline-grid font-mono text-[12px] tracking-[0.02em] whitespace-pre">
+      <span className="relative inline-grid font-mono text-[10.5px] tracking-[0.02em] whitespace-pre sm:text-[12px]">
         <span aria-hidden className="invisible col-start-1 row-start-1">
           {"M".repeat(WIDTH)}
         </span>
@@ -131,9 +155,11 @@ export function MakerCredit({ className }: { className?: string }) {
             "col-start-1 row-start-1 transition-[color] duration-(--duration-base)",
             active
               ? "bg-[linear-gradient(90deg,#ffb020,#ff7ac6,#a98bff,#7ce7ff,#ffb020)] bg-[length:200%_100%] bg-clip-text text-transparent [text-shadow:1px_0_rgb(255_60_90/0.35),-1px_0_rgb(80_220_255/0.35)]"
-              : "text-current",
+              : "bg-[linear-gradient(100deg,rgb(255_255_255/0.62)_40%,#ffb020_48%,#ffffff_50%,#7ce7ff_52%,rgb(255_255_255/0.62)_60%)] bg-[length:250%_100%] bg-clip-text text-transparent motion-reduce:bg-none motion-reduce:text-current",
           )}
-          style={active && !reduce ? { animation: "maker-flow 1.6s linear infinite" } : undefined}
+          style={
+            reduce ? undefined : { animation: active ? "maker-flow 1.6s linear infinite" : "maker-shimmer 3.2s ease-in-out infinite" }
+          }
         >
           {text}
         </span>

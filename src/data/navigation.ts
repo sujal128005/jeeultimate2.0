@@ -9,7 +9,7 @@ export const mainNav: NavItem[] = [
     icon: "compass",
     matches: ["/counselling"],
   },
-  { id: "colleges", label: "College Lists", shortLabel: "Colleges", href: "/college-lists", icon: "landmark" },
+  { id: "colleges", label: "College Lists", shortLabel: "Colleges", href: "/colleges", icon: "landmark", matches: ["/college-lists"] },
   { id: "cutoffs", label: "Previous Cutoffs", shortLabel: "Cutoffs", href: "/previous-cutoffs", icon: "chart" },
   { id: "predictor", label: "AI Predictor", shortLabel: "Predictor", href: "/ai-predictor", icon: "sparkles" },
   { id: "career", label: "Career", shortLabel: "Career", href: "/career", icon: "briefcase", world: "career" },
