@@ -6,15 +6,22 @@ import { Button } from "@/components/ui/Button";
 import { Container } from "@/components/ui/Container";
 import { StatusBadge } from "@/components/ui/StatusBadge";
 import { site } from "@/data/site";
+import { JoinCounselling } from "./JoinCounselling";
 import { ease } from "@/lib/motion";
 
-const lines = [
-  { lead: "Your JEE", word: "Rank." },
-  { lead: "Your", word: "College." },
-  { lead: "Your", word: "Strategy.", accent: true },
-];
-
-const institutes = ["IIT", "NIT", "IIIT", "GFTI"];
+/**
+ * Bhartrihari's Niti Shataka, on what an education is worth. Two of the four
+ * lines: the last two end on kings and wealth, and this page is not about
+ * either.
+ */
+const shloka = {
+  lines: [
+    "विद्या दीपः, ज्ञानं मार्गः।",
+    "संस्कारः शक्तिः, सफलता ध्येयम्॥",
+  ],
+  meaning:
+    "“Education is the light, knowledge is the path. Values are the strength, and success is the goal...”",
+};
 
 export function Hero() {
   const ref = useRef<HTMLElement>(null);
@@ -24,7 +31,7 @@ export function Hero() {
   const copyOpacity = useTransform(scrollYProgress, [0, 0.45], [1, reduce ? 1 : 0]);
 
   return (
-    <section ref={ref} aria-labelledby="hero-title" className="relative overflow-hidden pt-[120px] pb-20 md:pt-[168px] md:pb-28">
+    <section ref={ref} aria-labelledby="hero-title" className="relative overflow-hidden pt-[96px] pb-16 md:pt-[124px] md:pb-20">
       <HeroBackdrop />
 
       <Container size="wide" className="relative">
@@ -39,64 +46,56 @@ export function Hero() {
             </StatusBadge>
           </motion.div>
 
-          <h1
-            id="hero-title"
-            className="mt-8 type-display text-fg md:mt-10"
-          >
-            {lines.map((line, index) => (
-              <span key={line.word} className="block overflow-hidden pb-[0.06em]">
+          <h1 id="hero-title" className="mt-5 max-w-[24ch] type-shloka text-fg md:mt-6 md:max-w-none">
+            {shloka.lines.map((line, index) => (
+              <span key={line} className="block overflow-hidden pb-[0.12em]">
                 <motion.span
-                  className="inline-block"
+                  className={index === 1 ? "text-accent-gradient inline-block pr-[0.06em]" : "inline-block"}
                   initial={{ y: "105%" }}
                   animate={{ y: "0%" }}
-                  transition={{ duration: 1, ease: ease.out, delay: 0.25 + index * 0.1 }}
+                  transition={{ duration: 1, ease: ease.out, delay: 0.25 + index * 0.12 }}
                 >
-                  <span className="text-fg/45">{line.lead}</span>{" "}
-                  <span className={line.accent ? "text-accent-gradient pr-[0.04em]" : undefined}>{line.word}</span>
+                  {line}
                 </motion.span>
-                {index < lines.length - 1 && " "}
               </span>
             ))}
           </h1>
 
           <motion.p
-            initial={{ opacity: 0, y: 16 }}
+            initial={{ opacity: 0, y: 14 }}
             animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8, ease: ease.out, delay: 0.65 }}
-            className="mt-7 max-w-measure type-body-lg text-fg-muted md:mt-9"
+            transition={{ duration: 0.8, ease: ease.out, delay: 0.6 }}
+            className="mt-4 max-w-[58ch] type-verse-meaning text-fg-muted md:mt-5"
           >
-            Clear, human guidance for IIT, NIT, IIIT and GFTI admissions, from reading your rank to freezing the
-            right seat.
+            {shloka.meaning}
           </motion.p>
 
           <motion.div
             initial={{ opacity: 0, y: 16 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, ease: ease.out, delay: 0.75 }}
-            className="mt-9 flex w-full flex-col items-center gap-3 sm:w-auto sm:flex-row"
+            className="mt-6 flex w-full flex-col items-center gap-3 md:mt-7 md:w-auto md:flex-row"
           >
-            <Button href="/#counselling" size="lg" icon="arrow-right" className="w-full sm:w-auto">
-              Explore counselling
-            </Button>
-            <Button href="/#why" size="lg" variant="glass" className="w-full sm:w-auto">
+            <JoinCounselling className="w-full !h-15 !px-9 !text-[17px] md:w-auto" />
+            <Button href="/#why" size="lg" variant="glass" className="w-full md:w-auto">
               Why JEE Ultimate 2.0
             </Button>
           </motion.div>
 
-          <motion.ul
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            transition={{ duration: 1, delay: 1 }}
-            aria-label="Institutes we guide for"
-            className="mt-10 flex items-center gap-2 type-label text-fg-muted"
+          <motion.p
+            initial={{ opacity: 0, y: 14 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8, ease: ease.out, delay: 0.85 }}
+            className="mt-7 max-w-measure type-body text-fg-muted"
           >
-            {institutes.map((name, index) => (
-              <li key={name} className="flex items-center gap-2">
-                {index > 0 && <span aria-hidden className="size-[3px] rounded-full bg-fg-subtle" />}
-                {name}
-              </li>
-            ))}
-          </motion.ul>
+            Clear, guidance for <strong className="font-semibold text-fg-2">IIT</strong>,{" "}
+            <strong className="font-semibold text-fg-2">NIT</strong>,{" "}
+            <strong className="font-semibold text-fg-2">IIIT</strong>,{" "}
+            <strong className="font-semibold text-fg-2">GFTI</strong> and{" "}
+            <strong className="font-semibold text-fg-2">top Engineering college</strong> admissions, from reading your
+            rank to freezing the right seat.
+          </motion.p>
+
         </motion.div>
 
       </Container>

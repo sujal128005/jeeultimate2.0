@@ -5,8 +5,31 @@
    Usage: className="type-h2"
    ========================================================================== */
 
+/* Devanagari display: a proper Indic serif if the machine has one, with the
+   Google face picked up automatically if it is ever added to the project. */
+@utility type-shloka {
+  font-family: "Tiro Devanagari Hindi", "Noto Serif Devanagari", "Nirmala UI", "Kohinoor Devanagari",
+    "Devanagari Sangam MN", "Noto Sans Devanagari", var(--font-sans), serif;
+  font-size: clamp(1.6rem, min(4.05vw, 6.3vh), 3.4rem);
+  line-height: 1.5;
+  font-weight: 800;
+  letter-spacing: -0.005em;
+}
+
+/* The translation under the verse: a book serif, so it reads as a quotation
+   rather than as more interface text. */
+@utility type-verse-meaning {
+  font-family: "Iowan Old Style", "Palatino Linotype", Palatino, "Book Antiqua", Georgia, "Times New Roman", serif;
+  font-size: clamp(0.95rem, 1.05vw, 1.15rem);
+  line-height: 1.6;
+  font-style: italic;
+  letter-spacing: 0.002em;
+}
+
 @utility type-display {
-  font-size: clamp(2.6rem, 8.4vw, 7.4rem);
+  /* Width AND height: on a short wide window the headline gives way so the
+     call to action stays on the first screen. */
+  font-size: clamp(2.6rem, min(7.6vw, 11.5vh), 6.5rem);
   line-height: 0.94;
   font-weight: 600;
   letter-spacing: var(--tracking-display);
