@@ -76,6 +76,14 @@ export async function POST(request: Request) {
     });
   } catch (error) {
     console.error("[saarthi]", error);
-    return Response.json({ error: "upstream" }, { status: 502 });
+    // A busy model is not a broken site, and the panel should say so kindly.
+    const message = error instanceof Error ? error.message : String(error);
+    const status = Number(message.match(/\s(\d{3}):/)?.[1]);
+    const busy = status === 429 || status === 500 || status === 502 || status === 503 || status === 504;
+    // In development the reason travels to the panel, so a misconfigured model
+    // or key says so on screen instead of hiding in the terminal.
+    const detail =
+      process.env.NODE_ENV === "production" ? undefined : String(error instanceof Error ? error.message : error).slice(0, 300);
+    return Response.json({ error: busy ? "busy" : "upstream", detail }, { status: 502 });
   }
 }
