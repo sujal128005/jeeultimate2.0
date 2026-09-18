@@ -9,9 +9,16 @@ export const mainNav: NavItem[] = [
     icon: "compass",
     matches: ["/counselling"],
   },
-  { id: "colleges", label: "College Lists", shortLabel: "Colleges", href: "/colleges", icon: "landmark", matches: ["/college-lists"] },
+  {
+    id: "colleges",
+    label: "College Lists",
+    shortLabel: "Colleges",
+    href: "/colleges",
+    icon: "landmark",
+    matches: ["/college-lists"],
+  },
   { id: "cutoffs", label: "Previous Cutoffs", shortLabel: "Cutoffs", href: "/previous-cutoffs", icon: "chart" },
-  { id: "predictor", label: "AI Predictor", shortLabel: "Predictor", href: "/ai-predictor", icon: "sparkles" },
+  { id: "team", label: "Team", shortLabel: "Team", href: "/team", icon: "users" },
   { id: "career", label: "Career", shortLabel: "Career", href: "/career", icon: "briefcase", world: "career" },
 ];
 
@@ -59,7 +66,6 @@ export const footerNav: { title: string; links: LinkItem[] }[] = [
     links: [
       { label: "About", href: "/#about" },
       { label: "Why JEE Ultimate 2.0", href: "/#why" },
-      { label: "Team", href: "/team" },
       { label: "Contact", href: "/contact" },
     ],
   },

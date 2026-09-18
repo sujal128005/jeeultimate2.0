@@ -2,17 +2,35 @@ import Link from "next/link";
 import { Icon, type IconName } from "@/components/ui/Icon";
 import { cn } from "@/lib/cn";
 
-export type JourneyStep = "counselling" | "colleges" | "cutoffs" | "predictor";
+export type JourneyStep = "counselling" | "colleges" | "cutoffs";
 
 const STEPS: { id: JourneyStep; label: string; body: string; icon: IconName; href: string; soon?: boolean }[] = [
-  { id: "counselling", label: "Counselling", body: "Know which counselling to join and when.", icon: "compass", href: "/counselling-support" },
-  { id: "colleges", label: "Colleges", body: "Find, save and compare the colleges you like.", icon: "landmark", href: "/colleges" },
-  { id: "cutoffs", label: "Previous cutoffs", body: "See how far each seat went in past rounds.", icon: "chart", href: "/previous-cutoffs", soon: true },
-  { id: "predictor", label: "AI Predictor", body: "Check your chances with your rank.", icon: "sparkles", href: "/ai-predictor", soon: true },
+  {
+    id: "counselling",
+    label: "Counselling",
+    body: "Know which counselling to join and when.",
+    icon: "compass",
+    href: "/counselling-support",
+  },
+  {
+    id: "colleges",
+    label: "Colleges",
+    body: "Find, save and compare the colleges you like.",
+    icon: "landmark",
+    href: "/colleges",
+  },
+  {
+    id: "cutoffs",
+    label: "Previous cutoffs",
+    body: "See how far each seat went in past rounds.",
+    icon: "chart",
+    href: "/previous-cutoffs",
+    soon: true,
+  },
 ];
 
 /**
- * The four-step path through the site: Counselling → Colleges → Cutoffs → Predictor.
+ * The three-step path through the site: Counselling → Colleges → Cutoffs.
  * `query` is carried to the next steps (e.g. `college=iit-bombay` or `counselling=josaa`).
  */
 export function JourneyLinks({
@@ -33,9 +51,9 @@ export function JourneyLinks({
     <nav aria-label="Counselling journey" className={cn("rounded-section bg-surface p-5 shadow-hairline sm:p-7", className)}>
       <div className="flex flex-wrap items-baseline justify-between gap-2">
         <p className="type-h4">{title}</p>
-        <p className="type-caption text-fg-muted">Counselling, colleges, cutoffs, predictor</p>
+        <p className="type-caption text-fg-muted">Counselling, colleges, cutoffs</p>
       </div>
-      <ol className="mt-5 grid grid-cols-1 gap-2 sm:grid-cols-2 lg:grid-cols-4">
+      <ol className="mt-5 grid grid-cols-1 gap-2 sm:grid-cols-2 lg:grid-cols-3">
         {STEPS.map((s, i) => {
           const here = s.id === current;
           const done = i < currentIndex;
@@ -55,7 +73,11 @@ export function JourneyLinks({
                 <span
                   className={cn(
                     "grid size-9 shrink-0 place-items-center rounded-xl",
-                    here ? "bg-accent-gradient text-on-accent" : done ? "bg-fg/[0.06] text-fg-muted" : "bg-accent-soft text-accent-text",
+                    here
+                      ? "bg-accent-gradient text-on-accent"
+                      : done
+                        ? "bg-fg/[0.06] text-fg-muted"
+                        : "bg-accent-soft text-accent-text",
                   )}
                 >
                   <Icon name={done ? "check" : s.icon} className="size-4" />

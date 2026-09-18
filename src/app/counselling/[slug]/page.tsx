@@ -76,7 +76,10 @@ export default async function CounsellingPage(props: PageProps<"/counselling/[sl
           <div className="mt-10 grid gap-10 lg:grid-cols-12 lg:items-end">
             <AnimatedSection className="lg:col-span-7">
               <p className="inline-flex items-center gap-2 type-label text-[var(--ink)]">
-                <span className="grid size-7 place-items-center rounded-lg text-white" style={{ background: `linear-gradient(140deg, ${theme.accent}, ${theme.glow})` }}>
+                <span
+                  className="grid size-7 place-items-center rounded-lg text-white"
+                  style={{ background: `linear-gradient(140deg, ${theme.accent}, ${theme.glow})` }}
+                >
                   <Icon name={process.icon} className="size-4" />
                 </span>
                 {process.fullName}
@@ -173,10 +176,25 @@ export default async function CounsellingPage(props: PageProps<"/counselling/[sl
             />
           </Link>
           <ul className="grid gap-3 sm:grid-cols-2 lg:grid-cols-4">
-            <OfficialLink icon="layers" title="Seat matrix" body="Seats by institute and branch." href={process.links.seatMatrix} />
-            <OfficialLink icon="chart" title="Opening & closing ranks" body="Past rounds and years." href={process.links.cutoffs} />
+            <OfficialLink
+              icon="layers"
+              title="Seat matrix"
+              body="Seats by institute and branch."
+              href={process.links.seatMatrix}
+            />
+            <OfficialLink
+              icon="chart"
+              title="Opening & closing ranks"
+              body="Past rounds and years."
+              href={process.links.cutoffs}
+            />
             <OfficialLink icon="file" title="Brochure & rules" body="Official rules and notices." href={process.links.brochure} />
-            <OfficialLink icon="landmark" title="Official website" body="Login, schedule and updates." href={process.links.official} />
+            <OfficialLink
+              icon="landmark"
+              title="Official website"
+              body="Login, schedule and updates."
+              href={process.links.official}
+            />
           </ul>
           {process.links.extra && (
             <ul className="mt-4 flex flex-wrap gap-2">
@@ -204,7 +222,6 @@ export default async function CounsellingPage(props: PageProps<"/counselling/[sl
             hrefs={{
               colleges: `/colleges?counselling=${process.slug}`,
               cutoffs: `/previous-cutoffs?counselling=${process.slug}`,
-              predictor: `/ai-predictor?counselling=${process.slug}`,
             }}
           />
         </AnimatedSection>
@@ -361,7 +378,10 @@ function EnrolSection({ process, siblings }: { process: CounsellingProcess; sibl
                         href={`${s.href}#enrol`}
                         className="inline-flex h-8 items-center gap-2 rounded-full bg-on-contrast/[0.07] pr-3 pl-2 type-caption font-medium text-on-contrast/80 ring-1 ring-on-contrast/10 hover:bg-on-contrast/[0.12]"
                       >
-                        <span className="size-3 rounded-full" style={{ background: `linear-gradient(140deg, ${s.theme.accent}, ${s.theme.glow})` }} />
+                        <span
+                          className="size-3 rounded-full"
+                          style={{ background: `linear-gradient(140deg, ${s.theme.accent}, ${s.theme.glow})` }}
+                        />
                         {s.name}
                       </Link>
                     </li>

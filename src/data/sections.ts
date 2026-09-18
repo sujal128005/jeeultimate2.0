@@ -32,21 +32,6 @@ export const sectionPages: Record<string, SectionPage> = {
       "Year-on-year trends at a glance",
     ],
   },
-  "ai-predictor": {
-    slug: "ai-predictor",
-    href: "/ai-predictor",
-    eyebrow: "AI Predictor",
-    title: "A smarter first look at your options.",
-    description:
-      "A predictor that reads your rank in context, designed to support mentor guidance, never to replace it.",
-    icon: "sparkles",
-    preview: "form",
-    planned: [
-      "Rank-based college possibilities",
-      "Category, quota and home-state awareness",
-      "Hand-off to a mentor for a human review",
-    ],
-  },
   "counselling-support": {
     slug: "counselling-support",
     href: "/counselling-support",
@@ -56,11 +41,7 @@ export const sectionPages: Record<string, SectionPage> = {
       "Pick the counselling you’re appearing for. Each guide is being written to walk you from registration to reporting.",
     icon: "compass",
     preview: "list",
-    planned: [
-      "One-to-one mentor sessions",
-      "Choice-list reviews",
-      "Round-by-round guidance",
-    ],
+    planned: ["One-to-one mentor sessions", "Choice-list reviews", "Round-by-round guidance"],
   },
 };
 

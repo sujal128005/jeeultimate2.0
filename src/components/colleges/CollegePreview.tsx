@@ -32,10 +32,17 @@ export function PopularityBadge({ college }: { college: College }) {
   const p = popularityOf(college);
   if (!p) return null;
   return (
-    <span title={p.note} className="inline-flex items-center gap-1.5 rounded-full bg-accent-soft px-2 py-0.5 type-meta text-accent-text">
+    <span
+      title={p.note}
+      className="inline-flex items-center gap-1.5 rounded-full bg-accent-soft px-2 py-0.5 type-meta text-accent-text"
+    >
       <span className="flex items-end gap-[2px]" aria-hidden>
         {[1, 2, 3].map((i) => (
-          <span key={i} className={cn("w-[3px] rounded-full", i <= p.level ? "bg-accent-strong" : "bg-accent-strong/25")} style={{ height: 4 + i * 2 }} />
+          <span
+            key={i}
+            className={cn("w-[3px] rounded-full", i <= p.level ? "bg-accent-strong" : "bg-accent-strong/25")}
+            style={{ height: 4 + i * 2 }}
+          />
         ))}
       </span>
       {p.label}
@@ -116,8 +123,12 @@ export function CollegePreviewBody({ college: c, variant }: { college: College; 
         <span className="rounded-full px-2 py-0.5 type-meta text-white" style={{ background: t.color }}>
           {t.label}
         </span>
-        {c.established && <span className="rounded-full px-2 py-0.5 type-meta text-fg-muted ring-1 ring-line">Est. {c.established}</span>}
-        {c.ownership && <span className="rounded-full px-2 py-0.5 type-meta text-fg-muted ring-1 ring-line">{OWNERSHIP[c.ownership]}</span>}
+        {c.established && (
+          <span className="rounded-full px-2 py-0.5 type-meta text-fg-muted ring-1 ring-line">Est. {c.established}</span>
+        )}
+        {c.ownership && (
+          <span className="rounded-full px-2 py-0.5 type-meta text-fg-muted ring-1 ring-line">{OWNERSHIP[c.ownership]}</span>
+        )}
         {c.nirfRank !== null && (
           <span className="rounded-full bg-accent-soft px-2 py-0.5 type-meta font-semibold text-accent-text">
             NIRF #{c.nirfRank}
@@ -141,7 +152,12 @@ export function CollegePreviewBody({ college: c, variant }: { college: College; 
       )}
 
       <div className="mt-4 grid grid-cols-2 gap-1.5">
-        <Fact icon="layers" label="Programs" value={c.branches.length ? `${c.branches.length} branches` : "Not listed"} muted={!c.branches.length} />
+        <Fact
+          icon="layers"
+          label="Programs"
+          value={c.branches.length ? `${c.branches.length} branches` : "Not listed"}
+          muted={!c.branches.length}
+        />
         <Fact icon="users" label="Seats (approx.)" value={c.seats ? formatNumber(c.seats) : "Not listed"} muted={!c.seats} />
         <Fact icon="ticket" label="Fees (approx.)" value={feeLabel(c.fees)} muted={c.fees === null} />
         <Fact
@@ -153,7 +169,9 @@ export function CollegePreviewBody({ college: c, variant }: { college: College; 
         <Fact
           icon="chart"
           label={`CSE cutoff ${c.rankYear ?? ""}`.trim()}
-          value={c.closingRank ? `${formatNumber(c.closingRank)} ${c.rankExam === "advanced" ? "(Adv)" : "(Main)"}` : "Not listed"}
+          value={
+            c.closingRank ? `${formatNumber(c.closingRank)} ${c.rankExam === "advanced" ? "(Adv)" : "(Main)"}` : "Not listed"
+          }
           muted={!c.closingRank}
         />
         <Fact icon="compass" label="Counselling" value={c.counselling.map((k) => COUNSELLING[k] ?? k).join(" · ")} />
@@ -183,14 +201,12 @@ export function CollegePreviewBody({ college: c, variant }: { college: College; 
       </div>
 
       <div className="mt-3 flex flex-wrap gap-x-4 gap-y-1 border-t border-line pt-3 type-caption">
-        <Link href={`/previous-cutoffs?college=${c.slug}`} className="inline-flex items-center gap-1 font-medium text-fg-2 hover:text-fg">
+        <Link
+          href={`/previous-cutoffs?college=${c.slug}`}
+          className="inline-flex items-center gap-1 font-medium text-fg-2 hover:text-fg"
+        >
           <Icon name="chart" className="size-3.5" />
           Previous cutoffs
-        </Link>
-        <Link href={`/ai-predictor?college=${c.slug}`} className="inline-flex items-center gap-1 font-medium text-fg-2 hover:text-fg">
-          <Icon name="sparkles" className="size-3.5" />
-          Check my chances
-          <span className="rounded-full bg-fg/[0.06] px-1.5 type-meta text-fg-subtle">Soon</span>
         </Link>
       </div>
     </div>

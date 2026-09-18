@@ -1,23 +1,10 @@
-import type { Metadata } from "next";
-import { JourneyContext } from "@/components/journey/JourneyContext";
-import { JourneyLinks } from "@/components/journey/JourneyLinks";
-import { ComingSoon } from "@/components/placeholder/ComingSoon";
-import { sectionPages } from "@/data/sections";
+import { permanentRedirect } from "next/navigation";
 
-const page = sectionPages["ai-predictor"];
-
-export const metadata: Metadata = {
-  title: page.eyebrow,
-  description: page.description,
-  alternates: { canonical: page.href },
-};
-
-export default async function AiPredictorPage(props: PageProps<"/ai-predictor">) {
-  const search = await props.searchParams;
-  return (
-    <ComingSoon page={page}>
-      <JourneyContext search={search} tool="The predictor" />
-      <JourneyLinks current="predictor" className="[&_ol]:lg:grid-cols-2" />
-    </ComingSoon>
-  );
+/**
+ * The predictor was dropped before it shipped: a guess dressed up as an
+ * answer is the opposite of what this site is for. Past cutoffs are the
+ * honest version of the same question, so old links land there.
+ */
+export default function AiPredictorPage(): never {
+  permanentRedirect("/previous-cutoffs");
 }

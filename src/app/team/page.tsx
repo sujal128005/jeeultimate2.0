@@ -1,17 +1,15 @@
 import type { Metadata } from "next";
 import Link from "next/link";
-import { AnimatedSection, Stagger, StaggerItem } from "@/components/motion/AnimatedSection";
+import { AnimatedSection } from "@/components/motion/AnimatedSection";
 import { TeamBoard } from "@/components/team/TeamBoard";
-import { Container } from "@/components/ui/Container";
 import { Icon } from "@/components/ui/Icon";
 import { Section } from "@/components/ui/Section";
 import { socialLinks } from "@/data/navigation";
-import { openSeats, team, teamHero, teamPrinciples } from "@/data/team";
 
 export const metadata: Metadata = {
   title: "Team",
   description:
-    "The people building JEE Ultimate 2.0: counsellors, editors and engineers working on honest JEE counselling guidance. Seats still open.",
+    "The people behind JEE Ultimate 2.0: Shivam Raj, Ashu Kumar and Sujal Negi, and the Career world where the open roles live.",
   alternates: { canonical: "/team" },
 };
 
@@ -26,22 +24,11 @@ export default function TeamPage() {
         <div className="absolute top-[-10%] right-[-10%] h-[420px] w-[620px] rounded-full bg-[radial-gradient(closest-side,color-mix(in_oklab,var(--ju-brand-200)_26%,transparent),transparent)]" />
       </div>
 
-      <Container size="wide" className="relative pt-[120px] pb-4 md:pt-[150px]">
-        <AnimatedSection>
-          <p className="type-label text-fg-muted">{teamHero.eyebrow}</p>
-          <h1 className="mt-6 type-h1">
-            {teamHero.title.map((line, i) => (
-              <span key={line} className={i === 1 ? "block text-accent-text" : "block"}>
-                {line}
-              </span>
-            ))}
-          </h1>
-          <p className="mt-6 max-w-[38rem] type-body-lg text-fg-muted">{teamHero.lede}</p>
-        </AnimatedSection>
-      </Container>
+      {/* The page opens on the crew, so the only heading is one for screen readers. */}
+      <h1 className="sr-only">The JEE Ultimate 2.0 team</h1>
 
       {/* A strip of what the crew is made of, sliding past */}
-      <div aria-hidden className="relative my-8 overflow-hidden border-y border-line py-4">
+      <div aria-hidden className="relative mt-[92px] mb-1 overflow-hidden border-y border-line py-3 md:mt-[112px]">
         <div className="marquee-track flex w-max gap-10 pr-10">
           {[0, 1].map((copy) => (
             <div key={copy} className="flex shrink-0 items-center gap-10">
@@ -56,43 +43,8 @@ export default function TeamPage() {
         </div>
       </div>
 
-      <Section spacing="sm" id="board">
-        <AnimatedSection className="mb-2 flex flex-wrap items-end justify-between gap-4">
-          <div>
-            <h2 className="type-h3">The board</h2>
-            <p className="mt-2 max-w-[34rem] type-body text-fg-muted">
-              {team.length === 0
-                ? `Names go up here as the crew is announced. Right now every card below is a seat we are filling, ${openSeats.length} of them.`
-                : "The people on it, and the seats still open. Drag a card if you want to rearrange us."}
-            </p>
-          </div>
-          <span className="inline-flex items-center gap-2 rounded-full bg-surface px-3 py-1.5 type-caption text-fg-muted shadow-hairline">
-            <Icon name="hand-heart" className="size-3.5" />
-            Drag the cards
-          </span>
-        </AnimatedSection>
+      <Section spacing="sm" id="founders">
         <TeamBoard />
-      </Section>
-
-      <Section spacing="sm" id="how">
-        <AnimatedSection>
-          <h2 className="type-h3">How we work</h2>
-        </AnimatedSection>
-        <Stagger as="ul" className="mt-8 grid grid-cols-1 gap-3 md:grid-cols-2">
-          {teamPrinciples.map((p) => (
-            <StaggerItem as="li" key={p.id} className="min-w-0">
-              <div className="flex h-full min-w-0 gap-4 rounded-card bg-surface p-6 shadow-hairline">
-                <span className="grid size-11 shrink-0 place-items-center rounded-2xl bg-accent-soft text-accent-text">
-                  <Icon name={p.icon} className="size-5" />
-                </span>
-                <div className="min-w-0">
-                  <h3 className="type-h4">{p.title}</h3>
-                  <p className="mt-2 type-body-sm text-fg-muted">{p.body}</p>
-                </div>
-              </div>
-            </StaggerItem>
-          ))}
-        </Stagger>
       </Section>
 
       <Section spacing="sm">

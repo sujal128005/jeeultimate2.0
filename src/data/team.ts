@@ -1,65 +1,58 @@
-import type { IconName } from "@/components/ui/Icon";
-
 /**
  * The crew behind JEE Ultimate 2.0.
  *
  * Add a person by pushing an object into `team`. Nothing here is invented:
- * until a real name is added, the board shows the seat as open, which is the
- * truth. `photo` is a path in /public, or null for the initials tile.
+ * a field left empty stays empty on the page rather than being filled with a
+ * guess. `photo` is a path in /public (drop the files into /public/team), or
+ * null for the initials tile. `instagram` is the handle without the @.
  */
 export type TeamMember = {
   id: string;
   name: string;
   role: string;
-  /** One or two lines in their own voice */
-  blurb: string;
-  /** Short label on the card's tab, e.g. "since 2023" */
+  /** Short role label used on the card's tab */
   tag?: string;
+  /** One or two lines in their own voice. Edit these freely. */
+  blurb: string;
+  /** "technical" swaps the card's plate for a wiring-diagram treatment. */
+  theme?: "technical";
   photo?: string | null;
+  instagram?: string | null;
+  linkedin?: string | null;
+  /** Personal site, shown inline next to the role rather than as its own chip. */
+  site?: { label: string; href: string } | null;
   links?: { label: string; href: string }[];
 };
 
-export const team: TeamMember[] = [];
-
-/** Seats we are actively filling. These mirror the roles on the Career page. */
-export const openSeats: { id: string; role: string; note: string; icon: IconName }[] = [
-  { id: "long-form-editor", role: "Long-Form Editor", note: "Turns a two hour session into a video people finish.", icon: "pen-tool" },
-  { id: "short-form-editor", role: "Short-Form Editor", note: "One answer, one minute, no filler.", icon: "sparkles" },
-  { id: "mentor", role: "Mentor Counsellor", note: "Sits with a rank and a worried family, and makes it make sense.", icon: "hand-heart" },
-  { id: "social-media", role: "Social Media Lead", note: "Finds the students who need this and speaks their language.", icon: "megaphone" },
-  { id: "tech-manager", role: "Tech Manager", note: "Keeps the site fast, honest and always up in counselling season.", icon: "code" },
-];
-
-export const teamHero = {
-  eyebrow: "The crew",
-  title: ["Small team.", "Loud results."],
-  lede: "JEE Ultimate 2.0 is built by people who have sat through counselling themselves, not by a content farm. Drag the cards around. They do not mind.",
-};
-
-/** How we work. Statements about us, not claims about outcomes. */
-export const teamPrinciples: { id: string; title: string; body: string; icon: IconName }[] = [
+export const team: TeamMember[] = [
   {
-    id: "honest",
-    title: "We say when we do not know",
-    body: "A blank on this site means the number is not published yet. We would rather show a gap than a guess.",
-    icon: "shield",
+    id: "shivam-raj",
+    name: "Shivam Raj",
+    role: "Founder & CEO",
+    tag: "Founder",
+    blurb: "Started JEE Ultimate 2.0 and decides what we take on. Still the voice on most of the counselling sessions.",
+    photo: null,
+    instagram: "shivam_raj369",
   },
   {
-    id: "official",
-    title: "Official sources or nothing",
-    body: "Every rank, seat and date traces back to JoSAA, CSAB, UPTAC, JAC Delhi or the institute's own page.",
-    icon: "landmark",
+    id: "ashu-kumar",
+    name: "Ashu Kumar",
+    role: "Co-founder",
+    tag: "Co-founder",
+    blurb: "Co-founded JEE Ultimate 2.0. Works on how students find us and what reaches them first.",
+    photo: null,
+    instagram: "analogous_ashu",
   },
   {
-    id: "human",
-    title: "A person on the other end",
-    body: "Tools help you shortlist. A mentor helps you decide. We are not replacing the second one with the first.",
-    icon: "hand-heart",
-  },
-  {
-    id: "season",
-    title: "We move at counselling speed",
-    body: "Rounds do not wait. When a schedule changes, the site changes the same day.",
-    icon: "clock",
+    id: "sujal-negi",
+    name: "Sujal Negi",
+    role: "Chief Technical Officer",
+    tag: "CTO",
+    theme: "technical",
+    blurb: "Builds and runs this site. Every number on it has to trace back to an official source before it ships.",
+    photo: null,
+    instagram: "sujal128005_",
+    linkedin: "https://www.linkedin.com/in/sujalnegi128005/",
+    site: { label: "sujalnegi.tech", href: "https://sujalnegi.tech" },
   },
 ];
