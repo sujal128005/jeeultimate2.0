@@ -4,8 +4,7 @@ import { JourneyLinks } from "@/components/journey/JourneyLinks";
 import { Container } from "@/components/ui/Container";
 import { Icon } from "@/components/ui/Icon";
 import { Section } from "@/components/ui/Section";
-import { SectionHeading } from "@/components/ui/SectionHeading";
-import { FeaturedVideos, ShortsRail } from "@/components/videos/VideoPlayers";
+import { VideoStage } from "@/components/videos/VideoStage";
 import { CHANNEL_URL, getChannelVideos } from "@/lib/youtube";
 
 export const metadata: Metadata = {
@@ -29,40 +28,24 @@ export default async function VideosPage() {
         <div className="absolute top-[-32%] left-1/2 h-[520px] w-[960px] -translate-x-1/2 rounded-full bg-[radial-gradient(closest-side,color-mix(in_oklab,var(--accent)_16%,transparent),transparent)]" />
       </div>
 
-      <Container size="wide" className="relative pt-[120px] pb-6 md:pt-[150px]">
-        <AnimatedSection className="max-w-[46rem]">
-          <span className="inline-flex items-center gap-2 rounded-full bg-surface px-3 py-1.5 type-meta shadow-hairline">
-            <span className="size-1.5 rounded-full bg-[#ff0033]" />
-            On YouTube
-          </span>
-          <h1 className="mt-6 type-h1">
-            Watch it, then
-            <br />
-            do it.
-          </h1>
-          <p className="mt-6 max-w-[34rem] type-body-lg text-fg-muted">
-            Counselling is easier to follow when you can see the screen. The newest long videos and Shorts from our
-            channel land here on their own, an hour after we post them.
-          </p>
-          <div className="mt-8 flex flex-wrap gap-3">
-            <a
-              href={CHANNEL_URL}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="inline-flex h-12 items-center gap-2 rounded-full bg-contrast px-6 type-button text-on-contrast shadow-button transition-transform duration-(--duration-base) ease-(--ease-spring) hover:-translate-y-0.5"
-            >
-              Open the channel
-              <Icon name="arrow-up-right" className="size-4" />
-            </a>
-            <a
-              href={`${CHANNEL_URL}?sub_confirmation=1`}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="inline-flex h-12 items-center gap-2 rounded-full bg-surface px-6 type-button shadow-hairline hover:bg-surface-2"
-            >
-              Subscribe
-            </a>
+      <Container size="wide" className="relative pt-[104px] pb-8 md:pt-[124px]">
+        <AnimatedSection className="flex flex-wrap items-end justify-between gap-5">
+          <div className="min-w-0">
+            <span className="inline-flex items-center gap-2 rounded-full bg-surface px-3 py-1.5 type-meta shadow-hairline">
+              <span className="size-1.5 rounded-full bg-[#ff0033]" />
+              Straight from our channel
+            </span>
+            <h1 className="mt-4 type-h2">Watch it, then do it.</h1>
           </div>
+          <a
+            href={CHANNEL_URL}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex h-11 items-center gap-2 rounded-full bg-surface px-5 type-button shadow-hairline transition-transform duration-(--duration-base) ease-(--ease-spring) hover:-translate-y-0.5"
+          >
+            Open the channel
+            <Icon name="arrow-up-right" className="size-4" />
+          </a>
         </AnimatedSection>
       </Container>
 
@@ -90,35 +73,9 @@ export default async function VideosPage() {
         </Section>
       ) : (
         <>
-          {long.length > 0 && (
-            <Section spacing="sm" id="latest">
-              <AnimatedSection>
-                <SectionHeading
-                  eyebrow="Latest videos"
-                  title="The long ones."
-                  description="Full walkthroughs: choice filling, seat allotment, cutoffs and the decisions in between."
-                />
-              </AnimatedSection>
-              <div className="mt-10">
-                <FeaturedVideos videos={long} />
-              </div>
-            </Section>
-          )}
-
-          {shorts.length > 0 && (
-            <Section spacing="sm" id="shorts">
-              <AnimatedSection>
-                <SectionHeading
-                  eyebrow="Shorts"
-                  title="One answer, one minute."
-                  description="Quick answers to the questions that come up most in counselling season."
-                />
-              </AnimatedSection>
-              <div className="mt-10">
-                <ShortsRail videos={shorts} />
-              </div>
-            </Section>
-          )}
+          <Container size="wide" className="relative">
+            <VideoStage long={long} shorts={shorts} />
+          </Container>
 
           <Section spacing="sm">
             <a
