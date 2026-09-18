@@ -7,7 +7,7 @@ import { assistant } from "@/data/assistant";
 import { spring } from "@/lib/motion";
 import { AssistantMark } from "./AssistantMark";
 import { AssistantPanel } from "./AssistantPanel";
-import { useQueue } from "./queue";
+import { useThread } from "./thread";
 
 const noop = () => () => {};
 
@@ -20,7 +20,7 @@ export function AssistantLauncher() {
   const reduced = useReducedMotion();
   const [open, setOpen] = useState(false);
   const [hover, setHover] = useState(false);
-  const { queue } = useQueue();
+  const { messages } = useThread();
 
   useEffect(() => {
     const onKey = (e: KeyboardEvent) => {
@@ -67,10 +67,8 @@ export function AssistantLauncher() {
             aria-hidden
             className="pointer-events-none absolute -inset-3 -z-10 rounded-full bg-[radial-gradient(closest-side,color-mix(in_oklab,var(--accent)_26%,transparent),transparent)] opacity-0 transition-opacity duration-(--duration-slow) group-hover:opacity-100"
           />
-          {queue.length > 0 && !open && (
-            <span className="absolute -top-1 -right-1 grid size-5 place-items-center rounded-full bg-contrast font-mono text-[10px] text-on-contrast">
-              {queue.length}
-            </span>
+          {messages.length > 0 && !open && (
+            <span className="absolute -top-1 -right-1 size-2.5 rounded-full bg-accent ring-2 ring-canvas" />
           )}
         </motion.button>
 

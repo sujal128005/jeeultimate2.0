@@ -236,3 +236,27 @@ All sections sit side by side on large screens where it makes sense (2 and 3) an
 - Updates (`/news`) are **sample content** and are labelled as such. They are no longer on the homepage; the footer links to them under Counselling → Updates.
 - The homepage "Strategy board" is an illustrative example that uses no real data.
 - The Career page makes no claim about open roles. It says "Recruiting soon" and shows no application form until `applicationsOpen` is turned on.
+
+## Saarthi (the assistant)
+
+Saarthi is the assistant in the floating mark at the bottom of every page
+except `/career` and the `/portal` routes.
+
+It answers only once a model key is present. Add **one** of these to
+`.env.local` (see `.env.example`) and restart:
+
+```
+ANTHROPIC_API_KEY=...   # Claude
+OPENAI_API_KEY=...      # GPT
+GEMINI_API_KEY=...      # Gemini, has a free tier
+```
+
+Optional: `SAARTHI_PROVIDER` to force one, `SAARTHI_MODEL` to pin a model.
+
+Without a key the panel still opens and says plainly that answers are not
+switched on yet, instead of erroring. The key is read on the server only, in
+`src/app/api/saarthi/route.ts`, and is never sent to the browser.
+
+Saarthi's personality, rules and knowledge of this site live in
+`src/lib/saarthi/prompt.ts`. That file is where to edit its voice, what it
+refuses to guess, and which pages it links to.
