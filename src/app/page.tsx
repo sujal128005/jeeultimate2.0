@@ -3,6 +3,7 @@ import { CounsellingSection } from "@/components/home/CounsellingSection";
 import { FeatureSection } from "@/components/home/FeatureSection";
 import { Hero } from "@/components/home/Hero";
 import { Stats } from "@/components/home/Stats";
+import { WatchAndMeet } from "@/components/home/WatchAndMeet";
 import { WhyJEEUltimate } from "@/components/home/WhyJEEUltimate";
 
 /**
@@ -17,6 +18,7 @@ export default function HomePage() {
       <Stats />
       <FeatureSection />
       <CounsellingSection />
+      <WatchAndMeet />
       <WhyJEEUltimate />
       <ClosingCTA />
     </>

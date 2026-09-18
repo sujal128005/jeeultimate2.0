@@ -30,10 +30,37 @@ export type RawCollege = {
   closingRank?: number | null;
   rankExam?: string | null;
   rankYear?: number | null;
+  hostelFee?: number | null;
+  campusAcres?: number | null;
+  students?: number | null;
+  nirfRank?: number | null;
+  nirfYear?: number | null;
+  placement?: RawPlacement | null;
   placements?: unknown;
   rating?: unknown;
   reviewHighlights?: string[];
   sources?: string[];
+};
+
+/** Official placement numbers, straight from a report or NIRF filing. */
+export type RawPlacement = {
+  year?: number | null;
+  /** In lakh per annum */
+  median?: number | null;
+  average?: number | null;
+  highest?: number | null;
+  /** Share of eligible students placed, 0 to 100 */
+  placedPct?: number | null;
+  source?: string | null;
+};
+
+export type Placement = {
+  year: number | null;
+  median: number | null;
+  average: number | null;
+  highest: number | null;
+  placedPct: number | null;
+  source: string | null;
 };
 
 export type College = {
@@ -61,12 +88,42 @@ export type College = {
   closingRank: number | null;
   rankExam: "advanced" | "main";
   rankYear: number | null;
+  hostelFee: number | null;
+  campusAcres: number | null;
+  students: number | null;
+  nirfRank: number | null;
+  nirfYear: number | null;
+  placement: Placement | null;
   monogram: { top: string; symbol: string };
   /** Lower-case text used for search */
   haystack: string;
 };
 
 const num = (v: unknown) => (typeof v === "number" && Number.isFinite(v) && v > 0 ? v : null);
+
+function placementOf(p: RawPlacement | null | undefined): Placement | null {
+  if (!p) return null;
+  const out = {
+    year: num(p.year),
+    median: num(p.median),
+    average: num(p.average),
+    highest: num(p.highest),
+    placedPct: num(p.placedPct),
+    source: p.source ?? null,
+  };
+  return out.median || out.average || out.highest || out.placedPct ? out : null;
+}
+
+/** The college's own site icon, so the badge carries the institute's own mark. */
+export function logoFromWebsite(website: string | null | undefined): string | null {
+  if (!website) return null;
+  try {
+    const host = new URL(website).hostname.replace(/^www\./, "");
+    return host ? `https://www.google.com/s2/favicons?domain=${host}&sz=128` : null;
+  } catch {
+    return null;
+  }
+}
 
 /**
  * Periodic-table style monogram: "IIT Madras" -> { top: "IIT", symbol: "Ma" },
@@ -118,7 +175,7 @@ export function normalizeColleges(raw: RawCollege[]): College[] {
       established: num(r.established),
       ownership: r.ownership ?? null,
       website: r.website ?? null,
-      logo: r.logo ?? null,
+      logo: r.logo ?? logoFromWebsite(r.website),
       counselling,
       quotas: [...new Set(r.quotas ?? [])],
       courses: [...new Set(r.courses ?? [])],
@@ -130,6 +187,12 @@ export function normalizeColleges(raw: RawCollege[]): College[] {
       closingRank: num(r.closingRank),
       rankExam: r.rankExam === "advanced" ? "advanced" : "main",
       rankYear: num(r.rankYear),
+      hostelFee: num(r.hostelFee),
+      campusAcres: num(r.campusAcres),
+      students: num(r.students),
+      nirfRank: num(r.nirfRank),
+      nirfYear: num(r.nirfYear),
+      placement: placementOf(r.placement),
       monogram: monogramOf(r.short),
       haystack,
     });

@@ -42,7 +42,7 @@ export const roleOptions: RoleOption[] = [
 export const footerNav: { title: string; links: LinkItem[] }[] = [
   {
     title: "Platform",
-    links: mainNav.map(({ label, href }) => ({ label, href })),
+    links: [...mainNav.map(({ label, href }) => ({ label, href })), { label: "Videos", href: "/videos" }],
   },
   {
     title: "Counselling",
@@ -59,18 +59,17 @@ export const footerNav: { title: string; links: LinkItem[] }[] = [
     links: [
       { label: "About", href: "/#about" },
       { label: "Why JEE Ultimate 2.0", href: "/#why" },
+      { label: "Team", href: "/team" },
       { label: "Contact", href: "/contact" },
     ],
   },
 ];
 
-/** Replace the `#` placeholders with the real profile URLs. */
+/** Only channels that are actually live. Add the rest as they open. */
 export const socialLinks: LinkItem[] = [
-  { label: "Instagram", href: "#", external: true },
-  { label: "YouTube", href: "#", external: true },
-  { label: "Telegram", href: "#", external: true },
-  { label: "X", href: "#", external: true },
-  { label: "LinkedIn", href: "#", external: true },
+  { label: "YouTube", href: "https://www.youtube.com/@jeeultimate2.0", external: true },
+  { label: "Instagram", href: "https://www.instagram.com/rajshivamjee/", external: true },
+  { label: "Facebook", href: "https://www.facebook.com/profile.php?id=61574348263790", external: true },
 ];
 
 export const legalLinks: LinkItem[] = [

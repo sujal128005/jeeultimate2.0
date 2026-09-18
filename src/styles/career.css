@@ -104,3 +104,83 @@ html:has([data-world="career"]) ::selection {
   0% { transform: translateY(-100%); }
   60%, 100% { transform: translateY(200%); }
 }
+
+/* ==========================================================================
+   Career cursor - a targeting reticle in place of the arrow
+   ========================================================================== */
+
+/* Only once the reticle is actually mounted, so the arrow never disappears
+   on a device that cannot draw it. */
+html.career-cursor,
+html.career-cursor * {
+  cursor: none !important;
+}
+
+.career-cursor-root {
+  /* The reticle is portaled to <body>, outside the career world scope,
+     so it carries its own copy of the ion blue. */
+  --cursor-ion: #7ce7ff;
+  position: fixed;
+  inset: 0;
+  z-index: 200;
+  pointer-events: none;
+  transition: opacity 0.25s ease;
+}
+
+.career-cursor-frame,
+.career-cursor-dot {
+  position: absolute;
+  top: 0;
+  left: 0;
+  will-change: transform;
+}
+
+.career-cursor-dot > span {
+  position: absolute;
+  top: -3px;
+  left: -3px;
+  display: block;
+  width: 6px;
+  height: 6px;
+  border-radius: 9999px;
+  background: var(--cursor-ion);
+  box-shadow: 0 0 12px color-mix(in oklab, var(--cursor-ion) 70%, transparent);
+}
+
+/* Four corner ticks that open into a frame */
+.career-cursor-brackets {
+  position: absolute;
+  translate: -50% -50%;
+}
+
+.career-cursor-brackets > span {
+  position: absolute;
+  width: 11px;
+  height: 11px;
+  border: 1.5px solid color-mix(in oklab, var(--cursor-ion) 85%, transparent);
+}
+
+.career-cursor-brackets > span:nth-child(1) { top: 0; left: 0; border-right: 0; border-bottom: 0; }
+.career-cursor-brackets > span:nth-child(2) { top: 0; right: 0; border-left: 0; border-bottom: 0; }
+.career-cursor-brackets > span:nth-child(3) { bottom: 0; right: 0; border-left: 0; border-top: 0; }
+.career-cursor-brackets > span:nth-child(4) { bottom: 0; left: 0; border-right: 0; border-top: 0; }
+
+.career-cursor-readout {
+  position: absolute;
+  left: 0;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  translate: -50% 0;
+  white-space: nowrap;
+  font-family: var(--font-pixel);
+  font-size: 9.5px;
+  letter-spacing: 0.14em;
+  color: color-mix(in oklab, var(--cursor-ion) 80%, white);
+}
+
+.career-cursor-tag {
+  padding: 1px 5px;
+  border: 1px solid color-mix(in oklab, var(--cursor-ion) 60%, transparent);
+  color: var(--cursor-ion);
+}

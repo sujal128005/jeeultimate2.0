@@ -7,10 +7,18 @@ import { facetCounts } from "@/lib/colleges/engine";
 import { REGIONS, regionOf, slugify, type Region } from "@/lib/colleges/taxonomy";
 import { cn } from "@/lib/cn";
 import { ease } from "@/lib/motion";
+import { IndiaOutline } from "./IndiaOutline";
+import { REGION_COLORS } from "./mapColors";
 import type { Explorer } from "./useExplorer";
 
 /** Schematic tile map of India: one tile per state/UT, placed roughly by geography. */
-const TILES: { code: string; name: string; x: number; y: number; w?: number }[] = [
+const TILES: {
+  code: string;
+  name: string;
+  x: number;
+  y: number;
+  w?: number;
+}[] = [
   { code: "JK", name: "Jammu and Kashmir", x: 3, y: 0 },
   { code: "LA", name: "Ladakh", x: 4, y: 0 },
   { code: "PB", name: "Punjab", x: 1, y: 1 },
@@ -49,20 +57,13 @@ const TILES: { code: string; name: string; x: number; y: number; w?: number }[] 
   { code: "LD", name: "Lakshadweep", x: 0, y: 7 },
 ];
 
-export const REGION_COLORS: Record<Region, string> = {
-  north: "#6366f1",
-  south: "#0d9488",
-  east: "#f59e0b",
-  west: "#e11d48",
-  northeast: "#0284c7",
-};
-
 const COLS = 10;
 const ROWS = 8;
 
 /** "Map" button in the region bar with a pop-over tile map. */
 export function MapPicker({ explorer }: { explorer: Explorer }) {
   const [open, setOpen] = useState(false);
+  const [view, setView] = useState<"map" | "grid">("map");
   const rootRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
@@ -98,11 +99,36 @@ export function MapPicker({ explorer }: { explorer: Explorer }) {
             role="dialog"
             aria-label="Pick a state on the map"
             initial={{ opacity: 0, y: -6, scale: 0.97 }}
-            animate={{ opacity: 1, y: 0, scale: 1, transition: { duration: 0.26, ease: ease.out } }}
+            animate={{
+              opacity: 1,
+              y: 0,
+              scale: 1,
+              transition: { duration: 0.26, ease: ease.out },
+            }}
             exit={{ opacity: 0, y: -4, transition: { duration: 0.14 } }}
-            className="absolute top-full left-0 z-(--z-dropdown) mt-2 w-[min(92vw,26rem)] origin-top-left rounded-3xl bg-surface p-4 shadow-float ring-1 ring-line"
+            className="absolute top-full left-0 z-(--z-dropdown) mt-2 max-h-[calc(100dvh-11rem)] w-[min(92vw,29rem)] origin-top-left overflow-y-auto overscroll-contain rounded-3xl bg-surface p-4 shadow-float ring-1 ring-line"
           >
-            <IndiaMap explorer={explorer} />
+            <div className="flex items-center justify-between gap-3">
+              <p className="type-body-sm font-semibold">Pick states</p>
+              <div className="flex rounded-full bg-fg/[0.05] p-0.5">
+                {(["map", "grid"] as const).map((v) => (
+                  <button
+                    key={v}
+                    type="button"
+                    aria-pressed={view === v}
+                    onClick={() => setView(v)}
+                    className={cn(
+                      "h-7 rounded-full px-3 type-caption font-semibold capitalize transition-colors",
+                      view === v ? "bg-surface text-fg shadow-hairline" : "text-fg-muted hover:text-fg",
+                    )}
+                  >
+                    {v}
+                  </button>
+                ))}
+              </div>
+            </div>
+            <div className="mt-3">{view === "map" ? <IndiaOutline explorer={explorer} /> : <IndiaMap explorer={explorer} />}</div>
+            <RegionLegend explorer={explorer} />
           </motion.div>
         )}
       </AnimatePresence>
@@ -125,15 +151,19 @@ export function IndiaMap({ explorer }: { explorer: Explorer }) {
   return (
     <div>
       <div className="flex items-center justify-between gap-3">
-        <p className="type-body-sm font-semibold">Pick states on the map</p>
         <p className="h-5 truncate type-caption text-fg-muted" aria-live="polite">
-          {hovered ? `${hovered.name} · ${counts.get(slugify(hovered.name)) ?? 0} colleges` : `${state.state.length || "No"} selected`}
+          {hovered
+            ? `${hovered.name} · ${counts.get(slugify(hovered.name)) ?? 0} colleges`
+            : `${state.state.length || "No"} selected`}
         </p>
       </div>
 
       <div
-        className="mt-3 grid aspect-[10/8] gap-1"
-        style={{ gridTemplateColumns: `repeat(${COLS}, minmax(0, 1fr))`, gridTemplateRows: `repeat(${ROWS}, minmax(0, 1fr))` }}
+        className="mt-1 grid aspect-[10/8] gap-1"
+        style={{
+          gridTemplateColumns: `repeat(${COLS}, minmax(0, 1fr))`,
+          gridTemplateRows: `repeat(${ROWS}, minmax(0, 1fr))`,
+        }}
       >
         {TILES.map((t, i) => {
           const slug = slugify(t.name);
@@ -159,11 +189,13 @@ export function IndiaMap({ explorer }: { explorer: Explorer }) {
               onFocus={() => setHover(t.code)}
               onBlur={() => setHover(null)}
               onClick={() => toggleState(slug, region)}
-              style={{
-                gridColumn: `${t.x + 1} / span ${t.w ?? 1}`,
-                gridRow: t.y + 1,
-                "--c": color,
-              } as React.CSSProperties}
+              style={
+                {
+                  gridColumn: `${t.x + 1} / span ${t.w ?? 1}`,
+                  gridRow: t.y + 1,
+                  "--c": color,
+                } as React.CSSProperties
+              }
               className={cn(
                 "relative flex h-full w-full flex-col items-center justify-center rounded-[9px] font-mono text-[10px] leading-none font-semibold transition-[transform,background-color,color,opacity] duration-200 disabled:cursor-not-allowed",
                 on
@@ -180,36 +212,42 @@ export function IndiaMap({ explorer }: { explorer: Explorer }) {
           );
         })}
       </div>
-
-      <ul className="mt-4 flex flex-wrap gap-1.5 border-t border-line pt-3">
-        {(Object.keys(REGIONS) as Region[]).map((r) => (
-          <li key={r}>
-            <button
-              type="button"
-              aria-pressed={state.region === r}
-              onClick={() => update((s) => ({ region: s.region === r ? null : r }))}
-              className={cn(
-                "inline-flex h-7 items-center gap-1.5 rounded-full px-2.5 type-caption transition-colors",
-                state.region === r ? "bg-contrast text-on-contrast" : "ring-1 ring-line hover:ring-line-strong",
-              )}
-            >
-              <span className="size-2 rounded-full" style={{ background: REGION_COLORS[r] }} />
-              {REGIONS[r]}
-            </button>
-          </li>
-        ))}
-        {state.state.length > 0 && (
-          <li className="ml-auto">
-            <button
-              type="button"
-              onClick={() => update({ state: [] })}
-              className="h-7 rounded-full px-2.5 type-caption font-semibold text-accent-text hover:bg-accent-soft/60"
-            >
-              Clear states
-            </button>
-          </li>
-        )}
-      </ul>
     </div>
+  );
+}
+
+/** Region shortcuts and a clear button, shared by both views. */
+function RegionLegend({ explorer }: { explorer: Explorer }) {
+  const { state, update } = explorer;
+  return (
+    <ul className="mt-4 flex flex-wrap gap-1.5 border-t border-line pt-3">
+      {(Object.keys(REGIONS) as Region[]).map((r) => (
+        <li key={r}>
+          <button
+            type="button"
+            aria-pressed={state.region === r}
+            onClick={() => update((s) => ({ region: s.region === r ? null : r }))}
+            className={cn(
+              "inline-flex h-7 items-center gap-1.5 rounded-full px-2.5 type-caption transition-colors",
+              state.region === r ? "bg-contrast text-on-contrast" : "ring-1 ring-line hover:ring-line-strong",
+            )}
+          >
+            <span className="size-2 rounded-full" style={{ background: REGION_COLORS[r] }} />
+            {REGIONS[r]}
+          </button>
+        </li>
+      ))}
+      {state.state.length > 0 && (
+        <li className="ml-auto">
+          <button
+            type="button"
+            onClick={() => update({ state: [] })}
+            className="h-7 rounded-full px-2.5 type-caption font-semibold text-accent-text hover:bg-accent-soft/60"
+          >
+            Clear states
+          </button>
+        </li>
+      )}
+    </ul>
   );
 }

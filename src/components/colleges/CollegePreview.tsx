@@ -118,6 +118,12 @@ export function CollegePreviewBody({ college: c, variant }: { college: College; 
         </span>
         {c.established && <span className="rounded-full px-2 py-0.5 type-meta text-fg-muted ring-1 ring-line">Est. {c.established}</span>}
         {c.ownership && <span className="rounded-full px-2 py-0.5 type-meta text-fg-muted ring-1 ring-line">{OWNERSHIP[c.ownership]}</span>}
+        {c.nirfRank !== null && (
+          <span className="rounded-full bg-accent-soft px-2 py-0.5 type-meta font-semibold text-accent-text">
+            NIRF #{c.nirfRank}
+            {c.nirfYear ? ` · ${c.nirfYear}` : ""}
+          </span>
+        )}
         <PopularityBadge college={c} />
       </div>
 
@@ -151,6 +157,10 @@ export function CollegePreviewBody({ college: c, variant }: { college: College; 
           muted={!c.closingRank}
         />
         <Fact icon="compass" label="Counselling" value={c.counselling.map((k) => COUNSELLING[k] ?? k).join(" · ")} />
+        {c.placement?.median != null && (
+          <Fact icon="chart" label={`Median package ${c.placement.year ?? ""}`.trim()} value={`${c.placement.median} LPA`} />
+        )}
+        {c.placement?.placedPct != null && <Fact icon="users" label="Students placed" value={`${c.placement.placedPct}%`} />}
       </div>
 
       <div className="mt-4 flex flex-wrap gap-2">

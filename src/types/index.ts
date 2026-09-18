@@ -94,15 +94,29 @@ export type NewsCategory = "JoSAA" | "CSAB" | "UPTAC" | "JAC Delhi" | "Strategy"
  * Shape expected from the future news API.
  * Keep this stable and map the backend response into it.
  */
+export type NewsSection = {
+  heading: string;
+  paragraphs: string[];
+  /** Optional bullets under the paragraphs */
+  list?: string[];
+  /** One line worth pulling out of the flow */
+  note?: string;
+};
+
 export type NewsItem = {
   slug: string;
   title: string;
   excerpt: string;
   category: NewsCategory;
   publishedAt: string; // ISO date
+  /** When a human last read this against the official source. Only move it
+   *  when that actually happens: it is a promise, not decoration. */
+  checkedOn?: string; // ISO date
   readingMinutes: number;
   featured?: boolean;
   href: string;
+  body?: NewsSection[];
+  sources?: { label: string; href: string }[];
 };
 
 export type PlaceholderPreview = "table" | "chart" | "form" | "cards" | "list";

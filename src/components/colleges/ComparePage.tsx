@@ -77,11 +77,32 @@ const GROUPS: { title: string; rows: Row[] }[] = [
       { label: "Fees (approx.)", cell: (c) => (c.fees === null ? { text: "Not listed", muted: true } : { text: feeLabel(c.fees) }), score: (c) => c.fees },
       { label: "Seats (approx.)", cell: (c) => orNot(c.seats ? formatNumber(c.seats) : null) },
       { label: "Hostel", cell: (c) => orNot(c.hostel === null ? null : c.hostel ? "Available" : "Not available") },
-      { label: "Campus", cell: () => soon },
-      { label: "Student life", cell: () => soon },
+      { label: "Hostel fee (approx.)", cell: (c) => (c.hostelFee === null ? soon : { text: feeLabel(c.hostelFee) }), score: (c) => c.hostelFee },
+      { label: "Campus", cell: (c) => (c.campusAcres === null ? soon : { text: `${formatNumber(c.campusAcres)} acres` }) },
+      { label: "Students", cell: (c) => (c.students === null ? soon : { text: formatNumber(c.students) }) },
     ],
   },
-  { title: "Outcomes", rows: [{ label: "Placements", cell: () => soon }] },
+  {
+    title: "Outcomes",
+    rows: [
+      {
+        label: "Median package",
+        cell: (c) => (c.placement?.median ? { text: `${c.placement.median} LPA${c.placement.year ? ` · ${c.placement.year}` : ""}` } : soon),
+        score: (c) => (c.placement?.median ? -c.placement.median : null),
+      },
+      {
+        label: "Average package",
+        cell: (c) => (c.placement?.average ? { text: `${c.placement.average} LPA${c.placement.year ? ` · ${c.placement.year}` : ""}` } : soon),
+        score: (c) => (c.placement?.average ? -c.placement.average : null),
+      },
+      {
+        label: "Students placed",
+        cell: (c) => (c.placement?.placedPct ? { text: `${c.placement.placedPct}%` } : soon),
+        score: (c) => (c.placement?.placedPct ? -c.placement.placedPct : null),
+      },
+      { label: "NIRF rank (Engineering)", cell: (c) => (c.nirfRank === null ? soon : { text: `#${c.nirfRank}${c.nirfYear ? ` · ${c.nirfYear}` : ""}` }), score: (c) => c.nirfRank },
+    ],
+  },
 ];
 
 export function ComparePage() {

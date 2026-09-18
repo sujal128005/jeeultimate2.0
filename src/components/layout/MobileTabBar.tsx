@@ -24,7 +24,7 @@ export function MobileTabBar({ items }: { items: NavItem[] }) {
         initial={{ y: 90, opacity: 0 }}
         animate={{ y: 0, opacity: 1 }}
         transition={{ ...spring.panel, delay: 0.35 }}
-        className="glass-prominent pointer-events-auto mx-auto flex max-w-[460px] items-stretch gap-0.5 rounded-[26px] p-1.5"
+        className="glass-nav-3d pointer-events-auto mx-auto flex max-w-[460px] items-stretch gap-0.5 rounded-[26px] p-1.5"
       >
         {/* Home shortcut: only away from the homepage */}
         <AnimatePresence initial={false}>
@@ -65,7 +65,7 @@ export function MobileTabBar({ items }: { items: NavItem[] }) {
                   <motion.span
                     layoutId="tabbar-active"
                     aria-hidden
-                    className="absolute inset-0 rounded-[20px] bg-contrast shadow-pill"
+                    className="absolute inset-0 rounded-[20px] bg-[linear-gradient(180deg,color-mix(in_oklab,var(--contrast)_88%,white_12%),var(--contrast))] shadow-pill ring-1 ring-black/5 ring-inset"
                     transition={spring.pill}
                   />
                 )}

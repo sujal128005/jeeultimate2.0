@@ -1,26 +1,1184 @@
 [
-{"name":"Indian Institute of Technology Bombay","short":"IIT Bombay","type":"IIT","city":"Mumbai","state":"Maharashtra","established":1958,"ownership":"central","website":"https://www.iitb.ac.in","logo":null,"counselling":["josaa"],"quotas":["AI"],"courses":["btech","dual","bs"],"branches":["cse","ee","me","ce","che","aero","meta","ephys","bio","sci"],"seats":null,"fees":200000,"hostel":true,"openingRank":1,"closingRank":66,"rankExam":"advanced","rankYear":2025,"placements":null,"rating":null,"reviewHighlights":[],"sources":["https://cracku.in/josaa-previous-year-cutoff/"]},
-{"name":"Indian Institute of Technology Delhi","short":"IIT Delhi","type":"IIT","city":"New Delhi","state":"Delhi","established":1961,"ownership":"central","website":"https://home.iitd.ac.in","logo":null,"counselling":["josaa"],"quotas":["AI"],"courses":["btech","dual"],"branches":["cse","mnc","ee","me","ce","che","ephys","textile","bio","prod"],"seats":null,"fees":200000,"hostel":true,"openingRank":24,"closingRank":126,"rankExam":"advanced","rankYear":2025,"placements":null,"rating":null,"reviewHighlights":[],"sources":["https://cracku.in/josaa-previous-year-cutoff/"]},
-{"name":"Indian Institute of Technology Madras","short":"IIT Madras","type":"IIT","city":"Chennai","state":"Tamil Nadu","established":1959,"ownership":"central","website":"https://www.iitm.ac.in","logo":null,"counselling":["josaa"],"quotas":["AI"],"courses":["btech","dual"],"branches":["cse","ee","me","ce","che","aero","meta","ephys","ocean","bio"],"seats":null,"fees":200000,"hostel":true,"openingRank":79,"closingRank":171,"rankExam":"advanced","rankYear":2025,"placements":null,"rating":null,"reviewHighlights":[],"sources":["https://cracku.in/josaa-previous-year-cutoff/"]},
-{"name":"Indian Institute of Technology Kanpur","short":"IIT Kanpur","type":"IIT","city":"Kanpur","state":"Uttar Pradesh","established":1959,"ownership":"central","website":"https://www.iitk.ac.in","logo":null,"counselling":["josaa"],"quotas":["AI"],"courses":["btech","bs"],"branches":["cse","ee","me","ce","che","aero","meta","ephys","mnc","bio","sci"],"seats":null,"fees":200000,"hostel":true,"openingRank":147,"closingRank":271,"rankExam":"advanced","rankYear":2025,"placements":null,"rating":null,"reviewHighlights":[],"sources":["https://cracku.in/josaa-previous-year-cutoff/"]},
-{"name":"Indian Institute of Technology Kharagpur","short":"IIT Kharagpur","type":"IIT","city":"Kharagpur","state":"West Bengal","established":1951,"ownership":"central","website":"https://www.iitkgp.ac.in","logo":null,"counselling":["josaa"],"quotas":["AI"],"courses":["btech","dual","barch","bs"],"branches":["cse","ee","ece","instr","me","prod","ce","che","aero","meta","mining","ocean","agri","ephys","bio","arch","sci"],"seats":null,"fees":200000,"hostel":true,"openingRank":238,"closingRank":466,"rankExam":"advanced","rankYear":2025,"placements":null,"rating":null,"reviewHighlights":[],"sources":["https://cracku.in/josaa-previous-year-cutoff/"]},
-{"name":"Indian Institute of Technology Roorkee","short":"IIT Roorkee","type":"IIT","city":"Roorkee","state":"Uttarakhand","established":1847,"ownership":"central","website":"https://www.iitr.ac.in","logo":null,"counselling":["josaa"],"quotas":["AI"],"courses":["btech","barch"],"branches":["cse","ee","ece","me","prod","ce","che","meta","ephys","mnc","bio","arch","sci"],"seats":null,"fees":200000,"hostel":true,"openingRank":275,"closingRank":592,"rankExam":"advanced","rankYear":2025,"placements":null,"rating":null,"reviewHighlights":[],"sources":["https://cracku.in/josaa-previous-year-cutoff/"]},
-{"name":"Indian Institute of Technology Guwahati","short":"IIT Guwahati","type":"IIT","city":"Guwahati","state":"Assam","established":1994,"ownership":"central","website":"https://www.iitg.ac.in","logo":null,"counselling":["josaa"],"quotas":["AI"],"courses":["btech"],"branches":["cse","ece","eee","me","ce","che","bio","ephys","mnc"],"seats":null,"fees":200000,"hostel":true,"openingRank":504,"closingRank":792,"rankExam":"advanced","rankYear":2025,"placements":null,"rating":null,"reviewHighlights":[],"sources":["https://cracku.in/josaa-previous-year-cutoff/"]},
-{"name":"Indian Institute of Technology Hyderabad","short":"IIT Hyderabad","type":"IIT","city":"Sangareddy","state":"Telangana","established":2008,"ownership":"central","website":"https://www.iith.ac.in","logo":null,"counselling":["josaa"],"quotas":["AI"],"courses":["btech"],"branches":["cse","ai","ee","me","ce","che","meta","ephys","bio","mnc"],"seats":null,"fees":200000,"hostel":true,"openingRank":339,"closingRank":673,"rankExam":"advanced","rankYear":2025,"placements":null,"rating":null,"reviewHighlights":[],"sources":["https://cracku.in/josaa-previous-year-cutoff/"]},
-{"name":"Indian Institute of Technology (Banaras Hindu University) Varanasi","short":"IIT BHU","type":"IIT","city":"Varanasi","state":"Uttar Pradesh","established":1919,"ownership":"central","website":"https://www.iitbhu.ac.in","logo":null,"counselling":["josaa"],"quotas":["AI"],"courses":["btech","dual","barch"],"branches":["cse","ee","ece","me","ce","che","meta","mining","ephys","mnc","bio","arch","other"],"seats":null,"fees":200000,"hostel":true,"openingRank":747,"closingRank":1489,"rankExam":"advanced","rankYear":2025,"placements":null,"rating":null,"reviewHighlights":[],"sources":["https://cracku.in/josaa-previous-year-cutoff/"]},
-{"name":"Indian Institute of Technology (Indian School of Mines) Dhanbad","short":"IIT ISM Dhanbad","type":"IIT","city":"Dhanbad","state":"Jharkhand","established":1926,"ownership":"central","website":"https://www.iitism.ac.in","logo":null,"counselling":["josaa"],"quotas":["AI"],"courses":["btech","intmtech"],"branches":["cse","ee","ece","me","ce","che","mining","petro","meta","ephys","mnc","env"],"seats":null,"fees":200000,"hostel":true,"openingRank":2143,"closingRank":3585,"rankExam":"advanced","rankYear":2025,"placements":null,"rating":null,"reviewHighlights":[],"sources":["https://cracku.in/josaa-previous-year-cutoff/"]},
-{"name":"Indian Institute of Technology Gandhinagar","short":"IIT Gandhinagar","type":"IIT","city":"Gandhinagar","state":"Gujarat","established":2008,"ownership":"central","website":"https://iitgn.ac.in","logo":null,"counselling":["josaa"],"quotas":["AI"],"courses":["btech"],"branches":["cse","ee","me","ce","che","meta"],"seats":null,"fees":200000,"hostel":true,"openingRank":905,"closingRank":2020,"rankExam":"advanced","rankYear":2025,"placements":null,"rating":null,"reviewHighlights":[],"sources":["https://cracku.in/josaa-previous-year-cutoff/"]},
-{"name":"Indian Institute of Technology Indore","short":"IIT Indore","type":"IIT","city":"Indore","state":"Madhya Pradesh","established":2009,"ownership":"central","website":"https://www.iiti.ac.in","logo":null,"counselling":["josaa"],"quotas":["AI"],"courses":["btech"],"branches":["cse","ee","me","ce","meta","ephys"],"seats":null,"fees":200000,"hostel":true,"openingRank":952,"closingRank":1775,"rankExam":"advanced","rankYear":2025,"placements":null,"rating":null,"reviewHighlights":[],"sources":["https://cracku.in/josaa-previous-year-cutoff/"]},
-{"name":"Indian Institute of Technology Mandi","short":"IIT Mandi","type":"IIT","city":"Mandi","state":"Himachal Pradesh","established":2009,"ownership":"central","website":"https://www.iitmandi.ac.in","logo":null,"counselling":["josaa"],"quotas":["AI"],"courses":["btech"],"branches":["cse","ai","ee","me","ce","ephys"],"seats":null,"fees":200000,"hostel":true,"openingRank":2096,"closingRank":3123,"rankExam":"advanced","rankYear":2025,"placements":null,"rating":null,"reviewHighlights":[],"sources":["https://cracku.in/josaa-previous-year-cutoff/"]},
-{"name":"Indian Institute of Technology Patna","short":"IIT Patna","type":"IIT","city":"Patna","state":"Bihar","established":2008,"ownership":"central","website":"https://www.iitp.ac.in","logo":null,"counselling":["josaa"],"quotas":["AI"],"courses":["btech"],"branches":["cse","ee","me","ce","che","meta","mnc"],"seats":null,"fees":200000,"hostel":true,"openingRank":1954,"closingRank":3377,"rankExam":"advanced","rankYear":2025,"placements":null,"rating":null,"reviewHighlights":[],"sources":["https://cracku.in/josaa-previous-year-cutoff/"]},
-{"name":"Indian Institute of Technology Ropar","short":"IIT Ropar","type":"IIT","city":"Rupnagar","state":"Punjab","established":2008,"ownership":"central","website":"https://www.iitrpr.ac.in","logo":null,"counselling":["josaa"],"quotas":["AI"],"courses":["btech"],"branches":["cse","ee","me","ce","che","meta","ephys","mnc"],"seats":null,"fees":200000,"hostel":true,"openingRank":1680,"closingRank":2512,"rankExam":"advanced","rankYear":2025,"placements":null,"rating":null,"reviewHighlights":[],"sources":["https://cracku.in/josaa-previous-year-cutoff/"]},
-{"name":"Indian Institute of Technology Jodhpur","short":"IIT Jodhpur","type":"IIT","city":"Jodhpur","state":"Rajasthan","established":2008,"ownership":"central","website":"https://www.iitj.ac.in","logo":null,"counselling":["josaa"],"quotas":["AI"],"courses":["btech"],"branches":["cse","ai","ee","me","ce","che","meta","bio"],"seats":null,"fees":200000,"hostel":true,"openingRank":2269,"closingRank":2918,"rankExam":"advanced","rankYear":2025,"placements":null,"rating":null,"reviewHighlights":[],"sources":["https://cracku.in/josaa-previous-year-cutoff/"]},
-{"name":"Indian Institute of Technology Bhubaneswar","short":"IIT Bhubaneswar","type":"IIT","city":"Bhubaneswar","state":"Odisha","established":2008,"ownership":"central","website":"https://www.iitbbs.ac.in","logo":null,"counselling":["josaa"],"quotas":["AI"],"courses":["btech"],"branches":["cse","ee","ece","me","ce","meta"],"seats":null,"fees":200000,"hostel":true,"openingRank":2344,"closingRank":4162,"rankExam":"advanced","rankYear":2025,"placements":null,"rating":null,"reviewHighlights":[],"sources":["https://cracku.in/josaa-previous-year-cutoff/"]},
-{"name":"Indian Institute of Technology Tirupati","short":"IIT Tirupati","type":"IIT","city":"Tirupati","state":"Andhra Pradesh","established":2015,"ownership":"central","website":"https://www.iittp.ac.in","logo":null,"counselling":["josaa"],"quotas":["AI"],"courses":["btech"],"branches":["cse","ee","me","ce","che"],"seats":null,"fees":200000,"hostel":true,"openingRank":1916,"closingRank":5034,"rankExam":"advanced","rankYear":2025,"placements":null,"rating":null,"reviewHighlights":[],"sources":["https://cracku.in/josaa-previous-year-cutoff/"]},
-{"name":"Indian Institute of Technology Palakkad","short":"IIT Palakkad","type":"IIT","city":"Palakkad","state":"Kerala","established":2015,"ownership":"central","website":"https://iitpkd.ac.in","logo":null,"counselling":["josaa"],"quotas":["AI"],"courses":["btech"],"branches":["cse","ee","me","ce"],"seats":null,"fees":200000,"hostel":true,"openingRank":4530,"closingRank":6454,"rankExam":"advanced","rankYear":2025,"placements":null,"rating":null,"reviewHighlights":[],"sources":["https://cracku.in/josaa-previous-year-cutoff/"]},
-{"name":"Indian Institute of Technology Goa","short":"IIT Goa","type":"IIT","city":"Ponda","state":"Goa","established":2016,"ownership":"central","website":"https://iitgoa.ac.in","logo":null,"counselling":["josaa"],"quotas":["AI"],"courses":["btech"],"branches":["cse","ee","me","mnc"],"seats":null,"fees":200000,"hostel":true,"openingRank":4256,"closingRank":6242,"rankExam":"advanced","rankYear":2025,"placements":null,"rating":null,"reviewHighlights":[],"sources":["https://cracku.in/josaa-previous-year-cutoff/"]},
-{"name":"Indian Institute of Technology Jammu","short":"IIT Jammu","type":"IIT","city":"Jammu","state":"Jammu and Kashmir","established":2016,"ownership":"central","website":"https://www.iitjammu.ac.in","logo":null,"counselling":["josaa"],"quotas":["AI"],"courses":["btech"],"branches":["cse","ee","me","ce","che","meta"],"seats":null,"fees":200000,"hostel":true,"openingRank":4704,"closingRank":6651,"rankExam":"advanced","rankYear":2025,"placements":null,"rating":null,"reviewHighlights":[],"sources":["https://cracku.in/josaa-previous-year-cutoff/"]},
-{"name":"Indian Institute of Technology Bhilai","short":"IIT Bhilai","type":"IIT","city":"Bhilai","state":"Chhattisgarh","established":2016,"ownership":"central","website":"https://www.iitbhilai.ac.in","logo":null,"counselling":["josaa"],"quotas":["AI"],"courses":["btech"],"branches":["cse","ee","me"],"seats":null,"fees":200000,"hostel":true,"openingRank":4462,"closingRank":7382,"rankExam":"advanced","rankYear":2025,"placements":null,"rating":null,"reviewHighlights":[],"sources":["https://cracku.in/josaa-previous-year-cutoff/"]},
-{"name":"Indian Institute of Technology Dharwad","short":"IIT Dharwad","type":"IIT","city":"Dharwad","state":"Karnataka","established":2016,"ownership":"central","website":"https://www.iitdh.ac.in","logo":null,"counselling":["josaa"],"quotas":["AI"],"courses":["btech"],"branches":["cse","ee","me"],"seats":null,"fees":200000,"hostel":true,"openingRank":4742,"closingRank":7208,"rankExam":"advanced","rankYear":2025,"placements":null,"rating":null,"reviewHighlights":[],"sources":["https://cracku.in/josaa-previous-year-cutoff/"]},
-{"name":"Indian Institute of Science","short":"IISc Bengaluru","type":"Other","city":"Bengaluru","state":"Karnataka","established":1909,"ownership":"central","website":"https://iisc.ac.in","logo":null,"counselling":["josaa"],"quotas":["AI"],"courses":["btech"],"branches":["mnc","aero","meta","other"],"seats":125,"fees":null,"hostel":true,"openingRank":null,"closingRank":null,"rankExam":"advanced","rankYear":2025,"placements":null,"rating":null,"reviewHighlights":[],"sources":["https://www.collegepravesh.com/admissions/iisc-bangalore-btech-admissions/"]}
+  {
+    "name": "Indian Institute of Technology Bombay",
+    "short": "IIT Bombay",
+    "type": "IIT",
+    "city": "Mumbai",
+    "state": "Maharashtra",
+    "established": 1958,
+    "ownership": "central",
+    "website": "https://www.iitb.ac.in",
+    "logo": null,
+    "counselling": [
+      "josaa"
+    ],
+    "quotas": [
+      "AI"
+    ],
+    "courses": [
+      "btech",
+      "dual",
+      "bs"
+    ],
+    "branches": [
+      "cse",
+      "ee",
+      "me",
+      "ce",
+      "che",
+      "aero",
+      "meta",
+      "ephys",
+      "bio",
+      "sci"
+    ],
+    "seats": null,
+    "fees": 200000,
+    "hostel": true,
+    "openingRank": 1,
+    "closingRank": 66,
+    "rankExam": "advanced",
+    "rankYear": 2025,
+    "placements": null,
+    "rating": null,
+    "reviewHighlights": [],
+    "sources": [
+      "https://cracku.in/josaa-previous-year-cutoff/",
+      "https://www.nirfindia.org/Rankings/2025/EngineeringRanking.html"
+    ],
+    "nirfRank": 3,
+    "nirfYear": 2025
+  },
+  {
+    "name": "Indian Institute of Technology Delhi",
+    "short": "IIT Delhi",
+    "type": "IIT",
+    "city": "New Delhi",
+    "state": "Delhi",
+    "established": 1961,
+    "ownership": "central",
+    "website": "https://home.iitd.ac.in",
+    "logo": null,
+    "counselling": [
+      "josaa"
+    ],
+    "quotas": [
+      "AI"
+    ],
+    "courses": [
+      "btech",
+      "dual"
+    ],
+    "branches": [
+      "cse",
+      "mnc",
+      "ee",
+      "me",
+      "ce",
+      "che",
+      "ephys",
+      "textile",
+      "bio",
+      "prod"
+    ],
+    "seats": null,
+    "fees": 200000,
+    "hostel": true,
+    "openingRank": 24,
+    "closingRank": 126,
+    "rankExam": "advanced",
+    "rankYear": 2025,
+    "placements": null,
+    "rating": null,
+    "reviewHighlights": [],
+    "sources": [
+      "https://cracku.in/josaa-previous-year-cutoff/",
+      "https://www.nirfindia.org/Rankings/2025/EngineeringRanking.html",
+      "https://home.iitd.ac.in/uploads/nirf/2026/NIRF_2026_Engineering_Indian%20Institute%20of%20Technology%20Delhi20260402.pdf"
+    ],
+    "nirfRank": 2,
+    "nirfYear": 2025,
+    "placement": {
+      "year": 2025,
+      "median": 20.0,
+      "average": null,
+      "highest": null,
+      "placedPct": null,
+      "source": "https://home.iitd.ac.in/uploads/nirf/2026/NIRF_2026_Engineering_Indian%20Institute%20of%20Technology%20Delhi20260402.pdf"
+    }
+  },
+  {
+    "name": "Indian Institute of Technology Madras",
+    "short": "IIT Madras",
+    "type": "IIT",
+    "city": "Chennai",
+    "state": "Tamil Nadu",
+    "established": 1959,
+    "ownership": "central",
+    "website": "https://www.iitm.ac.in",
+    "logo": null,
+    "counselling": [
+      "josaa"
+    ],
+    "quotas": [
+      "AI"
+    ],
+    "courses": [
+      "btech",
+      "dual"
+    ],
+    "branches": [
+      "cse",
+      "ee",
+      "me",
+      "ce",
+      "che",
+      "aero",
+      "meta",
+      "ephys",
+      "ocean",
+      "bio"
+    ],
+    "seats": null,
+    "fees": 200000,
+    "hostel": true,
+    "openingRank": 79,
+    "closingRank": 171,
+    "rankExam": "advanced",
+    "rankYear": 2025,
+    "placements": null,
+    "rating": null,
+    "reviewHighlights": [],
+    "sources": [
+      "https://cracku.in/josaa-previous-year-cutoff/",
+      "https://www.nirfindia.org/Rankings/2025/EngineeringRanking.html"
+    ],
+    "nirfRank": 1,
+    "nirfYear": 2025
+  },
+  {
+    "name": "Indian Institute of Technology Kanpur",
+    "short": "IIT Kanpur",
+    "type": "IIT",
+    "city": "Kanpur",
+    "state": "Uttar Pradesh",
+    "established": 1959,
+    "ownership": "central",
+    "website": "https://www.iitk.ac.in",
+    "logo": null,
+    "counselling": [
+      "josaa"
+    ],
+    "quotas": [
+      "AI"
+    ],
+    "courses": [
+      "btech",
+      "bs"
+    ],
+    "branches": [
+      "cse",
+      "ee",
+      "me",
+      "ce",
+      "che",
+      "aero",
+      "meta",
+      "ephys",
+      "mnc",
+      "bio",
+      "sci"
+    ],
+    "seats": null,
+    "fees": 200000,
+    "hostel": true,
+    "openingRank": 147,
+    "closingRank": 271,
+    "rankExam": "advanced",
+    "rankYear": 2025,
+    "placements": null,
+    "rating": null,
+    "reviewHighlights": [],
+    "sources": [
+      "https://cracku.in/josaa-previous-year-cutoff/",
+      "https://www.nirfindia.org/Rankings/2025/EngineeringRanking.html",
+      "https://www.iitk.ac.in/data/nirf/nirf-2026/Engineering-2026.pdf"
+    ],
+    "nirfRank": 4,
+    "nirfYear": 2025,
+    "placement": {
+      "year": 2025,
+      "median": 21.7,
+      "average": null,
+      "highest": null,
+      "placedPct": null,
+      "source": "https://www.iitk.ac.in/data/nirf/nirf-2026/Engineering-2026.pdf"
+    }
+  },
+  {
+    "name": "Indian Institute of Technology Kharagpur",
+    "short": "IIT Kharagpur",
+    "type": "IIT",
+    "city": "Kharagpur",
+    "state": "West Bengal",
+    "established": 1951,
+    "ownership": "central",
+    "website": "https://www.iitkgp.ac.in",
+    "logo": null,
+    "counselling": [
+      "josaa"
+    ],
+    "quotas": [
+      "AI"
+    ],
+    "courses": [
+      "btech",
+      "dual",
+      "barch",
+      "bs"
+    ],
+    "branches": [
+      "cse",
+      "ee",
+      "ece",
+      "instr",
+      "me",
+      "prod",
+      "ce",
+      "che",
+      "aero",
+      "meta",
+      "mining",
+      "ocean",
+      "agri",
+      "ephys",
+      "bio",
+      "arch",
+      "sci"
+    ],
+    "seats": null,
+    "fees": 200000,
+    "hostel": true,
+    "openingRank": 238,
+    "closingRank": 466,
+    "rankExam": "advanced",
+    "rankYear": 2025,
+    "placements": null,
+    "rating": null,
+    "reviewHighlights": [],
+    "sources": [
+      "https://cracku.in/josaa-previous-year-cutoff/",
+      "https://www.nirfindia.org/Rankings/2025/EngineeringRanking.html"
+    ],
+    "nirfRank": 5,
+    "nirfYear": 2025
+  },
+  {
+    "name": "Indian Institute of Technology Roorkee",
+    "short": "IIT Roorkee",
+    "type": "IIT",
+    "city": "Roorkee",
+    "state": "Uttarakhand",
+    "established": 1847,
+    "ownership": "central",
+    "website": "https://www.iitr.ac.in",
+    "logo": null,
+    "counselling": [
+      "josaa"
+    ],
+    "quotas": [
+      "AI"
+    ],
+    "courses": [
+      "btech",
+      "barch"
+    ],
+    "branches": [
+      "cse",
+      "ee",
+      "ece",
+      "me",
+      "prod",
+      "ce",
+      "che",
+      "meta",
+      "ephys",
+      "mnc",
+      "bio",
+      "arch",
+      "sci"
+    ],
+    "seats": null,
+    "fees": 200000,
+    "hostel": true,
+    "openingRank": 275,
+    "closingRank": 592,
+    "rankExam": "advanced",
+    "rankYear": 2025,
+    "placements": null,
+    "rating": null,
+    "reviewHighlights": [],
+    "sources": [
+      "https://cracku.in/josaa-previous-year-cutoff/",
+      "https://www.nirfindia.org/Rankings/2025/EngineeringRanking.html"
+    ],
+    "nirfRank": 6,
+    "nirfYear": 2025
+  },
+  {
+    "name": "Indian Institute of Technology Guwahati",
+    "short": "IIT Guwahati",
+    "type": "IIT",
+    "city": "Guwahati",
+    "state": "Assam",
+    "established": 1994,
+    "ownership": "central",
+    "website": "https://www.iitg.ac.in",
+    "logo": null,
+    "counselling": [
+      "josaa"
+    ],
+    "quotas": [
+      "AI"
+    ],
+    "courses": [
+      "btech"
+    ],
+    "branches": [
+      "cse",
+      "ece",
+      "eee",
+      "me",
+      "ce",
+      "che",
+      "bio",
+      "ephys",
+      "mnc"
+    ],
+    "seats": null,
+    "fees": 200000,
+    "hostel": true,
+    "openingRank": 504,
+    "closingRank": 792,
+    "rankExam": "advanced",
+    "rankYear": 2025,
+    "placements": null,
+    "rating": null,
+    "reviewHighlights": [],
+    "sources": [
+      "https://cracku.in/josaa-previous-year-cutoff/",
+      "https://www.nirfindia.org/Rankings/2025/EngineeringRanking.html",
+      "https://www.iitg.ac.in/nirf/doc/NIRF_Engineering_2026.pdf"
+    ],
+    "nirfRank": 8,
+    "nirfYear": 2025,
+    "placement": {
+      "year": 2025,
+      "median": 17.0,
+      "average": null,
+      "highest": null,
+      "placedPct": null,
+      "source": "https://www.iitg.ac.in/nirf/doc/NIRF_Engineering_2026.pdf"
+    }
+  },
+  {
+    "name": "Indian Institute of Technology Hyderabad",
+    "short": "IIT Hyderabad",
+    "type": "IIT",
+    "city": "Sangareddy",
+    "state": "Telangana",
+    "established": 2008,
+    "ownership": "central",
+    "website": "https://www.iith.ac.in",
+    "logo": null,
+    "counselling": [
+      "josaa"
+    ],
+    "quotas": [
+      "AI"
+    ],
+    "courses": [
+      "btech"
+    ],
+    "branches": [
+      "cse",
+      "ai",
+      "ee",
+      "me",
+      "ce",
+      "che",
+      "meta",
+      "ephys",
+      "bio",
+      "mnc"
+    ],
+    "seats": null,
+    "fees": 200000,
+    "hostel": true,
+    "openingRank": 339,
+    "closingRank": 673,
+    "rankExam": "advanced",
+    "rankYear": 2025,
+    "placements": null,
+    "rating": null,
+    "reviewHighlights": [],
+    "sources": [
+      "https://cracku.in/josaa-previous-year-cutoff/",
+      "https://www.nirfindia.org/Rankings/2025/EngineeringRanking.html",
+      "https://iith.ac.in/assets/files/NIRF-Reports/2026/nirf-2026-engineering-iith.pdf"
+    ],
+    "nirfRank": 7,
+    "nirfYear": 2025,
+    "placement": {
+      "year": 2025,
+      "median": 19.15,
+      "average": null,
+      "highest": null,
+      "placedPct": null,
+      "source": "https://iith.ac.in/assets/files/NIRF-Reports/2026/nirf-2026-engineering-iith.pdf"
+    }
+  },
+  {
+    "name": "Indian Institute of Technology (Banaras Hindu University) Varanasi",
+    "short": "IIT BHU",
+    "type": "IIT",
+    "city": "Varanasi",
+    "state": "Uttar Pradesh",
+    "established": 1919,
+    "ownership": "central",
+    "website": "https://www.iitbhu.ac.in",
+    "logo": null,
+    "counselling": [
+      "josaa"
+    ],
+    "quotas": [
+      "AI"
+    ],
+    "courses": [
+      "btech",
+      "dual",
+      "barch"
+    ],
+    "branches": [
+      "cse",
+      "ee",
+      "ece",
+      "me",
+      "ce",
+      "che",
+      "meta",
+      "mining",
+      "ephys",
+      "mnc",
+      "bio",
+      "arch",
+      "other"
+    ],
+    "seats": null,
+    "fees": 200000,
+    "hostel": true,
+    "openingRank": 747,
+    "closingRank": 1489,
+    "rankExam": "advanced",
+    "rankYear": 2025,
+    "placements": null,
+    "rating": null,
+    "reviewHighlights": [],
+    "sources": [
+      "https://cracku.in/josaa-previous-year-cutoff/",
+      "https://www.nirfindia.org/Rankings/2025/EngineeringRanking.html",
+      "https://www.iitbhu.ac.in/contents/iitbhu/docs/nirf_2026_engg_report.pdf"
+    ],
+    "nirfRank": 10,
+    "nirfYear": 2025,
+    "placement": {
+      "year": 2025,
+      "median": 18.0,
+      "average": null,
+      "highest": null,
+      "placedPct": null,
+      "source": "https://www.iitbhu.ac.in/contents/iitbhu/docs/nirf_2026_engg_report.pdf"
+    }
+  },
+  {
+    "name": "Indian Institute of Technology (Indian School of Mines) Dhanbad",
+    "short": "IIT ISM Dhanbad",
+    "type": "IIT",
+    "city": "Dhanbad",
+    "state": "Jharkhand",
+    "established": 1926,
+    "ownership": "central",
+    "website": "https://www.iitism.ac.in",
+    "logo": null,
+    "counselling": [
+      "josaa"
+    ],
+    "quotas": [
+      "AI"
+    ],
+    "courses": [
+      "btech",
+      "intmtech"
+    ],
+    "branches": [
+      "cse",
+      "ee",
+      "ece",
+      "me",
+      "ce",
+      "che",
+      "mining",
+      "petro",
+      "meta",
+      "ephys",
+      "mnc",
+      "env"
+    ],
+    "seats": null,
+    "fees": 200000,
+    "hostel": true,
+    "openingRank": 2143,
+    "closingRank": 3585,
+    "rankExam": "advanced",
+    "rankYear": 2025,
+    "placements": null,
+    "rating": null,
+    "reviewHighlights": [],
+    "sources": [
+      "https://cracku.in/josaa-previous-year-cutoff/",
+      "https://www.nirfindia.org/Rankings/2025/EngineeringRanking.html"
+    ],
+    "nirfRank": 15,
+    "nirfYear": 2025
+  },
+  {
+    "name": "Indian Institute of Technology Gandhinagar",
+    "short": "IIT Gandhinagar",
+    "type": "IIT",
+    "city": "Gandhinagar",
+    "state": "Gujarat",
+    "established": 2008,
+    "ownership": "central",
+    "website": "https://iitgn.ac.in",
+    "logo": null,
+    "counselling": [
+      "josaa"
+    ],
+    "quotas": [
+      "AI"
+    ],
+    "courses": [
+      "btech"
+    ],
+    "branches": [
+      "cse",
+      "ee",
+      "me",
+      "ce",
+      "che",
+      "meta"
+    ],
+    "seats": null,
+    "fees": 200000,
+    "hostel": true,
+    "openingRank": 905,
+    "closingRank": 2020,
+    "rankExam": "advanced",
+    "rankYear": 2025,
+    "placements": null,
+    "rating": null,
+    "reviewHighlights": [],
+    "sources": [
+      "https://cracku.in/josaa-previous-year-cutoff/",
+      "https://www.nirfindia.org/Rankings/2025/EngineeringRanking.html"
+    ],
+    "nirfRank": 25,
+    "nirfYear": 2025
+  },
+  {
+    "name": "Indian Institute of Technology Indore",
+    "short": "IIT Indore",
+    "type": "IIT",
+    "city": "Indore",
+    "state": "Madhya Pradesh",
+    "established": 2009,
+    "ownership": "central",
+    "website": "https://www.iiti.ac.in",
+    "logo": null,
+    "counselling": [
+      "josaa"
+    ],
+    "quotas": [
+      "AI"
+    ],
+    "courses": [
+      "btech"
+    ],
+    "branches": [
+      "cse",
+      "ee",
+      "me",
+      "ce",
+      "meta",
+      "ephys"
+    ],
+    "seats": null,
+    "fees": 200000,
+    "hostel": true,
+    "openingRank": 952,
+    "closingRank": 1775,
+    "rankExam": "advanced",
+    "rankYear": 2025,
+    "placements": null,
+    "rating": null,
+    "reviewHighlights": [],
+    "sources": [
+      "https://cracku.in/josaa-previous-year-cutoff/",
+      "https://www.nirfindia.org/Rankings/2025/EngineeringRanking.html"
+    ],
+    "nirfRank": 12,
+    "nirfYear": 2025
+  },
+  {
+    "name": "Indian Institute of Technology Mandi",
+    "short": "IIT Mandi",
+    "type": "IIT",
+    "city": "Mandi",
+    "state": "Himachal Pradesh",
+    "established": 2009,
+    "ownership": "central",
+    "website": "https://www.iitmandi.ac.in",
+    "logo": null,
+    "counselling": [
+      "josaa"
+    ],
+    "quotas": [
+      "AI"
+    ],
+    "courses": [
+      "btech"
+    ],
+    "branches": [
+      "cse",
+      "ai",
+      "ee",
+      "me",
+      "ce",
+      "ephys"
+    ],
+    "seats": null,
+    "fees": 202000,
+    "hostel": true,
+    "openingRank": 2096,
+    "closingRank": 3123,
+    "rankExam": "advanced",
+    "rankYear": 2025,
+    "placements": null,
+    "rating": null,
+    "reviewHighlights": [],
+    "sources": [
+      "https://cracku.in/josaa-previous-year-cutoff/",
+      "https://www.nirfindia.org/Rankings/2025/EngineeringRanking.html",
+      "https://academics.iitmandi.ac.in/fees"
+    ],
+    "nirfRank": 26,
+    "nirfYear": 2025
+  },
+  {
+    "name": "Indian Institute of Technology Patna",
+    "short": "IIT Patna",
+    "type": "IIT",
+    "city": "Patna",
+    "state": "Bihar",
+    "established": 2008,
+    "ownership": "central",
+    "website": "https://www.iitp.ac.in",
+    "logo": null,
+    "counselling": [
+      "josaa"
+    ],
+    "quotas": [
+      "AI"
+    ],
+    "courses": [
+      "btech"
+    ],
+    "branches": [
+      "cse",
+      "ee",
+      "me",
+      "ce",
+      "che",
+      "meta",
+      "mnc"
+    ],
+    "seats": null,
+    "fees": 200000,
+    "hostel": true,
+    "openingRank": 1954,
+    "closingRank": 3377,
+    "rankExam": "advanced",
+    "rankYear": 2025,
+    "placements": null,
+    "rating": null,
+    "reviewHighlights": [],
+    "sources": [
+      "https://cracku.in/josaa-previous-year-cutoff/",
+      "https://www.nirfindia.org/Rankings/2025/EngineeringRanking.html"
+    ],
+    "nirfRank": 19,
+    "nirfYear": 2025
+  },
+  {
+    "name": "Indian Institute of Technology Ropar",
+    "short": "IIT Ropar",
+    "type": "IIT",
+    "city": "Rupnagar",
+    "state": "Punjab",
+    "established": 2008,
+    "ownership": "central",
+    "website": "https://www.iitrpr.ac.in",
+    "logo": null,
+    "counselling": [
+      "josaa"
+    ],
+    "quotas": [
+      "AI"
+    ],
+    "courses": [
+      "btech"
+    ],
+    "branches": [
+      "cse",
+      "ee",
+      "me",
+      "ce",
+      "che",
+      "meta",
+      "ephys",
+      "mnc"
+    ],
+    "seats": null,
+    "fees": 200000,
+    "hostel": true,
+    "openingRank": 1680,
+    "closingRank": 2512,
+    "rankExam": "advanced",
+    "rankYear": 2025,
+    "placements": null,
+    "rating": null,
+    "reviewHighlights": [],
+    "sources": [
+      "https://cracku.in/josaa-previous-year-cutoff/",
+      "https://www.nirfindia.org/Rankings/2025/EngineeringRanking.html"
+    ],
+    "nirfRank": 32,
+    "nirfYear": 2025
+  },
+  {
+    "name": "Indian Institute of Technology Jodhpur",
+    "short": "IIT Jodhpur",
+    "type": "IIT",
+    "city": "Jodhpur",
+    "state": "Rajasthan",
+    "established": 2008,
+    "ownership": "central",
+    "website": "https://www.iitj.ac.in",
+    "logo": null,
+    "counselling": [
+      "josaa"
+    ],
+    "quotas": [
+      "AI"
+    ],
+    "courses": [
+      "btech"
+    ],
+    "branches": [
+      "cse",
+      "ai",
+      "ee",
+      "me",
+      "ce",
+      "che",
+      "meta",
+      "bio"
+    ],
+    "seats": null,
+    "fees": 200000,
+    "hostel": true,
+    "openingRank": 2269,
+    "closingRank": 2918,
+    "rankExam": "advanced",
+    "rankYear": 2025,
+    "placements": null,
+    "rating": null,
+    "reviewHighlights": [],
+    "sources": [
+      "https://cracku.in/josaa-previous-year-cutoff/",
+      "https://www.nirfindia.org/Rankings/2025/EngineeringRanking.html"
+    ],
+    "nirfRank": 27,
+    "nirfYear": 2025
+  },
+  {
+    "name": "Indian Institute of Technology Bhubaneswar",
+    "short": "IIT Bhubaneswar",
+    "type": "IIT",
+    "city": "Bhubaneswar",
+    "state": "Odisha",
+    "established": 2008,
+    "ownership": "central",
+    "website": "https://www.iitbbs.ac.in",
+    "logo": null,
+    "counselling": [
+      "josaa"
+    ],
+    "quotas": [
+      "AI"
+    ],
+    "courses": [
+      "btech"
+    ],
+    "branches": [
+      "cse",
+      "ee",
+      "ece",
+      "me",
+      "ce",
+      "meta"
+    ],
+    "seats": null,
+    "fees": 200000,
+    "hostel": true,
+    "openingRank": 2344,
+    "closingRank": 4162,
+    "rankExam": "advanced",
+    "rankYear": 2025,
+    "placements": null,
+    "rating": null,
+    "reviewHighlights": [],
+    "sources": [
+      "https://cracku.in/josaa-previous-year-cutoff/",
+      "https://www.nirfindia.org/Rankings/2025/EngineeringRanking.html",
+      "https://www.iitbbs.ac.in/wp-content/uploads/2026/04/Engineering-Final-After-submission-2026.pdf"
+    ],
+    "nirfRank": 39,
+    "nirfYear": 2025,
+    "placement": {
+      "year": 2025,
+      "median": 13.3,
+      "average": null,
+      "highest": null,
+      "placedPct": null,
+      "source": "https://www.iitbbs.ac.in/wp-content/uploads/2026/04/Engineering-Final-After-submission-2026.pdf"
+    }
+  },
+  {
+    "name": "Indian Institute of Technology Tirupati",
+    "short": "IIT Tirupati",
+    "type": "IIT",
+    "city": "Tirupati",
+    "state": "Andhra Pradesh",
+    "established": 2015,
+    "ownership": "central",
+    "website": "https://www.iittp.ac.in",
+    "logo": null,
+    "counselling": [
+      "josaa"
+    ],
+    "quotas": [
+      "AI"
+    ],
+    "courses": [
+      "btech"
+    ],
+    "branches": [
+      "cse",
+      "ee",
+      "me",
+      "ce",
+      "che"
+    ],
+    "seats": null,
+    "fees": 200000,
+    "hostel": true,
+    "openingRank": 1916,
+    "closingRank": 5034,
+    "rankExam": "advanced",
+    "rankYear": 2025,
+    "placements": null,
+    "rating": null,
+    "reviewHighlights": [],
+    "sources": [
+      "https://cracku.in/josaa-previous-year-cutoff/",
+      "https://www.nirfindia.org/Rankings/2025/EngineeringRanking.html",
+      "https://files.iittp.ac.in/pdfs/nirf/2026/NIRF_Engineering_2026.pdf"
+    ],
+    "nirfRank": 57,
+    "nirfYear": 2025,
+    "placement": {
+      "year": 2025,
+      "median": 15.0,
+      "average": null,
+      "highest": null,
+      "placedPct": 57.7,
+      "source": "https://files.iittp.ac.in/pdfs/nirf/2026/NIRF_Engineering_2026.pdf"
+    }
+  },
+  {
+    "name": "Indian Institute of Technology Palakkad",
+    "short": "IIT Palakkad",
+    "type": "IIT",
+    "city": "Palakkad",
+    "state": "Kerala",
+    "established": 2015,
+    "ownership": "central",
+    "website": "https://iitpkd.ac.in",
+    "logo": null,
+    "counselling": [
+      "josaa"
+    ],
+    "quotas": [
+      "AI"
+    ],
+    "courses": [
+      "btech"
+    ],
+    "branches": [
+      "cse",
+      "ee",
+      "me",
+      "ce"
+    ],
+    "seats": null,
+    "fees": 200000,
+    "hostel": true,
+    "openingRank": 4530,
+    "closingRank": 6454,
+    "rankExam": "advanced",
+    "rankYear": 2025,
+    "placements": null,
+    "rating": null,
+    "reviewHighlights": [],
+    "sources": [
+      "https://cracku.in/josaa-previous-year-cutoff/",
+      "https://www.nirfindia.org/Rankings/2025/EngineeringRanking.html",
+      "https://iitpkd.ac.in/sites/default/files/2026-03/4bc0d928-8fa0-42e6-8140-a54bf872535f.pdf"
+    ],
+    "nirfRank": 64,
+    "nirfYear": 2025,
+    "placement": {
+      "year": 2025,
+      "median": 12.0,
+      "average": null,
+      "highest": null,
+      "placedPct": null,
+      "source": "https://iitpkd.ac.in/sites/default/files/2026-03/4bc0d928-8fa0-42e6-8140-a54bf872535f.pdf"
+    }
+  },
+  {
+    "name": "Indian Institute of Technology Goa",
+    "short": "IIT Goa",
+    "type": "IIT",
+    "city": "Ponda",
+    "state": "Goa",
+    "established": 2016,
+    "ownership": "central",
+    "website": "https://iitgoa.ac.in",
+    "logo": null,
+    "counselling": [
+      "josaa"
+    ],
+    "quotas": [
+      "AI"
+    ],
+    "courses": [
+      "btech"
+    ],
+    "branches": [
+      "cse",
+      "ee",
+      "me",
+      "mnc"
+    ],
+    "seats": null,
+    "fees": 200000,
+    "hostel": true,
+    "openingRank": 4256,
+    "closingRank": 6242,
+    "rankExam": "advanced",
+    "rankYear": 2025,
+    "placements": null,
+    "rating": null,
+    "reviewHighlights": [],
+    "sources": [
+      "https://cracku.in/josaa-previous-year-cutoff/"
+    ]
+  },
+  {
+    "name": "Indian Institute of Technology Jammu",
+    "short": "IIT Jammu",
+    "type": "IIT",
+    "city": "Jammu",
+    "state": "Jammu and Kashmir",
+    "established": 2016,
+    "ownership": "central",
+    "website": "https://www.iitjammu.ac.in",
+    "logo": null,
+    "counselling": [
+      "josaa"
+    ],
+    "quotas": [
+      "AI"
+    ],
+    "courses": [
+      "btech"
+    ],
+    "branches": [
+      "cse",
+      "ee",
+      "me",
+      "ce",
+      "che",
+      "meta"
+    ],
+    "seats": null,
+    "fees": 200000,
+    "hostel": true,
+    "openingRank": 4704,
+    "closingRank": 6651,
+    "rankExam": "advanced",
+    "rankYear": 2025,
+    "placements": null,
+    "rating": null,
+    "reviewHighlights": [],
+    "sources": [
+      "https://cracku.in/josaa-previous-year-cutoff/",
+      "https://www.nirfindia.org/Rankings/2025/EngineeringRanking.html"
+    ],
+    "nirfRank": 56,
+    "nirfYear": 2025
+  },
+  {
+    "name": "Indian Institute of Technology Bhilai",
+    "short": "IIT Bhilai",
+    "type": "IIT",
+    "city": "Bhilai",
+    "state": "Chhattisgarh",
+    "established": 2016,
+    "ownership": "central",
+    "website": "https://www.iitbhilai.ac.in",
+    "logo": null,
+    "counselling": [
+      "josaa"
+    ],
+    "quotas": [
+      "AI"
+    ],
+    "courses": [
+      "btech"
+    ],
+    "branches": [
+      "cse",
+      "ee",
+      "me"
+    ],
+    "seats": null,
+    "fees": 200000,
+    "hostel": true,
+    "openingRank": 4462,
+    "closingRank": 7382,
+    "rankExam": "advanced",
+    "rankYear": 2025,
+    "placements": null,
+    "rating": null,
+    "reviewHighlights": [],
+    "sources": [
+      "https://cracku.in/josaa-previous-year-cutoff/",
+      "https://www.nirfindia.org/Rankings/2025/EngineeringRanking.html"
+    ],
+    "nirfRank": 72,
+    "nirfYear": 2025
+  },
+  {
+    "name": "Indian Institute of Technology Dharwad",
+    "short": "IIT Dharwad",
+    "type": "IIT",
+    "city": "Dharwad",
+    "state": "Karnataka",
+    "established": 2016,
+    "ownership": "central",
+    "website": "https://www.iitdh.ac.in",
+    "logo": null,
+    "counselling": [
+      "josaa"
+    ],
+    "quotas": [
+      "AI"
+    ],
+    "courses": [
+      "btech"
+    ],
+    "branches": [
+      "cse",
+      "ee",
+      "me"
+    ],
+    "seats": null,
+    "fees": 200000,
+    "hostel": true,
+    "openingRank": 4742,
+    "closingRank": 7208,
+    "rankExam": "advanced",
+    "rankYear": 2025,
+    "placements": null,
+    "rating": null,
+    "reviewHighlights": [],
+    "sources": [
+      "https://cracku.in/josaa-previous-year-cutoff/",
+      "https://www.nirfindia.org/Rankings/2025/EngineeringRanking.html"
+    ],
+    "nirfRank": 77,
+    "nirfYear": 2025
+  },
+  {
+    "name": "Indian Institute of Science",
+    "short": "IISc Bengaluru",
+    "type": "Other",
+    "city": "Bengaluru",
+    "state": "Karnataka",
+    "established": 1909,
+    "ownership": "central",
+    "website": "https://iisc.ac.in",
+    "logo": null,
+    "counselling": [
+      "josaa"
+    ],
+    "quotas": [
+      "AI"
+    ],
+    "courses": [
+      "btech"
+    ],
+    "branches": [
+      "mnc",
+      "aero",
+      "meta",
+      "other"
+    ],
+    "seats": 125,
+    "fees": null,
+    "hostel": true,
+    "openingRank": null,
+    "closingRank": null,
+    "rankExam": "advanced",
+    "rankYear": 2025,
+    "placements": null,
+    "rating": null,
+    "reviewHighlights": [],
+    "sources": [
+      "https://www.collegepravesh.com/admissions/iisc-bangalore-btech-admissions/"
+    ]
+  }
 ]

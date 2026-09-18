@@ -1,9 +1,18 @@
 "use client";
 
 import { useSelectedLayoutSegment } from "next/navigation";
+import { AssistantLauncher } from "@/components/assistant/AssistantLauncher";
+import { BackToTop } from "./BackToTop";
+import { CursorGlow } from "./CursorGlow";
 
 /** Routes that bring their own chrome (header, footer, navigation). */
 const immersiveSegments = new Set(["career"]);
+
+/**
+ * Saarthi stays out of the Career world, and out of the sign-in areas for
+ * team, mentors and admins, where a general assistant has no business.
+ */
+const noAssistantSegments = new Set(["career", "portal"]);
 
 /**
  * Wraps pages in the main site's header and footer, except for
@@ -20,6 +29,7 @@ export function SiteChrome({
 }) {
   const segment = useSelectedLayoutSegment();
   const immersive = segment !== null && immersiveSegments.has(segment);
+  const assistant = segment === null || !noAssistantSegments.has(segment);
 
   return (
     <>
@@ -28,6 +38,9 @@ export function SiteChrome({
         {children}
       </main>
       {!immersive && footer}
+      {!immersive && <CursorGlow />}
+      {assistant && <AssistantLauncher />}
+      <BackToTop />
     </>
   );
 }

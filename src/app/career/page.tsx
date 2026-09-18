@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { CareerCursor } from "@/components/career/CareerCursor";
 import { CareerFooter } from "@/components/career/CareerFooter";
 import { CareerHero } from "@/components/career/CareerHero";
 import { CareerNav } from "@/components/career/CareerNav";
@@ -22,6 +23,7 @@ export const metadata: Metadata = {
 export default function CareerPage() {
   return (
     <CareerWorld>
+      <CareerCursor />
       <CareerNav />
       <CareerHero />
       <SignalTicker />

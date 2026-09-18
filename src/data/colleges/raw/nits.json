@@ -1,1216 +1,1559 @@
 [
-{
-"name": "National Institute of Technology Tiruchirappalli",
-"short": "NIT Trichy",
-"type": "NIT",
-"city": "Tiruchirappalli",
-"state": "Tamil Nadu",
-"established": 1964,
-"ownership": "central",
-"website": "https://www.nitt.edu",
-"counselling": [
-"josaa",
-"csab"
-],
-"quotas": [
-"HS",
-"OS"
-],
-"courses": [
-"btech",
-"barch"
-],
-"branches": [
-"cse",
-"ece",
-"eee",
-"instr",
-"me",
-"prod",
-"ce",
-"che",
-"meta",
-"arch"
-],
-"seats": null,
-"fees": 125000,
-"hostel": true,
-"openingRank": 659,
-"closingRank": 1449,
-"rankExam": "main",
-"rankYear": 2025
-},
-{
-"name": "National Institute of Technology Karnataka, Surathkal",
-"short": "NIT Surathkal",
-"type": "NIT",
-"city": "Mangaluru",
-"state": "Karnataka",
-"established": 1960,
-"ownership": "central",
-"website": "https://www.nitk.ac.in",
-"counselling": [
-"josaa",
-"csab"
-],
-"quotas": [
-"HS",
-"OS"
-],
-"courses": [
-"btech"
-],
-"branches": [
-"cse",
-"ai",
-"it",
-"ece",
-"eee",
-"me",
-"ce",
-"che",
-"meta",
-"mining"
-],
-"seats": null,
-"fees": 125000,
-"hostel": true,
-"openingRank": 1191,
-"closingRank": 1827,
-"rankExam": "main",
-"rankYear": 2025
-},
-{
-"name": "National Institute of Technology Warangal",
-"short": "NIT Warangal",
-"type": "NIT",
-"city": "Warangal",
-"state": "Telangana",
-"established": 1959,
-"ownership": "central",
-"website": "https://www.nitw.ac.in",
-"counselling": [
-"josaa",
-"csab"
-],
-"quotas": [
-"HS",
-"OS"
-],
-"courses": [
-"btech"
-],
-"branches": [
-"cse",
-"ai",
-"mnc",
-"ece",
-"eee",
-"me",
-"ce",
-"che",
-"meta",
-"bio"
-],
-"seats": null,
-"fees": 125000,
-"hostel": true,
-"openingRank": 1521,
-"closingRank": 2409,
-"rankExam": "main",
-"rankYear": 2025
-},
-{
-"name": "National Institute of Technology Rourkela",
-"short": "NIT Rourkela",
-"type": "NIT",
-"city": "Rourkela",
-"state": "Odisha",
-"established": 1961,
-"ownership": "central",
-"website": "https://www.nitrkl.ac.in",
-"counselling": [
-"josaa",
-"csab"
-],
-"quotas": [
-"HS",
-"OS"
-],
-"courses": [
-"btech",
-"dual"
-],
-"branches": [
-"cse",
-"ece",
-"ee",
-"instr",
-"me",
-"ce",
-"che",
-"meta",
-"mining",
-"bio",
-"other"
-],
-"seats": null,
-"fees": 125000,
-"hostel": true,
-"openingRank": 2442,
-"closingRank": 3431,
-"rankExam": "main",
-"rankYear": 2025
-},
-{
-"name": "National Institute of Technology Calicut",
-"short": "NIT Calicut",
-"type": "NIT",
-"city": "Kozhikode",
-"state": "Kerala",
-"established": 1961,
-"ownership": "central",
-"website": "https://nitc.ac.in",
-"counselling": [
-"josaa",
-"csab"
-],
-"quotas": [
-"HS",
-"OS"
-],
-"courses": [
-"btech",
-"barch"
-],
-"branches": [
-"cse",
-"ece",
-"eee",
-"me",
-"prod",
-"ce",
-"che",
-"meta",
-"bio",
-"ephys",
-"arch"
-],
-"seats": null,
-"fees": 125000,
-"hostel": true,
-"openingRank": 3651,
-"closingRank": 5222,
-"rankExam": "main",
-"rankYear": 2025
-},
-{
-"name": "Motilal Nehru National Institute of Technology Allahabad",
-"short": "MNNIT Allahabad",
-"type": "NIT",
-"city": "Prayagraj",
-"state": "Uttar Pradesh",
-"established": 1961,
-"ownership": "central",
-"website": "https://www.mnnit.ac.in",
-"counselling": [
-"josaa",
-"csab"
-],
-"quotas": [
-"HS",
-"OS"
-],
-"courses": [
-"btech"
-],
-"branches": [
-"cse",
-"ece",
-"ee",
-"me",
-"prod",
-"ce",
-"che",
-"bio"
-],
-"seats": null,
-"fees": 125000,
-"hostel": true,
-"openingRank": null,
-"closingRank": 4594,
-"rankExam": "main",
-"rankYear": 2025
-},
-{
-"name": "Malaviya National Institute of Technology Jaipur",
-"short": "MNIT Jaipur",
-"type": "NIT",
-"city": "Jaipur",
-"state": "Rajasthan",
-"established": 1963,
-"ownership": "central",
-"website": "https://www.mnit.ac.in",
-"counselling": [
-"josaa",
-"csab"
-],
-"quotas": [
-"HS",
-"OS"
-],
-"courses": [
-"btech",
-"barch"
-],
-"branches": [
-"cse",
-"ece",
-"ee",
-"me",
-"ce",
-"che",
-"meta",
-"arch"
-],
-"seats": null,
-"fees": 125000,
-"hostel": true,
-"openingRank": 3027,
-"closingRank": 5601,
-"rankExam": "main",
-"rankYear": 2025
-},
-{
-"name": "Maulana Azad National Institute of Technology Bhopal",
-"short": "MANIT Bhopal",
-"type": "NIT",
-"city": "Bhopal",
-"state": "Madhya Pradesh",
-"established": 1960,
-"ownership": "central",
-"website": "https://www.manit.ac.in",
-"counselling": [
-"josaa",
-"csab"
-],
-"quotas": [
-"HS",
-"OS"
-],
-"courses": [
-"btech",
-"barch",
-"bplan"
-],
-"branches": [
-"cse",
-"ece",
-"ee",
-"me",
-"ce",
-"che",
-"meta",
-"arch",
-"plan"
-],
-"seats": null,
-"fees": 125000,
-"hostel": true,
-"openingRank": null,
-"closingRank": null,
-"rankExam": "main",
-"rankYear": 2025
-},
-{
-"name": "Visvesvaraya National Institute of Technology Nagpur",
-"short": "VNIT Nagpur",
-"type": "NIT",
-"city": "Nagpur",
-"state": "Maharashtra",
-"established": 1960,
-"ownership": "central",
-"website": "https://vnit.ac.in",
-"counselling": [
-"josaa",
-"csab"
-],
-"quotas": [
-"HS",
-"OS"
-],
-"courses": [
-"btech",
-"barch"
-],
-"branches": [
-"cse",
-"ece",
-"ee",
-"me",
-"ce",
-"che",
-"meta",
-"mining",
-"arch"
-],
-"seats": null,
-"fees": 125000,
-"hostel": true,
-"openingRank": null,
-"closingRank": 6359,
-"rankExam": "main",
-"rankYear": 2025
-},
-{
-"name": "Sardar Vallabhbhai National Institute of Technology Surat",
-"short": "SVNIT Surat",
-"type": "NIT",
-"city": "Surat",
-"state": "Gujarat",
-"established": 1961,
-"ownership": "central",
-"website": "https://www.svnit.ac.in",
-"counselling": [
-"josaa",
-"csab"
-],
-"quotas": [
-"HS",
-"OS"
-],
-"courses": [
-"btech"
-],
-"branches": [
-"cse",
-"ece",
-"ee",
-"me",
-"ce",
-"che"
-],
-"seats": null,
-"fees": 125000,
-"hostel": true,
-"openingRank": null,
-"closingRank": null,
-"rankExam": "main",
-"rankYear": 2025
-},
-{
-"name": "National Institute of Technology Kurukshetra",
-"short": "NIT Kurukshetra",
-"type": "NIT",
-"city": "Kurukshetra",
-"state": "Haryana",
-"established": 1963,
-"ownership": "central",
-"website": "https://nitkkr.ac.in",
-"counselling": [
-"josaa",
-"csab"
-],
-"quotas": [
-"HS",
-"OS"
-],
-"courses": [
-"btech"
-],
-"branches": [
-"cse",
-"it",
-"ece",
-"ee",
-"me",
-"prod",
-"ce"
-],
-"seats": null,
-"fees": 125000,
-"hostel": true,
-"openingRank": null,
-"closingRank": 7037,
-"rankExam": "main",
-"rankYear": 2025
-},
-{
-"name": "National Institute of Technology Durgapur",
-"short": "NIT Durgapur",
-"type": "NIT",
-"city": "Durgapur",
-"state": "West Bengal",
-"established": 1960,
-"ownership": "central",
-"website": "https://nitdgp.ac.in",
-"counselling": [
-"josaa",
-"csab"
-],
-"quotas": [
-"HS",
-"OS"
-],
-"courses": [
-"btech"
-],
-"branches": [
-"cse",
-"ece",
-"ee",
-"me",
-"ce",
-"che",
-"meta",
-"bio"
-],
-"seats": null,
-"fees": 125000,
-"hostel": true,
-"openingRank": 6565,
-"closingRank": 9836,
-"rankExam": "main",
-"rankYear": 2025
-},
-{
-"name": "National Institute of Technology Delhi",
-"short": "NIT Delhi",
-"type": "NIT",
-"city": "New Delhi",
-"state": "Delhi",
-"established": 2010,
-"ownership": "central",
-"website": "https://nitdelhi.ac.in",
-"counselling": [
-"josaa",
-"csab"
-],
-"quotas": [
-"HS",
-"OS"
-],
-"courses": [
-"btech"
-],
-"branches": [
-"cse",
-"ai",
-"ece",
-"ee",
-"me",
-"ce"
-],
-"seats": null,
-"fees": 125000,
-"hostel": true,
-"openingRank": 2363,
-"closingRank": 7651,
-"rankExam": "main",
-"rankYear": 2025
-},
-{
-"name": "National Institute of Technology Silchar",
-"short": "NIT Silchar",
-"type": "NIT",
-"city": "Silchar",
-"state": "Assam",
-"established": 1967,
-"ownership": "central",
-"website": "https://www.nits.ac.in",
-"counselling": [
-"josaa",
-"csab"
-],
-"quotas": [
-"HS",
-"OS"
-],
-"courses": [
-"btech"
-],
-"branches": [
-"cse",
-"ece",
-"ee",
-"instr",
-"me",
-"ce"
-],
-"seats": null,
-"fees": 125000,
-"hostel": true,
-"openingRank": 8010,
-"closingRank": 12665,
-"rankExam": "main",
-"rankYear": 2025
-},
-{
-"name": "Dr. B R Ambedkar National Institute of Technology Jalandhar",
-"short": "NIT Jalandhar",
-"type": "NIT",
-"city": "Jalandhar",
-"state": "Punjab",
-"established": 1987,
-"ownership": "central",
-"website": "https://www.nitj.ac.in",
-"counselling": [
-"josaa",
-"csab"
-],
-"quotas": [
-"HS",
-"OS"
-],
-"courses": [
-"btech"
-],
-"branches": [
-"cse",
-"it",
-"ece",
-"ee",
-"instr",
-"me",
-"prod",
-"ce",
-"che",
-"textile",
-"bio"
-],
-"seats": null,
-"fees": 125000,
-"hostel": true,
-"openingRank": null,
-"closingRank": null,
-"rankExam": "main",
-"rankYear": 2025
-},
-{
-"name": "National Institute of Technology Hamirpur",
-"short": "NIT Hamirpur",
-"type": "NIT",
-"city": "Hamirpur",
-"state": "Himachal Pradesh",
-"established": 1986,
-"ownership": "central",
-"website": "https://nith.ac.in",
-"counselling": [
-"josaa",
-"csab"
-],
-"quotas": [
-"HS",
-"OS"
-],
-"courses": [
-"btech",
-"barch"
-],
-"branches": [
-"cse",
-"ece",
-"ee",
-"me",
-"ce",
-"che",
-"meta",
-"arch"
-],
-"seats": null,
-"fees": 125000,
-"hostel": true,
-"openingRank": null,
-"closingRank": null,
-"rankExam": "main",
-"rankYear": 2025
-},
-{
-"name": "National Institute of Technology Patna",
-"short": "NIT Patna",
-"type": "NIT",
-"city": "Patna",
-"state": "Bihar",
-"established": 1886,
-"ownership": "central",
-"website": "https://www.nitp.ac.in",
-"counselling": [
-"josaa",
-"csab"
-],
-"quotas": [
-"HS",
-"OS"
-],
-"courses": [
-"btech",
-"barch"
-],
-"branches": [
-"cse",
-"ece",
-"ee",
-"me",
-"ce",
-"arch"
-],
-"seats": null,
-"fees": 125000,
-"hostel": true,
-"openingRank": null,
-"closingRank": null,
-"rankExam": "main",
-"rankYear": 2025
-},
-{
-"name": "National Institute of Technology Raipur",
-"short": "NIT Raipur",
-"type": "NIT",
-"city": "Raipur",
-"state": "Chhattisgarh",
-"established": 1956,
-"ownership": "central",
-"website": "https://www.nitrr.ac.in",
-"counselling": [
-"josaa",
-"csab"
-],
-"quotas": [
-"HS",
-"OS"
-],
-"courses": [
-"btech",
-"barch"
-],
-"branches": [
-"cse",
-"it",
-"ece",
-"ee",
-"me",
-"ce",
-"che",
-"meta",
-"mining",
-"bio",
-"arch"
-],
-"seats": null,
-"fees": 125000,
-"hostel": true,
-"openingRank": null,
-"closingRank": null,
-"rankExam": "main",
-"rankYear": 2025
-},
-{
-"name": "National Institute of Technology Jamshedpur",
-"short": "NIT Jamshedpur",
-"type": "NIT",
-"city": "Jamshedpur",
-"state": "Jharkhand",
-"established": 1960,
-"ownership": "central",
-"website": "https://www.nitjsr.ac.in",
-"counselling": [
-"josaa",
-"csab"
-],
-"quotas": [
-"HS",
-"OS"
-],
-"courses": [
-"btech"
-],
-"branches": [
-"cse",
-"ece",
-"ee",
-"me",
-"prod",
-"ce",
-"meta"
-],
-"seats": null,
-"fees": 125000,
-"hostel": true,
-"openingRank": null,
-"closingRank": null,
-"rankExam": "main",
-"rankYear": 2025
-},
-{
-"name": "National Institute of Technology Srinagar",
-"short": "NIT Srinagar",
-"type": "NIT",
-"city": "Srinagar",
-"state": "Jammu and Kashmir",
-"established": 1960,
-"ownership": "central",
-"website": "https://nitsri.ac.in",
-"counselling": [
-"josaa",
-"csab"
-],
-"quotas": [
-"JK",
-"LA",
-"OS"
-],
-"courses": [
-"btech"
-],
-"branches": [
-"cse",
-"it",
-"ece",
-"ee",
-"me",
-"ce",
-"che",
-"meta"
-],
-"seats": null,
-"fees": 125000,
-"hostel": true,
-"openingRank": null,
-"closingRank": null,
-"rankExam": "main",
-"rankYear": 2025
-},
-{
-"name": "National Institute of Technology Agartala",
-"short": "NIT Agartala",
-"type": "NIT",
-"city": "Agartala",
-"state": "Tripura",
-"established": 1965,
-"ownership": "central",
-"website": "https://www.nita.ac.in",
-"counselling": [
-"josaa",
-"csab"
-],
-"quotas": [
-"HS",
-"OS"
-],
-"courses": [
-"btech"
-],
-"branches": [
-"cse",
-"ece",
-"ee",
-"instr",
-"me",
-"prod",
-"ce",
-"che"
-],
-"seats": null,
-"fees": 125000,
-"hostel": true,
-"openingRank": null,
-"closingRank": null,
-"rankExam": "main",
-"rankYear": 2025
-},
-{
-"name": "National Institute of Technology Goa",
-"short": "NIT Goa",
-"type": "NIT",
-"city": "Ponda",
-"state": "Goa",
-"established": 2010,
-"ownership": "central",
-"website": "https://www.nitgoa.ac.in",
-"counselling": [
-"josaa",
-"csab"
-],
-"quotas": [
-"GO",
-"HS",
-"OS"
-],
-"courses": [
-"btech"
-],
-"branches": [
-"cse",
-"ece",
-"eee",
-"me",
-"ce"
-],
-"seats": null,
-"fees": 125000,
-"hostel": true,
-"openingRank": null,
-"closingRank": null,
-"rankExam": "main",
-"rankYear": 2025
-},
-{
-"name": "National Institute of Technology Puducherry",
-"short": "NIT Puducherry",
-"type": "NIT",
-"city": "Karaikal",
-"state": "Puducherry",
-"established": 2010,
-"ownership": "central",
-"website": "https://nitpy.ac.in",
-"counselling": [
-"josaa",
-"csab"
-],
-"quotas": [
-"HS",
-"OS"
-],
-"courses": [
-"btech"
-],
-"branches": [
-"cse",
-"ece",
-"eee",
-"me",
-"ce"
-],
-"seats": null,
-"fees": 125000,
-"hostel": true,
-"openingRank": null,
-"closingRank": null,
-"rankExam": "main",
-"rankYear": 2025
-},
-{
-"name": "National Institute of Technology Uttarakhand",
-"short": "NIT Uttarakhand",
-"type": "NIT",
-"city": "Srinagar (Garhwal)",
-"state": "Uttarakhand",
-"established": 2009,
-"ownership": "central",
-"website": "https://www.nituk.ac.in",
-"counselling": [
-"josaa",
-"csab"
-],
-"quotas": [
-"HS",
-"OS"
-],
-"courses": [
-"btech"
-],
-"branches": [
-"cse",
-"ece",
-"ee",
-"me",
-"ce"
-],
-"seats": null,
-"fees": 125000,
-"hostel": true,
-"openingRank": null,
-"closingRank": null,
-"rankExam": "main",
-"rankYear": 2025
-},
-{
-"name": "National Institute of Technology Andhra Pradesh",
-"short": "NIT Andhra Pradesh",
-"type": "NIT",
-"city": "Tadepalligudem",
-"state": "Andhra Pradesh",
-"established": 2015,
-"ownership": "central",
-"website": "https://nitandhra.ac.in",
-"counselling": [
-"josaa",
-"csab"
-],
-"quotas": [
-"HS",
-"OS"
-],
-"courses": [
-"btech"
-],
-"branches": [
-"cse",
-"ece",
-"eee",
-"me",
-"ce",
-"che",
-"meta",
-"bio"
-],
-"seats": null,
-"fees": 125000,
-"hostel": true,
-"openingRank": null,
-"closingRank": null,
-"rankExam": "main",
-"rankYear": 2025
-},
-{
-"name": "National Institute of Technology Arunachal Pradesh",
-"short": "NIT Arunachal Pradesh",
-"type": "NIT",
-"city": "Jote",
-"state": "Arunachal Pradesh",
-"established": 2010,
-"ownership": "central",
-"website": "https://www.nitap.ac.in",
-"counselling": [
-"josaa",
-"csab"
-],
-"quotas": [
-"HS",
-"OS"
-],
-"courses": [
-"btech"
-],
-"branches": [
-"cse",
-"ece",
-"ee",
-"me",
-"ce"
-],
-"seats": null,
-"fees": 125000,
-"hostel": true,
-"openingRank": null,
-"closingRank": null,
-"rankExam": "main",
-"rankYear": 2025
-},
-{
-"name": "National Institute of Technology Manipur",
-"short": "NIT Manipur",
-"type": "NIT",
-"city": "Imphal",
-"state": "Manipur",
-"established": 2010,
-"ownership": "central",
-"website": "https://www.nitmanipur.ac.in",
-"counselling": [
-"josaa",
-"csab"
-],
-"quotas": [
-"HS",
-"OS"
-],
-"courses": [
-"btech"
-],
-"branches": [
-"cse",
-"ece",
-"ee",
-"me",
-"ce"
-],
-"seats": null,
-"fees": 125000,
-"hostel": true,
-"openingRank": null,
-"closingRank": null,
-"rankExam": "main",
-"rankYear": 2025
-},
-{
-"name": "National Institute of Technology Meghalaya",
-"short": "NIT Meghalaya",
-"type": "NIT",
-"city": "Shillong",
-"state": "Meghalaya",
-"established": 2010,
-"ownership": "central",
-"website": "https://www.nitm.ac.in",
-"counselling": [
-"josaa",
-"csab"
-],
-"quotas": [
-"HS",
-"OS"
-],
-"courses": [
-"btech"
-],
-"branches": [
-"cse",
-"ece",
-"ee",
-"me",
-"ce"
-],
-"seats": null,
-"fees": 125000,
-"hostel": true,
-"openingRank": null,
-"closingRank": null,
-"rankExam": "main",
-"rankYear": 2025
-},
-{
-"name": "National Institute of Technology Mizoram",
-"short": "NIT Mizoram",
-"type": "NIT",
-"city": "Aizawl",
-"state": "Mizoram",
-"established": 2010,
-"ownership": "central",
-"website": "https://www.nitmz.ac.in",
-"counselling": [
-"josaa",
-"csab"
-],
-"quotas": [
-"HS",
-"OS"
-],
-"courses": [
-"btech"
-],
-"branches": [
-"cse",
-"ece",
-"eee",
-"me",
-"ce"
-],
-"seats": null,
-"fees": 125000,
-"hostel": true,
-"openingRank": null,
-"closingRank": null,
-"rankExam": "main",
-"rankYear": 2025
-},
-{
-"name": "National Institute of Technology Nagaland",
-"short": "NIT Nagaland",
-"type": "NIT",
-"city": "Chumoukedima",
-"state": "Nagaland",
-"established": 2010,
-"ownership": "central",
-"website": "https://nitnagaland.ac.in",
-"counselling": [
-"josaa",
-"csab"
-],
-"quotas": [
-"HS",
-"OS"
-],
-"courses": [
-"btech"
-],
-"branches": [
-"cse",
-"ece",
-"eee",
-"instr",
-"me",
-"ce"
-],
-"seats": null,
-"fees": 125000,
-"hostel": true,
-"openingRank": null,
-"closingRank": null,
-"rankExam": "main",
-"rankYear": 2025
-},
-{
-"name": "National Institute of Technology Sikkim",
-"short": "NIT Sikkim",
-"type": "NIT",
-"city": "Ravangla",
-"state": "Sikkim",
-"established": 2010,
-"ownership": "central",
-"website": "https://nitsikkim.ac.in",
-"counselling": [
-"josaa",
-"csab"
-],
-"quotas": [
-"HS",
-"OS"
-],
-"courses": [
-"btech"
-],
-"branches": [
-"cse",
-"ece",
-"eee",
-"me",
-"ce"
-],
-"seats": null,
-"fees": 125000,
-"hostel": true,
-"openingRank": null,
-"closingRank": null,
-"rankExam": "main",
-"rankYear": 2025
-},
-{
-"name": "Indian Institute of Engineering Science and Technology, Shibpur",
-"short": "IIEST Shibpur",
-"type": "NIT",
-"city": "Howrah",
-"state": "West Bengal",
-"established": 1856,
-"ownership": "central",
-"website": "https://www.iiests.ac.in",
-"counselling": [
-"josaa",
-"csab"
-],
-"quotas": [
-"HS",
-"OS"
-],
-"courses": [
-"btech",
-"barch"
-],
-"branches": [
-"cse",
-"ece",
-"ee",
-"me",
-"ce",
-"meta",
-"mining",
-"aero",
-"arch"
-],
-"seats": null,
-"fees": null,
-"hostel": true,
-"openingRank": null,
-"closingRank": null,
-"rankExam": "main",
-"rankYear": 2025
-}
+  {
+    "name": "National Institute of Technology Tiruchirappalli",
+    "short": "NIT Trichy",
+    "type": "NIT",
+    "city": "Tiruchirappalli",
+    "state": "Tamil Nadu",
+    "established": 1964,
+    "ownership": "central",
+    "website": "https://www.nitt.edu",
+    "counselling": [
+      "josaa",
+      "csab"
+    ],
+    "quotas": [
+      "HS",
+      "OS"
+    ],
+    "courses": [
+      "btech",
+      "barch"
+    ],
+    "branches": [
+      "cse",
+      "ece",
+      "eee",
+      "instr",
+      "me",
+      "prod",
+      "ce",
+      "che",
+      "meta",
+      "arch"
+    ],
+    "seats": 964,
+    "fees": 125000,
+    "hostel": true,
+    "openingRank": 659,
+    "closingRank": 1449,
+    "rankExam": "main",
+    "rankYear": 2025,
+    "nirfRank": 9,
+    "nirfYear": 2025,
+    "sources": [
+      "https://www.nirfindia.org/Rankings/2025/EngineeringRanking.html",
+      "https://www.nirfindia.org/nirfpdfcdn/2025/pdf/Engineering/IR-E-U-0467.pdf",
+      "https://nitt.edu/home/academics/nirf/"
+    ]
+  },
+  {
+    "name": "National Institute of Technology Karnataka, Surathkal",
+    "short": "NIT Surathkal",
+    "type": "NIT",
+    "city": "Mangaluru",
+    "state": "Karnataka",
+    "established": 1960,
+    "ownership": "central",
+    "website": "https://www.nitk.ac.in",
+    "counselling": [
+      "josaa",
+      "csab"
+    ],
+    "quotas": [
+      "HS",
+      "OS"
+    ],
+    "courses": [
+      "btech"
+    ],
+    "branches": [
+      "cse",
+      "ai",
+      "it",
+      "ece",
+      "eee",
+      "me",
+      "ce",
+      "che",
+      "meta",
+      "mining"
+    ],
+    "seats": 740,
+    "fees": 125000,
+    "hostel": true,
+    "openingRank": 1191,
+    "closingRank": 1827,
+    "rankExam": "main",
+    "rankYear": 2025,
+    "nirfRank": 17,
+    "nirfYear": 2025,
+    "sources": [
+      "https://www.nirfindia.org/Rankings/2025/EngineeringRanking.html",
+      "https://www.nitk.ac.in/document/attachments/9558/NIRF_NITK_2026_Engineering.pdf",
+      "https://www.nitk.ac.in/nirf-2026"
+    ],
+    "placement": {
+      "year": 2025,
+      "median": 14.0,
+      "average": null,
+      "highest": null,
+      "placedPct": null,
+      "source": "https://www.nitk.ac.in/document/attachments/9558/NIRF_NITK_2026_Engineering.pdf"
+    }
+  },
+  {
+    "name": "National Institute of Technology Warangal",
+    "short": "NIT Warangal",
+    "type": "NIT",
+    "city": "Warangal",
+    "state": "Telangana",
+    "established": 1959,
+    "ownership": "central",
+    "website": "https://www.nitw.ac.in",
+    "counselling": [
+      "josaa",
+      "csab"
+    ],
+    "quotas": [
+      "HS",
+      "OS"
+    ],
+    "courses": [
+      "btech"
+    ],
+    "branches": [
+      "cse",
+      "ai",
+      "mnc",
+      "ece",
+      "eee",
+      "me",
+      "ce",
+      "che",
+      "meta",
+      "bio"
+    ],
+    "seats": 989,
+    "fees": 125000,
+    "hostel": true,
+    "openingRank": 1521,
+    "closingRank": 2409,
+    "rankExam": "main",
+    "rankYear": 2025,
+    "nirfRank": 28,
+    "nirfYear": 2025,
+    "sources": [
+      "https://www.nirfindia.org/Rankings/2025/EngineeringRanking.html",
+      "https://nitw.ac.in/api/static/files/Engineering_2026-4-2-15-50-15.pdf"
+    ],
+    "students": 6431,
+    "placement": {
+      "year": 2025,
+      "median": 14.6,
+      "average": null,
+      "highest": null,
+      "placedPct": null,
+      "source": "https://nitw.ac.in/api/static/files/Engineering_2026-4-2-15-50-15.pdf"
+    }
+  },
+  {
+    "name": "National Institute of Technology Rourkela",
+    "short": "NIT Rourkela",
+    "type": "NIT",
+    "city": "Rourkela",
+    "state": "Odisha",
+    "established": 1961,
+    "ownership": "central",
+    "website": "https://www.nitrkl.ac.in",
+    "counselling": [
+      "josaa",
+      "csab"
+    ],
+    "quotas": [
+      "HS",
+      "OS"
+    ],
+    "courses": [
+      "btech",
+      "dual"
+    ],
+    "branches": [
+      "cse",
+      "ece",
+      "ee",
+      "instr",
+      "me",
+      "ce",
+      "che",
+      "meta",
+      "mining",
+      "bio",
+      "other"
+    ],
+    "seats": 896,
+    "fees": 125000,
+    "hostel": true,
+    "openingRank": 2442,
+    "closingRank": 3431,
+    "rankExam": "main",
+    "rankYear": 2025,
+    "nirfRank": 13,
+    "nirfYear": 2025,
+    "sources": [
+      "https://www.nirfindia.org/Rankings/2025/EngineeringRanking.html",
+      "https://www.nitrkl.ac.in/docs/Documents/Ranking/NIRF2026/Engineering-2026.pdf",
+      "https://www.nitrkl.ac.in/Institute/NIRF/"
+    ],
+    "placement": {
+      "year": 2025,
+      "median": 18.38,
+      "average": null,
+      "highest": null,
+      "placedPct": null,
+      "source": "https://www.nitrkl.ac.in/docs/Documents/Ranking/NIRF2026/Engineering-2026.pdf"
+    }
+  },
+  {
+    "name": "National Institute of Technology Calicut",
+    "short": "NIT Calicut",
+    "type": "NIT",
+    "city": "Kozhikode",
+    "state": "Kerala",
+    "established": 1961,
+    "ownership": "central",
+    "website": "https://nitc.ac.in",
+    "counselling": [
+      "josaa",
+      "csab"
+    ],
+    "quotas": [
+      "HS",
+      "OS"
+    ],
+    "courses": [
+      "btech",
+      "barch"
+    ],
+    "branches": [
+      "cse",
+      "ece",
+      "eee",
+      "me",
+      "prod",
+      "ce",
+      "che",
+      "meta",
+      "bio",
+      "ephys",
+      "arch"
+    ],
+    "seats": 920,
+    "fees": 125000,
+    "hostel": true,
+    "openingRank": 3651,
+    "closingRank": 5222,
+    "rankExam": "main",
+    "rankYear": 2025,
+    "nirfRank": 21,
+    "nirfYear": 2025,
+    "sources": [
+      "https://www.nirfindia.org/Rankings/2025/EngineeringRanking.html",
+      "https://nitc.ac.in/imgserver/uploads/attachments/engineering_4a4422bd-6b10-4828-85e8-112935a6bdfc_0.pdf",
+      "https://nitc.ac.in/minutes-and-reports/nirf"
+    ],
+    "placement": {
+      "year": 2025,
+      "median": 12.16,
+      "average": null,
+      "highest": null,
+      "placedPct": null,
+      "source": "https://nitc.ac.in/imgserver/uploads/attachments/engineering_4a4422bd-6b10-4828-85e8-112935a6bdfc_0.pdf"
+    }
+  },
+  {
+    "name": "Motilal Nehru National Institute of Technology Allahabad",
+    "short": "MNNIT Allahabad",
+    "type": "NIT",
+    "city": "Prayagraj",
+    "state": "Uttar Pradesh",
+    "established": 1961,
+    "ownership": "central",
+    "website": "https://www.mnnit.ac.in",
+    "counselling": [
+      "josaa",
+      "csab"
+    ],
+    "quotas": [
+      "HS",
+      "OS"
+    ],
+    "courses": [
+      "btech"
+    ],
+    "branches": [
+      "cse",
+      "ece",
+      "ee",
+      "me",
+      "prod",
+      "ce",
+      "che",
+      "bio"
+    ],
+    "seats": null,
+    "fees": 125000,
+    "hostel": true,
+    "openingRank": null,
+    "closingRank": 4594,
+    "rankExam": "main",
+    "rankYear": 2025,
+    "nirfRank": 62,
+    "nirfYear": 2025,
+    "sources": [
+      "https://www.nirfindia.org/Rankings/2025/EngineeringRanking.html",
+      "https://www.mnnit.ac.in/index.php/nirfmnnit"
+    ]
+  },
+  {
+    "name": "Malaviya National Institute of Technology Jaipur",
+    "short": "MNIT Jaipur",
+    "type": "NIT",
+    "city": "Jaipur",
+    "state": "Rajasthan",
+    "established": 1963,
+    "ownership": "central",
+    "website": "https://www.mnit.ac.in",
+    "counselling": [
+      "josaa",
+      "csab"
+    ],
+    "quotas": [
+      "HS",
+      "OS"
+    ],
+    "courses": [
+      "btech",
+      "barch"
+    ],
+    "branches": [
+      "cse",
+      "ece",
+      "ee",
+      "me",
+      "ce",
+      "che",
+      "meta",
+      "arch"
+    ],
+    "seats": 811,
+    "fees": 125000,
+    "hostel": true,
+    "openingRank": 3027,
+    "closingRank": 5601,
+    "rankExam": "main",
+    "rankYear": 2025,
+    "nirfRank": 42,
+    "nirfYear": 2025,
+    "sources": [
+      "https://www.nirfindia.org/Rankings/2025/EngineeringRanking.html",
+      "https://www.mnit.ac.in/uploads/nirf/NIRF2026_Engineering.pdf",
+      "https://www.mnit.ac.in/about_us/nirf"
+    ],
+    "students": 4426,
+    "placement": {
+      "year": 2025,
+      "median": 10.0,
+      "average": null,
+      "highest": null,
+      "placedPct": null,
+      "source": "https://www.mnit.ac.in/uploads/nirf/NIRF2026_Engineering.pdf"
+    }
+  },
+  {
+    "name": "Maulana Azad National Institute of Technology Bhopal",
+    "short": "MANIT Bhopal",
+    "type": "NIT",
+    "city": "Bhopal",
+    "state": "Madhya Pradesh",
+    "established": 1960,
+    "ownership": "central",
+    "website": "https://www.manit.ac.in",
+    "counselling": [
+      "josaa",
+      "csab"
+    ],
+    "quotas": [
+      "HS",
+      "OS"
+    ],
+    "courses": [
+      "btech",
+      "barch",
+      "bplan"
+    ],
+    "branches": [
+      "cse",
+      "ece",
+      "ee",
+      "me",
+      "ce",
+      "che",
+      "meta",
+      "arch",
+      "plan"
+    ],
+    "seats": null,
+    "fees": 125000,
+    "hostel": true,
+    "openingRank": null,
+    "closingRank": null,
+    "rankExam": "main",
+    "rankYear": 2025,
+    "nirfRank": 81,
+    "nirfYear": 2025,
+    "sources": [
+      "https://www.nirfindia.org/Rankings/2025/EngineeringRanking.html"
+    ]
+  },
+  {
+    "name": "Visvesvaraya National Institute of Technology Nagpur",
+    "short": "VNIT Nagpur",
+    "type": "NIT",
+    "city": "Nagpur",
+    "state": "Maharashtra",
+    "established": 1960,
+    "ownership": "central",
+    "website": "https://vnit.ac.in",
+    "counselling": [
+      "josaa",
+      "csab"
+    ],
+    "quotas": [
+      "HS",
+      "OS"
+    ],
+    "courses": [
+      "btech",
+      "barch"
+    ],
+    "branches": [
+      "cse",
+      "ece",
+      "ee",
+      "me",
+      "ce",
+      "che",
+      "meta",
+      "mining",
+      "arch"
+    ],
+    "seats": null,
+    "fees": 125000,
+    "hostel": true,
+    "openingRank": null,
+    "closingRank": 6359,
+    "rankExam": "main",
+    "rankYear": 2025,
+    "nirfRank": 44,
+    "nirfYear": 2025,
+    "sources": [
+      "https://www.nirfindia.org/Rankings/2025/EngineeringRanking.html",
+      "https://vnit.ac.in/nirf/",
+      "https://vnit.ac.in/nirf/nirf-2026/"
+    ]
+  },
+  {
+    "name": "Sardar Vallabhbhai National Institute of Technology Surat",
+    "short": "SVNIT Surat",
+    "type": "NIT",
+    "city": "Surat",
+    "state": "Gujarat",
+    "established": 1961,
+    "ownership": "central",
+    "website": "https://www.svnit.ac.in",
+    "counselling": [
+      "josaa",
+      "csab"
+    ],
+    "quotas": [
+      "HS",
+      "OS"
+    ],
+    "courses": [
+      "btech"
+    ],
+    "branches": [
+      "cse",
+      "ece",
+      "ee",
+      "me",
+      "ce",
+      "che"
+    ],
+    "seats": null,
+    "fees": 125000,
+    "hostel": true,
+    "openingRank": null,
+    "closingRank": null,
+    "rankExam": "main",
+    "rankYear": 2025,
+    "nirfRank": 66,
+    "nirfYear": 2025,
+    "sources": [
+      "https://www.nirfindia.org/Rankings/2025/EngineeringRanking.html"
+    ]
+  },
+  {
+    "name": "National Institute of Technology Kurukshetra",
+    "short": "NIT Kurukshetra",
+    "type": "NIT",
+    "city": "Kurukshetra",
+    "state": "Haryana",
+    "established": 1963,
+    "ownership": "central",
+    "website": "https://nitkkr.ac.in",
+    "counselling": [
+      "josaa",
+      "csab"
+    ],
+    "quotas": [
+      "HS",
+      "OS"
+    ],
+    "courses": [
+      "btech"
+    ],
+    "branches": [
+      "cse",
+      "it",
+      "ece",
+      "ee",
+      "me",
+      "prod",
+      "ce"
+    ],
+    "seats": null,
+    "fees": 125000,
+    "hostel": true,
+    "openingRank": null,
+    "closingRank": 7037,
+    "rankExam": "main",
+    "rankYear": 2025,
+    "nirfRank": 85,
+    "nirfYear": 2025,
+    "sources": [
+      "https://www.nirfindia.org/Rankings/2025/EngineeringRanking.html",
+      "https://nitkkr.ac.in/nirf-national-institutional-ranking-framework/"
+    ]
+  },
+  {
+    "name": "National Institute of Technology Durgapur",
+    "short": "NIT Durgapur",
+    "type": "NIT",
+    "city": "Durgapur",
+    "state": "West Bengal",
+    "established": 1960,
+    "ownership": "central",
+    "website": "https://nitdgp.ac.in",
+    "counselling": [
+      "josaa",
+      "csab"
+    ],
+    "quotas": [
+      "HS",
+      "OS"
+    ],
+    "courses": [
+      "btech"
+    ],
+    "branches": [
+      "cse",
+      "ece",
+      "ee",
+      "me",
+      "ce",
+      "che",
+      "meta",
+      "bio"
+    ],
+    "seats": 936,
+    "fees": 125000,
+    "hostel": true,
+    "openingRank": 6565,
+    "closingRank": 9836,
+    "rankExam": "main",
+    "rankYear": 2025,
+    "nirfRank": 49,
+    "nirfYear": 2025,
+    "sources": [
+      "https://www.nirfindia.org/Rankings/2025/EngineeringRanking.html",
+      "https://nitdgp.ac.in/uploads/02666188dc9d1572b224e8c8cf36bd99.pdf",
+      "https://nitdgp.ac.in/p/nirf-1"
+    ],
+    "students": 4621,
+    "placement": {
+      "year": 2025,
+      "median": 12.15,
+      "average": null,
+      "highest": null,
+      "placedPct": null,
+      "source": "https://nitdgp.ac.in/uploads/02666188dc9d1572b224e8c8cf36bd99.pdf"
+    }
+  },
+  {
+    "name": "National Institute of Technology Delhi",
+    "short": "NIT Delhi",
+    "type": "NIT",
+    "city": "New Delhi",
+    "state": "Delhi",
+    "established": 2010,
+    "ownership": "central",
+    "website": "https://nitdelhi.ac.in",
+    "counselling": [
+      "josaa",
+      "csab"
+    ],
+    "quotas": [
+      "HS",
+      "OS"
+    ],
+    "courses": [
+      "btech"
+    ],
+    "branches": [
+      "cse",
+      "ai",
+      "ece",
+      "ee",
+      "me",
+      "ce"
+    ],
+    "seats": null,
+    "fees": 125000,
+    "hostel": true,
+    "openingRank": 2363,
+    "closingRank": 7651,
+    "rankExam": "main",
+    "rankYear": 2025,
+    "nirfRank": 65,
+    "nirfYear": 2025,
+    "sources": [
+      "https://www.nirfindia.org/Rankings/2025/EngineeringRanking.html",
+      "https://nitdelhi.ac.in/institute/disclosure/nirf"
+    ]
+  },
+  {
+    "name": "National Institute of Technology Silchar",
+    "short": "NIT Silchar",
+    "type": "NIT",
+    "city": "Silchar",
+    "state": "Assam",
+    "established": 1967,
+    "ownership": "central",
+    "website": "https://www.nits.ac.in",
+    "counselling": [
+      "josaa",
+      "csab"
+    ],
+    "quotas": [
+      "HS",
+      "OS"
+    ],
+    "courses": [
+      "btech"
+    ],
+    "branches": [
+      "cse",
+      "ece",
+      "ee",
+      "instr",
+      "me",
+      "ce"
+    ],
+    "seats": 825,
+    "fees": 125000,
+    "hostel": true,
+    "openingRank": 8010,
+    "closingRank": 12665,
+    "rankExam": "main",
+    "rankYear": 2025,
+    "nirfRank": 50,
+    "nirfYear": 2025,
+    "sources": [
+      "https://www.nirfindia.org/Rankings/2025/EngineeringRanking.html",
+      "https://www.nits.ac.in/storage/files/nirf-2026.pdf",
+      "https://www.nits.ac.in/ranking?rank=Mw%3D%3D"
+    ],
+    "students": 3562,
+    "placement": {
+      "year": 2025,
+      "median": 11.5,
+      "average": null,
+      "highest": null,
+      "placedPct": null,
+      "source": "https://www.nits.ac.in/storage/files/nirf-2026.pdf"
+    }
+  },
+  {
+    "name": "Dr. B R Ambedkar National Institute of Technology Jalandhar",
+    "short": "NIT Jalandhar",
+    "type": "NIT",
+    "city": "Jalandhar",
+    "state": "Punjab",
+    "established": 1987,
+    "ownership": "central",
+    "website": "https://www.nitj.ac.in",
+    "counselling": [
+      "josaa",
+      "csab"
+    ],
+    "quotas": [
+      "HS",
+      "OS"
+    ],
+    "courses": [
+      "btech"
+    ],
+    "branches": [
+      "cse",
+      "it",
+      "ece",
+      "ee",
+      "instr",
+      "me",
+      "prod",
+      "ce",
+      "che",
+      "textile",
+      "bio"
+    ],
+    "seats": 1103,
+    "fees": 125000,
+    "hostel": true,
+    "openingRank": null,
+    "closingRank": null,
+    "rankExam": "main",
+    "rankYear": 2025,
+    "nirfRank": 55,
+    "nirfYear": 2025,
+    "sources": [
+      "https://www.nirfindia.org/Rankings/2025/EngineeringRanking.html",
+      "https://nitj.ac.in/files/1775453068872-NIRF%20Dr%20B%20R%20Ambedkar%20National%20Institute%20of%20Technology,%20Jalandhar%2020260405.pdf"
+    ],
+    "placement": {
+      "year": 2025,
+      "median": 12.5,
+      "average": null,
+      "highest": null,
+      "placedPct": null,
+      "source": "https://nitj.ac.in/files/1775453068872-NIRF%20Dr%20B%20R%20Ambedkar%20National%20Institute%20of%20Technology,%20Jalandhar%2020260405.pdf"
+    }
+  },
+  {
+    "name": "National Institute of Technology Hamirpur",
+    "short": "NIT Hamirpur",
+    "type": "NIT",
+    "city": "Hamirpur",
+    "state": "Himachal Pradesh",
+    "established": 1986,
+    "ownership": "central",
+    "website": "https://nith.ac.in",
+    "counselling": [
+      "josaa",
+      "csab"
+    ],
+    "quotas": [
+      "HS",
+      "OS"
+    ],
+    "courses": [
+      "btech",
+      "barch"
+    ],
+    "branches": [
+      "cse",
+      "ece",
+      "ee",
+      "me",
+      "ce",
+      "che",
+      "meta",
+      "arch"
+    ],
+    "seats": 830,
+    "fees": 125000,
+    "hostel": true,
+    "openingRank": null,
+    "closingRank": null,
+    "rankExam": "main",
+    "rankYear": 2025,
+    "nirfRank": 97,
+    "nirfYear": 2025,
+    "sources": [
+      "https://www.nirfindia.org/Rankings/2025/EngineeringRanking.html",
+      "https://nith.ac.in/uploads/files/nirf/nirf-engineering-2026.pdf",
+      "https://nith.ac.in/nirf-at-nith"
+    ],
+    "placement": {
+      "year": 2025,
+      "median": 10.75,
+      "average": null,
+      "highest": null,
+      "placedPct": null,
+      "source": "https://nith.ac.in/uploads/files/nirf/nirf-engineering-2026.pdf"
+    }
+  },
+  {
+    "name": "National Institute of Technology Patna",
+    "short": "NIT Patna",
+    "type": "NIT",
+    "city": "Patna",
+    "state": "Bihar",
+    "established": 1886,
+    "ownership": "central",
+    "website": "https://www.nitp.ac.in",
+    "counselling": [
+      "josaa",
+      "csab"
+    ],
+    "quotas": [
+      "HS",
+      "OS"
+    ],
+    "courses": [
+      "btech",
+      "barch"
+    ],
+    "branches": [
+      "cse",
+      "ece",
+      "ee",
+      "me",
+      "ce",
+      "arch"
+    ],
+    "seats": null,
+    "fees": 125000,
+    "hostel": true,
+    "openingRank": null,
+    "closingRank": null,
+    "rankExam": "main",
+    "rankYear": 2025,
+    "nirfRank": 53,
+    "nirfYear": 2025,
+    "sources": [
+      "https://www.nirfindia.org/Rankings/2025/EngineeringRanking.html",
+      "https://www.nitp.ac.in/Facilities/Hostel",
+      "https://www.nitp.ac.in/Others/NIRF",
+      "https://www.nitp.ac.in/Academic/Fee"
+    ]
+  },
+  {
+    "name": "National Institute of Technology Raipur",
+    "short": "NIT Raipur",
+    "type": "NIT",
+    "city": "Raipur",
+    "state": "Chhattisgarh",
+    "established": 1956,
+    "ownership": "central",
+    "website": "https://www.nitrr.ac.in",
+    "counselling": [
+      "josaa",
+      "csab"
+    ],
+    "quotas": [
+      "HS",
+      "OS"
+    ],
+    "courses": [
+      "btech",
+      "barch"
+    ],
+    "branches": [
+      "cse",
+      "it",
+      "ece",
+      "ee",
+      "me",
+      "ce",
+      "che",
+      "meta",
+      "mining",
+      "bio",
+      "arch"
+    ],
+    "seats": null,
+    "fees": 125000,
+    "hostel": true,
+    "openingRank": null,
+    "closingRank": null,
+    "rankExam": "main",
+    "rankYear": 2025,
+    "nirfRank": 86,
+    "nirfYear": 2025,
+    "sources": [
+      "https://www.nirfindia.org/Rankings/2025/EngineeringRanking.html",
+      "https://nitrr.ac.in/nirf_data.php"
+    ]
+  },
+  {
+    "name": "National Institute of Technology Jamshedpur",
+    "short": "NIT Jamshedpur",
+    "type": "NIT",
+    "city": "Jamshedpur",
+    "state": "Jharkhand",
+    "established": 1960,
+    "ownership": "central",
+    "website": "https://www.nitjsr.ac.in",
+    "counselling": [
+      "josaa",
+      "csab"
+    ],
+    "quotas": [
+      "HS",
+      "OS"
+    ],
+    "courses": [
+      "btech"
+    ],
+    "branches": [
+      "cse",
+      "ece",
+      "ee",
+      "me",
+      "prod",
+      "ce",
+      "meta"
+    ],
+    "seats": 751,
+    "fees": 125000,
+    "hostel": true,
+    "openingRank": null,
+    "closingRank": null,
+    "rankExam": "main",
+    "rankYear": 2025,
+    "nirfRank": 82,
+    "nirfYear": 2025,
+    "sources": [
+      "https://www.nirfindia.org/Rankings/2025/EngineeringRanking.html",
+      "https://www.nitjsr.ac.in/backend/uploads/old_rankings/NIRF/2026/NIRF-2026-DATA.pdf"
+    ],
+    "placement": {
+      "year": 2025,
+      "median": 11.24,
+      "average": null,
+      "highest": null,
+      "placedPct": null,
+      "source": "https://www.nitjsr.ac.in/backend/uploads/old_rankings/NIRF/2026/NIRF-2026-DATA.pdf"
+    }
+  },
+  {
+    "name": "National Institute of Technology Srinagar",
+    "short": "NIT Srinagar",
+    "type": "NIT",
+    "city": "Srinagar",
+    "state": "Jammu and Kashmir",
+    "established": 1960,
+    "ownership": "central",
+    "website": "https://nitsri.ac.in",
+    "counselling": [
+      "josaa",
+      "csab"
+    ],
+    "quotas": [
+      "JK",
+      "LA",
+      "OS"
+    ],
+    "courses": [
+      "btech"
+    ],
+    "branches": [
+      "cse",
+      "it",
+      "ece",
+      "ee",
+      "me",
+      "ce",
+      "che",
+      "meta"
+    ],
+    "seats": 899,
+    "fees": 125000,
+    "hostel": true,
+    "openingRank": null,
+    "closingRank": null,
+    "rankExam": "main",
+    "rankYear": 2025,
+    "nirfRank": 73,
+    "nirfYear": 2025,
+    "sources": [
+      "https://www.nirfindia.org/Rankings/2025/EngineeringRanking.html",
+      "https://nitsri.ac.in/uploaded_files/Engineering_2026.pdf",
+      "https://nitsri.ac.in/Pages/DisplayPages.aspx?page=cacsg"
+    ],
+    "students": 4144,
+    "placement": {
+      "year": 2025,
+      "median": 10.33,
+      "average": null,
+      "highest": null,
+      "placedPct": null,
+      "source": "https://nitsri.ac.in/uploaded_files/Engineering_2026.pdf"
+    }
+  },
+  {
+    "name": "National Institute of Technology Agartala",
+    "short": "NIT Agartala",
+    "type": "NIT",
+    "city": "Agartala",
+    "state": "Tripura",
+    "established": 1965,
+    "ownership": "central",
+    "website": "https://www.nita.ac.in",
+    "counselling": [
+      "josaa",
+      "csab"
+    ],
+    "quotas": [
+      "HS",
+      "OS"
+    ],
+    "courses": [
+      "btech"
+    ],
+    "branches": [
+      "cse",
+      "ece",
+      "ee",
+      "instr",
+      "me",
+      "prod",
+      "ce",
+      "che"
+    ],
+    "seats": null,
+    "fees": 125000,
+    "hostel": true,
+    "openingRank": null,
+    "closingRank": null,
+    "rankExam": "main",
+    "rankYear": 2025,
+    "sources": [
+      "https://www.nita.ac.in/userpanel/DisplayPage.aspx?page=ie"
+    ]
+  },
+  {
+    "name": "National Institute of Technology Goa",
+    "short": "NIT Goa",
+    "type": "NIT",
+    "city": "Ponda",
+    "state": "Goa",
+    "established": 2010,
+    "ownership": "central",
+    "website": "https://www.nitgoa.ac.in",
+    "counselling": [
+      "josaa",
+      "csab"
+    ],
+    "quotas": [
+      "GO",
+      "HS",
+      "OS"
+    ],
+    "courses": [
+      "btech"
+    ],
+    "branches": [
+      "cse",
+      "ece",
+      "eee",
+      "me",
+      "ce"
+    ],
+    "seats": 224,
+    "fees": 125000,
+    "hostel": true,
+    "openingRank": null,
+    "closingRank": null,
+    "rankExam": "main",
+    "rankYear": 2025,
+    "students": 970,
+    "placement": {
+      "year": 2025,
+      "median": 8.1,
+      "average": null,
+      "highest": null,
+      "placedPct": null,
+      "source": "https://www.nitgoa.ac.in/uploads/National%20Institute%20of%20Technology%20Goa2026%20Engg.pdf"
+    },
+    "sources": [
+      "https://www.nitgoa.ac.in/uploads/National%20Institute%20of%20Technology%20Goa2026%20Engg.pdf"
+    ]
+  },
+  {
+    "name": "National Institute of Technology Puducherry",
+    "short": "NIT Puducherry",
+    "type": "NIT",
+    "city": "Karaikal",
+    "state": "Puducherry",
+    "established": 2010,
+    "ownership": "central",
+    "website": "https://nitpy.ac.in",
+    "counselling": [
+      "josaa",
+      "csab"
+    ],
+    "quotas": [
+      "HS",
+      "OS"
+    ],
+    "courses": [
+      "btech"
+    ],
+    "branches": [
+      "cse",
+      "ece",
+      "eee",
+      "me",
+      "ce"
+    ],
+    "seats": null,
+    "fees": 125000,
+    "hostel": true,
+    "openingRank": null,
+    "closingRank": null,
+    "rankExam": "main",
+    "rankYear": 2025,
+    "nirfRank": 99,
+    "nirfYear": 2025,
+    "sources": [
+      "https://www.nirfindia.org/Rankings/2025/EngineeringRanking.html"
+    ]
+  },
+  {
+    "name": "National Institute of Technology Uttarakhand",
+    "short": "NIT Uttarakhand",
+    "type": "NIT",
+    "city": "Srinagar (Garhwal)",
+    "state": "Uttarakhand",
+    "established": 2009,
+    "ownership": "central",
+    "website": "https://www.nituk.ac.in",
+    "counselling": [
+      "josaa",
+      "csab"
+    ],
+    "quotas": [
+      "HS",
+      "OS"
+    ],
+    "courses": [
+      "btech"
+    ],
+    "branches": [
+      "cse",
+      "ece",
+      "ee",
+      "me",
+      "ce"
+    ],
+    "seats": 200,
+    "fees": 125000,
+    "hostel": true,
+    "openingRank": null,
+    "closingRank": null,
+    "rankExam": "main",
+    "rankYear": 2025,
+    "placement": {
+      "year": 2025,
+      "median": 7.5,
+      "average": null,
+      "highest": null,
+      "placedPct": null,
+      "source": "https://nituk.ac.in/uploads/topics/NIRF%202026%20-Engineering.pdf"
+    },
+    "sources": [
+      "https://nituk.ac.in/uploads/topics/NIRF%202026%20-Engineering.pdf"
+    ]
+  },
+  {
+    "name": "National Institute of Technology Andhra Pradesh",
+    "short": "NIT Andhra Pradesh",
+    "type": "NIT",
+    "city": "Tadepalligudem",
+    "state": "Andhra Pradesh",
+    "established": 2015,
+    "ownership": "central",
+    "website": "https://nitandhra.ac.in",
+    "counselling": [
+      "josaa",
+      "csab"
+    ],
+    "quotas": [
+      "HS",
+      "OS"
+    ],
+    "courses": [
+      "btech"
+    ],
+    "branches": [
+      "cse",
+      "ece",
+      "eee",
+      "me",
+      "ce",
+      "che",
+      "meta",
+      "bio"
+    ],
+    "seats": 530,
+    "fees": 125000,
+    "hostel": true,
+    "openingRank": null,
+    "closingRank": null,
+    "rankExam": "main",
+    "rankYear": 2025,
+    "students": 2451,
+    "placement": {
+      "year": 2025,
+      "median": 6.41,
+      "average": null,
+      "highest": null,
+      "placedPct": null,
+      "source": "https://nitandhra.ac.in/main/nirf/NATIONAL%20INSTITUTE%20OF%20TECHNOLOGY,%20ANDHRA%20PRADESH%20ENGINEERING.pdf"
+    },
+    "sources": [
+      "https://nitandhra.ac.in/main/nirf/NATIONAL%20INSTITUTE%20OF%20TECHNOLOGY,%20ANDHRA%20PRADESH%20ENGINEERING.pdf",
+      "https://www.nitandhra.ac.in/main/nirf"
+    ]
+  },
+  {
+    "name": "National Institute of Technology Arunachal Pradesh",
+    "short": "NIT Arunachal Pradesh",
+    "type": "NIT",
+    "city": "Jote",
+    "state": "Arunachal Pradesh",
+    "established": 2010,
+    "ownership": "central",
+    "website": "https://www.nitap.ac.in",
+    "counselling": [
+      "josaa",
+      "csab"
+    ],
+    "quotas": [
+      "HS",
+      "OS"
+    ],
+    "courses": [
+      "btech"
+    ],
+    "branches": [
+      "cse",
+      "ece",
+      "ee",
+      "me",
+      "ce"
+    ],
+    "seats": null,
+    "fees": 125000,
+    "hostel": true,
+    "openingRank": null,
+    "closingRank": null,
+    "rankExam": "main",
+    "rankYear": 2025,
+    "sources": [
+      "https://www.nitap.ac.in/institute/nirf-report/"
+    ]
+  },
+  {
+    "name": "National Institute of Technology Manipur",
+    "short": "NIT Manipur",
+    "type": "NIT",
+    "city": "Imphal",
+    "state": "Manipur",
+    "established": 2010,
+    "ownership": "central",
+    "website": "https://www.nitmanipur.ac.in",
+    "counselling": [
+      "josaa",
+      "csab"
+    ],
+    "quotas": [
+      "HS",
+      "OS"
+    ],
+    "courses": [
+      "btech"
+    ],
+    "branches": [
+      "cse",
+      "ece",
+      "ee",
+      "me",
+      "ce"
+    ],
+    "seats": null,
+    "fees": 125000,
+    "hostel": true,
+    "openingRank": null,
+    "closingRank": null,
+    "rankExam": "main",
+    "rankYear": 2025,
+    "sources": [
+      "https://nitmanipur.ac.in/DisplayPage.aspx?page=ccaceq&ItemID=kaccq"
+    ]
+  },
+  {
+    "name": "National Institute of Technology Meghalaya",
+    "short": "NIT Meghalaya",
+    "type": "NIT",
+    "city": "Shillong",
+    "state": "Meghalaya",
+    "established": 2010,
+    "ownership": "central",
+    "website": "https://www.nitm.ac.in",
+    "counselling": [
+      "josaa",
+      "csab"
+    ],
+    "quotas": [
+      "HS",
+      "OS"
+    ],
+    "courses": [
+      "btech"
+    ],
+    "branches": [
+      "cse",
+      "ece",
+      "ee",
+      "me",
+      "ce"
+    ],
+    "seats": 165,
+    "fees": 125000,
+    "hostel": true,
+    "openingRank": null,
+    "closingRank": null,
+    "rankExam": "main",
+    "rankYear": 2025,
+    "nirfRank": 83,
+    "nirfYear": 2025,
+    "sources": [
+      "https://www.nirfindia.org/Rankings/2025/EngineeringRanking.html",
+      "https://www.nitm.ac.in/nitm_files/pdf/national-institute-of-technology-meghalaya-engineering-69f03e5d3b3c4.pdf",
+      "https://www.nitm.ac.in/page_details.php?page=nirf-2026-ranking-data"
+    ],
+    "students": 1098,
+    "placement": {
+      "year": 2025,
+      "median": 10.0,
+      "average": null,
+      "highest": null,
+      "placedPct": null,
+      "source": "https://www.nitm.ac.in/nitm_files/pdf/national-institute-of-technology-meghalaya-engineering-69f03e5d3b3c4.pdf"
+    }
+  },
+  {
+    "name": "National Institute of Technology Mizoram",
+    "short": "NIT Mizoram",
+    "type": "NIT",
+    "city": "Aizawl",
+    "state": "Mizoram",
+    "established": 2010,
+    "ownership": "central",
+    "website": "https://www.nitmz.ac.in",
+    "counselling": [
+      "josaa",
+      "csab"
+    ],
+    "quotas": [
+      "HS",
+      "OS"
+    ],
+    "courses": [
+      "btech"
+    ],
+    "branches": [
+      "cse",
+      "ece",
+      "eee",
+      "me",
+      "ce"
+    ],
+    "seats": 150,
+    "fees": 125000,
+    "hostel": true,
+    "openingRank": null,
+    "closingRank": null,
+    "rankExam": "main",
+    "rankYear": 2025,
+    "students": 874,
+    "placement": {
+      "year": 2025,
+      "median": 8.4,
+      "average": null,
+      "highest": null,
+      "placedPct": null,
+      "source": "https://nitmz.ac.in/wp-content/uploads/2026/04/DCS_NIRF2026-Data_Engineering.pdf"
+    },
+    "sources": [
+      "https://nitmz.ac.in/wp-content/uploads/2026/04/DCS_NIRF2026-Data_Engineering.pdf",
+      "https://nitmz.ac.in/nirf-submitted-data-for-the-year-2026-overall-engineering-data/"
+    ]
+  },
+  {
+    "name": "National Institute of Technology Nagaland",
+    "short": "NIT Nagaland",
+    "type": "NIT",
+    "city": "Chumoukedima",
+    "state": "Nagaland",
+    "established": 2010,
+    "ownership": "central",
+    "website": "https://nitnagaland.ac.in",
+    "counselling": [
+      "josaa",
+      "csab"
+    ],
+    "quotas": [
+      "HS",
+      "OS"
+    ],
+    "courses": [
+      "btech"
+    ],
+    "branches": [
+      "cse",
+      "ece",
+      "eee",
+      "instr",
+      "me",
+      "ce"
+    ],
+    "seats": 180,
+    "fees": 125000,
+    "hostel": true,
+    "openingRank": null,
+    "closingRank": null,
+    "rankExam": "main",
+    "rankYear": 2025,
+    "students": 932,
+    "placement": {
+      "year": 2025,
+      "median": 16.75,
+      "average": null,
+      "highest": null,
+      "placedPct": null,
+      "source": "https://www.nitnagaland.ac.in/templates/g5_helium/PDF/OTHERS/National%20Institute%20of%20Technology%20Nagaland20260306-.pdf"
+    },
+    "sources": [
+      "https://www.nitnagaland.ac.in/templates/g5_helium/PDF/OTHERS/National%20Institute%20of%20Technology%20Nagaland20260306-.pdf"
+    ]
+  },
+  {
+    "name": "National Institute of Technology Sikkim",
+    "short": "NIT Sikkim",
+    "type": "NIT",
+    "city": "Ravangla",
+    "state": "Sikkim",
+    "established": 2010,
+    "ownership": "central",
+    "website": "https://nitsikkim.ac.in",
+    "counselling": [
+      "josaa",
+      "csab"
+    ],
+    "quotas": [
+      "HS",
+      "OS"
+    ],
+    "courses": [
+      "btech"
+    ],
+    "branches": [
+      "cse",
+      "ece",
+      "eee",
+      "me",
+      "ce"
+    ],
+    "seats": 190,
+    "fees": 125000,
+    "hostel": true,
+    "openingRank": null,
+    "closingRank": null,
+    "rankExam": "main",
+    "rankYear": 2025,
+    "students": 746,
+    "placement": {
+      "year": 2025,
+      "median": 7.5,
+      "average": null,
+      "highest": null,
+      "placedPct": null,
+      "source": "http://www.nitsikkim.ac.in/documents/Informations/NIRF/2024-25/NIRF%202024-25.pdf"
+    },
+    "sources": [
+      "http://www.nitsikkim.ac.in/documents/Informations/NIRF/2024-25/NIRF%202024-25.pdf",
+      "https://nitsikkim.ac.in/institute/about/information.php"
+    ]
+  },
+  {
+    "name": "Indian Institute of Engineering Science and Technology, Shibpur",
+    "short": "IIEST Shibpur",
+    "type": "NIT",
+    "city": "Howrah",
+    "state": "West Bengal",
+    "established": 1856,
+    "ownership": "central",
+    "website": "https://www.iiests.ac.in",
+    "counselling": [
+      "josaa",
+      "csab"
+    ],
+    "quotas": [
+      "HS",
+      "OS"
+    ],
+    "courses": [
+      "btech",
+      "barch"
+    ],
+    "branches": [
+      "cse",
+      "ece",
+      "ee",
+      "me",
+      "ce",
+      "meta",
+      "mining",
+      "aero",
+      "arch"
+    ],
+    "seats": 740,
+    "fees": null,
+    "hostel": true,
+    "openingRank": null,
+    "closingRank": null,
+    "rankExam": "main",
+    "rankYear": 2025,
+    "nirfRank": 54,
+    "nirfYear": 2025,
+    "sources": [
+      "https://www.nirfindia.org/Rankings/2025/EngineeringRanking.html",
+      "https://oldwww1926.iiests.ac.in/uploads/nirf/2026/nirf-2026-engineering.pdf",
+      "https://oldwww1926.iiests.ac.in/IIEST/NIRF"
+    ],
+    "students": 3804,
+    "placement": {
+      "year": 2025,
+      "median": 8.0,
+      "average": null,
+      "highest": null,
+      "placedPct": null,
+      "source": "https://oldwww1926.iiests.ac.in/uploads/nirf/2026/nirf-2026-engineering.pdf"
+    }
+  }
 ]

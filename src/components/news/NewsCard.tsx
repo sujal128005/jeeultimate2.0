@@ -11,6 +11,14 @@ function Meta({ item, className }: { item: NewsItem; className?: string }) {
       <span className="font-medium text-accent-text">{item.category}</span>
       <span aria-hidden className="size-[3px] rounded-full bg-fg-subtle" />
       <time dateTime={item.publishedAt}>{formatDate(item.publishedAt)}</time>
+      {item.checkedOn && item.checkedOn !== item.publishedAt && (
+        <>
+          <span aria-hidden className="size-[3px] rounded-full bg-fg-subtle" />
+          <span title="The day a person last read this against the official source">
+            checked {formatDate(item.checkedOn)}
+          </span>
+        </>
+      )}
     </p>
   );
 }
