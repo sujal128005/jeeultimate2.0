@@ -168,105 +168,45 @@
     0 18px 40px -22px color-mix(in oklab, var(--glass-shade) 150%, transparent);
 }
 
-/* The warm light that trails the cursor. Two layers, because one blend mode
-   cannot serve both halves of the page: multiply tints the pale canvas and
-   cards, screen lifts the dark slabs like the footer. Both are pointer-inert. */
-@utility cursor-glow {
-  position: fixed;
-  top: 0;
-  left: 0;
-  margin: -260px 0 0 -260px;
-  z-index: var(--z-overlay);
-  pointer-events: none;
-  will-change: transform, opacity;
-}
+/* The pointer.
 
-@utility cursor-glow-layer {
-  position: absolute;
-  inset: 0;
-  border-radius: 9999px;
-}
+   Not an effect that follows the cursor: the cursor itself, redrawn. Same
+   arrow shape a visitor already knows, in our ink with a white edge so it
+   stays readable on a photo or a dark slab, and a small accent dot added
+   over anything clickable. Mouse and trackpad only, and never on Career,
+   which hides the system cursor and draws its own reticle. */
+@media (hover: hover) and (pointer: fine) {
+  html:not(.career-cursor) body {
+    cursor:
+      url("data:image/svg+xml,%3Csvg%20xmlns=%27http://www.w3.org/2000/svg%27%20width=%2726%27%20height=%2726%27%20viewBox=%270%200%2026%2026%27%3E%3Cpath%20d=%27M5.4%202.6%20L5.4%2019.6%20L9.9%2015.4%20L12.6%2021.6%20L15.6%2020.2%20L13%2014.2%20L19%2013.9%20Z%27%20fill=%27%2317120C%27%20stroke=%27%23FFFFFF%27%20stroke-width=%271.6%27%20stroke-linejoin=%27round%27/%3E%3C/svg%3E")
+        5 3,
+      default;
+  }
 
-@utility cursor-glow-warm {
-  mix-blend-mode: multiply;
-  background: radial-gradient(
-    closest-side,
-    color-mix(in oklab, var(--ju-brand-400) 10%, transparent),
-    color-mix(in oklab, var(--ju-brand-300) 6%, transparent) 44%,
-    color-mix(in oklab, var(--ju-brand-200) 3%, transparent) 66%,
-    transparent 80%
-  );
-}
+  html:not(.career-cursor) a[href],
+  html:not(.career-cursor) button:not([disabled]),
+  html:not(.career-cursor) summary,
+  html:not(.career-cursor) label[for],
+  html:not(.career-cursor) select,
+  html:not(.career-cursor) [role="button"]:not([aria-disabled="true"]),
+  html:not(.career-cursor) [role="tab"],
+  html:not(.career-cursor) [role="option"],
+  html:not(.career-cursor) .cursor-pointer {
+    cursor:
+      url("data:image/svg+xml,%3Csvg%20xmlns=%27http://www.w3.org/2000/svg%27%20width=%2726%27%20height=%2726%27%20viewBox=%270%200%2026%2026%27%3E%3Cpath%20d=%27M5.4%202.6%20L5.4%2019.6%20L9.9%2015.4%20L12.6%2021.6%20L15.6%2020.2%20L13%2014.2%20L19%2013.9%20Z%27%20fill=%27%2317120C%27%20stroke=%27%23FFFFFF%27%20stroke-width=%271.6%27%20stroke-linejoin=%27round%27/%3E%3Ccircle%20cx=%2720.4%27%20cy=%275.6%27%20r=%273%27%20fill=%27%23FF9315%27%20stroke=%27%23FFFFFF%27%20stroke-width=%271.4%27/%3E%3C/svg%3E")
+        5 3,
+      pointer;
+  }
 
-@utility cursor-glow-lift {
-  mix-blend-mode: screen;
-  background: radial-gradient(
-    closest-side,
-    color-mix(in oklab, var(--ju-brand-500) 9%, transparent),
-    color-mix(in oklab, var(--ju-brand-600) 4%, transparent) 48%,
-    transparent 76%
-  );
-}
+  /* Typing, dragging and disabled controls keep the cursor that says so. */
+  html:not(.career-cursor) input:not([type="button"]):not([type="submit"]):not([type="checkbox"]):not([type="radio"]),
+  html:not(.career-cursor) textarea,
+  html:not(.career-cursor) [contenteditable="true"] {
+    cursor: text;
+  }
 
-/* Over anything clickable the tint steps aside and this takes over: a warm
-   ring with a clear hole in the middle, so the control sits in the light
-   rather than under it. Nothing is drawn on top of the button itself. */
-@utility cursor-glow-focus {
-  background: radial-gradient(
-    closest-side,
-    transparent 24%,
-    color-mix(in oklab, var(--ju-brand-400) 24%, transparent) 43%,
-    color-mix(in oklab, var(--ju-brand-300) 12%, transparent) 60%,
-    transparent 78%
-  );
-}
-
-[data-theme="dark"] .cursor-glow-focus {
-  background: radial-gradient(
-    closest-side,
-    transparent 24%,
-    color-mix(in oklab, var(--ju-brand-400) 20%, transparent) 43%,
-    color-mix(in oklab, var(--ju-brand-500) 10%, transparent) 60%,
-    transparent 78%
-  );
-}
-
-/* The marks the light leaves behind: ink strokes, pulled along the direction
-   the cursor travelled, with a slower bleed layer spreading underneath. */
-@utility cursor-trail {
-  position: fixed;
-  inset: 0;
-  z-index: calc(var(--z-overlay) - 1);
-  pointer-events: none;
-}
-
-@utility cursor-trail-mark {
-  position: absolute;
-  top: 0;
-  left: 0;
-  will-change: transform;
-}
-
-@utility cursor-trail-ink {
-  position: absolute;
-  inset: 0;
-  opacity: 0;
-  will-change: opacity, transform;
-  /* An ellipse, feathered hardest at the tail so a stroke has a direction */
-  border-radius: 50%;
-  background: radial-gradient(
-    60% 78% at 46% 50%,
-    color-mix(in oklab, var(--ju-brand-400) 13%, transparent),
-    color-mix(in oklab, var(--ju-brand-300) 7%, transparent) 52%,
-    transparent 82%
-  );
-}
-
-@utility cursor-trail-bleed {
-  border-radius: 46% 54% 52% 48% / 58% 46% 54% 42%;
-  background: radial-gradient(72% 64% at 54% 48%, color-mix(in oklab, var(--ju-brand-300) 6%, transparent), transparent 78%);
-}
-
-[data-theme="dark"] .cursor-trail-ink {
-  background: radial-gradient(60% 78% at 46% 50%, color-mix(in oklab, var(--ju-brand-500) 9%, transparent), transparent 80%);
+  html:not(.career-cursor) [disabled],
+  html:not(.career-cursor) [aria-disabled="true"] {
+    cursor: not-allowed;
+  }
 }

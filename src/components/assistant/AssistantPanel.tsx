@@ -2,7 +2,7 @@
 
 import { AnimatePresence, motion } from "motion/react";
 import { usePathname } from "next/navigation";
-import { useCallback, useEffect, useRef, useState } from "react";
+import { useCallback, useEffect, useRef, useState, useSyncExternalStore } from "react";
 import { Icon } from "@/components/ui/Icon";
 import { assistant } from "@/data/assistant";
 import { cn } from "@/lib/cn";
@@ -162,27 +162,64 @@ export function AssistantPanel({ open, onClose }: { open: boolean; onClose: () =
   };
 
   const empty = messages.length === 0;
+  // The launcher sits bottom right on a desktop and bottom left on a phone.
+  // Measuring the real distance to the furthest corner keeps the whole sweep
+  // on screen, instead of finishing early behind an oversized circle.
+  const spread = useSyncExternalStore(
+    (cb) => {
+      const mq = window.matchMedia("(min-width: 768px)");
+      mq.addEventListener("change", cb);
+      window.addEventListener("resize", cb);
+      return () => {
+        mq.removeEventListener("change", cb);
+        window.removeEventListener("resize", cb);
+      };
+    },
+    () => {
+      const w = window.innerWidth;
+      const h = window.innerHeight;
+      const wide = window.matchMedia("(min-width: 768px)").matches;
+      const x = wide ? w - 56 : 40;
+      const y = wide ? h - 56 : h - 112;
+      return `${Math.round(x)}px ${Math.round(y)}px|${Math.ceil(Math.hypot(Math.max(x, w - x), Math.max(y, h - y)))}`;
+    },
+    () => "50% 50%|1400",
+  );
+  const [from, reachText] = spread.split("|");
+  const reach = Number(reachText);
 
   return (
     <AnimatePresence>
       {open && (
         <>
+          {/* The dim spreads out from under the button you pressed, the way a
+              folded screen opens: a circle that grows across the page rather
+              than a rectangle that fades. */}
           <motion.button
             type="button"
             aria-label={`Close ${assistant.name}`}
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            exit={{ opacity: 0 }}
+            initial={{ clipPath: `circle(0px at ${from})`, opacity: 0.9 }}
+            animate={{
+              clipPath: `circle(${reach}px at ${from})`,
+              opacity: 1,
+              transition: { clipPath: { duration: 0.66, ease: ease.spread }, opacity: { duration: 0.2 } },
+            }}
+            exit={{
+              clipPath: `circle(0px at ${from})`,
+              opacity: 0.9,
+              transition: { duration: 0.36, ease: ease.spread },
+            }}
             onClick={onClose}
-            className="fixed inset-0 z-(--z-overlay) bg-fg/25 backdrop-blur-[2px] md:hidden"
+            className="fixed inset-0 z-(--z-overlay) bg-fg/28 backdrop-blur-[7px] md:bg-fg/14"
           />
 
           <motion.aside
             role="dialog"
             aria-label={assistant.name}
-            initial={{ opacity: 0, y: 40, scale: 0.98 }}
-            animate={{ opacity: 1, y: 0, scale: 1, transition: spring.panel }}
-            exit={{ opacity: 0, y: 24, scale: 0.98, transition: { duration: 0.18, ease: ease.out } }}
+            initial={{ opacity: 0, scaleX: 0.24, scaleY: 0.9, rotateY: -34 }}
+            animate={{ opacity: 1, scaleX: 1, scaleY: 1, rotateY: 0, transition: spring.panel }}
+            exit={{ opacity: 0, scaleX: 0.28, scaleY: 0.92, rotateY: -26, transition: { duration: 0.24, ease: ease.out } }}
+            style={{ originX: 1, originY: 1, transformPerspective: 1500 }}
             className={cn(
               "glass-prominent fixed z-(--z-modal) flex flex-col overflow-hidden rounded-[26px]",
               "inset-x-3 bottom-3 top-[max(3.5rem,8vh)]",

@@ -14,13 +14,18 @@ import { counsellingProcesses } from "@/data/counselling";
  */
 export function JoinCounselling({ className }: { className?: string }) {
   const [open, setOpen] = useState(false);
+  const [origin, setOrigin] = useState<{ x: number; y: number } | null>(null);
 
   return (
     <>
       <Button
         size="lg"
         icon="arrow-right"
-        onClick={() => setOpen(true)}
+        onClick={(e) => {
+          const box = e.currentTarget.getBoundingClientRect();
+          setOrigin({ x: box.left + box.width / 2, y: box.top + box.height / 2 });
+          setOpen(true);
+        }}
         className={className}
         aria-haspopup="dialog"
         aria-expanded={open}
@@ -31,6 +36,7 @@ export function JoinCounselling({ className }: { className?: string }) {
       <Modal
         open={open}
         onClose={() => setOpen(false)}
+        origin={origin}
         title="Which counselling are you joining?"
         size="lg"
         className="max-h-[88dvh] overflow-y-auto"

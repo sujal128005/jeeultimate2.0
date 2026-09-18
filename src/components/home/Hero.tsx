@@ -7,6 +7,7 @@ import { Container } from "@/components/ui/Container";
 import { StatusBadge } from "@/components/ui/StatusBadge";
 import { site } from "@/data/site";
 import { JoinCounselling } from "./JoinCounselling";
+import { VideosButton } from "./VideosButton";
 import { ease } from "@/lib/motion";
 
 /**
@@ -15,10 +16,7 @@ import { ease } from "@/lib/motion";
  * either.
  */
 const shloka = {
-  lines: [
-    "विद्या दीपः, ज्ञानं मार्गः।",
-    "संस्कारः शक्तिः, सफलता ध्येयम्॥",
-  ],
+  lines: ["विद्या दीपः, ज्ञानं मार्गः।", "संस्कारः शक्तिः, सफलता ध्येयम्॥"],
   meaning:
     "“Education is the light, knowledge is the path. Values are the strength, and success is the goal...”",
 };
@@ -41,9 +39,7 @@ export function Hero() {
             animate={{ opacity: 1, y: 0, scale: 1 }}
             transition={{ duration: 0.7, ease: ease.out, delay: 0.15 }}
           >
-            <StatusBadge>
-              JEE counselling guidance · since {site.since}
-            </StatusBadge>
+            <StatusBadge>JEE counselling guidance · since {site.since}</StatusBadge>
           </motion.div>
 
           <h1 id="hero-title" className="mt-5 max-w-[24ch] type-shloka text-fg md:mt-6 md:max-w-none">
@@ -80,6 +76,7 @@ export function Hero() {
             <Button href="/#why" size="lg" variant="glass" className="w-full md:w-auto">
               Why JEE Ultimate 2.0
             </Button>
+            <VideosButton />
           </motion.div>
 
           <motion.p
@@ -89,15 +86,12 @@ export function Hero() {
             className="mt-7 max-w-measure type-body text-fg-muted"
           >
             Clear, guidance for <strong className="font-semibold text-fg-2">IIT</strong>,{" "}
-            <strong className="font-semibold text-fg-2">NIT</strong>,{" "}
-            <strong className="font-semibold text-fg-2">IIIT</strong>,{" "}
+            <strong className="font-semibold text-fg-2">NIT</strong>, <strong className="font-semibold text-fg-2">IIIT</strong>,{" "}
             <strong className="font-semibold text-fg-2">GFTI</strong> and{" "}
-            <strong className="font-semibold text-fg-2">top Engineering college</strong> admissions, from reading your
-            rank to freezing the right seat.
+            <strong className="font-semibold text-fg-2">top Engineering college</strong> admissions, from reading your rank to
+            freezing the right seat.
           </motion.p>
-
         </motion.div>
-
       </Container>
     </section>
   );

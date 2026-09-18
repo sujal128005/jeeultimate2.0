@@ -3,7 +3,6 @@
 import { useSelectedLayoutSegment } from "next/navigation";
 import { AssistantLauncher } from "@/components/assistant/AssistantLauncher";
 import { BackToTop } from "./BackToTop";
-import { CursorGlow } from "./CursorGlow";
 
 /** Routes that bring their own chrome (header, footer, navigation). */
 const immersiveSegments = new Set(["career"]);
@@ -38,7 +37,6 @@ export function SiteChrome({
         {children}
       </main>
       {!immersive && footer}
-      {!immersive && <CursorGlow />}
       {assistant && <AssistantLauncher />}
       <BackToTop />
     </>

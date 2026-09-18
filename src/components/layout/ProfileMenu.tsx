@@ -5,6 +5,10 @@ import { Icon } from "@/components/ui/Icon";
 import { roleOptions } from "@/data/navigation";
 import { cn } from "@/lib/cn";
 
+/** The three workspaces, in the order people ask for them. */
+const ORDER = ["admin", "mentor", "team"];
+const workspaces = ORDER.map((id) => roleOptions.find((r) => r.id === id)).filter((r) => r !== undefined);
+
 /** Sign-in entry point. UI only in Phase 1 - each role links to a placeholder portal. */
 export function ProfileMenu() {
   return (
@@ -21,32 +25,21 @@ export function ProfileMenu() {
         <Icon name="user" className="size-[19px]" />
       </DropdownTrigger>
 
-      <DropdownMenu label="Choose a workspace" className="w-[292px]">
-        <div className="px-3 pt-2.5 pb-3">
-          <p className="type-body-sm font-semibold text-fg">Sign in to JEE Ultimate 2.0</p>
-          <p className="mt-0.5 type-caption text-fg-muted">Choose your workspace</p>
+      <DropdownMenu label="Choose a workspace" className="w-[240px]">
+        <div className="px-3 pt-2.5 pb-2">
+          <p className="type-body-sm font-semibold text-fg">JEE Ultimate 2.0 workspace</p>
         </div>
         <div className="h-px bg-line" />
         <div className="flex flex-col gap-0.5 py-1.5">
-          {roleOptions.map((role) => (
+          {workspaces.map((role) => (
             <DropdownItem key={role.id} href={role.href}>
-              <span className="grid size-10 shrink-0 place-items-center rounded-sm bg-surface-2 text-fg-2 shadow-hairline transition-colors duration-(--duration-base) group-hover/item:bg-accent-gradient group-hover/item:text-on-accent group-focus-visible/item:bg-accent-gradient group-focus-visible/item:text-on-accent">
-                <Icon name={role.icon} className="size-[18px]" />
-              </span>
-              <span className="min-w-0 flex-1">
-                <span className="block type-body-sm font-medium tracking-[-0.015em] text-fg">{role.label}</span>
-                <span className="block truncate type-caption text-fg-muted">{role.description}</span>
-              </span>
+              <span className="min-w-0 flex-1 type-body-sm font-medium tracking-[-0.015em] text-fg">{role.label}</span>
               <Icon
                 name="chevron-right"
                 className="size-4 text-fg-subtle transition-transform duration-(--duration-base) group-hover/item:translate-x-0.5 group-hover/item:text-fg"
               />
             </DropdownItem>
           ))}
-        </div>
-        <div className="flex items-center gap-2 rounded-md bg-surface-2/80 px-3 py-2.5 type-caption text-fg-muted">
-          <Icon name="lock" className="size-3.5" />
-          Secure sign-in arrives in the next phase.
         </div>
       </DropdownMenu>
     </Dropdown>

@@ -7,7 +7,7 @@ type RevealProps = HTMLMotionProps<"div"> & {
   delay?: number;
   /** Distance travelled on reveal, in px */
   offset?: number;
-  as?: "div" | "section" | "li" | "article" | "header";
+  as?: "div" | "section" | "li" | "article" | "header" | "nav";
 };
 
 /** Fades and lifts content into view once, as the user scrolls to it. */

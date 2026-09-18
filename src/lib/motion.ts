@@ -17,6 +17,8 @@ export const ease = {
   inOut: [0.65, 0, 0.35, 1] as const,
   expo: [0.16, 1, 0.3, 1] as const,
   in: [0.55, 0, 1, 0.45] as const,
+  /** For a wipe or a spread: eases, but never front-loads out of sight. */
+  spread: [0.38, 0.06, 0.24, 1] as const,
 };
 
 export const duration = {
@@ -72,9 +74,9 @@ export const variants = {
     exit: { opacity: 0, scale: 0.97, y: -4, filter: "blur(4px)", transition: transition.menuExit },
   },
   modal: {
-    hidden: { opacity: 0, scale: 0.96, y: 16 },
+    hidden: { opacity: 0, scale: 0.9, y: 28 },
     visible: { opacity: 1, scale: 1, y: 0, transition: transition.modalEnter },
-    exit: { opacity: 0, scale: 0.98, y: 8, transition: transition.modalExit },
+    exit: { opacity: 0, scale: 0.96, y: 10, transition: transition.modalExit },
   },
 } satisfies Record<string, Variants>;
 

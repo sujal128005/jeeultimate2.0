@@ -1,18 +1,14 @@
 import type { Metadata } from "next";
-import { SimplePage } from "@/components/placeholder/SimplePage";
+import { LegalDoc } from "@/components/legal/LegalDoc";
+import { privacySections } from "@/data/legal";
 
 export const metadata: Metadata = {
   title: "Privacy Policy",
+  description:
+    "What JEE Ultimate 2.0 does and does not collect. No accounts, no visitor database, and everything you save here stays in your own browser.",
   alternates: { canonical: "/privacy" },
 };
 
 export default function PrivacyPage() {
-  return (
-    <SimplePage
-      eyebrow="Legal"
-      title="Privacy Policy"
-      description="How JEE Ultimate 2.0 collects, uses and protects your information. The full policy will be published here."
-      status="Policy being finalised"
-    />
-  );
+  return <LegalDoc eyebrow="Legal" title="Privacy Policy" sections={privacySections} />;
 }

@@ -53,6 +53,7 @@ import {
   Sparkles,
   Target,
   UserRound,
+  Video,
   UsersRound,
   Waypoints,
   type LucideProps,
@@ -120,6 +121,7 @@ const icons = {
   sparkles: Sparkles,
   target: Target,
   user: UserRound,
+  video: Video,
   users: UsersRound,
   waypoints: Waypoints,
 } as const;

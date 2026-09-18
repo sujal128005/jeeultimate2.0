@@ -20,14 +20,14 @@ export function Footer() {
         className="pointer-events-none absolute -top-40 left-1/2 h-[380px] w-[760px] -translate-x-1/2 rounded-full bg-accent/[0.12] blur-[120px]"
       />
 
-      <Container size="wide" className="relative pt-20 pb-32 md:pt-24 md:pb-10">
+      <Container size="wide" className="relative pt-20 pb-32 md:pt-24 md:pb-28">
         <div className="grid gap-14 lg:grid-cols-12 lg:gap-8">
           {/* Brand block */}
           <div className="flex flex-col gap-6 lg:col-span-4">
             <Logo tone="light" />
             <p className="max-w-[22rem] type-body text-on-contrast/60">
-              Counselling and admission guidance for IITs, NITs, IIITs and GFTIs. Helping JEE aspirants turn a rank
-              into the right decision since {site.since}.
+              Counselling and admission guidance for IITs, NITs, IIITs and GFTIs. Helping JEE aspirants turn a rank into the right
+              decision since {site.since}.
             </p>
             <Link
               href="/contact"
