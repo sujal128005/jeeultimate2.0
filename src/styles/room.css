@@ -1,0 +1,559 @@
+/* ==========================================================================
+   The message room.
+
+   The rest of the workspace is a grey ledger: dense, square, built for
+   scanning rows. This is the one room meant to feel like people talking, so
+   it borrows what phones already taught everyone — a light thread, bubbles
+   with tails, your side on the right, the day written across the middle, and
+   a tick when someone has read you. Light, because most of the day's messages
+   are read next to a bright browser window, and a dark panel in a light app
+   is a lamp in your eye.
+   ========================================================================== */
+
+.wr {
+  --wr-bg: #f2efe9;
+  --wr-panel: #ffffff;
+  --wr-panel-2: #f7f5f1;
+  --wr-line: #e2ded6;
+  --wr-line-soft: #ece9e3;
+  --wr-ink: #16150f;
+  --wr-ink-2: #55514a;
+  --wr-ink-3: #8b8578;
+  --wr-amber: #e07c00;
+  --wr-amber-soft: #fdf1df;
+  --wr-mine: #ffeccd;
+  --wr-mine-line: #f6dcae;
+  --wr-them: #ffffff;
+  --wr-green: #1c7a3e;
+
+  font-family:
+    ui-sans-serif, -apple-system, "Segoe UI", system-ui, "Helvetica Neue", Arial, sans-serif;
+  font-size: 14px;
+  color: var(--wr-ink);
+  background: var(--wr-bg);
+  min-height: 100dvh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* ---- header -------------------------------------------------------------- */
+
+.wr-head {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 10px 16px;
+  background: var(--wr-panel);
+  border-bottom: 1px solid var(--wr-line);
+}
+
+.wr-mark {
+  display: grid;
+  place-items: center;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  background: linear-gradient(145deg, #ffb443, var(--wr-amber));
+  color: #fff;
+  font-weight: 700;
+  font-size: 14px;
+  flex: none;
+}
+
+.wr-name {
+  font-size: 16px;
+  font-weight: 650;
+  letter-spacing: -0.01em;
+}
+
+.wr-tagline {
+  font-size: 11.5px;
+  color: var(--wr-ink-3);
+}
+
+.wr-link {
+  color: var(--wr-ink-2);
+  text-decoration: none;
+  font-size: 12.5px;
+  border: 1px solid var(--wr-line);
+  border-radius: 999px;
+  padding: 4px 12px;
+  background: var(--wr-panel);
+  cursor: pointer;
+  font-family: inherit;
+}
+
+.wr-link:hover {
+  color: var(--wr-ink);
+  border-color: var(--wr-ink-3);
+}
+
+/* ---- layout -------------------------------------------------------------- */
+
+.wr-main {
+  flex: 1;
+  display: grid;
+  grid-template-columns: 250px minmax(0, 1fr);
+  min-height: 0;
+}
+
+.wr-side {
+  border-right: 1px solid var(--wr-line);
+  background: var(--wr-panel);
+  padding: 10px 8px;
+  overflow-y: auto;
+}
+
+.wr-side-title {
+  font-size: 10.5px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--wr-ink-3);
+  padding: 4px 8px 6px;
+}
+
+.wr-room {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  width: 100%;
+  padding: 8px 9px;
+  border: 0;
+  border-radius: 10px;
+  background: transparent;
+  color: var(--wr-ink-2);
+  font: inherit;
+  font-size: 13.5px;
+  text-align: left;
+  cursor: pointer;
+}
+
+.wr-room:hover {
+  background: var(--wr-panel-2);
+  color: var(--wr-ink);
+}
+
+.wr-room[aria-current="true"] {
+  background: var(--wr-amber-soft);
+  color: var(--wr-ink);
+  font-weight: 600;
+}
+
+.wr-avatar {
+  display: grid;
+  place-items: center;
+  width: 26px;
+  height: 26px;
+  border-radius: 50%;
+  background: linear-gradient(145deg, #efece6, #ddd8cf);
+  border: 1px solid var(--wr-line);
+  font-size: 10.5px;
+  font-weight: 700;
+  color: var(--wr-ink-2);
+  flex: none;
+  overflow: hidden;
+}
+
+.wr-badge {
+  margin-left: auto;
+  min-width: 19px;
+  padding: 1px 6px;
+  border-radius: 999px;
+  background: var(--wr-amber);
+  color: #fff;
+  font-size: 11px;
+  font-weight: 700;
+  text-align: center;
+}
+
+/* ---- the thread ---------------------------------------------------------- */
+
+.wr-thread {
+  display: flex;
+  flex-direction: column;
+  min-height: 0;
+  min-width: 0;
+  background: var(--wr-bg);
+}
+
+.wr-thread-head {
+  padding: 10px 16px;
+  border-bottom: 1px solid var(--wr-line);
+  background: var(--wr-panel);
+}
+
+.wr-scroll {
+  flex: 1;
+  overflow-y: auto;
+  padding: 16px 18px 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+/* A row is one message: the avatar rail, then the bubble. */
+.wr-row {
+  display: flex;
+  align-items: flex-end;
+  gap: 8px;
+  max-width: 100%;
+}
+
+.wr-row-mine {
+  flex-direction: row-reverse;
+}
+
+.wr-row-last {
+  margin-bottom: 8px;
+}
+
+.wr-row-avatar {
+  width: 26px;
+  flex: none;
+}
+
+.wr-bubble {
+  position: relative;
+  max-width: min(60ch, 74%);
+  padding: 7px 11px 5px;
+  border-radius: 16px;
+  background: var(--wr-them);
+  border: 1px solid var(--wr-line);
+  box-shadow: 0 1px 1px rgb(20 18 14 / 0.04);
+}
+
+.wr-bubble-mine {
+  background: var(--wr-mine);
+  border-color: var(--wr-mine-line);
+}
+
+/* The tail, drawn only on the last bubble of a run. */
+.wr-row:not(.wr-row-mine) .wr-bubble-tail {
+  border-bottom-left-radius: 5px;
+}
+
+.wr-row-mine .wr-bubble-tail {
+  border-bottom-right-radius: 5px;
+}
+
+.wr-who {
+  font-size: 12px;
+  font-weight: 700;
+  color: var(--wr-amber);
+  margin-bottom: 2px;
+}
+
+.wr-text {
+  white-space: pre-wrap;
+  word-break: break-word;
+  line-height: 1.42;
+  font-size: 14px;
+}
+
+/* The time, and the ticks, tucked under the text the way a phone does. */
+.wr-foot {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 4px;
+  margin-top: 2px;
+  font-size: 10.5px;
+  color: var(--wr-ink-3);
+  line-height: 1;
+}
+
+.wr-ticks {
+  letter-spacing: -0.18em;
+  padding-right: 0.18em;
+}
+
+.wr-ticks-seen {
+  color: #2b7fd4;
+}
+
+.wr-day {
+  align-self: center;
+  margin: 12px 0 8px;
+  padding: 3px 12px;
+  border-radius: 999px;
+  background: rgb(255 255 255 / 0.85);
+  border: 1px solid var(--wr-line);
+  font-size: 11px;
+  color: var(--wr-ink-3);
+}
+
+.wr-empty {
+  margin: auto;
+  text-align: center;
+  color: var(--wr-ink-3);
+  font-size: 13.5px;
+  line-height: 1.6;
+}
+
+/* ---- files and pictures -------------------------------------------------- */
+
+.wr-files {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin-top: 6px;
+}
+
+.wr-file {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 5px 11px;
+  border-radius: 999px;
+  border: 1px solid var(--wr-line);
+  background: var(--wr-panel-2);
+  color: var(--wr-ink-2);
+  font: inherit;
+  font-size: 12px;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.wr-file:hover {
+  color: var(--wr-ink);
+  border-color: var(--wr-amber);
+}
+
+.wr-image {
+  display: block;
+  max-width: 300px;
+  max-height: 240px;
+  border-radius: 12px;
+  border: 1px solid var(--wr-line);
+}
+
+/* ---- the compose bar ----------------------------------------------------- */
+
+.wr-compose {
+  border-top: 1px solid var(--wr-line);
+  background: var(--wr-panel);
+  padding: 10px 16px 12px;
+}
+
+.wr-box {
+  border: 1px solid var(--wr-line);
+  border-radius: 20px;
+  background: var(--wr-panel-2);
+  padding: 9px 12px;
+}
+
+.wr-box:focus-within {
+  border-color: var(--wr-amber);
+  background: var(--wr-panel);
+}
+
+.wr-input {
+  width: 100%;
+  border: 0;
+  background: transparent;
+  color: var(--wr-ink);
+  font: inherit;
+  font-size: 14px;
+  resize: none;
+  outline: none;
+  line-height: 1.42;
+}
+
+.wr-input::placeholder {
+  color: var(--wr-ink-3);
+}
+
+.wr-actions {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-top: 8px;
+}
+
+.wr-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  height: 32px;
+  padding: 0 15px;
+  border-radius: 999px;
+  border: 1px solid var(--wr-line);
+  background: var(--wr-panel);
+  color: var(--wr-ink-2);
+  font: inherit;
+  font-size: 12.5px;
+  cursor: pointer;
+}
+
+.wr-btn:hover:not(:disabled) {
+  color: var(--wr-ink);
+  border-color: var(--wr-ink-3);
+}
+
+.wr-btn:disabled {
+  opacity: 0.45;
+  cursor: default;
+}
+
+.wr-send {
+  background: var(--wr-amber);
+  border-color: var(--wr-amber);
+  color: #fff;
+  font-weight: 650;
+}
+
+.wr-send:hover:not(:disabled) {
+  background: #c96e00;
+  border-color: #c96e00;
+  color: #fff;
+}
+
+.wr-chip {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 4px 10px;
+  border-radius: 999px;
+  background: var(--wr-panel-2);
+  border: 1px solid var(--wr-line);
+  font-size: 11.5px;
+  color: var(--wr-ink-2);
+}
+
+.wr-chip button {
+  background: none;
+  border: 0;
+  color: var(--wr-ink-3);
+  cursor: pointer;
+  font: inherit;
+  line-height: 1;
+}
+
+.wr-chip button:hover {
+  color: var(--wr-amber);
+}
+
+.wr-hint {
+  font-size: 11.5px;
+  color: var(--wr-ink-3);
+}
+
+.wr-alert {
+  color: #b3261e;
+  font-size: 12px;
+}
+
+/* ---- people, pictures, and the lock -------------------------------------- */
+
+.wr-photo {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+.wr-avatar-lg {
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+  border: 1px solid var(--wr-line);
+  background: var(--wr-panel-2);
+  display: grid;
+  place-items: center;
+  font-weight: 700;
+  font-size: 20px;
+  color: var(--wr-ink-2);
+  overflow: hidden;
+  flex: none;
+}
+
+.wr-about {
+  font-size: 11.5px;
+  color: var(--wr-ink-3);
+}
+
+.wr-panel {
+  margin: auto;
+  width: min(420px, 92vw);
+  background: var(--wr-panel);
+  border: 1px solid var(--wr-line);
+  border-radius: 18px;
+  padding: 24px;
+  box-shadow: 0 12px 34px rgb(20 18 14 / 0.08);
+}
+
+.wr-panel h2 {
+  font-size: 17px;
+  margin-bottom: 6px;
+}
+
+.wr-field {
+  width: 100%;
+  margin-top: 4px;
+  padding: 9px 12px;
+  border-radius: 12px;
+  border: 1px solid var(--wr-line);
+  background: var(--wr-panel-2);
+  color: var(--wr-ink);
+  font: inherit;
+}
+
+.wr-field:focus {
+  outline: none;
+  border-color: var(--wr-amber);
+  background: var(--wr-panel);
+}
+
+.wr-lock {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  font-size: 11px;
+  color: var(--wr-green);
+}
+
+.wr-sheetline {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 10px 16px;
+  border-top: 1px solid var(--wr-line);
+  background: var(--wr-panel);
+}
+
+.wr-unreadable {
+  color: var(--wr-ink-3);
+  font-style: italic;
+  font-size: 12.5px;
+}
+
+/* ---- narrow screens ------------------------------------------------------ */
+
+@media (max-width: 720px) {
+  .wr-main {
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  .wr-side {
+    border-right: 0;
+    border-bottom: 1px solid var(--wr-line);
+    display: flex;
+    gap: 6px;
+    overflow-x: auto;
+    padding: 8px;
+  }
+
+  .wr-side-title {
+    display: none;
+  }
+
+  .wr-room {
+    width: auto;
+    flex: none;
+    border: 1px solid var(--wr-line);
+  }
+
+  .wr-bubble {
+    max-width: 84%;
+  }
+}

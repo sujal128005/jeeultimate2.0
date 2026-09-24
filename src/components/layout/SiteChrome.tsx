@@ -4,8 +4,8 @@ import { useSelectedLayoutSegment } from "next/navigation";
 import { AssistantLauncher } from "@/components/assistant/AssistantLauncher";
 import { BackToTop } from "./BackToTop";
 
-/** Routes that bring their own chrome (header, footer, navigation). */
-const immersiveSegments = new Set(["career"]);
+/** Routes that bring their own chrome: the Career world and the workspace. */
+const immersiveSegments = new Set(["career", "portal"]);
 
 /**
  * Saarthi stays out of the Career world, and out of the sign-in areas for

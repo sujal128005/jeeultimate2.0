@@ -114,27 +114,46 @@ function placementOf(p: RawPlacement | null | undefined): Placement | null {
   return out.median || out.average || out.highest || out.placedPct ? out : null;
 }
 
-/** The college's own site icon, so the badge carries the institute's own mark. */
-export function logoFromWebsite(website: string | null | undefined): string | null {
-  if (!website) return null;
-  try {
-    const host = new URL(website).hostname.replace(/^www\./, "");
-    return host ? `https://www.google.com/s2/favicons?domain=${host}&sz=128` : null;
-  } catch {
-    return null;
-  }
-}
+/** Words that say nothing about which college this is. */
+const GENERIC = new Set([
+  "university",
+  "college",
+  "institute",
+  "institutes",
+  "technology",
+  "technological",
+  "engineering",
+  "campus",
+  "group",
+  "school",
+  "academy",
+  "of",
+  "and",
+  "the",
+  "nagar",
+]);
 
 /**
  * Periodic-table style monogram: "IIT Madras" -> { top: "IIT", symbol: "Ma" },
  * "DTU" -> { top: "", symbol: "DTU" }, "KIET Ghaziabad" -> { top: "KIET", symbol: "Gh" }.
+ *
+ * The symbol is the part that identifies the place, so a generic tail is
+ * skipped: "Assam University" gives "As", not "Un".
  */
 function monogramOf(short: string) {
   const words = short.replace(/[()]/g, " ").split(/\s+/).filter(Boolean);
   if (words.length === 1) return { top: "", symbol: words[0].slice(0, 5) };
-  const last = words[words.length - 1];
-  const top = words.slice(0, -1).join(" ");
-  return { top: top.length > 9 ? words[0] : top, symbol: last.slice(0, 2) };
+
+  // The last word that actually names something; fall back to the first word.
+  let i = words.length - 1;
+  while (i > 0 && GENERIC.has(words[i].toLowerCase())) i--;
+  const symbol = words[i].slice(0, 2);
+
+  // Whatever is left that still carries meaning becomes the line above it.
+  // "Assam University" leaves nothing, and the badge shows the type instead.
+  const rest = words.filter((w, k) => k !== i && !GENERIC.has(w.toLowerCase()));
+  const top = rest.join(" ");
+  return { top: top.length > 9 ? (rest[0] ?? "") : top, symbol };
 }
 
 export function normalizeColleges(raw: RawCollege[]): College[] {
@@ -175,7 +194,7 @@ export function normalizeColleges(raw: RawCollege[]): College[] {
       established: num(r.established),
       ownership: r.ownership ?? null,
       website: r.website ?? null,
-      logo: r.logo ?? logoFromWebsite(r.website),
+      logo: r.logo ?? null,
       counselling,
       quotas: [...new Set(r.quotas ?? [])],
       courses: [...new Set(r.courses ?? [])],

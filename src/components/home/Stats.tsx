@@ -1,8 +1,10 @@
+import Link from "next/link";
 import { AnimatedSection, Stagger, StaggerItem } from "@/components/motion/AnimatedSection";
 import { Counter } from "@/components/motion/Counter";
 import { Container } from "@/components/ui/Container";
 import { Stat } from "@/components/ui/Stat";
 import { Eyebrow } from "@/components/ui/Eyebrow";
+import { Icon } from "@/components/ui/Icon";
 import { institutesCovered } from "@/data/colleges";
 import { credibility } from "@/data/home";
 import { site } from "@/data/site";
@@ -50,6 +52,16 @@ export function Stats() {
                 IITians, NITians, IIITians &amp; GFTIans produced.
               </span>
             </p>
+            <Link
+              href="/testimonials"
+              className="group/results mt-7 inline-flex items-center gap-2 rounded-full border border-on-contrast/20 px-5 py-2.5 type-button text-on-contrast/80 transition-colors duration-(--duration-base) hover:border-on-contrast/45 hover:text-on-contrast"
+            >
+              See where this year&rsquo;s students landed
+              <Icon
+                name="arrow-right"
+                className="size-4 transition-transform duration-(--duration-base) ease-(--ease-out-soft) group-hover/results:translate-x-1"
+              />
+            </Link>
           </AnimatedSection>
 
           <Stagger

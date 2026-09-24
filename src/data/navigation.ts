@@ -1,4 +1,4 @@
-import type { LinkItem, NavItem, RoleOption } from "@/types";
+import type { LinkItem, NavItem } from "@/types";
 
 export const mainNav: NavItem[] = [
   {
@@ -22,30 +22,6 @@ export const mainNav: NavItem[] = [
   { id: "career", label: "Career", shortLabel: "Career", href: "/career", icon: "briefcase", world: "career" },
 ];
 
-export const roleOptions: RoleOption[] = [
-  {
-    id: "mentor",
-    label: "Mentor",
-    description: "Student mentors & counsellors",
-    href: "/portal/mentor",
-    icon: "graduation",
-  },
-  {
-    id: "admin",
-    label: "Admin",
-    description: "Owner & platform control",
-    href: "/portal/admin",
-    icon: "shield",
-  },
-  {
-    id: "team",
-    label: "Team",
-    description: "JEE Ultimate 2.0 team members",
-    href: "/portal/team",
-    icon: "users",
-  },
-];
-
 export const footerNav: { title: string; links: LinkItem[] }[] = [
   {
     title: "Platform",
@@ -66,6 +42,7 @@ export const footerNav: { title: string; links: LinkItem[] }[] = [
     links: [
       { label: "About", href: "/#about" },
       { label: "Why JEE Ultimate 2.0", href: "/#why" },
+      { label: "Results & Reviews", href: "/testimonials" },
       { label: "Contact", href: "/contact" },
     ],
   },

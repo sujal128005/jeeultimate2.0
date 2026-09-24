@@ -1,904 +1,992 @@
 [
-  {
-    "name": "National Institute of Advanced Manufacturing Technology, Ranchi",
-    "short": "NIAMT Ranchi",
-    "type": "GFTI",
-    "city": "Ranchi",
-    "state": "Jharkhand",
-    "established": 1966,
-    "ownership": "central",
-    "website": "https://niamt.ac.in",
-    "counselling": [
-      "josaa",
-      "csab"
-    ],
-    "quotas": [
-      "AI"
-    ],
-    "courses": [
-      "btech"
-    ],
-    "branches": [
-      "prod",
-      "meta",
-      "cse"
-    ],
-    "seats": null,
-    "fees": null,
-    "hostel": null,
-    "openingRank": null,
-    "closingRank": null,
-    "rankExam": "main",
-    "rankYear": 2025
-  },
-  {
-    "name": "National Institute of Electronics and Information Technology, Agartala",
-    "short": "NIELIT Agartala",
-    "type": "GFTI",
-    "city": "Agartala",
-    "state": "Tripura",
-    "established": null,
-    "ownership": "central",
-    "website": "https://nielit.gov.in",
-    "counselling": [
-      "josaa",
-      "csab"
-    ],
-    "quotas": [
-      "AI"
-    ],
-    "courses": [
-      "btech"
-    ],
-    "branches": [
-      "cse"
-    ],
-    "seats": null,
-    "fees": null,
-    "hostel": null,
-    "openingRank": null,
-    "closingRank": null,
-    "rankExam": "main",
-    "rankYear": 2025
-  },
-  {
-    "name": "National Institute of Electronics and Information Technology, Aizawl",
-    "short": "NIELIT Aizawl",
-    "type": "GFTI",
-    "city": "Aizawl",
-    "state": "Mizoram",
-    "established": null,
-    "ownership": "central",
-    "website": "https://nielit.gov.in",
-    "counselling": [
-      "josaa",
-      "csab"
-    ],
-    "quotas": [
-      "AI"
-    ],
-    "courses": [
-      "btech"
-    ],
-    "branches": [
-      "cse"
-    ],
-    "seats": null,
-    "fees": null,
-    "hostel": null,
-    "openingRank": null,
-    "closingRank": null,
-    "rankExam": "main",
-    "rankYear": 2025
-  },
-  {
-    "name": "National Institute of Electronics and Information Technology, Ajmer",
-    "short": "NIELIT Ajmer",
-    "type": "GFTI",
-    "city": "Ajmer",
-    "state": "Rajasthan",
-    "established": null,
-    "ownership": "central",
-    "website": "https://nielit.gov.in",
-    "counselling": [
-      "josaa",
-      "csab"
-    ],
-    "quotas": [
-      "AI"
-    ],
-    "courses": [
-      "btech"
-    ],
-    "branches": [
-      "cse"
-    ],
-    "seats": null,
-    "fees": null,
-    "hostel": null,
-    "openingRank": null,
-    "closingRank": null,
-    "rankExam": "main",
-    "rankYear": 2025
-  },
-  {
-    "name": "National Institute of Electronics and Information Technology, Aurangabad",
-    "short": "NIELIT Aurangabad",
-    "type": "GFTI",
-    "city": "Chhatrapati Sambhajinagar",
-    "state": "Maharashtra",
-    "established": null,
-    "ownership": "central",
-    "website": "https://nielit.gov.in",
-    "counselling": [
-      "josaa",
-      "csab"
-    ],
-    "quotas": [
-      "AI"
-    ],
-    "courses": [
-      "btech"
-    ],
-    "branches": [
-      "cse",
-      "ece"
-    ],
-    "seats": null,
-    "fees": null,
-    "hostel": null,
-    "openingRank": null,
-    "closingRank": null,
-    "rankExam": "main",
-    "rankYear": 2025
-  },
-  {
-    "name": "National Institute of Electronics and Information Technology, Calicut",
-    "short": "NIELIT Calicut",
-    "type": "GFTI",
-    "city": "Kozhikode",
-    "state": "Kerala",
-    "established": null,
-    "ownership": "central",
-    "website": "https://nielit.gov.in",
-    "counselling": [
-      "josaa",
-      "csab"
-    ],
-    "quotas": [
-      "AI"
-    ],
-    "courses": [
-      "btech"
-    ],
-    "branches": [
-      "cse"
-    ],
-    "seats": null,
-    "fees": null,
-    "hostel": null,
-    "openingRank": null,
-    "closingRank": null,
-    "rankExam": "main",
-    "rankYear": 2025
-  },
-  {
-    "name": "National Institute of Electronics and Information Technology, Gorakhpur",
-    "short": "NIELIT Gorakhpur",
-    "type": "GFTI",
-    "city": "Gorakhpur",
-    "state": "Uttar Pradesh",
-    "established": null,
-    "ownership": "central",
-    "website": "https://nielit.gov.in",
-    "counselling": [
-      "josaa",
-      "csab"
-    ],
-    "quotas": [
-      "AI"
-    ],
-    "courses": [
-      "btech"
-    ],
-    "branches": [
-      "cse"
-    ],
-    "seats": null,
-    "fees": null,
-    "hostel": null,
-    "openingRank": null,
-    "closingRank": null,
-    "rankExam": "main",
-    "rankYear": 2025
-  },
-  {
-    "name": "National Institute of Electronics and Information Technology, Imphal",
-    "short": "NIELIT Imphal",
-    "type": "GFTI",
-    "city": "Imphal",
-    "state": "Manipur",
-    "established": null,
-    "ownership": "central",
-    "website": "https://nielit.gov.in",
-    "counselling": [
-      "josaa",
-      "csab"
-    ],
-    "quotas": [
-      "AI"
-    ],
-    "courses": [
-      "btech"
-    ],
-    "branches": [
-      "cse"
-    ],
-    "seats": null,
-    "fees": null,
-    "hostel": null,
-    "openingRank": null,
-    "closingRank": null,
-    "rankExam": "main",
-    "rankYear": 2025
-  },
-  {
-    "name": "National Institute of Electronics and Information Technology, Kohima",
-    "short": "NIELIT Kohima",
-    "type": "GFTI",
-    "city": "Kohima",
-    "state": "Nagaland",
-    "established": null,
-    "ownership": "central",
-    "website": "https://nielit.gov.in",
-    "counselling": [
-      "josaa",
-      "csab"
-    ],
-    "quotas": [
-      "AI"
-    ],
-    "courses": [
-      "btech"
-    ],
-    "branches": [
-      "cse"
-    ],
-    "seats": null,
-    "fees": null,
-    "hostel": null,
-    "openingRank": null,
-    "closingRank": null,
-    "rankExam": "main",
-    "rankYear": 2025
-  },
-  {
-    "name": "National Institute of Electronics and Information Technology, Patna",
-    "short": "NIELIT Patna",
-    "type": "GFTI",
-    "city": "Patna",
-    "state": "Bihar",
-    "established": null,
-    "ownership": "central",
-    "website": "https://nielit.gov.in",
-    "counselling": [
-      "josaa",
-      "csab"
-    ],
-    "quotas": [
-      "AI"
-    ],
-    "courses": [
-      "btech"
-    ],
-    "branches": [
-      "cse"
-    ],
-    "seats": null,
-    "fees": null,
-    "hostel": null,
-    "openingRank": null,
-    "closingRank": null,
-    "rankExam": "main",
-    "rankYear": 2025
-  },
-  {
-    "name": "National Institute of Electronics and Information Technology, Ropar",
-    "short": "NIELIT Ropar",
-    "type": "GFTI",
-    "city": "Rupnagar",
-    "state": "Punjab",
-    "established": null,
-    "ownership": "central",
-    "website": "https://nielit.gov.in",
-    "counselling": [
-      "josaa",
-      "csab"
-    ],
-    "quotas": [
-      "AI"
-    ],
-    "courses": [
-      "btech"
-    ],
-    "branches": [
-      "cse"
-    ],
-    "seats": null,
-    "fees": null,
-    "hostel": null,
-    "openingRank": null,
-    "closingRank": null,
-    "rankExam": "main",
-    "rankYear": 2025
-  },
-  {
-    "name": "National Institute of Electronics and Information Technology, Srinagar",
-    "short": "NIELIT Srinagar",
-    "type": "GFTI",
-    "city": "Srinagar",
-    "state": "Jammu and Kashmir",
-    "established": null,
-    "ownership": "central",
-    "website": "https://nielit.gov.in",
-    "counselling": [
-      "josaa",
-      "csab"
-    ],
-    "quotas": [
-      "AI"
-    ],
-    "courses": [
-      "btech"
-    ],
-    "branches": [
-      "cse"
-    ],
-    "seats": null,
-    "fees": null,
-    "hostel": null,
-    "openingRank": null,
-    "closingRank": null,
-    "rankExam": "main",
-    "rankYear": 2025
-  },
-  {
-    "name": "National Institute of Food Technology Entrepreneurship and Management, Kundli",
-    "short": "NIFTEM Kundli",
-    "type": "GFTI",
-    "city": "Sonipat",
-    "state": "Haryana",
-    "established": 2012,
-    "ownership": "central",
-    "website": "https://niftem.ac.in",
-    "counselling": [
-      "josaa",
-      "csab"
-    ],
-    "quotas": [
-      "AI"
-    ],
-    "courses": [
-      "btech"
-    ],
-    "branches": [
-      "agri"
-    ],
-    "seats": null,
-    "fees": null,
-    "hostel": true,
-    "openingRank": null,
-    "closingRank": null,
-    "rankExam": "main",
-    "rankYear": 2025
-  },
-  {
-    "name": "National Institute of Food Technology Entrepreneurship and Management, Thanjavur",
-    "short": "NIFTEM Thanjavur",
-    "type": "GFTI",
-    "city": "Thanjavur",
-    "state": "Tamil Nadu",
-    "established": null,
-    "ownership": "central",
-    "website": null,
-    "counselling": [
-      "josaa",
-      "csab"
-    ],
-    "quotas": [
-      "AI"
-    ],
-    "courses": [
-      "btech"
-    ],
-    "branches": [
-      "agri"
-    ],
-    "seats": null,
-    "fees": null,
-    "hostel": null,
-    "openingRank": null,
-    "closingRank": null,
-    "rankExam": "main",
-    "rankYear": 2025
-  },
-  {
-    "name": "National Institute of Technical Teachers Training and Research, Bhopal",
-    "short": "NITTTR Bhopal",
-    "type": "GFTI",
-    "city": "Bhopal",
-    "state": "Madhya Pradesh",
-    "established": 1965,
-    "ownership": "central",
-    "website": "https://www.nitttrbpl.ac.in",
-    "counselling": [
-      "josaa",
-      "csab"
-    ],
-    "quotas": [
-      "AI"
-    ],
-    "courses": [
-      "btech"
-    ],
-    "branches": [
-      "other"
-    ],
-    "seats": null,
-    "fees": null,
-    "hostel": null,
-    "openingRank": null,
-    "closingRank": null,
-    "rankExam": "main",
-    "rankYear": 2025
-  },
-  {
-    "name": "North Eastern Regional Institute of Science and Technology, Itanagar",
-    "short": "NERIST Itanagar",
-    "type": "GFTI",
-    "city": "Nirjuli",
-    "state": "Arunachal Pradesh",
-    "established": 1984,
-    "ownership": "central",
-    "website": "https://nerist.ac.in",
-    "counselling": [
-      "josaa",
-      "csab"
-    ],
-    "quotas": [
-      "AI"
-    ],
-    "courses": [
-      "btech"
-    ],
-    "branches": [
-      "cse",
-      "ece",
-      "ee",
-      "me",
-      "ce",
-      "agri"
-    ],
-    "seats": null,
-    "fees": null,
-    "hostel": true,
-    "openingRank": null,
-    "closingRank": null,
-    "rankExam": "main",
-    "rankYear": 2025
-  },
-  {
-    "name": "North-Eastern Hill University, Shillong",
-    "short": "NEHU Shillong",
-    "type": "GFTI",
-    "city": "Shillong",
-    "state": "Meghalaya",
-    "established": 1973,
-    "ownership": "central",
-    "website": "https://nehu.ac.in",
-    "counselling": [
-      "josaa",
-      "csab"
-    ],
-    "quotas": [
-      "AI"
-    ],
-    "courses": [
-      "btech"
-    ],
-    "branches": [
-      "it",
-      "ece"
-    ],
-    "seats": null,
-    "fees": null,
-    "hostel": null,
-    "openingRank": null,
-    "closingRank": null,
-    "rankExam": "main",
-    "rankYear": 2025
-  },
-  {
-    "name": "Puducherry Technological University, Puducherry",
-    "short": "PTU Puducherry",
-    "type": "GFTI",
-    "city": "Puducherry",
-    "state": "Puducherry",
-    "established": 1984,
-    "ownership": "state",
-    "website": "https://ptuniv.edu.in",
-    "counselling": [
-      "josaa",
-      "csab"
-    ],
-    "quotas": [
-      "HS",
-      "AI"
-    ],
-    "courses": [
-      "btech"
-    ],
-    "branches": [
-      "cse",
-      "it",
-      "ece",
-      "eee",
-      "instr",
-      "me",
-      "ce",
-      "che"
-    ],
-    "seats": null,
-    "fees": null,
-    "hostel": null,
-    "openingRank": null,
-    "closingRank": null,
-    "rankExam": "main",
-    "rankYear": 2025
-  },
-  {
-    "name": "Punjab Engineering College, Chandigarh",
-    "short": "PEC Chandigarh",
-    "type": "GFTI",
-    "city": "Chandigarh",
-    "state": "Chandigarh",
-    "established": 1921,
-    "ownership": "deemed",
-    "website": "https://pec.ac.in",
-    "counselling": [
-      "josaa",
-      "csab"
-    ],
-    "quotas": [
-      "HS",
-      "OS"
-    ],
-    "courses": [
-      "btech"
-    ],
-    "branches": [
-      "cse",
-      "ece",
-      "ee",
-      "me",
-      "prod",
-      "ce",
-      "aero",
-      "meta"
-    ],
-    "seats": null,
-    "fees": null,
-    "hostel": true,
-    "openingRank": null,
-    "closingRank": null,
-    "rankExam": "main",
-    "rankYear": 2025
-  },
-  {
-    "name": "Rajiv Gandhi National Aviation University, Fursatganj",
-    "short": "RGNAU Amethi",
-    "type": "GFTI",
-    "city": "Fursatganj",
-    "state": "Uttar Pradesh",
-    "established": 2013,
-    "ownership": "central",
-    "website": "https://rgnau.ac.in",
-    "counselling": [
-      "josaa",
-      "csab"
-    ],
-    "quotas": [
-      "AI"
-    ],
-    "courses": [
-      "btech"
-    ],
-    "branches": [
-      "aero"
-    ],
-    "seats": null,
-    "fees": null,
-    "hostel": null,
-    "openingRank": null,
-    "closingRank": null,
-    "rankExam": "main",
-    "rankYear": 2025
-  },
-  {
-    "name": "Sant Longowal Institute of Engineering and Technology, Longowal",
-    "short": "SLIET Longowal",
-    "type": "GFTI",
-    "city": "Longowal",
-    "state": "Punjab",
-    "established": 1989,
-    "ownership": "central",
-    "website": "https://sliet.ac.in",
-    "counselling": [
-      "josaa",
-      "csab"
-    ],
-    "quotas": [
-      "AI"
-    ],
-    "courses": [
-      "btech"
-    ],
-    "branches": [
-      "cse",
-      "ece",
-      "eee",
-      "instr",
-      "me",
-      "che",
-      "agri"
-    ],
-    "seats": null,
-    "fees": null,
-    "hostel": true,
-    "openingRank": null,
-    "closingRank": null,
-    "rankExam": "main",
-    "rankYear": 2025,
-    "nirfRank": 79,
-    "nirfYear": 2025,
-    "sources": [
-      "https://www.nirfindia.org/Rankings/2025/EngineeringRanking.html"
-    ]
-  },
-  {
-    "name": "School of Engineering, Tezpur University",
-    "short": "Tezpur University",
-    "type": "GFTI",
-    "city": "Tezpur",
-    "state": "Assam",
-    "established": 1994,
-    "ownership": "central",
-    "website": "https://www.tezu.ernet.in",
-    "counselling": [
-      "josaa",
-      "csab"
-    ],
-    "quotas": [
-      "AI"
-    ],
-    "courses": [
-      "btech"
-    ],
-    "branches": [
-      "cse",
-      "ece",
-      "ee",
-      "me",
-      "ce",
-      "agri"
-    ],
-    "seats": null,
-    "fees": null,
-    "hostel": true,
-    "openingRank": null,
-    "closingRank": null,
-    "rankExam": "main",
-    "rankYear": 2025
-  },
-  {
-    "name": "School of Planning and Architecture, Bhopal",
-    "short": "SPA Bhopal",
-    "type": "GFTI",
-    "city": "Bhopal",
-    "state": "Madhya Pradesh",
-    "established": 2008,
-    "ownership": "central",
-    "website": "https://www.spabhopal.ac.in",
-    "counselling": [
-      "josaa",
-      "csab"
-    ],
-    "quotas": [
-      "AI"
-    ],
-    "courses": [
-      "barch",
-      "bplan"
-    ],
-    "branches": [
-      "arch",
-      "plan"
-    ],
-    "seats": null,
-    "fees": null,
-    "hostel": null,
-    "openingRank": null,
-    "closingRank": null,
-    "rankExam": "main",
-    "rankYear": 2025
-  },
-  {
-    "name": "School of Planning and Architecture, New Delhi",
-    "short": "SPA Delhi",
-    "type": "GFTI",
-    "city": "New Delhi",
-    "state": "Delhi",
-    "established": 1941,
-    "ownership": "central",
-    "website": "https://spa.ac.in",
-    "counselling": [
-      "josaa",
-      "csab"
-    ],
-    "quotas": [
-      "AI"
-    ],
-    "courses": [
-      "barch",
-      "bplan"
-    ],
-    "branches": [
-      "arch",
-      "plan"
-    ],
-    "seats": null,
-    "fees": null,
-    "hostel": null,
-    "openingRank": null,
-    "closingRank": null,
-    "rankExam": "main",
-    "rankYear": 2025
-  },
-  {
-    "name": "School of Planning and Architecture, Vijayawada",
-    "short": "SPA Vijayawada",
-    "type": "GFTI",
-    "city": "Vijayawada",
-    "state": "Andhra Pradesh",
-    "established": 2008,
-    "ownership": "central",
-    "website": "https://www.spav.ac.in",
-    "counselling": [
-      "josaa",
-      "csab"
-    ],
-    "quotas": [
-      "AI"
-    ],
-    "courses": [
-      "barch",
-      "bplan"
-    ],
-    "branches": [
-      "arch",
-      "plan"
-    ],
-    "seats": null,
-    "fees": null,
-    "hostel": null,
-    "openingRank": null,
-    "closingRank": null,
-    "rankExam": "main",
-    "rankYear": 2025
-  },
-  {
-    "name": "Shri G. S. Institute of Technology and Science, Indore",
-    "short": "SGSITS Indore",
-    "type": "GFTI",
-    "city": "Indore",
-    "state": "Madhya Pradesh",
-    "established": 1952,
-    "ownership": "state",
-    "website": "https://www.sgsits.ac.in",
-    "counselling": [
-      "josaa",
-      "csab"
-    ],
-    "quotas": [
-      "AI"
-    ],
-    "courses": [
-      "btech"
-    ],
-    "branches": [
-      "cse",
-      "it",
-      "ece",
-      "ee",
-      "instr",
-      "me",
-      "ce",
-      "bio"
-    ],
-    "seats": null,
-    "fees": null,
-    "hostel": null,
-    "openingRank": null,
-    "closingRank": null,
-    "rankExam": "main",
-    "rankYear": 2025
-  },
-  {
-    "name": "Shri Mata Vaishno Devi University, Katra",
-    "short": "SMVDU Katra",
-    "type": "GFTI",
-    "city": "Katra",
-    "state": "Jammu and Kashmir",
-    "established": 1999,
-    "ownership": "state",
-    "website": "https://www.smvdu.ac.in",
-    "counselling": [
-      "josaa",
-      "csab"
-    ],
-    "quotas": [
-      "AI"
-    ],
-    "courses": [
-      "btech"
-    ],
-    "branches": [
-      "cse",
-      "ece",
-      "me"
-    ],
-    "seats": null,
-    "fees": null,
-    "hostel": true,
-    "openingRank": null,
-    "closingRank": null,
-    "rankExam": "main",
-    "rankYear": 2025
-  },
-  {
-    "name": "University of Hyderabad",
-    "short": "UoH Hyderabad",
-    "type": "GFTI",
-    "city": "Hyderabad",
-    "state": "Telangana",
-    "established": 1974,
-    "ownership": "central",
-    "website": "https://uohyd.ac.in",
-    "counselling": [
-      "josaa",
-      "csab"
-    ],
-    "quotas": [
-      "AI"
-    ],
-    "courses": [
-      "intmtech"
-    ],
-    "branches": [
-      "cse",
-      "meta"
-    ],
-    "seats": null,
-    "fees": null,
-    "hostel": true,
-    "openingRank": null,
-    "closingRank": null,
-    "rankExam": "main",
-    "rankYear": 2025,
-    "nirfRank": 74,
-    "nirfYear": 2025,
-    "sources": [
-      "https://www.nirfindia.org/Rankings/2025/EngineeringRanking.html"
-    ]
-  }
+ {
+  "name": "National Institute of Advanced Manufacturing Technology, Ranchi",
+  "short": "NIAMT Ranchi",
+  "type": "GFTI",
+  "city": "Ranchi",
+  "state": "Jharkhand",
+  "established": 1966,
+  "ownership": "central",
+  "website": "https://niamt.ac.in",
+  "counselling": [
+   "josaa",
+   "csab"
+  ],
+  "quotas": [
+   "AI"
+  ],
+  "courses": [
+   "btech"
+  ],
+  "branches": [
+   "prod",
+   "meta",
+   "cse"
+  ],
+  "seats": null,
+  "fees": 50000,
+  "hostel": true,
+  "openingRank": null,
+  "closingRank": null,
+  "rankExam": "main",
+  "rankYear": 2025,
+  "sources": [
+   "https://niamt.ac.in/UserView/UserView.aspx?TypeID=1387"
+  ]
+ },
+ {
+  "name": "National Institute of Electronics and Information Technology, Agartala",
+  "short": "NIELIT Agartala",
+  "type": "GFTI",
+  "city": "Agartala",
+  "state": "Tripura",
+  "established": 2009,
+  "ownership": "central",
+  "website": "https://nielit.ac.in",
+  "counselling": [
+   "josaa",
+   "csab"
+  ],
+  "quotas": [
+   "AI"
+  ],
+  "courses": [
+   "btech"
+  ],
+  "branches": [
+   "cse"
+  ],
+  "seats": null,
+  "fees": 100000,
+  "hostel": null,
+  "openingRank": null,
+  "closingRank": null,
+  "rankExam": "main",
+  "rankYear": 2025,
+  "sources": [
+   "https://nielit.ac.in/agartala.php",
+   "https://nielit.ac.in/",
+   "https://nielit.ac.in/fee-structure.php"
+  ]
+ },
+ {
+  "name": "National Institute of Electronics and Information Technology, Aizawl",
+  "short": "NIELIT Aizawl",
+  "type": "GFTI",
+  "city": "Aizawl",
+  "state": "Mizoram",
+  "established": 2001,
+  "ownership": "central",
+  "website": "https://nielit.ac.in",
+  "counselling": [
+   "josaa",
+   "csab"
+  ],
+  "quotas": [
+   "AI"
+  ],
+  "courses": [
+   "btech"
+  ],
+  "branches": [
+   "cse"
+  ],
+  "seats": null,
+  "fees": 100000,
+  "hostel": null,
+  "openingRank": null,
+  "closingRank": null,
+  "rankExam": "main",
+  "rankYear": 2025,
+  "sources": [
+   "https://nielit.ac.in/aizawl.php",
+   "https://nielit.ac.in/",
+   "https://nielit.ac.in/fee-structure.php"
+  ]
+ },
+ {
+  "name": "National Institute of Electronics and Information Technology, Ajmer",
+  "short": "NIELIT Ajmer",
+  "type": "GFTI",
+  "city": "Ajmer",
+  "state": "Rajasthan",
+  "established": 2010,
+  "ownership": "central",
+  "website": "https://nielit.ac.in",
+  "counselling": [
+   "josaa",
+   "csab"
+  ],
+  "quotas": [
+   "AI"
+  ],
+  "courses": [
+   "btech"
+  ],
+  "branches": [
+   "cse"
+  ],
+  "seats": null,
+  "fees": 100000,
+  "hostel": null,
+  "openingRank": null,
+  "closingRank": null,
+  "rankExam": "main",
+  "rankYear": 2025,
+  "sources": [
+   "https://nielit.ac.in/ajmer.php",
+   "https://nielit.ac.in/",
+   "https://nielit.ac.in/fee-structure.php"
+  ]
+ },
+ {
+  "name": "National Institute of Electronics and Information Technology, Aurangabad",
+  "short": "NIELIT Aurangabad",
+  "type": "GFTI",
+  "city": "Chhatrapati Sambhajinagar",
+  "state": "Maharashtra",
+  "established": null,
+  "ownership": "central",
+  "website": "https://nielit.ac.in",
+  "counselling": [
+   "josaa",
+   "csab"
+  ],
+  "quotas": [
+   "AI"
+  ],
+  "courses": [
+   "btech"
+  ],
+  "branches": [
+   "cse",
+   "ece"
+  ],
+  "seats": null,
+  "fees": 100000,
+  "hostel": null,
+  "openingRank": null,
+  "closingRank": null,
+  "rankExam": "main",
+  "rankYear": 2025,
+  "sources": [
+   "https://nielit.ac.in/",
+   "https://nielit.ac.in/fee-structure.php"
+  ]
+ },
+ {
+  "name": "National Institute of Electronics and Information Technology, Calicut",
+  "short": "NIELIT Calicut",
+  "type": "GFTI",
+  "city": "Kozhikode",
+  "state": "Kerala",
+  "established": 1989,
+  "ownership": "central",
+  "website": "https://nielit.ac.in",
+  "counselling": [
+   "josaa",
+   "csab"
+  ],
+  "quotas": [
+   "AI"
+  ],
+  "courses": [
+   "btech"
+  ],
+  "branches": [
+   "cse"
+  ],
+  "seats": null,
+  "fees": 100000,
+  "hostel": true,
+  "openingRank": null,
+  "closingRank": null,
+  "rankExam": "main",
+  "rankYear": 2025,
+  "sources": [
+   "https://nielit.ac.in/calicut.php",
+   "https://nielit.ac.in/",
+   "https://nielit.ac.in/fee-structure.php"
+  ]
+ },
+ {
+  "name": "National Institute of Electronics and Information Technology, Gorakhpur",
+  "short": "NIELIT Gorakhpur",
+  "type": "GFTI",
+  "city": "Gorakhpur",
+  "state": "Uttar Pradesh",
+  "established": null,
+  "ownership": "central",
+  "website": "https://nielit.ac.in",
+  "counselling": [
+   "josaa",
+   "csab"
+  ],
+  "quotas": [
+   "AI"
+  ],
+  "courses": [
+   "btech"
+  ],
+  "branches": [
+   "cse"
+  ],
+  "seats": null,
+  "fees": 100000,
+  "hostel": true,
+  "openingRank": null,
+  "closingRank": null,
+  "rankExam": "main",
+  "rankYear": 2025,
+  "sources": [
+   "https://nielit.ac.in/",
+   "https://nielit.ac.in/fee-structure.php",
+   "https://nielit.ac.in/gorakhpur.php"
+  ]
+ },
+ {
+  "name": "National Institute of Electronics and Information Technology, Imphal",
+  "short": "NIELIT Imphal",
+  "type": "GFTI",
+  "city": "Imphal",
+  "state": "Manipur",
+  "established": 1988,
+  "ownership": "central",
+  "website": "https://nielit.ac.in",
+  "counselling": [
+   "josaa",
+   "csab"
+  ],
+  "quotas": [
+   "AI"
+  ],
+  "courses": [
+   "btech"
+  ],
+  "branches": [
+   "cse"
+  ],
+  "seats": null,
+  "fees": 100000,
+  "hostel": null,
+  "openingRank": null,
+  "closingRank": null,
+  "rankExam": "main",
+  "rankYear": 2025,
+  "sources": [
+   "https://nielit.ac.in/imphal.php",
+   "https://nielit.ac.in/",
+   "https://nielit.ac.in/fee-structure.php"
+  ]
+ },
+ {
+  "name": "National Institute of Electronics and Information Technology, Kohima",
+  "short": "NIELIT Kohima",
+  "type": "GFTI",
+  "city": "Kohima",
+  "state": "Nagaland",
+  "established": 2004,
+  "ownership": "central",
+  "website": "https://nielit.ac.in",
+  "counselling": [
+   "josaa",
+   "csab"
+  ],
+  "quotas": [
+   "AI"
+  ],
+  "courses": [
+   "btech"
+  ],
+  "branches": [
+   "cse"
+  ],
+  "seats": null,
+  "fees": 100000,
+  "hostel": null,
+  "openingRank": null,
+  "closingRank": null,
+  "rankExam": "main",
+  "rankYear": 2025,
+  "sources": [
+   "https://nielit.ac.in/kohima.php",
+   "https://nielit.ac.in/",
+   "https://nielit.ac.in/fee-structure.php"
+  ]
+ },
+ {
+  "name": "National Institute of Electronics and Information Technology, Patna",
+  "short": "NIELIT Patna",
+  "type": "GFTI",
+  "city": "Patna",
+  "state": "Bihar",
+  "established": 2008,
+  "ownership": "central",
+  "website": "https://nielit.ac.in",
+  "counselling": [
+   "josaa",
+   "csab"
+  ],
+  "quotas": [
+   "AI"
+  ],
+  "courses": [
+   "btech"
+  ],
+  "branches": [
+   "cse"
+  ],
+  "seats": null,
+  "fees": 100000,
+  "hostel": null,
+  "openingRank": null,
+  "closingRank": null,
+  "rankExam": "main",
+  "rankYear": 2025,
+  "sources": [
+   "https://www.nielit.in/patna/index.php",
+   "https://nielit.ac.in/",
+   "https://nielit.ac.in/fee-structure.php"
+  ]
+ },
+ {
+  "name": "National Institute of Electronics and Information Technology, Ropar",
+  "short": "NIELIT Ropar",
+  "type": "GFTI",
+  "city": "Rupnagar",
+  "state": "Punjab",
+  "established": null,
+  "ownership": "central",
+  "website": "https://nielit.ac.in",
+  "counselling": [
+   "josaa",
+   "csab"
+  ],
+  "quotas": [
+   "AI"
+  ],
+  "courses": [
+   "btech"
+  ],
+  "branches": [
+   "cse"
+  ],
+  "seats": null,
+  "fees": 100000,
+  "hostel": null,
+  "openingRank": null,
+  "closingRank": null,
+  "rankExam": "main",
+  "rankYear": 2025,
+  "sources": [
+   "https://nielit.ac.in/",
+   "https://nielit.ac.in/fee-structure.php"
+  ]
+ },
+ {
+  "name": "National Institute of Electronics and Information Technology, Srinagar",
+  "short": "NIELIT Srinagar",
+  "type": "GFTI",
+  "city": "Srinagar",
+  "state": "Jammu and Kashmir",
+  "established": 1982,
+  "ownership": "central",
+  "website": "https://nielit.ac.in",
+  "counselling": [
+   "josaa",
+   "csab"
+  ],
+  "quotas": [
+   "AI"
+  ],
+  "courses": [
+   "btech"
+  ],
+  "branches": [
+   "cse"
+  ],
+  "seats": null,
+  "fees": 100000,
+  "hostel": null,
+  "openingRank": null,
+  "closingRank": null,
+  "rankExam": "main",
+  "rankYear": 2025,
+  "sources": [
+   "https://nielit.ac.in/srinagar.php",
+   "https://nielit.ac.in/",
+   "https://nielit.ac.in/fee-structure.php"
+  ]
+ },
+ {
+  "name": "National Institute of Food Technology Entrepreneurship and Management, Kundli",
+  "short": "NIFTEM Kundli",
+  "type": "GFTI",
+  "city": "Sonipat",
+  "state": "Haryana",
+  "established": 2012,
+  "ownership": "central",
+  "website": "https://niftem.ac.in",
+  "counselling": [
+   "josaa",
+   "csab"
+  ],
+  "quotas": [
+   "AI"
+  ],
+  "courses": [
+   "btech"
+  ],
+  "branches": [
+   "agri"
+  ],
+  "seats": 200,
+  "fees": 103300,
+  "hostel": true,
+  "openingRank": null,
+  "closingRank": null,
+  "rankExam": "main",
+  "rankYear": 2025,
+  "sources": [
+   "https://niftem.ac.in/newsite/wp-content/uploads/2025/07/ADMISSION-GUIDELINES-FOR-B.TECH_.-PROGRAMME.pdf"
+  ]
+ },
+ {
+  "name": "National Institute of Food Technology Entrepreneurship and Management, Thanjavur",
+  "short": "NIFTEM Thanjavur",
+  "type": "GFTI",
+  "city": "Thanjavur",
+  "state": "Tamil Nadu",
+  "established": 1967,
+  "ownership": "central",
+  "website": "https://niftem-t.ac.in",
+  "counselling": [
+   "josaa",
+   "csab"
+  ],
+  "quotas": [
+   "AI"
+  ],
+  "courses": [
+   "btech"
+  ],
+  "branches": [
+   "agri"
+  ],
+  "seats": null,
+  "fees": null,
+  "hostel": true,
+  "openingRank": null,
+  "closingRank": null,
+  "rankExam": "main",
+  "rankYear": 2025,
+  "sources": [
+   "https://niftem-t.ac.in/"
+  ]
+ },
+ {
+  "name": "National Institute of Technical Teachers Training and Research, Bhopal",
+  "short": "NITTTR Bhopal",
+  "type": "GFTI",
+  "city": "Bhopal",
+  "state": "Madhya Pradesh",
+  "established": 1965,
+  "ownership": "central",
+  "website": "https://www.nitttrbpl.ac.in",
+  "counselling": [
+   "josaa",
+   "csab"
+  ],
+  "quotas": [
+   "AI"
+  ],
+  "courses": [
+   "btech"
+  ],
+  "branches": [
+   "other"
+  ],
+  "seats": null,
+  "fees": 120000,
+  "hostel": true,
+  "openingRank": null,
+  "closingRank": null,
+  "rankExam": "main",
+  "rankYear": 2025,
+  "sources": [
+   "https://nitttrbpl.ac.in/fee_structure.php"
+  ]
+ },
+ {
+  "name": "North Eastern Regional Institute of Science and Technology, Itanagar",
+  "short": "NERIST Itanagar",
+  "type": "GFTI",
+  "city": "Nirjuli",
+  "state": "Arunachal Pradesh",
+  "established": 1984,
+  "ownership": "central",
+  "website": "https://nerist.ac.in",
+  "counselling": [
+   "josaa",
+   "csab"
+  ],
+  "quotas": [
+   "AI"
+  ],
+  "courses": [
+   "btech"
+  ],
+  "branches": [
+   "cse",
+   "ece",
+   "ee",
+   "me",
+   "ce",
+   "agri"
+  ],
+  "seats": null,
+  "fees": null,
+  "hostel": true,
+  "openingRank": null,
+  "closingRank": null,
+  "rankExam": "main",
+  "rankYear": 2025
+ },
+ {
+  "name": "North-Eastern Hill University, Shillong",
+  "short": "NEHU Shillong",
+  "type": "GFTI",
+  "city": "Shillong",
+  "state": "Meghalaya",
+  "established": 1973,
+  "ownership": "central",
+  "website": "https://nehu.ac.in",
+  "counselling": [
+   "josaa",
+   "csab"
+  ],
+  "quotas": [
+   "AI"
+  ],
+  "courses": [
+   "btech"
+  ],
+  "branches": [
+   "it",
+   "ece"
+  ],
+  "seats": 60,
+  "fees": null,
+  "hostel": null,
+  "openingRank": null,
+  "closingRank": null,
+  "rankExam": "main",
+  "rankYear": 2025,
+  "sources": [
+   "https://nehu.ac.in/course/display/10"
+  ]
+ },
+ {
+  "name": "Puducherry Technological University, Puducherry",
+  "short": "PTU Puducherry",
+  "type": "GFTI",
+  "city": "Puducherry",
+  "state": "Puducherry",
+  "established": 1984,
+  "ownership": "state",
+  "website": "https://ptuniv.edu.in",
+  "counselling": [
+   "josaa",
+   "csab"
+  ],
+  "quotas": [
+   "HS",
+   "AI"
+  ],
+  "courses": [
+   "btech"
+  ],
+  "branches": [
+   "cse",
+   "it",
+   "ece",
+   "eee",
+   "instr",
+   "me",
+   "ce",
+   "che"
+  ],
+  "seats": 780,
+  "fees": null,
+  "hostel": null,
+  "openingRank": null,
+  "closingRank": null,
+  "rankExam": "main",
+  "rankYear": 2025,
+  "sources": [
+   "https://cms.ptuniv.edu.in/file_contents/NIRF-2025.pdf"
+  ]
+ },
+ {
+  "name": "Punjab Engineering College, Chandigarh",
+  "short": "PEC Chandigarh",
+  "type": "GFTI",
+  "city": "Chandigarh",
+  "state": "Chandigarh",
+  "established": 1921,
+  "ownership": "deemed",
+  "website": "https://pec.ac.in",
+  "counselling": [
+   "josaa",
+   "csab"
+  ],
+  "quotas": [
+   "HS",
+   "OS"
+  ],
+  "courses": [
+   "btech"
+  ],
+  "branches": [
+   "cse",
+   "ece",
+   "ee",
+   "me",
+   "prod",
+   "ce",
+   "aero",
+   "meta"
+  ],
+  "seats": 771,
+  "fees": 176000,
+  "hostel": true,
+  "openingRank": null,
+  "closingRank": null,
+  "rankExam": "main",
+  "rankYear": 2025,
+  "sources": [
+   "https://pec.ac.in/sites/default/files/2025-05/Fee_Policy_2022-23.pdf",
+   "https://pec.ac.in/sites/default/files/aai/nirf/nirf_pec_2022-1.pdf"
+  ]
+ },
+ {
+  "name": "Rajiv Gandhi National Aviation University, Fursatganj",
+  "short": "RGNAU Amethi",
+  "type": "GFTI",
+  "city": "Fursatganj",
+  "state": "Uttar Pradesh",
+  "established": 2013,
+  "ownership": "central",
+  "website": "https://rgnau.ac.in",
+  "counselling": [
+   "josaa",
+   "csab"
+  ],
+  "quotas": [
+   "AI"
+  ],
+  "courses": [
+   "btech"
+  ],
+  "branches": [
+   "aero"
+  ],
+  "seats": null,
+  "fees": 160000,
+  "hostel": true,
+  "openingRank": null,
+  "closingRank": null,
+  "rankExam": "main",
+  "rankYear": 2025,
+  "sources": [
+   "https://www.rgnau.ac.in/sites/default/files/inline-files/Admission%20Brochure%202025-2026-04.08.2025.pdf"
+  ]
+ },
+ {
+  "name": "Sant Longowal Institute of Engineering and Technology, Longowal",
+  "short": "SLIET Longowal",
+  "type": "GFTI",
+  "city": "Longowal",
+  "state": "Punjab",
+  "established": 1989,
+  "ownership": "central",
+  "website": "https://sliet.ac.in",
+  "counselling": [
+   "josaa",
+   "csab"
+  ],
+  "quotas": [
+   "AI"
+  ],
+  "courses": [
+   "btech"
+  ],
+  "branches": [
+   "cse",
+   "ece",
+   "eee",
+   "instr",
+   "me",
+   "che",
+   "agri"
+  ],
+  "seats": 237,
+  "fees": 52400,
+  "hostel": true,
+  "openingRank": null,
+  "closingRank": null,
+  "rankExam": "main",
+  "rankYear": 2025,
+  "nirfRank": 79,
+  "nirfYear": 2025,
+  "sources": [
+   "https://www.nirfindia.org/Rankings/2025/EngineeringRanking.html",
+   "http://set.sliet.ac.in/files/2025/02/Fee-Structure-for-the-Session-2025-26.pdf",
+   "https://sliet.ac.in/wp-content/uploads/2025/02/SLIET-Longowal-NIRF-2025-DCF-Overall-1-1.pdf"
+  ]
+ },
+ {
+  "name": "School of Engineering, Tezpur University",
+  "short": "Tezpur University",
+  "type": "GFTI",
+  "city": "Tezpur",
+  "state": "Assam",
+  "established": 1994,
+  "ownership": "central",
+  "website": "https://www.tezu.ernet.in",
+  "counselling": [
+   "josaa",
+   "csab"
+  ],
+  "quotas": [
+   "AI"
+  ],
+  "courses": [
+   "btech"
+  ],
+  "branches": [
+   "cse",
+   "ece",
+   "ee",
+   "me",
+   "ce",
+   "agri"
+  ],
+  "seats": 327,
+  "fees": 30000,
+  "hostel": true,
+  "openingRank": null,
+  "closingRank": null,
+  "rankExam": "main",
+  "rankYear": 2025,
+  "sources": [
+   "https://www.tezu.ernet.in/soe/pdf/josaa_csab/FEE%20Sturucture_2025.pdf",
+   "http://www.tezu.ernet.in/notice/2025/February/EngineeringNIRF2025.pdf"
+  ]
+ },
+ {
+  "name": "School of Planning and Architecture, Bhopal",
+  "short": "SPA Bhopal",
+  "type": "GFTI",
+  "city": "Bhopal",
+  "state": "Madhya Pradesh",
+  "established": 2008,
+  "ownership": "central",
+  "website": "https://www.spabhopal.ac.in",
+  "counselling": [
+   "josaa",
+   "csab"
+  ],
+  "quotas": [
+   "AI"
+  ],
+  "courses": [
+   "barch",
+   "bplan"
+  ],
+  "branches": [
+   "arch",
+   "plan"
+  ],
+  "seats": null,
+  "fees": null,
+  "hostel": null,
+  "openingRank": null,
+  "closingRank": null,
+  "rankExam": "main",
+  "rankYear": 2025
+ },
+ {
+  "name": "School of Planning and Architecture, New Delhi",
+  "short": "SPA Delhi",
+  "type": "GFTI",
+  "city": "New Delhi",
+  "state": "Delhi",
+  "established": 1941,
+  "ownership": "central",
+  "website": "https://spa.ac.in",
+  "counselling": [
+   "josaa",
+   "csab"
+  ],
+  "quotas": [
+   "AI"
+  ],
+  "courses": [
+   "barch",
+   "bplan"
+  ],
+  "branches": [
+   "arch",
+   "plan"
+  ],
+  "seats": 177,
+  "fees": null,
+  "hostel": null,
+  "openingRank": null,
+  "closingRank": null,
+  "rankExam": "main",
+  "rankYear": 2025,
+  "sources": [
+   "https://spa.ac.in/admissions"
+  ]
+ },
+ {
+  "name": "School of Planning and Architecture, Vijayawada",
+  "short": "SPA Vijayawada",
+  "type": "GFTI",
+  "city": "Vijayawada",
+  "state": "Andhra Pradesh",
+  "established": 2008,
+  "ownership": "central",
+  "website": "https://www.spav.ac.in",
+  "counselling": [
+   "josaa",
+   "csab"
+  ],
+  "quotas": [
+   "AI"
+  ],
+  "courses": [
+   "barch",
+   "bplan"
+  ],
+  "branches": [
+   "arch",
+   "plan"
+  ],
+  "seats": null,
+  "fees": null,
+  "hostel": null,
+  "openingRank": null,
+  "closingRank": null,
+  "rankExam": "main",
+  "rankYear": 2025
+ },
+ {
+  "name": "Shri G. S. Institute of Technology and Science, Indore",
+  "short": "SGSITS Indore",
+  "type": "GFTI",
+  "city": "Indore",
+  "state": "Madhya Pradesh",
+  "established": 1952,
+  "ownership": "state",
+  "website": "https://www.sgsits.ac.in",
+  "counselling": [
+   "josaa",
+   "csab"
+  ],
+  "quotas": [
+   "AI"
+  ],
+  "courses": [
+   "btech"
+  ],
+  "branches": [
+   "cse",
+   "it",
+   "ece",
+   "ee",
+   "instr",
+   "me",
+   "ce",
+   "bio"
+  ],
+  "seats": null,
+  "fees": null,
+  "hostel": null,
+  "openingRank": null,
+  "closingRank": null,
+  "rankExam": "main",
+  "rankYear": 2025
+ },
+ {
+  "name": "Shri Mata Vaishno Devi University, Katra",
+  "short": "SMVDU Katra",
+  "type": "GFTI",
+  "city": "Katra",
+  "state": "Jammu and Kashmir",
+  "established": 1999,
+  "ownership": "state",
+  "website": "https://www.smvdu.ac.in",
+  "counselling": [
+   "josaa",
+   "csab"
+  ],
+  "quotas": [
+   "AI"
+  ],
+  "courses": [
+   "btech"
+  ],
+  "branches": [
+   "cse",
+   "ece",
+   "me"
+  ],
+  "seats": null,
+  "fees": null,
+  "hostel": true,
+  "openingRank": null,
+  "closingRank": null,
+  "rankExam": "main",
+  "rankYear": 2025
+ },
+ {
+  "name": "University of Hyderabad",
+  "short": "UoH Hyderabad",
+  "type": "GFTI",
+  "city": "Hyderabad",
+  "state": "Telangana",
+  "established": 1974,
+  "ownership": "central",
+  "website": "https://uohyd.ac.in",
+  "counselling": [
+   "josaa",
+   "csab"
+  ],
+  "quotas": [
+   "AI"
+  ],
+  "courses": [
+   "intmtech"
+  ],
+  "branches": [
+   "cse",
+   "meta"
+  ],
+  "seats": 60,
+  "fees": null,
+  "hostel": true,
+  "openingRank": null,
+  "closingRank": null,
+  "rankExam": "main",
+  "rankYear": 2025,
+  "nirfRank": 74,
+  "nirfYear": 2025,
+  "sources": [
+   "https://www.nirfindia.org/Rankings/2025/EngineeringRanking.html",
+   "https://enggtechnology.uohyd.ac.in/integrated-m-tech-b-techm-tech/"
+  ]
+ }
 ]

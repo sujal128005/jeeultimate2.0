@@ -103,6 +103,15 @@ export function CollegeExplorerApp() {
             </AnimatePresence>
           </div>
         </section>
+        <p className="mt-14 flex max-w-[46rem] items-start gap-2.5 type-body-sm text-fg-muted">
+          <Icon name="info" className="mt-0.5 size-4 shrink-0 text-fg-subtle" />
+          <span>
+            Fees, seats and founding years come from each institute&rsquo;s own published documents, and cutoffs from
+            past JoSAA rounds. Where a field reads &ldquo;Not listed&rdquo;, the institute has not published a figure we
+            could confirm, so we leave it blank rather than guess. Fees change every session, so treat them as the
+            order of the cost and check the institute&rsquo;s fee page before you pay.
+          </span>
+        </p>
         <JourneyLinks
           current="colleges"
           title="Found a few you like?"

@@ -44,21 +44,3 @@ export const sectionPages: Record<string, SectionPage> = {
     planned: ["One-to-one mentor sessions", "Choice-list reviews", "Round-by-round guidance"],
   },
 };
-
-export const portalCopy = {
-  mentor: {
-    title: "Mentor workspace",
-    body: "A dedicated space for JEE Ultimate 2.0 mentors and counsellors to support their students.",
-    icon: "graduation",
-  },
-  admin: {
-    title: "Admin console",
-    body: "Platform control for the JEE Ultimate 2.0 owner and development team.",
-    icon: "shield",
-  },
-  team: {
-    title: "Team workspace",
-    body: "Shared tools for the wider JEE Ultimate 2.0 team.",
-    icon: "users",
-  },
-} as const;

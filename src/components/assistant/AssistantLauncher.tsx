@@ -45,23 +45,28 @@ export function AssistantLauncher() {
           onHoverEnd={() => setHover(false)}
           aria-label={`${assistant.name}: ask anything`}
           aria-expanded={open}
-          animate={
-            reduced || open || hover
-              ? { y: 0, rotate: open ? -8 : 0 }
-              : // a slow drift when nobody is reaching for it, and it settles
-                // the moment the pointer arrives, so the target never moves
-                { y: [0, -5, 0], rotate: 0 }
-          }
-          transition={
-            reduced
-              ? undefined
-              : { y: { duration: 4.2, repeat: Infinity, ease: "easeInOut" }, rotate: spring.hover }
-          }
           whileHover={{ scale: 1.08 }}
           whileTap={{ scale: 0.94 }}
-          className="group relative block outline-none"
+          className="group relative block p-1.5 outline-none"
         >
-          <AssistantMark className="size-12 drop-shadow-[0_10px_24px_color-mix(in_oklab,var(--accent)_45%,transparent)] md:size-14" />
+          {/* The drift lives on the mark, never on the button. A target that
+              moves under the pointer is a target you miss, so the hit area
+              stays exactly where it was while the shape breathes inside it. */}
+          <motion.span
+            className="block"
+            animate={
+              reduced || open || hover
+                ? { y: 0, rotate: open ? -8 : 0 }
+                : { y: [0, -5, 0], rotate: 0 }
+            }
+            transition={
+              reduced
+                ? undefined
+                : { y: { duration: 4.2, repeat: Infinity, ease: "easeInOut" }, rotate: spring.hover }
+            }
+          >
+            <AssistantMark className="size-12 drop-shadow-[0_10px_24px_color-mix(in_oklab,var(--accent)_45%,transparent)] md:size-14" />
+          </motion.span>
           {/* A soft pool of light under the mark, so it sits on the page */}
           <span
             aria-hidden

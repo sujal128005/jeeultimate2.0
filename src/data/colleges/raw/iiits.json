@@ -1,826 +1,887 @@
 [
-  {
-    "name": "Indian Institute of Information Technology Allahabad",
-    "short": "IIIT Allahabad",
-    "type": "IIIT",
-    "city": "Prayagraj",
-    "state": "Uttar Pradesh",
-    "established": 1999,
-    "ownership": "central",
-    "website": "https://www.iiita.ac.in",
-    "counselling": [
-      "josaa",
-      "csab"
-    ],
-    "quotas": [
-      "AI"
-    ],
-    "courses": [
-      "btech"
-    ],
-    "branches": [
-      "it",
-      "ece"
-    ],
-    "seats": null,
-    "fees": null,
-    "hostel": true,
-    "openingRank": 2064,
-    "closingRank": 6094,
-    "rankExam": "main",
-    "rankYear": 2025
-  },
-  {
-    "name": "Atal Bihari Vajpayee Indian Institute of Information Technology and Management Gwalior",
-    "short": "ABV-IIITM Gwalior",
-    "type": "IIIT",
-    "city": "Gwalior",
-    "state": "Madhya Pradesh",
-    "established": 1997,
-    "ownership": "central",
-    "website": "https://www.iiitm.ac.in",
-    "counselling": [
-      "josaa",
-      "csab"
-    ],
-    "quotas": [
-      "AI"
-    ],
-    "courses": [
-      "btech"
-    ],
-    "branches": [
-      "cse",
-      "it"
-    ],
-    "seats": null,
-    "fees": null,
-    "hostel": true,
-    "openingRank": null,
-    "closingRank": 9527,
-    "rankExam": "main",
-    "rankYear": 2025,
-    "nirfRank": 96,
-    "nirfYear": 2025,
-    "sources": [
-      "https://www.nirfindia.org/Rankings/2025/EngineeringRanking.html"
-    ]
-  },
-  {
-    "name": "PDPM Indian Institute of Information Technology, Design and Manufacturing Jabalpur",
-    "short": "IIITDM Jabalpur",
-    "type": "IIIT",
-    "city": "Jabalpur",
-    "state": "Madhya Pradesh",
-    "established": 2005,
-    "ownership": "central",
-    "website": "https://www.iiitdmj.ac.in",
-    "counselling": [
-      "josaa",
-      "csab"
-    ],
-    "quotas": [
-      "AI"
-    ],
-    "courses": [
-      "btech",
-      "bdes"
-    ],
-    "branches": [
-      "cse",
-      "ece",
-      "me",
-      "design"
-    ],
-    "seats": null,
-    "fees": null,
-    "hostel": true,
-    "openingRank": null,
-    "closingRank": 14787,
-    "rankExam": "main",
-    "rankYear": 2025
-  },
-  {
-    "name": "Indian Institute of Information Technology, Design and Manufacturing Kancheepuram",
-    "short": "IIITDM Kancheepuram",
-    "type": "IIIT",
-    "city": "Chennai",
-    "state": "Tamil Nadu",
-    "established": 2007,
-    "ownership": "central",
-    "website": "https://www.iiitdm.ac.in",
-    "counselling": [
-      "josaa",
-      "csab"
-    ],
-    "quotas": [
-      "AI"
-    ],
-    "courses": [
-      "btech",
-      "dual"
-    ],
-    "branches": [
-      "cse",
-      "ece",
-      "me"
-    ],
-    "seats": null,
-    "fees": null,
-    "hostel": true,
-    "openingRank": null,
-    "closingRank": null,
-    "rankExam": "main",
-    "rankYear": 2025
-  },
-  {
-    "name": "Indian Institute of Information Technology, Design and Manufacturing Kurnool",
-    "short": "IIITDM Kurnool",
-    "type": "IIIT",
-    "city": "Kurnool",
-    "state": "Andhra Pradesh",
-    "established": 2015,
-    "ownership": "central",
-    "website": "https://iiitk.ac.in",
-    "counselling": [
-      "josaa",
-      "csab"
-    ],
-    "quotas": [
-      "AI"
-    ],
-    "courses": [
-      "btech"
-    ],
-    "branches": [
-      "cse",
-      "ai",
-      "ece",
-      "me"
-    ],
-    "seats": null,
-    "fees": null,
-    "hostel": true,
-    "openingRank": null,
-    "closingRank": null,
-    "rankExam": "main",
-    "rankYear": 2025
-  },
-  {
-    "name": "Indian Institute of Information Technology Guwahati",
-    "short": "IIIT Guwahati",
-    "type": "IIIT",
-    "city": "Guwahati",
-    "state": "Assam",
-    "established": 2013,
-    "ownership": "ppp",
-    "website": "https://www.iiitg.ac.in",
-    "counselling": [
-      "josaa",
-      "csab"
-    ],
-    "quotas": [
-      "AI"
-    ],
-    "courses": [
-      "btech"
-    ],
-    "branches": [
-      "cse",
-      "ece"
-    ],
-    "seats": null,
-    "fees": null,
-    "hostel": true,
-    "openingRank": null,
-    "closingRank": 22739,
-    "rankExam": "main",
-    "rankYear": 2025
-  },
-  {
-    "name": "Indian Institute of Information Technology Kota",
-    "short": "IIIT Kota",
-    "type": "IIIT",
-    "city": "Kota",
-    "state": "Rajasthan",
-    "established": 2013,
-    "ownership": "ppp",
-    "website": "https://www.iiitkota.ac.in",
-    "counselling": [
-      "josaa",
-      "csab"
-    ],
-    "quotas": [
-      "AI"
-    ],
-    "courses": [
-      "btech"
-    ],
-    "branches": [
-      "cse",
-      "ai",
-      "ece"
-    ],
-    "seats": null,
-    "fees": null,
-    "hostel": true,
-    "openingRank": null,
-    "closingRank": 27400,
-    "rankExam": "main",
-    "rankYear": 2025
-  },
-  {
-    "name": "Indian Institute of Information Technology Vadodara",
-    "short": "IIIT Vadodara",
-    "type": "IIIT",
-    "city": "Gandhinagar",
-    "state": "Gujarat",
-    "established": 2013,
-    "ownership": "ppp",
-    "website": "https://iiitvadodara.ac.in",
-    "counselling": [
-      "josaa",
-      "csab"
-    ],
-    "quotas": [
-      "AI"
-    ],
-    "courses": [
-      "btech"
-    ],
-    "branches": [
-      "cse",
-      "it"
-    ],
-    "seats": null,
-    "fees": null,
-    "hostel": null,
-    "openingRank": null,
-    "closingRank": 24840,
-    "rankExam": "main",
-    "rankYear": 2025
-  },
-  {
-    "name": "Indian Institute of Information Technology Vadodara International Campus Diu",
-    "short": "IIIT Vadodara Diu",
-    "type": "IIIT",
-    "city": "Diu",
-    "state": "Dadra and Nagar Haveli and Daman and Diu",
-    "established": null,
-    "ownership": "ppp",
-    "website": "https://iiitvadodara.ac.in",
-    "counselling": [
-      "josaa",
-      "csab"
-    ],
-    "quotas": [
-      "AI"
-    ],
-    "courses": [
-      "btech"
-    ],
-    "branches": [
-      "cse"
-    ],
-    "seats": null,
-    "fees": null,
-    "hostel": null,
-    "openingRank": null,
-    "closingRank": null,
-    "rankExam": "main",
-    "rankYear": 2025
-  },
-  {
-    "name": "Indian Institute of Information Technology Sri City, Chittoor",
-    "short": "IIIT Sri City",
-    "type": "IIIT",
-    "city": "Sri City",
-    "state": "Andhra Pradesh",
-    "established": 2013,
-    "ownership": "ppp",
-    "website": "https://www.iiits.ac.in",
-    "counselling": [
-      "josaa",
-      "csab"
-    ],
-    "quotas": [
-      "AI"
-    ],
-    "courses": [
-      "btech"
-    ],
-    "branches": [
-      "cse",
-      "ece"
-    ],
-    "seats": null,
-    "fees": null,
-    "hostel": true,
-    "openingRank": null,
-    "closingRank": 26387,
-    "rankExam": "main",
-    "rankYear": 2025
-  },
-  {
-    "name": "Indian Institute of Information Technology Tiruchirappalli",
-    "short": "IIIT Tiruchirappalli",
-    "type": "IIIT",
-    "city": "Tiruchirappalli",
-    "state": "Tamil Nadu",
-    "established": 2013,
-    "ownership": "ppp",
-    "website": "https://iiitt.ac.in",
-    "counselling": [
-      "josaa",
-      "csab"
-    ],
-    "quotas": [
-      "AI"
-    ],
-    "courses": [
-      "btech"
-    ],
-    "branches": [
-      "cse",
-      "ece"
-    ],
-    "seats": null,
-    "fees": 230400,
-    "hostel": true,
-    "openingRank": null,
-    "closingRank": null,
-    "rankExam": "main",
-    "rankYear": 2025
-  },
-  {
-    "name": "Indian Institute of Information Technology Una",
-    "short": "IIIT Una",
-    "type": "IIIT",
-    "city": "Una",
-    "state": "Himachal Pradesh",
-    "established": 2014,
-    "ownership": "ppp",
-    "website": "https://iiitu.ac.in",
-    "counselling": [
-      "josaa",
-      "csab"
-    ],
-    "quotas": [
-      "AI"
-    ],
-    "courses": [
-      "btech"
-    ],
-    "branches": [
-      "cse",
-      "it",
-      "ece"
-    ],
-    "seats": null,
-    "fees": null,
-    "hostel": true,
-    "openingRank": null,
-    "closingRank": 33468,
-    "rankExam": "main",
-    "rankYear": 2025
-  },
-  {
-    "name": "Indian Institute of Information Technology Sonepat",
-    "short": "IIIT Sonepat",
-    "type": "IIIT",
-    "city": "Sonipat",
-    "state": "Haryana",
-    "established": 2014,
-    "ownership": "ppp",
-    "website": "https://iiitsonepat.ac.in",
-    "counselling": [
-      "josaa",
-      "csab"
-    ],
-    "quotas": [
-      "AI"
-    ],
-    "courses": [
-      "btech"
-    ],
-    "branches": [
-      "cse",
-      "it"
-    ],
-    "seats": null,
-    "fees": null,
-    "hostel": null,
-    "openingRank": null,
-    "closingRank": 32506,
-    "rankExam": "main",
-    "rankYear": 2025
-  },
-  {
-    "name": "Indian Institute of Information Technology Kalyani",
-    "short": "IIIT Kalyani",
-    "type": "IIIT",
-    "city": "Kalyani",
-    "state": "West Bengal",
-    "established": 2014,
-    "ownership": "ppp",
-    "website": "https://iiitkalyani.ac.in",
-    "counselling": [
-      "josaa",
-      "csab"
-    ],
-    "quotas": [
-      "AI"
-    ],
-    "courses": [
-      "btech"
-    ],
-    "branches": [
-      "cse",
-      "ece"
-    ],
-    "seats": null,
-    "fees": null,
-    "hostel": true,
-    "openingRank": null,
-    "closingRank": 44154,
-    "rankExam": "main",
-    "rankYear": 2025
-  },
-  {
-    "name": "Indian Institute of Information Technology Lucknow",
-    "short": "IIIT Lucknow",
-    "type": "IIIT",
-    "city": "Lucknow",
-    "state": "Uttar Pradesh",
-    "established": 2015,
-    "ownership": "ppp",
-    "website": "https://iiitl.ac.in",
-    "counselling": [
-      "josaa",
-      "csab"
-    ],
-    "quotas": [
-      "AI"
-    ],
-    "courses": [
-      "btech"
-    ],
-    "branches": [
-      "cse",
-      "it",
-      "ai"
-    ],
-    "seats": null,
-    "fees": null,
-    "hostel": true,
-    "openingRank": null,
-    "closingRank": null,
-    "rankExam": "main",
-    "rankYear": 2025
-  },
-  {
-    "name": "Indian Institute of Information Technology Dharwad",
-    "short": "IIIT Dharwad",
-    "type": "IIIT",
-    "city": "Dharwad",
-    "state": "Karnataka",
-    "established": 2015,
-    "ownership": "ppp",
-    "website": "https://iiitdwd.ac.in",
-    "counselling": [
-      "josaa",
-      "csab"
-    ],
-    "quotas": [
-      "AI"
-    ],
-    "courses": [
-      "btech"
-    ],
-    "branches": [
-      "cse",
-      "ai",
-      "ece"
-    ],
-    "seats": null,
-    "fees": null,
-    "hostel": true,
-    "openingRank": null,
-    "closingRank": null,
-    "rankExam": "main",
-    "rankYear": 2025
-  },
-  {
-    "name": "Indian Institute of Information Technology Kottayam",
-    "short": "IIIT Kottayam",
-    "type": "IIIT",
-    "city": "Kottayam",
-    "state": "Kerala",
-    "established": 2015,
-    "ownership": "ppp",
-    "website": "https://www.iiitkottayam.ac.in",
-    "counselling": [
-      "josaa",
-      "csab"
-    ],
-    "quotas": [
-      "AI"
-    ],
-    "courses": [
-      "btech"
-    ],
-    "branches": [
-      "cse",
-      "ai",
-      "ece"
-    ],
-    "seats": null,
-    "fees": null,
-    "hostel": true,
-    "openingRank": null,
-    "closingRank": null,
-    "rankExam": "main",
-    "rankYear": 2025
-  },
-  {
-    "name": "Indian Institute of Information Technology Senapati, Manipur",
-    "short": "IIIT Manipur",
-    "type": "IIIT",
-    "city": "Imphal",
-    "state": "Manipur",
-    "established": 2015,
-    "ownership": "ppp",
-    "website": "https://www.iiitmanipur.ac.in",
-    "counselling": [
-      "josaa",
-      "csab"
-    ],
-    "quotas": [
-      "AI"
-    ],
-    "courses": [
-      "btech"
-    ],
-    "branches": [
-      "cse",
-      "ece"
-    ],
-    "seats": null,
-    "fees": null,
-    "hostel": null,
-    "openingRank": null,
-    "closingRank": null,
-    "rankExam": "main",
-    "rankYear": 2025
-  },
-  {
-    "name": "Indian Institute of Information Technology Nagpur",
-    "short": "IIIT Nagpur",
-    "type": "IIIT",
-    "city": "Nagpur",
-    "state": "Maharashtra",
-    "established": 2016,
-    "ownership": "ppp",
-    "website": "https://iiitn.ac.in",
-    "counselling": [
-      "josaa",
-      "csab"
-    ],
-    "quotas": [
-      "AI"
-    ],
-    "courses": [
-      "btech"
-    ],
-    "branches": [
-      "cse",
-      "ece"
-    ],
-    "seats": null,
-    "fees": null,
-    "hostel": true,
-    "openingRank": null,
-    "closingRank": null,
-    "rankExam": "main",
-    "rankYear": 2025
-  },
-  {
-    "name": "Indian Institute of Information Technology Pune",
-    "short": "IIIT Pune",
-    "type": "IIIT",
-    "city": "Pune",
-    "state": "Maharashtra",
-    "established": 2016,
-    "ownership": "ppp",
-    "website": "https://www.iiitp.ac.in",
-    "counselling": [
-      "josaa",
-      "csab"
-    ],
-    "quotas": [
-      "AI"
-    ],
-    "courses": [
-      "btech"
-    ],
-    "branches": [
-      "cse",
-      "ece"
-    ],
-    "seats": null,
-    "fees": null,
-    "hostel": null,
-    "openingRank": null,
-    "closingRank": null,
-    "rankExam": "main",
-    "rankYear": 2025
-  },
-  {
-    "name": "Indian Institute of Information Technology Ranchi",
-    "short": "IIIT Ranchi",
-    "type": "IIIT",
-    "city": "Ranchi",
-    "state": "Jharkhand",
-    "established": 2016,
-    "ownership": "ppp",
-    "website": "https://iiitranchi.ac.in",
-    "counselling": [
-      "josaa",
-      "csab"
-    ],
-    "quotas": [
-      "AI"
-    ],
-    "courses": [
-      "btech"
-    ],
-    "branches": [
-      "cse",
-      "ece"
-    ],
-    "seats": null,
-    "fees": null,
-    "hostel": null,
-    "openingRank": null,
-    "closingRank": null,
-    "rankExam": "main",
-    "rankYear": 2025
-  },
-  {
-    "name": "Indian Institute of Information Technology Bhagalpur",
-    "short": "IIIT Bhagalpur",
-    "type": "IIIT",
-    "city": "Bhagalpur",
-    "state": "Bihar",
-    "established": 2017,
-    "ownership": "ppp",
-    "website": "https://www.iiitbh.ac.in",
-    "counselling": [
-      "josaa",
-      "csab"
-    ],
-    "quotas": [
-      "AI"
-    ],
-    "courses": [
-      "btech"
-    ],
-    "branches": [
-      "cse",
-      "ece",
-      "mnc"
-    ],
-    "seats": null,
-    "fees": null,
-    "hostel": true,
-    "openingRank": null,
-    "closingRank": null,
-    "rankExam": "main",
-    "rankYear": 2025
-  },
-  {
-    "name": "Indian Institute of Information Technology Bhopal",
-    "short": "IIIT Bhopal",
-    "type": "IIIT",
-    "city": "Bhopal",
-    "state": "Madhya Pradesh",
-    "established": 2017,
-    "ownership": "ppp",
-    "website": "https://iiitbhopal.ac.in",
-    "counselling": [
-      "josaa",
-      "csab"
-    ],
-    "quotas": [
-      "AI"
-    ],
-    "courses": [
-      "btech"
-    ],
-    "branches": [
-      "cse",
-      "it",
-      "ece"
-    ],
-    "seats": null,
-    "fees": null,
-    "hostel": null,
-    "openingRank": null,
-    "closingRank": null,
-    "rankExam": "main",
-    "rankYear": 2025
-  },
-  {
-    "name": "Indian Institute of Information Technology Surat",
-    "short": "IIIT Surat",
-    "type": "IIIT",
-    "city": "Surat",
-    "state": "Gujarat",
-    "established": 2017,
-    "ownership": "ppp",
-    "website": "https://iiitsurat.ac.in",
-    "counselling": [
-      "josaa",
-      "csab"
-    ],
-    "quotas": [
-      "AI"
-    ],
-    "courses": [
-      "btech"
-    ],
-    "branches": [
-      "cse",
-      "ece"
-    ],
-    "seats": null,
-    "fees": null,
-    "hostel": null,
-    "openingRank": null,
-    "closingRank": null,
-    "rankExam": "main",
-    "rankYear": 2025
-  },
-  {
-    "name": "Indian Institute of Information Technology Agartala",
-    "short": "IIIT Agartala",
-    "type": "IIIT",
-    "city": "Agartala",
-    "state": "Tripura",
-    "established": 2018,
-    "ownership": "ppp",
-    "website": "https://iiitagartala.ac.in",
-    "counselling": [
-      "josaa",
-      "csab"
-    ],
-    "quotas": [
-      "AI"
-    ],
-    "courses": [
-      "btech"
-    ],
-    "branches": [
-      "cse",
-      "ece"
-    ],
-    "seats": null,
-    "fees": null,
-    "hostel": null,
-    "openingRank": null,
-    "closingRank": null,
-    "rankExam": "main",
-    "rankYear": 2025
-  },
-  {
-    "name": "Indian Institute of Information Technology Raichur",
-    "short": "IIIT Raichur",
-    "type": "IIIT",
-    "city": "Raichur",
-    "state": "Karnataka",
-    "established": 2019,
-    "ownership": "ppp",
-    "website": "https://iiitr.ac.in",
-    "counselling": [
-      "josaa",
-      "csab"
-    ],
-    "quotas": [
-      "AI"
-    ],
-    "courses": [
-      "btech"
-    ],
-    "branches": [
-      "cse",
-      "ai"
-    ],
-    "seats": null,
-    "fees": null,
-    "hostel": null,
-    "openingRank": null,
-    "closingRank": null,
-    "rankExam": "main",
-    "rankYear": 2025
-  }
+ {
+  "name": "Indian Institute of Information Technology Allahabad",
+  "short": "IIIT Allahabad",
+  "type": "IIIT",
+  "city": "Prayagraj",
+  "state": "Uttar Pradesh",
+  "established": 1999,
+  "ownership": "central",
+  "website": "https://www.iiita.ac.in",
+  "counselling": [
+   "josaa",
+   "csab"
+  ],
+  "quotas": [
+   "AI"
+  ],
+  "courses": [
+   "btech"
+  ],
+  "branches": [
+   "it",
+   "ece"
+  ],
+  "seats": 504,
+  "fees": 180000,
+  "hostel": true,
+  "openingRank": 2064,
+  "closingRank": 6094,
+  "rankExam": "main",
+  "rankYear": 2025,
+  "sources": [
+   "https://aaa.iiita.ac.in/PDF1/Updated%20Fee%20Structure%20for%202025%20Batch%20dated%2014-05-2025%20Wednesday.pdf",
+   "https://aaa.iiita.ac.in/PDF1/Summary%20of%20UG,%20PG%20Seats%202026_FOR%20WEBSITE.pdf"
+  ]
+ },
+ {
+  "name": "Atal Bihari Vajpayee Indian Institute of Information Technology and Management Gwalior",
+  "short": "ABV-IIITM Gwalior",
+  "type": "IIIT",
+  "city": "Gwalior",
+  "state": "Madhya Pradesh",
+  "established": 1997,
+  "ownership": "central",
+  "website": "https://www.iiitm.ac.in",
+  "counselling": [
+   "josaa",
+   "csab"
+  ],
+  "quotas": [
+   "AI"
+  ],
+  "courses": [
+   "btech"
+  ],
+  "branches": [
+   "cse",
+   "it"
+  ],
+  "seats": null,
+  "fees": null,
+  "hostel": true,
+  "openingRank": null,
+  "closingRank": 9527,
+  "rankExam": "main",
+  "rankYear": 2025,
+  "nirfRank": 96,
+  "nirfYear": 2025,
+  "sources": [
+   "https://www.nirfindia.org/Rankings/2025/EngineeringRanking.html"
+  ]
+ },
+ {
+  "name": "PDPM Indian Institute of Information Technology, Design and Manufacturing Jabalpur",
+  "short": "IIITDM Jabalpur",
+  "type": "IIIT",
+  "city": "Jabalpur",
+  "state": "Madhya Pradesh",
+  "established": 2005,
+  "ownership": "central",
+  "website": "https://www.iiitdmj.ac.in",
+  "counselling": [
+   "josaa",
+   "csab"
+  ],
+  "quotas": [
+   "AI"
+  ],
+  "courses": [
+   "btech",
+   "bdes"
+  ],
+  "branches": [
+   "cse",
+   "ece",
+   "me",
+   "design"
+  ],
+  "seats": 440,
+  "fees": 143500,
+  "hostel": true,
+  "openingRank": null,
+  "closingRank": 14787,
+  "rankExam": "main",
+  "rankYear": 2025,
+  "sources": [
+   "https://www.iiitdmj.ac.in/academics/download/fee-structure-2025-26/Fee%20Structure%20UG2025.pdf",
+   "https://www.iiitdmj.ac.in/academics/download/Seat%20Matrix%202023-24.pdf"
+  ]
+ },
+ {
+  "name": "Indian Institute of Information Technology, Design and Manufacturing Kancheepuram",
+  "short": "IIITDM Kancheepuram",
+  "type": "IIIT",
+  "city": "Chennai",
+  "state": "Tamil Nadu",
+  "established": 2007,
+  "ownership": "central",
+  "website": "https://www.iiitdm.ac.in",
+  "counselling": [
+   "josaa",
+   "csab"
+  ],
+  "quotas": [
+   "AI"
+  ],
+  "courses": [
+   "btech",
+   "dual"
+  ],
+  "branches": [
+   "cse",
+   "ece",
+   "me"
+  ],
+  "seats": 535,
+  "fees": 146000,
+  "hostel": true,
+  "openingRank": null,
+  "closingRank": null,
+  "rankExam": "main",
+  "rankYear": 2025,
+  "sources": [
+   "https://old.iiitdm.ac.in/img/academics/Fee%20structure%20UG,%20DD%20&%20PG.pdf",
+   "https://www.iiitdm.ac.in/students/existing-students/curriculum-info"
+  ]
+ },
+ {
+  "name": "Indian Institute of Information Technology, Design and Manufacturing Kurnool",
+  "short": "IIITDM Kurnool",
+  "type": "IIIT",
+  "city": "Kurnool",
+  "state": "Andhra Pradesh",
+  "established": 2015,
+  "ownership": "central",
+  "website": "https://iiitk.ac.in",
+  "counselling": [
+   "josaa",
+   "csab"
+  ],
+  "quotas": [
+   "AI"
+  ],
+  "courses": [
+   "btech"
+  ],
+  "branches": [
+   "cse",
+   "ai",
+   "ece",
+   "me"
+  ],
+  "seats": 267,
+  "fees": 176000,
+  "hostel": true,
+  "openingRank": null,
+  "closingRank": null,
+  "rankExam": "main",
+  "rankYear": 2025,
+  "sources": [
+   "https://files.iiitk.ac.in/uploads/academics/2025/B.Tech_2025_brouchure.pdf"
+  ]
+ },
+ {
+  "name": "Indian Institute of Information Technology Guwahati",
+  "short": "IIIT Guwahati",
+  "type": "IIIT",
+  "city": "Guwahati",
+  "state": "Assam",
+  "established": 2013,
+  "ownership": "ppp",
+  "website": "https://www.iiitg.ac.in",
+  "counselling": [
+   "josaa",
+   "csab"
+  ],
+  "quotas": [
+   "AI"
+  ],
+  "courses": [
+   "btech"
+  ],
+  "branches": [
+   "cse",
+   "ece"
+  ],
+  "seats": 254,
+  "fees": 295000,
+  "hostel": true,
+  "openingRank": null,
+  "closingRank": 22739,
+  "rankExam": "main",
+  "rankYear": 2025,
+  "sources": [
+   "https://www.iiitg.ac.in/fees.html",
+   "https://www.iiitg.ac.in/uploads/2025/02/14/5293ea128861a29e27e43cbaa421d871.pdf"
+  ]
+ },
+ {
+  "name": "Indian Institute of Information Technology Kota",
+  "short": "IIIT Kota",
+  "type": "IIIT",
+  "city": "Kota",
+  "state": "Rajasthan",
+  "established": 2013,
+  "ownership": "ppp",
+  "website": "https://www.iiitkota.ac.in",
+  "counselling": [
+   "josaa",
+   "csab"
+  ],
+  "quotas": [
+   "AI"
+  ],
+  "courses": [
+   "btech"
+  ],
+  "branches": [
+   "cse",
+   "ai",
+   "ece"
+  ],
+  "seats": null,
+  "fees": null,
+  "hostel": true,
+  "openingRank": null,
+  "closingRank": 27400,
+  "rankExam": "main",
+  "rankYear": 2025
+ },
+ {
+  "name": "Indian Institute of Information Technology Vadodara",
+  "short": "IIIT Vadodara",
+  "type": "IIIT",
+  "city": "Gandhinagar",
+  "state": "Gujarat",
+  "established": 2013,
+  "ownership": "ppp",
+  "website": "https://iiitvadodara.ac.in",
+  "counselling": [
+   "josaa",
+   "csab"
+  ],
+  "quotas": [
+   "AI"
+  ],
+  "courses": [
+   "btech"
+  ],
+  "branches": [
+   "cse",
+   "it"
+  ],
+  "seats": 690,
+  "fees": 250000,
+  "hostel": true,
+  "openingRank": null,
+  "closingRank": 24840,
+  "rankExam": "main",
+  "rankYear": 2025,
+  "sources": [
+   "https://iiitvadodara.ac.in/admission_btech.php"
+  ]
+ },
+ {
+  "name": "Indian Institute of Information Technology Vadodara International Campus Diu",
+  "short": "IIIT Vadodara Diu",
+  "type": "IIIT",
+  "city": "Diu",
+  "state": "Dadra and Nagar Haveli and Daman and Diu",
+  "established": null,
+  "ownership": "ppp",
+  "website": "http://diu.iiitvadodara.ac.in",
+  "counselling": [
+   "josaa",
+   "csab"
+  ],
+  "quotas": [
+   "AI"
+  ],
+  "courses": [
+   "btech"
+  ],
+  "branches": [
+   "cse"
+  ],
+  "seats": 108,
+  "fees": 230000,
+  "hostel": true,
+  "openingRank": null,
+  "closingRank": null,
+  "rankExam": "main",
+  "rankYear": 2025,
+  "sources": [
+   "http://diu.iiitvadodara.ac.in/btech_admission.php"
+  ]
+ },
+ {
+  "name": "Indian Institute of Information Technology Sri City, Chittoor",
+  "short": "IIIT Sri City",
+  "type": "IIIT",
+  "city": "Sri City",
+  "state": "Andhra Pradesh",
+  "established": 2013,
+  "ownership": "ppp",
+  "website": "https://www.iiits.ac.in",
+  "counselling": [
+   "josaa",
+   "csab"
+  ],
+  "quotas": [
+   "AI"
+  ],
+  "courses": [
+   "btech"
+  ],
+  "branches": [
+   "cse",
+   "ece"
+  ],
+  "seats": 438,
+  "fees": 330000,
+  "hostel": true,
+  "openingRank": null,
+  "closingRank": 26387,
+  "rankExam": "main",
+  "rankYear": 2025,
+  "sources": [
+   "https://iiits.ac.in/academics/b-tech-programme/fee-structure/",
+   "https://iiits.ac.in/admissions/b-tech-programme/josaa-csab/"
+  ]
+ },
+ {
+  "name": "Indian Institute of Information Technology Tiruchirappalli",
+  "short": "IIIT Tiruchirappalli",
+  "type": "IIIT",
+  "city": "Tiruchirappalli",
+  "state": "Tamil Nadu",
+  "established": 2013,
+  "ownership": "ppp",
+  "website": "https://iiitt.ac.in",
+  "counselling": [
+   "josaa",
+   "csab"
+  ],
+  "quotas": [
+   "AI"
+  ],
+  "courses": [
+   "btech"
+  ],
+  "branches": [
+   "cse",
+   "ece"
+  ],
+  "seats": null,
+  "fees": 230400,
+  "hostel": true,
+  "openingRank": null,
+  "closingRank": null,
+  "rankExam": "main",
+  "rankYear": 2025
+ },
+ {
+  "name": "Indian Institute of Information Technology Una",
+  "short": "IIIT Una",
+  "type": "IIIT",
+  "city": "Una",
+  "state": "Himachal Pradesh",
+  "established": 2014,
+  "ownership": "ppp",
+  "website": "https://iiitu.ac.in",
+  "counselling": [
+   "josaa",
+   "csab"
+  ],
+  "quotas": [
+   "AI"
+  ],
+  "courses": [
+   "btech"
+  ],
+  "branches": [
+   "cse",
+   "it",
+   "ece"
+  ],
+  "seats": 285,
+  "fees": 210000,
+  "hostel": true,
+  "openingRank": null,
+  "closingRank": 33468,
+  "rankExam": "main",
+  "rankYear": 2025,
+  "sources": [
+   "https://cdn.iiitu.ac.in/uploads/news/fees_structure_iiituna.pdf",
+   "https://cdn.iiitu.ac.in/uploads/admission/Brochure_2025-26.pdf"
+  ]
+ },
+ {
+  "name": "Indian Institute of Information Technology Sonepat",
+  "short": "IIIT Sonepat",
+  "type": "IIIT",
+  "city": "Sonipat",
+  "state": "Haryana",
+  "established": 2014,
+  "ownership": "ppp",
+  "website": "https://iiitsonepat.ac.in",
+  "counselling": [
+   "josaa",
+   "csab"
+  ],
+  "quotas": [
+   "AI"
+  ],
+  "courses": [
+   "btech"
+  ],
+  "branches": [
+   "cse",
+   "it"
+  ],
+  "seats": null,
+  "fees": null,
+  "hostel": null,
+  "openingRank": null,
+  "closingRank": 32506,
+  "rankExam": "main",
+  "rankYear": 2025
+ },
+ {
+  "name": "Indian Institute of Information Technology Kalyani",
+  "short": "IIIT Kalyani",
+  "type": "IIIT",
+  "city": "Kalyani",
+  "state": "West Bengal",
+  "established": 2014,
+  "ownership": "ppp",
+  "website": "https://iiitkalyani.ac.in",
+  "counselling": [
+   "josaa",
+   "csab"
+  ],
+  "quotas": [
+   "AI"
+  ],
+  "courses": [
+   "btech"
+  ],
+  "branches": [
+   "cse",
+   "ece"
+  ],
+  "seats": 237,
+  "fees": 250000,
+  "hostel": true,
+  "openingRank": null,
+  "closingRank": 44154,
+  "rankExam": "main",
+  "rankYear": 2025,
+  "sources": [
+   "https://iiitkalyani.ac.in/api/serve/2025/09/10/btech-broch-IIIT-Kalyani-Admission-2025-12-08-2025.pdf"
+  ]
+ },
+ {
+  "name": "Indian Institute of Information Technology Lucknow",
+  "short": "IIIT Lucknow",
+  "type": "IIIT",
+  "city": "Lucknow",
+  "state": "Uttar Pradesh",
+  "established": 2015,
+  "ownership": "ppp",
+  "website": "https://iiitl.ac.in",
+  "counselling": [
+   "josaa",
+   "csab"
+  ],
+  "quotas": [
+   "AI"
+  ],
+  "courses": [
+   "btech"
+  ],
+  "branches": [
+   "cse",
+   "it",
+   "ai"
+  ],
+  "seats": null,
+  "fees": 240000,
+  "hostel": true,
+  "openingRank": null,
+  "closingRank": null,
+  "rankExam": "main",
+  "rankYear": 2025,
+  "sources": [
+   "https://iiitl.ac.in/wp-content/uploads/2023/06/B.Tech-Fees-2023-2027.pdf"
+  ]
+ },
+ {
+  "name": "Indian Institute of Information Technology Dharwad",
+  "short": "IIIT Dharwad",
+  "type": "IIIT",
+  "city": "Dharwad",
+  "state": "Karnataka",
+  "established": 2015,
+  "ownership": "ppp",
+  "website": "https://iiitdwd.ac.in",
+  "counselling": [
+   "josaa",
+   "csab"
+  ],
+  "quotas": [
+   "AI"
+  ],
+  "courses": [
+   "btech"
+  ],
+  "branches": [
+   "cse",
+   "ai",
+   "ece"
+  ],
+  "seats": null,
+  "fees": null,
+  "hostel": true,
+  "openingRank": null,
+  "closingRank": null,
+  "rankExam": "main",
+  "rankYear": 2025
+ },
+ {
+  "name": "Indian Institute of Information Technology Kottayam",
+  "short": "IIIT Kottayam",
+  "type": "IIIT",
+  "city": "Kottayam",
+  "state": "Kerala",
+  "established": 2015,
+  "ownership": "ppp",
+  "website": "https://www.iiitkottayam.ac.in",
+  "counselling": [
+   "josaa",
+   "csab"
+  ],
+  "quotas": [
+   "AI"
+  ],
+  "courses": [
+   "btech"
+  ],
+  "branches": [
+   "cse",
+   "ai",
+   "ece"
+  ],
+  "seats": null,
+  "fees": 319600,
+  "hostel": true,
+  "openingRank": null,
+  "closingRank": null,
+  "rankExam": "main",
+  "rankYear": 2025,
+  "sources": [
+   "https://iiitkottayam.ac.in/views/fees.html"
+  ]
+ },
+ {
+  "name": "Indian Institute of Information Technology Senapati, Manipur",
+  "short": "IIIT Manipur",
+  "type": "IIIT",
+  "city": "Imphal",
+  "state": "Manipur",
+  "established": 2015,
+  "ownership": "ppp",
+  "website": "https://www.iiitmanipur.ac.in",
+  "counselling": [
+   "josaa",
+   "csab"
+  ],
+  "quotas": [
+   "AI"
+  ],
+  "courses": [
+   "btech"
+  ],
+  "branches": [
+   "cse",
+   "ece"
+  ],
+  "seats": null,
+  "fees": 280000,
+  "hostel": true,
+  "openingRank": null,
+  "closingRank": null,
+  "rankExam": "main",
+  "rankYear": 2025,
+  "sources": [
+   "https://iiitmanipur.ac.in/pages/academic/admission2025/FeeStructureIIITM2025.pdf"
+  ]
+ },
+ {
+  "name": "Indian Institute of Information Technology Nagpur",
+  "short": "IIIT Nagpur",
+  "type": "IIIT",
+  "city": "Nagpur",
+  "state": "Maharashtra",
+  "established": 2016,
+  "ownership": "ppp",
+  "website": "https://iiitn.ac.in",
+  "counselling": [
+   "josaa",
+   "csab"
+  ],
+  "quotas": [
+   "AI"
+  ],
+  "courses": [
+   "btech"
+  ],
+  "branches": [
+   "cse",
+   "ece"
+  ],
+  "seats": null,
+  "fees": 198000,
+  "hostel": true,
+  "openingRank": null,
+  "closingRank": null,
+  "rankExam": "main",
+  "rankYear": 2025,
+  "sources": [
+   "https://iiitn.ac.in/media/7128975f4eff4b1eb85c8ff31af69084.pdf"
+  ]
+ },
+ {
+  "name": "Indian Institute of Information Technology Pune",
+  "short": "IIIT Pune",
+  "type": "IIIT",
+  "city": "Pune",
+  "state": "Maharashtra",
+  "established": 2016,
+  "ownership": "ppp",
+  "website": "https://www.iiitp.ac.in",
+  "counselling": [
+   "josaa",
+   "csab"
+  ],
+  "quotas": [
+   "AI"
+  ],
+  "courses": [
+   "btech"
+  ],
+  "branches": [
+   "cse",
+   "ece"
+  ],
+  "seats": null,
+  "fees": null,
+  "hostel": null,
+  "openingRank": null,
+  "closingRank": null,
+  "rankExam": "main",
+  "rankYear": 2025
+ },
+ {
+  "name": "Indian Institute of Information Technology Ranchi",
+  "short": "IIIT Ranchi",
+  "type": "IIIT",
+  "city": "Ranchi",
+  "state": "Jharkhand",
+  "established": 2016,
+  "ownership": "ppp",
+  "website": "https://iiitranchi.ac.in",
+  "counselling": [
+   "josaa",
+   "csab"
+  ],
+  "quotas": [
+   "AI"
+  ],
+  "courses": [
+   "btech"
+  ],
+  "branches": [
+   "cse",
+   "ece"
+  ],
+  "seats": 320,
+  "fees": 264000,
+  "hostel": true,
+  "openingRank": null,
+  "closingRank": null,
+  "rankExam": "main",
+  "rankYear": 2025,
+  "sources": [
+   "https://iiitranchi.ac.in/docs/updates/BF290425.pdf",
+   "https://iiitranchi.ac.in/docs/Seat2526.pdf"
+  ]
+ },
+ {
+  "name": "Indian Institute of Information Technology Bhagalpur",
+  "short": "IIIT Bhagalpur",
+  "type": "IIIT",
+  "city": "Bhagalpur",
+  "state": "Bihar",
+  "established": 2017,
+  "ownership": "ppp",
+  "website": "https://www.iiitbh.ac.in",
+  "counselling": [
+   "josaa",
+   "csab"
+  ],
+  "quotas": [
+   "AI"
+  ],
+  "courses": [
+   "btech"
+  ],
+  "branches": [
+   "cse",
+   "ece",
+   "mnc"
+  ],
+  "seats": null,
+  "fees": 239580,
+  "hostel": true,
+  "openingRank": null,
+  "closingRank": null,
+  "rankExam": "main",
+  "rankYear": 2025,
+  "sources": [
+   "https://www.iiitbh.ac.in/sites/default/files/Document/Fee_Structure_2024_28.pdf"
+  ]
+ },
+ {
+  "name": "Indian Institute of Information Technology Bhopal",
+  "short": "IIIT Bhopal",
+  "type": "IIIT",
+  "city": "Bhopal",
+  "state": "Madhya Pradesh",
+  "established": 2017,
+  "ownership": "ppp",
+  "website": "https://iiitbhopal.ac.in",
+  "counselling": [
+   "josaa",
+   "csab"
+  ],
+  "quotas": [
+   "AI"
+  ],
+  "courses": [
+   "btech"
+  ],
+  "branches": [
+   "cse",
+   "it",
+   "ece"
+  ],
+  "seats": null,
+  "fees": 180000,
+  "hostel": true,
+  "openingRank": null,
+  "closingRank": null,
+  "rankExam": "main",
+  "rankYear": 2025,
+  "sources": [
+   "https://iiitbhopal.ac.in/Document/Admission/B.Tech%20FEE%20STRUCTURE%202023-24.pdf"
+  ]
+ },
+ {
+  "name": "Indian Institute of Information Technology Surat",
+  "short": "IIIT Surat",
+  "type": "IIIT",
+  "city": "Surat",
+  "state": "Gujarat",
+  "established": 2017,
+  "ownership": "ppp",
+  "website": "https://www.iiitsurat.ac.in",
+  "counselling": [
+   "josaa",
+   "csab"
+  ],
+  "quotas": [
+   "AI"
+  ],
+  "courses": [
+   "btech"
+  ],
+  "branches": [
+   "cse",
+   "ece"
+  ],
+  "seats": null,
+  "fees": null,
+  "hostel": null,
+  "openingRank": null,
+  "closingRank": null,
+  "rankExam": "main",
+  "rankYear": 2025
+ },
+ {
+  "name": "Indian Institute of Information Technology Agartala",
+  "short": "IIIT Agartala",
+  "type": "IIIT",
+  "city": "Agartala",
+  "state": "Tripura",
+  "established": 2018,
+  "ownership": "ppp",
+  "website": "https://iiitagartala.ac.in",
+  "counselling": [
+   "josaa",
+   "csab"
+  ],
+  "quotas": [
+   "AI"
+  ],
+  "courses": [
+   "btech"
+  ],
+  "branches": [
+   "cse",
+   "ece"
+  ],
+  "seats": null,
+  "fees": null,
+  "hostel": null,
+  "openingRank": null,
+  "closingRank": null,
+  "rankExam": "main",
+  "rankYear": 2025
+ },
+ {
+  "name": "Indian Institute of Information Technology Raichur",
+  "short": "IIIT Raichur",
+  "type": "IIIT",
+  "city": "Raichur",
+  "state": "Karnataka",
+  "established": 2019,
+  "ownership": "ppp",
+  "website": "https://iiitr.ac.in",
+  "counselling": [
+   "josaa",
+   "csab"
+  ],
+  "quotas": [
+   "AI"
+  ],
+  "courses": [
+   "btech"
+  ],
+  "branches": [
+   "cse",
+   "ai"
+  ],
+  "seats": null,
+  "fees": 220000,
+  "hostel": null,
+  "openingRank": null,
+  "closingRank": null,
+  "rankExam": "main",
+  "rankYear": 2025,
+  "sources": [
+   "https://iiitr.ac.in/assets/files/fee_structure/BTech%20Fee%20structure_2024%20Batch%20(All%20Branches)%20new%20student.pdf"
+  ]
+ }
 ]

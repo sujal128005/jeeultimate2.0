@@ -1,898 +1,970 @@
 [
-  {
-    "name": "Assam University, Silchar",
-    "short": "Assam University",
-    "type": "GFTI",
-    "city": "Silchar",
-    "state": "Assam",
-    "established": 1994,
-    "ownership": "central",
-    "website": "https://www.aus.ac.in",
-    "counselling": [
-      "josaa",
-      "csab"
-    ],
-    "quotas": [
-      "HS",
-      "AI"
-    ],
-    "courses": [
-      "btech"
-    ],
-    "branches": [
-      "cse",
-      "ece",
-      "agri"
-    ],
-    "seats": null,
-    "fees": null,
-    "hostel": true,
-    "openingRank": null,
-    "closingRank": null,
-    "rankExam": "main",
-    "rankYear": 2025
-  },
-  {
-    "name": "Birla Institute of Technology, Deoghar Off-Campus",
-    "short": "BIT Deoghar",
-    "type": "GFTI",
-    "city": "Deoghar",
-    "state": "Jharkhand",
-    "established": null,
-    "ownership": "deemed",
-    "website": "https://www.bitmesra.ac.in",
-    "counselling": [
-      "josaa",
-      "csab"
-    ],
-    "quotas": [
-      "HS",
-      "AI"
-    ],
-    "courses": [
-      "btech"
-    ],
-    "branches": [
-      "cse"
-    ],
-    "seats": null,
-    "fees": null,
-    "hostel": null,
-    "openingRank": null,
-    "closingRank": null,
-    "rankExam": "main",
-    "rankYear": 2025
-  },
-  {
-    "name": "Birla Institute of Technology, Mesra, Ranchi",
-    "short": "BIT Mesra",
-    "type": "GFTI",
-    "city": "Ranchi",
-    "state": "Jharkhand",
-    "established": 1955,
-    "ownership": "deemed",
-    "website": "https://www.bitmesra.ac.in",
-    "counselling": [
-      "josaa",
-      "csab"
-    ],
-    "quotas": [
-      "HS",
-      "AI"
-    ],
-    "courses": [
-      "btech",
-      "barch"
-    ],
-    "branches": [
-      "cse",
-      "ai",
-      "ece",
-      "eee",
-      "me",
-      "prod",
-      "ce",
-      "che",
-      "bio",
-      "arch"
-    ],
-    "seats": null,
-    "fees": null,
-    "hostel": true,
-    "openingRank": null,
-    "closingRank": null,
-    "rankExam": "main",
-    "rankYear": 2025,
-    "nirfRank": 51,
-    "nirfYear": 2025,
-    "sources": [
-      "https://www.nirfindia.org/Rankings/2025/EngineeringRanking.html"
-    ]
-  },
-  {
-    "name": "Birla Institute of Technology, Patna Off-Campus",
-    "short": "BIT Patna",
-    "type": "GFTI",
-    "city": "Patna",
-    "state": "Bihar",
-    "established": null,
-    "ownership": "deemed",
-    "website": "https://www.bitmesra.ac.in",
-    "counselling": [
-      "josaa",
-      "csab"
-    ],
-    "quotas": [
-      "HS",
-      "AI"
-    ],
-    "courses": [
-      "btech"
-    ],
-    "branches": [
-      "cse",
-      "ece"
-    ],
-    "seats": null,
-    "fees": null,
-    "hostel": null,
-    "openingRank": null,
-    "closingRank": null,
-    "rankExam": "main",
-    "rankYear": 2025
-  },
-  {
-    "name": "Central Institute of Technology Kokrajhar",
-    "short": "CIT Kokrajhar",
-    "type": "GFTI",
-    "city": "Kokrajhar",
-    "state": "Assam",
-    "established": 2006,
-    "ownership": "central",
-    "website": "https://www.cit.ac.in",
-    "counselling": [
-      "josaa",
-      "csab"
-    ],
-    "quotas": [
-      "AI"
-    ],
-    "courses": [
-      "btech"
-    ],
-    "branches": [
-      "cse",
-      "ece",
-      "instr",
-      "ce"
-    ],
-    "seats": null,
-    "fees": null,
-    "hostel": null,
-    "openingRank": null,
-    "closingRank": null,
-    "rankExam": "main",
-    "rankYear": 2025
-  },
-  {
-    "name": "Central University of Haryana",
-    "short": "CU Haryana",
-    "type": "GFTI",
-    "city": "Mahendergarh",
-    "state": "Haryana",
-    "established": 2009,
-    "ownership": "central",
-    "website": "https://www.cuh.ac.in",
-    "counselling": [
-      "josaa",
-      "csab"
-    ],
-    "quotas": [
-      "AI"
-    ],
-    "courses": [
-      "btech"
-    ],
-    "branches": [
-      "cse",
-      "ce"
-    ],
-    "seats": null,
-    "fees": null,
-    "hostel": null,
-    "openingRank": null,
-    "closingRank": null,
-    "rankExam": "main",
-    "rankYear": 2025
-  },
-  {
-    "name": "Central University of Jammu",
-    "short": "CU Jammu",
-    "type": "GFTI",
-    "city": "Samba",
-    "state": "Jammu and Kashmir",
-    "established": 2011,
-    "ownership": "central",
-    "website": "https://www.cujammu.ac.in",
-    "counselling": [
-      "josaa",
-      "csab"
-    ],
-    "quotas": [
-      "AI"
-    ],
-    "courses": [
-      "btech"
-    ],
-    "branches": [
-      "cse"
-    ],
-    "seats": null,
-    "fees": null,
-    "hostel": null,
-    "openingRank": null,
-    "closingRank": null,
-    "rankExam": "main",
-    "rankYear": 2025
-  },
-  {
-    "name": "Central University of Jharkhand",
-    "short": "CU Jharkhand",
-    "type": "GFTI",
-    "city": "Ranchi",
-    "state": "Jharkhand",
-    "established": 2009,
-    "ownership": "central",
-    "website": "https://www.cuj.ac.in",
-    "counselling": [
-      "josaa",
-      "csab"
-    ],
-    "quotas": [
-      "AI"
-    ],
-    "courses": [
-      "btech"
-    ],
-    "branches": [
-      "cse"
-    ],
-    "seats": null,
-    "fees": null,
-    "hostel": null,
-    "openingRank": null,
-    "closingRank": null,
-    "rankExam": "main",
-    "rankYear": 2025
-  },
-  {
-    "name": "Central University of Karnataka",
-    "short": "CU Karnataka",
-    "type": "GFTI",
-    "city": "Kalaburagi",
-    "state": "Karnataka",
-    "established": 2009,
-    "ownership": "central",
-    "website": "https://www.cuk.ac.in",
-    "counselling": [
-      "josaa",
-      "csab"
-    ],
-    "quotas": [
-      "AI"
-    ],
-    "courses": [
-      "btech"
-    ],
-    "branches": [
-      "cse"
-    ],
-    "seats": null,
-    "fees": null,
-    "hostel": null,
-    "openingRank": null,
-    "closingRank": null,
-    "rankExam": "main",
-    "rankYear": 2025
-  },
-  {
-    "name": "Central University of Punjab",
-    "short": "CU Punjab",
-    "type": "GFTI",
-    "city": "Bathinda",
-    "state": "Punjab",
-    "established": 2009,
-    "ownership": "central",
-    "website": "https://www.cup.edu.in",
-    "counselling": [
-      "josaa",
-      "csab"
-    ],
-    "quotas": [
-      "AI"
-    ],
-    "courses": [
-      "btech"
-    ],
-    "branches": [
-      "cse"
-    ],
-    "seats": null,
-    "fees": null,
-    "hostel": null,
-    "openingRank": null,
-    "closingRank": null,
-    "rankExam": "main",
-    "rankYear": 2025
-  },
-  {
-    "name": "Central University of Rajasthan",
-    "short": "CU Rajasthan",
-    "type": "GFTI",
-    "city": "Kishangarh",
-    "state": "Rajasthan",
-    "established": 2009,
-    "ownership": "central",
-    "website": "https://www.curaj.ac.in",
-    "counselling": [
-      "josaa",
-      "csab"
-    ],
-    "quotas": [
-      "AI"
-    ],
-    "courses": [
-      "btech"
-    ],
-    "branches": [
-      "cse"
-    ],
-    "seats": null,
-    "fees": null,
-    "hostel": null,
-    "openingRank": null,
-    "closingRank": null,
-    "rankExam": "main",
-    "rankYear": 2025
-  },
-  {
-    "name": "Chhattisgarh Swami Vivekanand Technical University, Bhilai",
-    "short": "CSVTU Bhilai",
-    "type": "GFTI",
-    "city": "Bhilai",
-    "state": "Chhattisgarh",
-    "established": 2005,
-    "ownership": "state",
-    "website": "https://csvtu.ac.in",
-    "counselling": [
-      "josaa",
-      "csab"
-    ],
-    "quotas": [
-      "AI"
-    ],
-    "courses": [
-      "btech"
-    ],
-    "branches": [
-      "cse"
-    ],
-    "seats": null,
-    "fees": null,
-    "hostel": null,
-    "openingRank": null,
-    "closingRank": null,
-    "rankExam": "main",
-    "rankYear": 2025
-  },
-  {
-    "name": "Gati Shakti Vishwavidyalaya, Vadodara",
-    "short": "GSV Vadodara",
-    "type": "GFTI",
-    "city": "Vadodara",
-    "state": "Gujarat",
-    "established": null,
-    "ownership": "central",
-    "website": "https://gsv.ac.in",
-    "counselling": [
-      "josaa",
-      "csab"
-    ],
-    "quotas": [
-      "AI"
-    ],
-    "courses": [
-      "btech"
-    ],
-    "branches": [
-      "other"
-    ],
-    "seats": null,
-    "fees": null,
-    "hostel": null,
-    "openingRank": null,
-    "closingRank": null,
-    "rankExam": "main",
-    "rankYear": 2025
-  },
-  {
-    "name": "Ghani Khan Choudhury Institute of Engineering and Technology, Malda",
-    "short": "GKCIET Malda",
-    "type": "GFTI",
-    "city": "Malda",
-    "state": "West Bengal",
-    "established": 2010,
-    "ownership": "central",
-    "website": "https://www.gkciet.ac.in",
-    "counselling": [
-      "josaa",
-      "csab"
-    ],
-    "quotas": [
-      "AI"
-    ],
-    "courses": [
-      "btech"
-    ],
-    "branches": [
-      "cse",
-      "ece",
-      "ee",
-      "me",
-      "ce"
-    ],
-    "seats": null,
-    "fees": null,
-    "hostel": null,
-    "openingRank": null,
-    "closingRank": null,
-    "rankExam": "main",
-    "rankYear": 2025
-  },
-  {
-    "name": "Gurukula Kangri Vishwavidyalaya, Haridwar",
-    "short": "GKV Haridwar",
-    "type": "GFTI",
-    "city": "Haridwar",
-    "state": "Uttarakhand",
-    "established": 1902,
-    "ownership": "deemed",
-    "website": "https://www.gkv.ac.in",
-    "counselling": [
-      "josaa",
-      "csab"
-    ],
-    "quotas": [
-      "AI"
-    ],
-    "courses": [
-      "btech"
-    ],
-    "branches": [
-      "cse",
-      "ece",
-      "ee",
-      "me"
-    ],
-    "seats": null,
-    "fees": null,
-    "hostel": null,
-    "openingRank": null,
-    "closingRank": null,
-    "rankExam": "main",
-    "rankYear": 2025
-  },
-  {
-    "name": "Indian Institute of Carpet Technology, Bhadohi",
-    "short": "IICT Bhadohi",
-    "type": "GFTI",
-    "city": "Bhadohi",
-    "state": "Uttar Pradesh",
-    "established": null,
-    "ownership": "central",
-    "website": null,
-    "counselling": [
-      "josaa",
-      "csab"
-    ],
-    "quotas": [
-      "AI"
-    ],
-    "courses": [
-      "btech"
-    ],
-    "branches": [
-      "textile"
-    ],
-    "seats": null,
-    "fees": null,
-    "hostel": null,
-    "openingRank": null,
-    "closingRank": null,
-    "rankExam": "main",
-    "rankYear": 2025
-  },
-  {
-    "name": "Indian Institute of Handloom Technology, Salem",
-    "short": "IIHT Salem",
-    "type": "GFTI",
-    "city": "Salem",
-    "state": "Tamil Nadu",
-    "established": null,
-    "ownership": "central",
-    "website": null,
-    "counselling": [
-      "josaa",
-      "csab"
-    ],
-    "quotas": [
-      "AI"
-    ],
-    "courses": [
-      "btech"
-    ],
-    "branches": [
-      "textile"
-    ],
-    "seats": null,
-    "fees": null,
-    "hostel": null,
-    "openingRank": null,
-    "closingRank": null,
-    "rankExam": "main",
-    "rankYear": 2025
-  },
-  {
-    "name": "Indian Institute of Handloom Technology, Varanasi",
-    "short": "IIHT Varanasi",
-    "type": "GFTI",
-    "city": "Varanasi",
-    "state": "Uttar Pradesh",
-    "established": null,
-    "ownership": "central",
-    "website": null,
-    "counselling": [
-      "josaa",
-      "csab"
-    ],
-    "quotas": [
-      "AI"
-    ],
-    "courses": [
-      "btech"
-    ],
-    "branches": [
-      "textile"
-    ],
-    "seats": null,
-    "fees": null,
-    "hostel": null,
-    "openingRank": null,
-    "closingRank": null,
-    "rankExam": "main",
-    "rankYear": 2025
-  },
-  {
-    "name": "Institute of Chemical Technology, Mumbai: IndianOil Odisha Campus, Bhubaneswar",
-    "short": "ICT-IOC Bhubaneswar",
-    "type": "GFTI",
-    "city": "Bhubaneswar",
-    "state": "Odisha",
-    "established": null,
-    "ownership": "deemed",
-    "website": null,
-    "counselling": [
-      "josaa",
-      "csab"
-    ],
-    "quotas": [
-      "AI"
-    ],
-    "courses": [
-      "btech"
-    ],
-    "branches": [
-      "che"
-    ],
-    "seats": null,
-    "fees": null,
-    "hostel": null,
-    "openingRank": null,
-    "closingRank": null,
-    "rankExam": "main",
-    "rankYear": 2025
-  },
-  {
-    "name": "Institute of Engineering and Technology, Dr. H. S. Gour University, Sagar",
-    "short": "IET Sagar",
-    "type": "GFTI",
-    "city": "Sagar",
-    "state": "Madhya Pradesh",
-    "established": null,
-    "ownership": "central",
-    "website": "https://www.dhsgsu.edu.in",
-    "counselling": [
-      "josaa",
-      "csab"
-    ],
-    "quotas": [
-      "AI"
-    ],
-    "courses": [
-      "btech"
-    ],
-    "branches": [
-      "cse",
-      "ece"
-    ],
-    "seats": null,
-    "fees": null,
-    "hostel": null,
-    "openingRank": null,
-    "closingRank": null,
-    "rankExam": "main",
-    "rankYear": 2025
-  },
-  {
-    "name": "Institute of Infrastructure, Technology, Research and Management, Ahmedabad",
-    "short": "IITRAM Ahmedabad",
-    "type": "GFTI",
-    "city": "Ahmedabad",
-    "state": "Gujarat",
-    "established": 2013,
-    "ownership": "state",
-    "website": "https://iitram.ac.in",
-    "counselling": [
-      "josaa",
-      "csab"
-    ],
-    "quotas": [
-      "AI"
-    ],
-    "courses": [
-      "btech"
-    ],
-    "branches": [
-      "cse",
-      "ee",
-      "me",
-      "ce"
-    ],
-    "seats": null,
-    "fees": null,
-    "hostel": null,
-    "openingRank": null,
-    "closingRank": null,
-    "rankExam": "main",
-    "rankYear": 2025
-  },
-  {
-    "name": "Institute of Technology, Guru Ghasidas Vishwavidyalaya, Bilaspur",
-    "short": "GGV Bilaspur",
-    "type": "GFTI",
-    "city": "Bilaspur",
-    "state": "Chhattisgarh",
-    "established": 1983,
-    "ownership": "central",
-    "website": "https://www.ggu.ac.in",
-    "counselling": [
-      "josaa",
-      "csab"
-    ],
-    "quotas": [
-      "AI"
-    ],
-    "courses": [
-      "btech"
-    ],
-    "branches": [
-      "cse",
-      "it",
-      "ece",
-      "me",
-      "ce",
-      "che",
-      "prod"
-    ],
-    "seats": null,
-    "fees": null,
-    "hostel": true,
-    "openingRank": null,
-    "closingRank": null,
-    "rankExam": "main",
-    "rankYear": 2025
-  },
-  {
-    "name": "International Institute of Information Technology, Bhubaneswar",
-    "short": "IIIT Bhubaneswar",
-    "type": "GFTI",
-    "city": "Bhubaneswar",
-    "state": "Odisha",
-    "established": 2006,
-    "ownership": "state",
-    "website": "https://www.iiit-bh.ac.in",
-    "counselling": [
-      "josaa",
-      "csab"
-    ],
-    "quotas": [
-      "AI"
-    ],
-    "courses": [
-      "btech"
-    ],
-    "branches": [
-      "cse",
-      "it",
-      "ece",
-      "eee"
-    ],
-    "seats": null,
-    "fees": null,
-    "hostel": true,
-    "openingRank": null,
-    "closingRank": null,
-    "rankExam": "main",
-    "rankYear": 2025
-  },
-  {
-    "name": "International Institute of Information Technology, Naya Raipur",
-    "short": "IIIT Naya Raipur",
-    "type": "GFTI",
-    "city": "Nava Raipur",
-    "state": "Chhattisgarh",
-    "established": 2015,
-    "ownership": "state",
-    "website": "https://www.iiitnr.ac.in",
-    "counselling": [
-      "josaa",
-      "csab"
-    ],
-    "quotas": [
-      "AI"
-    ],
-    "courses": [
-      "btech"
-    ],
-    "branches": [
-      "cse",
-      "ai",
-      "ece"
-    ],
-    "seats": null,
-    "fees": null,
-    "hostel": true,
-    "openingRank": null,
-    "closingRank": null,
-    "rankExam": "main",
-    "rankYear": 2025
-  },
-  {
-    "name": "Islamic University of Science and Technology, Kashmir",
-    "short": "IUST Awantipora",
-    "type": "GFTI",
-    "city": "Awantipora",
-    "state": "Jammu and Kashmir",
-    "established": 2005,
-    "ownership": "state",
-    "website": "https://www.iust.ac.in",
-    "counselling": [
-      "josaa",
-      "csab"
-    ],
-    "quotas": [
-      "AI"
-    ],
-    "courses": [
-      "btech"
-    ],
-    "branches": [
-      "cse",
-      "ece",
-      "ee",
-      "me",
-      "ce"
-    ],
-    "seats": null,
-    "fees": null,
-    "hostel": null,
-    "openingRank": null,
-    "closingRank": null,
-    "rankExam": "main",
-    "rankYear": 2025
-  },
-  {
-    "name": "J.K. Institute of Applied Physics and Technology, University of Allahabad",
-    "short": "JKIAPT Allahabad",
-    "type": "GFTI",
-    "city": "Prayagraj",
-    "state": "Uttar Pradesh",
-    "established": null,
-    "ownership": "central",
-    "website": "https://www.allduniv.ac.in",
-    "counselling": [
-      "josaa",
-      "csab"
-    ],
-    "quotas": [
-      "AI"
-    ],
-    "courses": [
-      "btech"
-    ],
-    "branches": [
-      "cse",
-      "ece"
-    ],
-    "seats": null,
-    "fees": null,
-    "hostel": null,
-    "openingRank": null,
-    "closingRank": null,
-    "rankExam": "main",
-    "rankYear": 2025
-  },
-  {
-    "name": "Jawaharlal Nehru University, Delhi (School of Engineering)",
-    "short": "JNU Delhi",
-    "type": "GFTI",
-    "city": "New Delhi",
-    "state": "Delhi",
-    "established": 1969,
-    "ownership": "central",
-    "website": "https://www.jnu.ac.in",
-    "counselling": [
-      "josaa",
-      "csab"
-    ],
-    "quotas": [
-      "AI"
-    ],
-    "courses": [
-      "btech"
-    ],
-    "branches": [
-      "cse",
-      "ece"
-    ],
-    "seats": null,
-    "fees": null,
-    "hostel": true,
-    "openingRank": null,
-    "closingRank": null,
-    "rankExam": "main",
-    "rankYear": 2025
-  },
-  {
-    "name": "Mizoram University, Aizawl",
-    "short": "Mizoram University",
-    "type": "GFTI",
-    "city": "Aizawl",
-    "state": "Mizoram",
-    "established": 2001,
-    "ownership": "central",
-    "website": "https://mzu.edu.in",
-    "counselling": [
-      "josaa",
-      "csab"
-    ],
-    "quotas": [
-      "AI"
-    ],
-    "courses": [
-      "btech"
-    ],
-    "branches": [
-      "cse",
-      "ece",
-      "ce"
-    ],
-    "seats": null,
-    "fees": null,
-    "hostel": true,
-    "openingRank": null,
-    "closingRank": null,
-    "rankExam": "main",
-    "rankYear": 2025
-  }
+ {
+  "name": "Assam University, Silchar",
+  "short": "Assam University",
+  "type": "GFTI",
+  "city": "Silchar",
+  "state": "Assam",
+  "established": 1994,
+  "ownership": "central",
+  "website": "https://www.aus.ac.in",
+  "counselling": [
+   "josaa",
+   "csab"
+  ],
+  "quotas": [
+   "HS",
+   "AI"
+  ],
+  "courses": [
+   "btech"
+  ],
+  "branches": [
+   "cse",
+   "ece",
+   "agri"
+  ],
+  "seats": null,
+  "fees": null,
+  "hostel": true,
+  "openingRank": null,
+  "closingRank": null,
+  "rankExam": "main",
+  "rankYear": 2025
+ },
+ {
+  "name": "Birla Institute of Technology, Deoghar Off-Campus",
+  "short": "BIT Deoghar",
+  "type": "GFTI",
+  "city": "Deoghar",
+  "state": "Jharkhand",
+  "established": 2007,
+  "ownership": "deemed",
+  "website": "https://www.bitmesra.ac.in",
+  "counselling": [
+   "josaa",
+   "csab"
+  ],
+  "quotas": [
+   "HS",
+   "AI"
+  ],
+  "courses": [
+   "btech"
+  ],
+  "branches": [
+   "cse"
+  ],
+  "seats": 270,
+  "fees": 243000,
+  "hostel": true,
+  "openingRank": null,
+  "closingRank": null,
+  "rankExam": "main",
+  "rankYear": 2025,
+  "sources": [
+   "https://bitmesra.ac.in/4",
+   "https://bitmesra.ac.in/UploadedDocuments/admadmission/files/BTech%202022(Draft)%20-%20Info%20Brochure%20for%20DJP(4).pdf"
+  ]
+ },
+ {
+  "name": "Birla Institute of Technology, Mesra, Ranchi",
+  "short": "BIT Mesra",
+  "type": "GFTI",
+  "city": "Ranchi",
+  "state": "Jharkhand",
+  "established": 1955,
+  "ownership": "deemed",
+  "website": "https://www.bitmesra.ac.in",
+  "counselling": [
+   "josaa",
+   "csab"
+  ],
+  "quotas": [
+   "HS",
+   "AI"
+  ],
+  "courses": [
+   "btech",
+   "barch"
+  ],
+  "branches": [
+   "cse",
+   "ai",
+   "ece",
+   "eee",
+   "me",
+   "prod",
+   "ce",
+   "che",
+   "bio",
+   "arch"
+  ],
+  "seats": 915,
+  "fees": 306000,
+  "hostel": true,
+  "openingRank": null,
+  "closingRank": null,
+  "rankExam": "main",
+  "rankYear": 2025,
+  "nirfRank": 51,
+  "nirfYear": 2025,
+  "sources": [
+   "https://www.nirfindia.org/Rankings/2025/EngineeringRanking.html",
+   "https://bitmesra.ac.in/UploadedDocuments/admadmission/files/Financial%20information%20and%20fees%20payable%202025.pdf",
+   "https://bitmesra.ac.in/UploadedDocuments/admnirf/files/NIRF%202024%20Overall_01Mar24.pdf"
+  ]
+ },
+ {
+  "name": "Birla Institute of Technology, Patna Off-Campus",
+  "short": "BIT Patna",
+  "type": "GFTI",
+  "city": "Patna",
+  "state": "Bihar",
+  "established": 2006,
+  "ownership": "deemed",
+  "website": "https://www.bitmesra.ac.in",
+  "counselling": [
+   "josaa",
+   "csab"
+  ],
+  "quotas": [
+   "HS",
+   "AI"
+  ],
+  "courses": [
+   "btech"
+  ],
+  "branches": [
+   "cse",
+   "ece"
+  ],
+  "seats": 300,
+  "fees": 243000,
+  "hostel": true,
+  "openingRank": null,
+  "closingRank": null,
+  "rankExam": "main",
+  "rankYear": 2025,
+  "sources": [
+   "https://bitmesra.ac.in/8",
+   "https://bitmesra.ac.in/UploadedDocuments/admadmission/files/BTech%202022(Draft)%20-%20Info%20Brochure%20for%20DJP(4).pdf"
+  ]
+ },
+ {
+  "name": "Central Institute of Technology Kokrajhar",
+  "short": "CIT Kokrajhar",
+  "type": "GFTI",
+  "city": "Kokrajhar",
+  "state": "Assam",
+  "established": 2006,
+  "ownership": "central",
+  "website": "https://www.cit.ac.in",
+  "counselling": [
+   "josaa",
+   "csab"
+  ],
+  "quotas": [
+   "AI"
+  ],
+  "courses": [
+   "btech"
+  ],
+  "branches": [
+   "cse",
+   "ece",
+   "instr",
+   "ce"
+  ],
+  "seats": null,
+  "fees": 24000,
+  "hostel": true,
+  "openingRank": null,
+  "closingRank": null,
+  "rankExam": "main",
+  "rankYear": 2025,
+  "sources": [
+   "https://admission.cit.ac.in/feestructure/ug",
+   "https://admission.cit.ac.in/bachelor-of-technology"
+  ]
+ },
+ {
+  "name": "Central University of Haryana",
+  "short": "CU Haryana",
+  "type": "GFTI",
+  "city": "Mahendergarh",
+  "state": "Haryana",
+  "established": 2009,
+  "ownership": "central",
+  "website": "https://cuh.ac.in",
+  "counselling": [
+   "josaa",
+   "csab"
+  ],
+  "quotas": [
+   "AI"
+  ],
+  "courses": [
+   "btech"
+  ],
+  "branches": [
+   "cse",
+   "ce"
+  ],
+  "seats": null,
+  "fees": null,
+  "hostel": null,
+  "openingRank": null,
+  "closingRank": null,
+  "rankExam": "main",
+  "rankYear": 2025
+ },
+ {
+  "name": "Central University of Jammu",
+  "short": "CU Jammu",
+  "type": "GFTI",
+  "city": "Samba",
+  "state": "Jammu and Kashmir",
+  "established": 2011,
+  "ownership": "central",
+  "website": "https://www.cujammu.ac.in",
+  "counselling": [
+   "josaa",
+   "csab"
+  ],
+  "quotas": [
+   "AI"
+  ],
+  "courses": [
+   "btech"
+  ],
+  "branches": [
+   "cse"
+  ],
+  "seats": null,
+  "fees": 105000,
+  "hostel": null,
+  "openingRank": null,
+  "closingRank": null,
+  "rankExam": "main",
+  "rankYear": 2025,
+  "sources": [
+   "https://www.cujammu.ac.in/media/departments/CSE/events/200525_Top_B._Tech.__Fee_2025-26.pdf"
+  ]
+ },
+ {
+  "name": "Central University of Jharkhand",
+  "short": "CU Jharkhand",
+  "type": "GFTI",
+  "city": "Ranchi",
+  "state": "Jharkhand",
+  "established": 2009,
+  "ownership": "central",
+  "website": "https://www.cuj.ac.in",
+  "counselling": [
+   "josaa",
+   "csab"
+  ],
+  "quotas": [
+   "AI"
+  ],
+  "courses": [
+   "btech"
+  ],
+  "branches": [
+   "cse"
+  ],
+  "seats": null,
+  "fees": 29172,
+  "hostel": true,
+  "openingRank": null,
+  "closingRank": null,
+  "rankExam": "main",
+  "rankYear": 2025,
+  "sources": [
+   "https://www.cuj.ac.in/file/admission/Fee_Structure_BTech.pdf",
+   "https://www.cuj.ac.in/hostels.php"
+  ]
+ },
+ {
+  "name": "Central University of Karnataka",
+  "short": "CU Karnataka",
+  "type": "GFTI",
+  "city": "Kalaburagi",
+  "state": "Karnataka",
+  "established": 2009,
+  "ownership": "central",
+  "website": "https://www.cuk.ac.in",
+  "counselling": [
+   "josaa",
+   "csab"
+  ],
+  "quotas": [
+   "AI"
+  ],
+  "courses": [
+   "btech"
+  ],
+  "branches": [
+   "cse"
+  ],
+  "seats": null,
+  "fees": 64000,
+  "hostel": null,
+  "openingRank": null,
+  "closingRank": null,
+  "rankExam": "main",
+  "rankYear": 2025,
+  "sources": [
+   "https://cuk.ac.in/Circular/Fee%20for%20website%2001.07.2025.pdf"
+  ]
+ },
+ {
+  "name": "Central University of Punjab",
+  "short": "CU Punjab",
+  "type": "GFTI",
+  "city": "Bathinda",
+  "state": "Punjab",
+  "established": 2009,
+  "ownership": "central",
+  "website": "https://www.cup.edu.in",
+  "counselling": [
+   "josaa",
+   "csab"
+  ],
+  "quotas": [
+   "AI"
+  ],
+  "courses": [
+   "btech"
+  ],
+  "branches": [
+   "cse"
+  ],
+  "seats": 60,
+  "fees": 44000,
+  "hostel": true,
+  "openingRank": null,
+  "closingRank": null,
+  "rankExam": "main",
+  "rankYear": 2025,
+  "sources": [
+   "https://cup.edu.in/sites/default/files/Admissions-2025/UG/UG%20Prospectus%202025-26.pdf"
+  ]
+ },
+ {
+  "name": "Central University of Rajasthan",
+  "short": "CU Rajasthan",
+  "type": "GFTI",
+  "city": "Kishangarh",
+  "state": "Rajasthan",
+  "established": 2009,
+  "ownership": "central",
+  "website": "https://www.curaj.ac.in",
+  "counselling": [
+   "josaa",
+   "csab"
+  ],
+  "quotas": [
+   "AI"
+  ],
+  "courses": [
+   "btech"
+  ],
+  "branches": [
+   "cse"
+  ],
+  "seats": null,
+  "fees": 134000,
+  "hostel": true,
+  "openingRank": null,
+  "closingRank": null,
+  "rankExam": "main",
+  "rankYear": 2025,
+  "sources": [
+   "https://curaj.ac.in/sites/default/files/Fee%20Structure%20for%20Students%20admitted%20in%20B.Tech%202024-25.pdf",
+   "https://www.curaj.ac.in/sites/default/files/Admission%20Policy%20for%20Hall%20of%20Residence-%20Final_0.pdf"
+  ]
+ },
+ {
+  "name": "Chhattisgarh Swami Vivekanand Technical University, Bhilai",
+  "short": "CSVTU Bhilai",
+  "type": "GFTI",
+  "city": "Bhilai",
+  "state": "Chhattisgarh",
+  "established": 2005,
+  "ownership": "state",
+  "website": "https://csvtu.ac.in",
+  "counselling": [
+   "josaa",
+   "csab"
+  ],
+  "quotas": [
+   "AI"
+  ],
+  "courses": [
+   "btech"
+  ],
+  "branches": [
+   "cse"
+  ],
+  "seats": null,
+  "fees": null,
+  "hostel": null,
+  "openingRank": null,
+  "closingRank": null,
+  "rankExam": "main",
+  "rankYear": 2025
+ },
+ {
+  "name": "Gati Shakti Vishwavidyalaya, Vadodara",
+  "short": "GSV Vadodara",
+  "type": "GFTI",
+  "city": "Vadodara",
+  "state": "Gujarat",
+  "established": null,
+  "ownership": "central",
+  "website": "https://gsv.ac.in",
+  "counselling": [
+   "josaa",
+   "csab"
+  ],
+  "quotas": [
+   "AI"
+  ],
+  "courses": [
+   "btech"
+  ],
+  "branches": [
+   "other"
+  ],
+  "seats": null,
+  "fees": null,
+  "hostel": true,
+  "openingRank": null,
+  "closingRank": null,
+  "rankExam": "main",
+  "rankYear": 2025,
+  "sources": [
+   "https://gsv.ac.in/fees-financial-aid/"
+  ]
+ },
+ {
+  "name": "Ghani Khan Choudhury Institute of Engineering and Technology, Malda",
+  "short": "GKCIET Malda",
+  "type": "GFTI",
+  "city": "Malda",
+  "state": "West Bengal",
+  "established": 2010,
+  "ownership": "central",
+  "website": "https://www.gkciet.ac.in",
+  "counselling": [
+   "josaa",
+   "csab"
+  ],
+  "quotas": [
+   "AI"
+  ],
+  "courses": [
+   "btech"
+  ],
+  "branches": [
+   "cse",
+   "ece",
+   "ee",
+   "me",
+   "ce"
+  ],
+  "seats": 162,
+  "fees": null,
+  "hostel": true,
+  "openingRank": null,
+  "closingRank": null,
+  "rankExam": "main",
+  "rankYear": 2025,
+  "sources": [
+   "https://www.gkciet.ac.in/facility/hostel",
+   "https://www.gkciet.ac.in/static_doc/Ranking/Datauploaded%20for%20NIRF%20Engineering%20Ranking%202023.pdf"
+  ]
+ },
+ {
+  "name": "Gurukula Kangri Vishwavidyalaya, Haridwar",
+  "short": "GKV Haridwar",
+  "type": "GFTI",
+  "city": "Haridwar",
+  "state": "Uttarakhand",
+  "established": 1902,
+  "ownership": "deemed",
+  "website": "https://www.gkv.ac.in",
+  "counselling": [
+   "josaa",
+   "csab"
+  ],
+  "quotas": [
+   "AI"
+  ],
+  "courses": [
+   "btech"
+  ],
+  "branches": [
+   "cse",
+   "ece",
+   "ee",
+   "me"
+  ],
+  "seats": null,
+  "fees": 137250,
+  "hostel": null,
+  "openingRank": null,
+  "closingRank": null,
+  "rankExam": "main",
+  "rankYear": 2025,
+  "sources": [
+   "https://www.gkv.ac.in/wp-content/uploads/2026/06/Fee-Structure-with-new-course-fees-2026-27.pdf"
+  ]
+ },
+ {
+  "name": "Indian Institute of Carpet Technology, Bhadohi",
+  "short": "IICT Bhadohi",
+  "type": "GFTI",
+  "city": "Bhadohi",
+  "state": "Uttar Pradesh",
+  "established": null,
+  "ownership": "central",
+  "website": "https://www.iict.ac.in",
+  "counselling": [
+   "josaa",
+   "csab"
+  ],
+  "quotas": [
+   "AI"
+  ],
+  "courses": [
+   "btech"
+  ],
+  "branches": [
+   "textile"
+  ],
+  "seats": 60,
+  "fees": 55000,
+  "hostel": null,
+  "openingRank": null,
+  "closingRank": null,
+  "rankExam": "main",
+  "rankYear": 2025,
+  "sources": [
+   "https://www.iict.ac.in/mandatory_disclosure.htm",
+   "http://www.iict.ac.in/Fee_Structure_2025-26.pdf"
+  ]
+ },
+ {
+  "name": "Indian Institute of Handloom Technology, Salem",
+  "short": "IIHT Salem",
+  "type": "GFTI",
+  "city": "Salem",
+  "state": "Tamil Nadu",
+  "established": 1960,
+  "ownership": "central",
+  "website": "https://www.iihtsalem.edu.in",
+  "counselling": [
+   "josaa",
+   "csab"
+  ],
+  "quotas": [
+   "AI"
+  ],
+  "courses": [
+   "btech"
+  ],
+  "branches": [
+   "textile"
+  ],
+  "seats": null,
+  "fees": null,
+  "hostel": true,
+  "openingRank": null,
+  "closingRank": null,
+  "rankExam": "main",
+  "rankYear": 2025,
+  "sources": [
+   "https://www.iihtsalem.edu.in/about-us/",
+   "https://www.iihtsalem.edu.in/"
+  ]
+ },
+ {
+  "name": "Indian Institute of Handloom Technology, Varanasi",
+  "short": "IIHT Varanasi",
+  "type": "GFTI",
+  "city": "Varanasi",
+  "state": "Uttar Pradesh",
+  "established": 1956,
+  "ownership": "central",
+  "website": "https://www.iihtvaranasi.edu.in",
+  "counselling": [
+   "josaa",
+   "csab"
+  ],
+  "quotas": [
+   "AI"
+  ],
+  "courses": [
+   "btech"
+  ],
+  "branches": [
+   "textile"
+  ],
+  "seats": null,
+  "fees": 8000,
+  "hostel": null,
+  "openingRank": null,
+  "closingRank": null,
+  "rankExam": "main",
+  "rankYear": 2025,
+  "sources": [
+   "https://iiht.ac.in/",
+   "https://www.iihtvaranasi.edu.in/",
+   "https://www.iihtvaranasi.edu.in/wp-content/uploads/2025/08/B.Tech-HTT-Fee-Structure-2025-26.pdf"
+  ]
+ },
+ {
+  "name": "Institute of Chemical Technology, Mumbai: IndianOil Odisha Campus, Bhubaneswar",
+  "short": "ICT-IOC Bhubaneswar",
+  "type": "GFTI",
+  "city": "Bhubaneswar",
+  "state": "Odisha",
+  "established": 2018,
+  "ownership": "deemed",
+  "website": "https://iocb.ictmumbai.edu.in",
+  "counselling": [
+   "josaa",
+   "csab"
+  ],
+  "quotas": [
+   "AI"
+  ],
+  "courses": [
+   "btech"
+  ],
+  "branches": [
+   "che"
+  ],
+  "seats": null,
+  "fees": null,
+  "hostel": null,
+  "openingRank": null,
+  "closingRank": null,
+  "rankExam": "main",
+  "rankYear": 2025,
+  "sources": [
+   "https://iocb.ictmumbai.edu.in/"
+  ]
+ },
+ {
+  "name": "Institute of Engineering and Technology, Dr. H. S. Gour University, Sagar",
+  "short": "IET Sagar",
+  "type": "GFTI",
+  "city": "Sagar",
+  "state": "Madhya Pradesh",
+  "established": null,
+  "ownership": "central",
+  "website": "https://www.dhsgsu.edu.in",
+  "counselling": [
+   "josaa",
+   "csab"
+  ],
+  "quotas": [
+   "AI"
+  ],
+  "courses": [
+   "btech"
+  ],
+  "branches": [
+   "cse",
+   "ece"
+  ],
+  "seats": null,
+  "fees": null,
+  "hostel": null,
+  "openingRank": null,
+  "closingRank": null,
+  "rankExam": "main",
+  "rankYear": 2025
+ },
+ {
+  "name": "Institute of Infrastructure, Technology, Research and Management, Ahmedabad",
+  "short": "IITRAM Ahmedabad",
+  "type": "GFTI",
+  "city": "Ahmedabad",
+  "state": "Gujarat",
+  "established": 2013,
+  "ownership": "state",
+  "website": "https://iitram.ac.in",
+  "counselling": [
+   "josaa",
+   "csab"
+  ],
+  "quotas": [
+   "AI"
+  ],
+  "courses": [
+   "btech"
+  ],
+  "branches": [
+   "cse",
+   "ee",
+   "me",
+   "ce"
+  ],
+  "seats": null,
+  "fees": 160000,
+  "hostel": null,
+  "openingRank": null,
+  "closingRank": null,
+  "rankExam": "main",
+  "rankYear": 2025,
+  "sources": [
+   "https://iitram.ac.in/frontend/Admissions/FEESTRUCTURE/ACADEMIC/20260311_Academic_Fee_Structure_applicable_to_students_admitted_in_A.Y._2023-24_to_2025-26.pdf"
+  ]
+ },
+ {
+  "name": "Institute of Technology, Guru Ghasidas Vishwavidyalaya, Bilaspur",
+  "short": "GGV Bilaspur",
+  "type": "GFTI",
+  "city": "Bilaspur",
+  "state": "Chhattisgarh",
+  "established": 1983,
+  "ownership": "central",
+  "website": "https://www.ggu.ac.in",
+  "counselling": [
+   "josaa",
+   "csab"
+  ],
+  "quotas": [
+   "AI"
+  ],
+  "courses": [
+   "btech"
+  ],
+  "branches": [
+   "cse",
+   "it",
+   "ece",
+   "me",
+   "ce",
+   "che",
+   "prod"
+  ],
+  "seats": null,
+  "fees": null,
+  "hostel": true,
+  "openingRank": null,
+  "closingRank": null,
+  "rankExam": "main",
+  "rankYear": 2025
+ },
+ {
+  "name": "International Institute of Information Technology, Bhubaneswar",
+  "short": "IIIT Bhubaneswar",
+  "type": "GFTI",
+  "city": "Bhubaneswar",
+  "state": "Odisha",
+  "established": 2006,
+  "ownership": "state",
+  "website": "https://www.iiit-bh.ac.in",
+  "counselling": [
+   "josaa",
+   "csab"
+  ],
+  "quotas": [
+   "AI"
+  ],
+  "courses": [
+   "btech"
+  ],
+  "branches": [
+   "cse",
+   "it",
+   "ece",
+   "eee"
+  ],
+  "seats": null,
+  "fees": null,
+  "hostel": true,
+  "openingRank": null,
+  "closingRank": null,
+  "rankExam": "main",
+  "rankYear": 2025
+ },
+ {
+  "name": "International Institute of Information Technology, Naya Raipur",
+  "short": "IIIT Naya Raipur",
+  "type": "GFTI",
+  "city": "Nava Raipur",
+  "state": "Chhattisgarh",
+  "established": 2015,
+  "ownership": "state",
+  "website": "https://www.iiitnr.ac.in",
+  "counselling": [
+   "josaa",
+   "csab"
+  ],
+  "quotas": [
+   "AI"
+  ],
+  "courses": [
+   "btech"
+  ],
+  "branches": [
+   "cse",
+   "ai",
+   "ece"
+  ],
+  "seats": null,
+  "fees": null,
+  "hostel": true,
+  "openingRank": null,
+  "closingRank": null,
+  "rankExam": "main",
+  "rankYear": 2025
+ },
+ {
+  "name": "Islamic University of Science and Technology, Kashmir",
+  "short": "IUST Awantipora",
+  "type": "GFTI",
+  "city": "Awantipora",
+  "state": "Jammu and Kashmir",
+  "established": 2005,
+  "ownership": "state",
+  "website": "https://www.iust.ac.in",
+  "counselling": [
+   "josaa",
+   "csab"
+  ],
+  "quotas": [
+   "AI"
+  ],
+  "courses": [
+   "btech"
+  ],
+  "branches": [
+   "cse",
+   "ece",
+   "ee",
+   "me",
+   "ce"
+  ],
+  "seats": null,
+  "fees": 62000,
+  "hostel": true,
+  "openingRank": null,
+  "closingRank": null,
+  "rankExam": "main",
+  "rankYear": 2025,
+  "sources": [
+   "https://iust.ac.in/departmentcontent/DO/documents/637920269014212774.pdf",
+   "https://iust.ac.in/administrative-section-about-us.aspx?deptcode=QH3azfmfCDxE0J1oeTtsbA%3D%3D"
+  ]
+ },
+ {
+  "name": "J.K. Institute of Applied Physics and Technology, University of Allahabad",
+  "short": "JKIAPT Allahabad",
+  "type": "GFTI",
+  "city": "Prayagraj",
+  "state": "Uttar Pradesh",
+  "established": 1947,
+  "ownership": "central",
+  "website": "https://www.jkinstitute.ac.in",
+  "counselling": [
+   "josaa",
+   "csab"
+  ],
+  "quotas": [
+   "AI"
+  ],
+  "courses": [
+   "btech"
+  ],
+  "branches": [
+   "cse",
+   "ece"
+  ],
+  "seats": 86,
+  "fees": null,
+  "hostel": true,
+  "openingRank": null,
+  "closingRank": null,
+  "rankExam": "main",
+  "rankYear": 2025,
+  "sources": [
+   "https://jkinstitute.ac.in/about.php",
+   "https://www.jkinstitute.ac.in/course"
+  ]
+ },
+ {
+  "name": "Jawaharlal Nehru University, Delhi (School of Engineering)",
+  "short": "JNU Delhi",
+  "type": "GFTI",
+  "city": "New Delhi",
+  "state": "Delhi",
+  "established": 1969,
+  "ownership": "central",
+  "website": "https://www.jnu.ac.in",
+  "counselling": [
+   "josaa",
+   "csab"
+  ],
+  "quotas": [
+   "AI"
+  ],
+  "courses": [
+   "btech"
+  ],
+  "branches": [
+   "cse",
+   "ece"
+  ],
+  "seats": null,
+  "fees": null,
+  "hostel": true,
+  "openingRank": null,
+  "closingRank": null,
+  "rankExam": "main",
+  "rankYear": 2025
+ },
+ {
+  "name": "Mizoram University, Aizawl",
+  "short": "Mizoram University",
+  "type": "GFTI",
+  "city": "Aizawl",
+  "state": "Mizoram",
+  "established": 2001,
+  "ownership": "central",
+  "website": "https://mzu.edu.in",
+  "counselling": [
+   "josaa",
+   "csab"
+  ],
+  "quotas": [
+   "AI"
+  ],
+  "courses": [
+   "btech"
+  ],
+  "branches": [
+   "cse",
+   "ece",
+   "ce"
+  ],
+  "seats": 180,
+  "fees": 32400,
+  "hostel": true,
+  "openingRank": null,
+  "closingRank": null,
+  "rankExam": "main",
+  "rankYear": 2025,
+  "sources": [
+   "https://mzu.edu.in/fees/",
+   "https://mzu.edu.in/school-of-engineering-technology/"
+  ]
+ }
 ]

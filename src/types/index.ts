@@ -19,14 +19,6 @@ export type LinkItem = {
   external?: boolean;
 };
 
-export type RoleOption = {
-  id: "mentor" | "admin" | "team";
-  label: string;
-  description: string;
-  href: string;
-  icon: IconName;
-};
-
 export type CounsellingSlug = "josaa" | "csab" | "uptac" | "jac-delhi";
 
 /** Colour identity of a counselling. `accent` for fills, `ink` for small text on light surfaces (AA). */

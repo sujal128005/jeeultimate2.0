@@ -5,7 +5,7 @@ import { useCallback, useEffect, useRef, useState } from "react";
 import { cn } from "@/lib/cn";
 
 const IDLE = "01001100 01100101 01100001 01100011 01111001 ↗";
-const REVEAL = "Sujal Negi · sujalnegi.tech ↗";
+const REVEAL = "Made by Sujal Negi · sujalnegi.tech ↗";
 const HREF = "https://sujalnegi.tech";
 const GLYPHS = "!<>-_\\/[]{}=+*^?#01ABCDEFXYZ";
 const SPARK_COLORS = ["#ffb020", "#ff7a1a", "#ffffff", "#a98bff", "#7ce7ff", "#ff7ac6"];

@@ -1,0 +1,713 @@
+/* ==========================================================================
+   Workspace skin.
+
+   Deliberately plain. Square corners, grey chrome, thin rules, system font,
+   everything visible at once. It is meant to read like the branch software a
+   bank clerk uses: nothing decorative, nothing that needs explaining, and the
+   same control in the same place on every screen.
+
+   This file does not use the site's design tokens on purpose. The public site
+   and this are two different products with two different jobs.
+   ========================================================================== */
+
+.ws {
+  --ws-bg: #eceae6;
+  --ws-panel: #ffffff;
+  --ws-head: #e2e0db;
+  --ws-strip: #dedbd5;
+  --ws-line: #b9b5ad;
+  --ws-line-soft: #d7d3cb;
+  --ws-ink: #17150f;
+  --ws-ink-2: #46423a;
+  --ws-ink-3: #6f6a60;
+  --ws-btn: #e6e3dd;
+  --ws-btn-hot: #dcd8d0;
+  --ws-sel: #245a9e;
+  --ws-sel-soft: #d6e4f5;
+  --ws-ok: #1c6b34;
+  --ws-ok-soft: #dcecdf;
+  --ws-warn: #8a5300;
+  --ws-warn-soft: #f6ead2;
+  --ws-bad: #9a2220;
+  --ws-bad-soft: #f5dedd;
+  --ws-row-alt: #f6f5f2;
+  --ws-grid: #d4d1cb;
+  --ws-grid-strong: #a9a49b;
+  --ws-sheet-head: #eceae5;
+  --ws-sheet-hover: #e4edf8;
+  --ws-tick-col: #f1f6f0;
+  --ws-tick-head: #e2ebe0;
+
+  font-family: "Segoe UI", Tahoma, "Helvetica Neue", Arial, sans-serif;
+  font-size: 13px;
+  line-height: 1.35;
+  color: var(--ws-ink);
+  background: var(--ws-bg);
+  min-height: 100dvh;
+}
+
+.ws * {
+  border-radius: 0 !important;
+  box-sizing: border-box;
+}
+
+.ws-mono {
+  font-family: Consolas, "DejaVu Sans Mono", "Courier New", monospace;
+  font-variant-numeric: tabular-nums;
+}
+
+.ws-num {
+  font-family: Consolas, "DejaVu Sans Mono", "Courier New", monospace;
+  font-variant-numeric: tabular-nums;
+  text-align: right;
+  white-space: nowrap;
+}
+
+/* ---- window chrome ------------------------------------------------------ */
+
+.ws-titlebar {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 4px 8px;
+  background: var(--ws-strip);
+  border-bottom: 1px solid var(--ws-line);
+  font-size: 12px;
+}
+
+.ws-title {
+  font-weight: 700;
+  letter-spacing: 0.02em;
+}
+
+.ws-menubar {
+  display: flex;
+  align-items: stretch;
+  gap: 0;
+  background: var(--ws-head);
+  border-bottom: 1px solid var(--ws-line);
+  overflow-x: auto;
+}
+
+.ws-menu {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 5px 12px;
+  font-size: 13px;
+  color: var(--ws-ink-2);
+  text-decoration: none;
+  border-right: 1px solid var(--ws-line-soft);
+  white-space: nowrap;
+}
+
+.ws-menu:hover {
+  background: var(--ws-btn-hot);
+  color: var(--ws-ink);
+}
+
+.ws-menu[aria-current="page"] {
+  background: var(--ws-panel);
+  color: var(--ws-ink);
+  font-weight: 600;
+  box-shadow: inset 0 -2px 0 var(--ws-sel);
+}
+
+.ws-menu-count {
+  font-family: Consolas, monospace;
+  font-size: 11px;
+  background: var(--ws-bad);
+  color: #fff;
+  padding: 0 4px;
+  min-width: 16px;
+  text-align: center;
+}
+
+.ws-statusbar {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  padding: 3px 8px;
+  background: var(--ws-strip);
+  border-top: 1px solid var(--ws-line);
+  font-size: 11px;
+  color: var(--ws-ink-3);
+}
+
+.ws-body {
+  padding: 8px;
+}
+
+/* ---- panels ------------------------------------------------------------- */
+
+.ws-panel {
+  background: var(--ws-panel);
+  border: 1px solid var(--ws-line);
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+}
+
+.ws-panel-head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+  padding: 4px 8px;
+  background: var(--ws-head);
+  border-bottom: 1px solid var(--ws-line);
+}
+
+.ws-panel-title {
+  font-size: 12px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  color: var(--ws-ink-2);
+}
+
+.ws-panel-hint {
+  font-size: 11px;
+  color: var(--ws-ink-3);
+}
+
+.ws-panel-body {
+  padding: 8px;
+  min-width: 0;
+}
+
+.ws-panel-body-flush {
+  padding: 0;
+  min-width: 0;
+}
+
+/* ---- readouts ----------------------------------------------------------- */
+
+.ws-readouts {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 0;
+  border: 1px solid var(--ws-line);
+  background: var(--ws-panel);
+}
+
+.ws-readout {
+  padding: 6px 10px;
+  border-right: 1px solid var(--ws-line-soft);
+}
+
+.ws-readout:last-child {
+  border-right: 0;
+}
+
+.ws-readout-label {
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--ws-ink-3);
+}
+
+.ws-readout-value {
+  font-family: Consolas, "DejaVu Sans Mono", monospace;
+  font-variant-numeric: tabular-nums;
+  font-size: 22px;
+  font-weight: 700;
+  line-height: 1.15;
+}
+
+.ws-readout-sub {
+  font-size: 11px;
+  color: var(--ws-ink-3);
+}
+
+.ws-v-ok {
+  color: var(--ws-ok);
+}
+.ws-v-warn {
+  color: var(--ws-warn);
+}
+.ws-v-bad {
+  color: var(--ws-bad);
+}
+.ws-v-none {
+  color: var(--ws-ink-3);
+}
+
+/* ---- tables: a spreadsheet -------------------------------------------------
+   Ruled on all four sides like a worksheet, with a numbered gutter down the
+   left, a header row that stays put while you scroll, and the first column
+   frozen so a name never scrolls out of sight. */
+
+.ws-table {
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 0;
+  font-size: 12.5px;
+  background: #fff;
+}
+
+.ws-table th {
+  position: sticky;
+  top: 0;
+  z-index: 3;
+  text-align: left;
+  font-size: 11.5px;
+  font-weight: 600;
+  color: var(--ws-ink-2);
+  background: var(--ws-sheet-head);
+  border-top: 1px solid var(--ws-grid-strong);
+  border-bottom: 1px solid var(--ws-grid-strong);
+  border-right: 1px solid var(--ws-grid);
+  padding: 4px 7px;
+  white-space: nowrap;
+  user-select: none;
+}
+
+.ws-table th.ws-sortable {
+  cursor: pointer;
+}
+.ws-table th.ws-sortable:hover {
+  background: var(--ws-btn-hot);
+}
+
+.ws-table td {
+  padding: 3px 7px;
+  border-bottom: 1px solid var(--ws-grid);
+  border-right: 1px solid var(--ws-grid);
+  white-space: nowrap;
+  background: #fff;
+}
+
+.ws-table tbody tr:hover td {
+  background: var(--ws-sheet-hover);
+}
+.ws-table tbody tr.ws-row-flag td {
+  background: var(--ws-warn-soft);
+}
+.ws-table tbody tr.ws-row-flag:hover td {
+  background: #f1e2c4;
+}
+
+/* The numbered gutter, and the frozen first column beside it. */
+.ws-rownum {
+  position: sticky;
+  left: 0;
+  z-index: 2;
+  width: 38px;
+  min-width: 38px;
+  text-align: center;
+  font-family: Consolas, "DejaVu Sans Mono", monospace;
+  font-size: 11px;
+  color: var(--ws-ink-3);
+  background: var(--ws-sheet-head) !important;
+  border-right: 1px solid var(--ws-grid-strong) !important;
+}
+
+th.ws-rownum {
+  z-index: 4;
+}
+
+.ws-freeze {
+  position: sticky;
+  left: 38px;
+  z-index: 2;
+  border-right: 1px solid var(--ws-grid-strong) !important;
+}
+
+th.ws-freeze {
+  z-index: 4;
+  background: var(--ws-sheet-head);
+}
+tbody tr:hover td.ws-freeze {
+  background: var(--ws-sheet-hover);
+}
+tbody tr.ws-row-flag td.ws-freeze {
+  background: var(--ws-warn-soft);
+}
+
+/* Columns a person ticks, set apart from the columns they only read. */
+.ws-tick {
+  width: 86px;
+  text-align: center;
+  background: var(--ws-tick-col) !important;
+  border-left: 1px solid var(--ws-grid-strong) !important;
+}
+
+th.ws-tick {
+  background: var(--ws-tick-head) !important;
+  text-align: center;
+}
+tbody tr:hover td.ws-tick {
+  background: #e6efe4 !important;
+}
+.ws-tick input {
+  cursor: pointer;
+}
+.ws-tick-date {
+  display: block;
+  font-size: 9.5px;
+  color: var(--ws-ink-3);
+  line-height: 1.1;
+}
+
+.ws-scroll {
+  overflow: auto;
+  max-height: 70vh;
+}
+
+/* ---- controls ----------------------------------------------------------- */
+
+.ws-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+  height: 24px;
+  padding: 0 10px;
+  font-family: inherit;
+  font-size: 12.5px;
+  color: var(--ws-ink);
+  background: var(--ws-btn);
+  border: 1px solid var(--ws-line);
+  cursor: pointer;
+  white-space: nowrap;
+}
+
+.ws-btn:hover:not(:disabled) {
+  background: var(--ws-btn-hot);
+}
+.ws-btn:active:not(:disabled) {
+  border-style: inset;
+}
+.ws-btn:disabled {
+  color: var(--ws-ink-3);
+  cursor: default;
+}
+
+.ws-btn-primary {
+  background: var(--ws-sel);
+  border-color: #17406f;
+  color: #fff;
+  font-weight: 600;
+}
+
+.ws-btn-primary:hover:not(:disabled) {
+  background: #1d4c87;
+}
+
+.ws-btn-lg {
+  height: 28px;
+  padding: 0 14px;
+}
+
+.ws-input,
+.ws-select,
+.ws-textarea {
+  font-family: inherit;
+  font-size: 12.5px;
+  color: var(--ws-ink);
+  background: #fff;
+  border: 1px solid var(--ws-line);
+  padding: 3px 6px;
+  height: 24px;
+}
+
+.ws-textarea {
+  height: auto;
+  resize: vertical;
+  line-height: 1.4;
+}
+
+.ws-input:focus,
+.ws-select:focus,
+.ws-textarea:focus,
+.ws-btn:focus-visible,
+.ws-menu:focus-visible {
+  outline: 2px solid var(--ws-sel);
+  outline-offset: -2px;
+}
+
+.ws-label {
+  display: block;
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  color: var(--ws-ink-3);
+  margin-bottom: 2px;
+}
+
+.ws-toolbar {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 6px;
+  padding: 5px 8px;
+  background: var(--ws-head);
+  border: 1px solid var(--ws-line);
+}
+
+.ws-toolbar-label {
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--ws-ink-3);
+  margin-right: 2px;
+}
+
+/* ---- tags and marks ----------------------------------------------------- */
+
+.ws-tag {
+  display: inline-block;
+  font-family: Consolas, monospace;
+  font-size: 11px;
+  padding: 0 5px;
+  border: 1px solid var(--ws-line);
+  background: var(--ws-head);
+  color: var(--ws-ink-2);
+  white-space: nowrap;
+}
+
+.ws-tag-ok {
+  background: var(--ws-ok-soft);
+  border-color: #9cc0a6;
+  color: var(--ws-ok);
+}
+.ws-tag-warn {
+  background: var(--ws-warn-soft);
+  border-color: #d9be89;
+  color: var(--ws-warn);
+}
+.ws-tag-bad {
+  background: var(--ws-bad-soft);
+  border-color: #d6a4a2;
+  color: var(--ws-bad);
+}
+.ws-tag-sel {
+  background: var(--ws-sel-soft);
+  border-color: #9cb8dc;
+  color: var(--ws-sel);
+}
+
+.ws-dot {
+  display: inline-block;
+  width: 11px;
+  height: 11px;
+  border: 1px solid var(--ws-line);
+  background: #fff;
+  margin-right: 2px;
+}
+
+.ws-dot-on {
+  background: var(--ws-sel);
+  border-color: #17406f;
+}
+
+/* ---- bars --------------------------------------------------------------- */
+
+.ws-bar-track {
+  height: 10px;
+  background: #fff;
+  border: 1px solid var(--ws-line-soft);
+}
+
+.ws-bar-fill {
+  height: 100%;
+  background: var(--ws-sel);
+}
+
+.ws-chart {
+  display: flex;
+  align-items: flex-end;
+  gap: 1px;
+  height: 110px;
+  border-left: 1px solid var(--ws-line);
+  border-bottom: 1px solid var(--ws-line);
+  padding-left: 2px;
+}
+
+.ws-chart span {
+  flex: 1;
+  background: var(--ws-sel);
+  min-height: 1px;
+}
+
+.ws-chart span:hover {
+  background: var(--ws-warn);
+}
+
+/* ---- messages ----------------------------------------------------------- */
+
+.ws-msg {
+  border: 1px solid var(--ws-line-soft);
+  background: #fff;
+  padding: 6px 8px;
+}
+
+.ws-msg-mine {
+  background: var(--ws-sel-soft);
+}
+.ws-msg-unread {
+  border-left: 3px solid var(--ws-sel);
+}
+
+.ws-msg-head {
+  display: flex;
+  justify-content: space-between;
+  gap: 8px;
+  font-size: 11px;
+  color: var(--ws-ink-3);
+  margin-bottom: 3px;
+}
+
+.ws-msg-body {
+  white-space: pre-wrap;
+  word-break: break-word;
+  font-size: 13px;
+}
+
+.ws-attach {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  border: 1px solid var(--ws-line);
+  background: var(--ws-head);
+  padding: 2px 6px;
+  font-size: 11px;
+  color: var(--ws-ink-2);
+  text-decoration: none;
+}
+
+.ws-attach:hover {
+  background: var(--ws-btn-hot);
+  color: var(--ws-ink);
+}
+
+.ws-thumb {
+  display: block;
+  max-width: 220px;
+  max-height: 160px;
+  border: 1px solid var(--ws-line);
+  background: #fff;
+}
+
+/* ---- odds and ends ------------------------------------------------------ */
+
+.ws-empty {
+  padding: 18px 8px;
+  text-align: center;
+  font-size: 12px;
+  color: var(--ws-ink-3);
+}
+
+.ws-grid {
+  display: grid;
+  gap: 8px;
+}
+.ws-note {
+  font-size: 11px;
+  color: var(--ws-ink-3);
+}
+.ws-strong {
+  font-weight: 600;
+}
+.ws-rule {
+  border-top: 1px solid var(--ws-line-soft);
+}
+
+.ws-card {
+  border: 1px solid var(--ws-line);
+  background: #fff;
+  padding: 6px 8px;
+}
+
+.ws-card-late {
+  border-left: 3px solid var(--ws-warn);
+}
+.ws-card-picked {
+  outline: 2px solid var(--ws-sel);
+  outline-offset: -2px;
+}
+.ws-dropzone {
+  outline: 2px dashed var(--ws-sel);
+  outline-offset: -3px;
+  background: var(--ws-sel-soft);
+}
+
+/* The six-digit code. Wide letter spacing so a mistyped digit is easy to spot. */
+.ws-pin {
+  height: 34px;
+  font-family: Consolas, "Courier New", monospace;
+  font-size: 19px;
+  letter-spacing: 0.42em;
+  text-indent: 0.42em;
+  text-align: center;
+}
+
+.ws-pin::placeholder {
+  color: #b9b9b9;
+}
+
+/* ---- the counselling strip ---------------------------------------------- */
+/* One row of tabs under the menu bar. The lit one is the only counselling
+   anything below it is about. */
+
+.ws-streams {
+  display: flex;
+  align-items: stretch;
+  gap: 0;
+  background: var(--ws-panel);
+  border-bottom: 1px solid var(--ws-line);
+  padding: 0 4px;
+  overflow-x: auto;
+}
+
+.ws-stream {
+  font-family: inherit;
+  font-size: 12px;
+  color: var(--ws-ink-2);
+  background: transparent;
+  border: 0;
+  border-bottom: 2px solid transparent;
+  padding: 6px 13px;
+  cursor: pointer;
+  white-space: nowrap;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.ws-stream:hover {
+  background: var(--ws-btn-hot);
+  color: var(--ws-ink);
+}
+
+.ws-stream[aria-selected="true"] {
+  color: var(--ws-ink);
+  font-weight: 700;
+  border-bottom-color: var(--ws-sel);
+  background: #fff;
+}
+
+.ws-stream-count {
+  font-size: 10.5px;
+  font-weight: 400;
+  color: var(--ws-ink-3);
+  border: 1px solid var(--ws-line);
+  padding: 0 4px;
+  min-width: 16px;
+  text-align: center;
+}
+
+.ws-stream[aria-selected="true"] .ws-stream-count {
+  color: var(--ws-ink);
+  border-color: var(--ws-ink-3);
+}
+
+/* Said once, at the top, when there is genuinely nothing yet. */
+.ws-nodata {
+  background: var(--ws-warn-soft);
+  border-bottom: 1px solid var(--ws-line);
+  color: var(--ws-warn);
+  font-size: 12px;
+  padding: 6px 12px;
+}
